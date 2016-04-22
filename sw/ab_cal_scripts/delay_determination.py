@@ -5,8 +5,7 @@ License GPL version 2:
 
 Copyright (C) 2016  Tjeerd Pinkert
 based on:
-<...>
-
+[5]	N. Sotiropoulos et al., Opt. Express 21, 32643-32654 (2013)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
