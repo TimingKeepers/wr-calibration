@@ -157,7 +157,7 @@ if __name__ == "__main__":
   # use Channel 3 Ethernet Frame input
 
   # A fixed trigger level is important for proper timing measurement
-  # Choose 1.4 Volt for a direct signal but 0.8  Volt when the signal
+  # Choose 100 mV for a direct signal but 50 mV  Volt when the signal
   # is split by a power splitter
   scope.write(":TRIGger:EDGE:SOURce CHANnel1")
   scope.write(":TRIGger:SWEep TRIGgered")
@@ -165,18 +165,18 @@ if __name__ == "__main__":
   use_power_splitter = True
 
   if use_power_splitter:
-    scope.write(":TRIGger:LEVel CHANnel1, 0.4")
-    scope.write(":CHANnel1:RANGe 2.0")     # 250 mV/div
+    scope.write(":TRIGger:LEVel CHANnel1, 0.05")
+    scope.write(":CHANnel1:RANGe 0.8")     # 100 mV/div
   else:  
-    scope.write(":TRIGger:LEVel CHANnel1, 0.7")
-    scope.write(":CHANnel1:RANGe 3.0")     # 750 mV/div
+    scope.write(":TRIGger:LEVel CHANnel1, 0.1")
+    scope.write(":CHANnel1:RANGe 1.6")     # 200 mV/div
 
   scope.write(":CHANnel1:INPut DCFifty")
   scope.write(":CHANnel1:OFFSet 0.0")
 
   scope.write(":CHANnel3:INPut DCFifty")
   scope.write(":CHANnel3:OFFSet 0.0")
-  scope.write(":CHANnel3:RANGe 4.0")     # 500 mV/div
+  scope.write(":CHANnel3:RANGe 0.8")     # 100 mV/div
 
 
   # Trigger in the centre of the screen; important for maximum estimations
