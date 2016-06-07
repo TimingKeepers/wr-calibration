@@ -61,12 +61,12 @@ def wr_abs_cal_gui_file_to_scipy_array(filename):
   """
 
   data_file = open(filename,"r")
-  header = data_file.read(5)           # read the waveform_header "wrc# "
-  if header != "wrc# ":
+  # header = data_file.read(5)           # read the waveform_header "wrc# "
+  #if header != "wrc# ":
     #print("Exception: wr_abs_cal_gui_file_to_scipy_array: Not a WR Absolute Calibration GUI file.")
-    Exception("wr_abs_cal_gui_file_to_scipy_array: Not a WR Absolute Calibration GUI file.")
-    data_file.close()
-    return
+    #Exception("wr_abs_cal_gui_file_to_scipy_array: Not a WR Absolute Calibration GUI file.")
+    #data_file.close()
+    #return
 
   # create an empty gui_data dictionairy
   gui_data     = {}
