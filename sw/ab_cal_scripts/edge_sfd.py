@@ -247,7 +247,7 @@ if __name__ == "__main__":
   time_base       = 50.0e-9   # 50 ns/div
   num_meas = 1
 
-  if len(sys.argv) < 8:
+  if len(sys.argv) < 10:
     for i in range(1,len(sys.argv)):
       option = sys.argv[i].split('=')
       if option[0] == '-e' or option[0] == '--edge':
