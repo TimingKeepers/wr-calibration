@@ -167,10 +167,8 @@ if __name__ == "__main__":
     freq_cnt.write("INP1:LEVEL:AUTO OFF")
 
     # A fixed trigger level is important for proper timing measurement
-    # Choose 1.4 Volt for a direct signal.
-    # With one power splitter this is reduced to 0.7 volt and with
-    # With two power splitters (for cable and channel skew calibration)
-    # this is even reduced to 0.35 volt
+    # Choose 100 mV for a direct signal but 50 mV when the signal
+    # is split by a power splitter
 
     use_power_splitter_ch1 = True
     use_power_splitter_ch2 = True
@@ -187,7 +185,7 @@ if __name__ == "__main__":
     freq_cnt.write("INP2:SLOPE POS")
 
     # A fixed trigger level is important for proper timing measurement
-    # Choose 1.4 Volt for a direct signal but 0.4  Volt when the signal
+    # Choose 100 mV for a direct signal but 50 mV when the signal
     # is split by a power splitter
 
     freq_cnt.write("INP2:IMP 50")
