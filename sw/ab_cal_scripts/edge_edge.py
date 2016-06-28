@@ -150,15 +150,13 @@ if __name__ == "__main__":
 
   scope =  vxi11.Instrument(sys.argv[1])    
   #scope =  vxi11.Instrument("192.168.32.248")
-  print(scope.ask("*IDN?"))
-  # Returns 'KEYSIGHT TECHNOLOGIES,DSOS254A,MY55160101,05.50.0004'
 
+  # Initialize oscilloscope
   # Use Channel 1 pulse input
-  # use Channel 3 Ethernet Frame input
+  # use Channel 3-4 Ethernet Frame input
+  DSO.osc_init(scope, time_base)    
 
-  # A fixed trigger level is important for proper timing measurement
-  # Choose 100 mV for a direct signal but 50 mV  Volt when the signal
-  # is split by a power splitter
+  """
   scope.write(":TRIGger:EDGE:SOURce CHANnel1")
   scope.write(":TRIGger:SWEep TRIGgered")
 
@@ -184,7 +182,7 @@ if __name__ == "__main__":
   scope.write(":TIMebase:DELay 0")
   scope.write(":TIMebase:RANGe "+str(time_base))  # set 50 ns/div
   scope.write(":TIMebase:REFClock ON")    # set external refrence clock
-
+  """
 
   meas, samples, sample_period, first_filename, last_filename = average_edge_to_edge(scope, num_meas, expect_max, estimated_delay, tolerance)
   print("Samples:",samples)
