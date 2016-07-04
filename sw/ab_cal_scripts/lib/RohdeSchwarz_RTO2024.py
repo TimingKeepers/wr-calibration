@@ -32,6 +32,9 @@ import matplotlib.pyplot as plt
 ############################################################################
 
 def get_sweeps(scope, chan_str):
+  # scope.write("ACQuire:COUNt 100")      Set RohdeSchwarz avarage number
+  # print(scope.ask("ACQuire:COUNt?"))    read this back
+  # print(scope.ask("ACQuire:CURRent?"))  Wait for acquisitions to complete
   sweep_str = str(scope.ask(chan_str + ':INSPECT? SWEEPS_PER_ACQ')).split(':')[2]
      # returns something like:
      # u'C1:INSP "SWEEPS_PER_ACQ     : 30                 "'
