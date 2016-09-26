@@ -86,10 +86,22 @@ def get_waveforms(scope, channels=[1,2,3,4],num_avg=1):
     # First point (FP=0)
     # Segment Number (SN=0: all segments)
 
-  for chan in channels.split(','):
-    scope.write("C" + str(chan)+':TRACE ON')                               # For Function or Channel
-
+  src_str = "F"
   scope.write("TRIG_MODE STOP")
+
+  for chan in channels.split(','):
+    scope.write(src_str + str(chan)+':TRACE ON')                               # For Function or Channel
+    # Attention! LeCroy can set average in Channel Tab manually but not via
+    # script!? For this we need to setup a function!
+    # Also note that setting up a function does not mean that we need to
+    # administrate the triggers by script (see for loop below where each loop
+    # one sweep is armed and taken.
+    scope.write("VBS 'app.Math."+src_str + str(chan)+".View = True'")
+    scope.write("VBS 'app.Math."+src_str + str(chan)+".Source1 = \"C"+str(chan)+"\"'")
+    scope.write("VBS 'app.Math."+src_str + str(chan)+".Operator1 = \"Average\"'")
+    scope.write("VBS 'app.Math."+src_str + str(chan)+".Operator1Setup.Sweeps = " + str(num_avg))
+    scope.write("VBS 'app.Math."+src_str + str(chan)+".MathMode = \"OneOperator\"'")
+
   scope.write("CLEAR_SWEEPS")
   scope.write("TRIG_MODE SINGLE")
 
@@ -116,12 +128,12 @@ def get_waveforms(scope, channels=[1,2,3,4],num_avg=1):
 
   for chan in channels.split(','):
     channel_preamble.append("#preamble:\n")
-    channel_preamble.append(scope.ask("C"+str(chan)+":INSPECT? WAVEDESC")+"\n")
+    channel_preamble.append(scope.ask(src_str+str(chan)+":INSPECT? WAVEDESC")+"\n")
     channel_preamble.append("#preamble_end:\n")
     channel_descriptor.append("#waveform_desc:\n")
-    channel_descriptor.append(scope.ask_raw("C"+str(chan)+":WAVEFORM? DESC"))
+    channel_descriptor.append(scope.ask_raw(src_str+str(chan)+":WAVEFORM? DESC"))
     channel_data.append("#waveform_data:\n")
-    channel_data.append(scope.ask_raw("C"+str(chan)+":WAVEFORM? DAT1"))
+    channel_data.append(scope.ask_raw(src_str+str(chan)+":WAVEFORM? DAT1"))
 
   # Write out file_header, followed by all preambles, followed by all channel_data
   data = [file_header]
@@ -685,7 +697,7 @@ if __name__ == "__main__":
     # use Channel 3 Ethernet Frame input
 
     # A fixed trigger level (1,4 Volt) is important for proper timing measurement
-    scope.write("C1:TRIG_LEVEL 1.4")
+    scope.write("C1:TRIG_LEVEL 0.1")
     scope.write("C1:COUPLING DC50")
 
     # Trigger in the centre of the screen; important for maximum estimations
