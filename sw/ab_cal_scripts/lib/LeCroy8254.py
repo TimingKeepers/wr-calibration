@@ -8,7 +8,7 @@ Usage:
   LeCroy8254.py -h | --help
 
   IP          IP number of the Oscilloscope
-              (for example: 192.168.32.248 which is its DevNet IP number)
+              (for example: 192.168.32.243 which is its DevNet IP number)
 
 Options:
   -h --help    Show this screen.
@@ -601,6 +601,56 @@ def file_to_waveform(filename):
   return waveform_data
 
 ############################################################################
+def osc_init(scope, time_base = 50.0e-9):
+
+  """
+  Initialize the Oscilloscope for the timestamp edge to SFD measurement.
+
+    scope      -- instance of python-vxi connected to the oscilloscope
+    time_base  -- <float> time base, default 50 ns/div
+  """
+
+  #scope =  vxi11.Instrument("192.168.32.243")
+  print(scope.ask("*IDN?"))
+  # Returns '*IDN LECROY,HDO4034-MS,LCRY-HDO,7.9.0'
+
+  # Use Channel 1 pulse input
+  # use Channel 3 Ethernet Frame input
+
+  # A fixed trigger level is important for proper timing measurement
+  # Choose 1.4 Volt for a direct signal but 0.8  Volt when the signal
+  # is split by a power splitter
+  scope.write("TRIG_SELECT EDGE,SR,C1")
+
+  use_power_splitter = True
+
+  if use_power_splitter:
+    scope.write("C1:TRIG_LEVEL 0.4")
+    scope.write("C1:Volt_DIV 0.5")
+  else:  
+    scope.write("C1:TRIG_LEVEL 0.7")
+    scope.write("C1:Volt_DIV 0.75")
+
+  scope.write("C1:COUPLING D50")
+  scope.write("C1:OFFSET 0.0")
+
+  scope.write("C3:COUPLING D50")
+  scope.write("C3:OFFSET 0.0")
+  scope.write("C3:Volt_DIV 0.125")
+  scope.write("C4:COUPLING D50")
+  scope.write("C4:OFFSET 0.0")
+  scope.write("C4:Volt_DIV 0.125")
+
+
+  # Trigger in the centre of the screen; important for maximum estimations
+  # forwarded to function average_edge_to_sfd
+  scope.write("TRIG_DELAY 0 ns")
+  scope.write("TIME_DIV "+str(time_base))  # set 50 ns/div
+  #scope.write("REFERENCE_CLOCK EXTERNAL")  # set external refrence clock
+
+  return
+
+############################################################################
 ##
 ## If run from commandline, we can test the library
 ##
@@ -608,13 +658,9 @@ if __name__ == "__main__":
   
   arguments = docopt(__doc__,version='LeCroy WaveRunner 8254M-MS version 01')
 
-  print("aap",arguments)
-  #print(len(sys.argv))
-  #print(sys.argv)
-
   if len(sys.argv) >= 2:            # just IP number
     scope =  vxi11.Instrument(sys.argv[1])    
-    #scope =  vxi11.Instrument("192.168.32.248")
+    #scope =  vxi11.Instrument("192.168.32.243")
     print(scope.ask("*IDN?"))
     # Returns '*IDN LECROY,HDO4034-MS,LCRY-HDO,7.9.0'
     channels = '1'
@@ -624,7 +670,6 @@ if __name__ == "__main__":
     if len(sys.argv) >= 3:                  # There are more arguments...
       for i in range(1,len(sys.argv)):
         option = sys.argv[i].split('=')
-        print(option)
         if option[0] == '-c':           # set channels
           channels=option[1]
           #print("channels:",channels)
@@ -634,14 +679,13 @@ if __name__ == "__main__":
         if option[0] == '-a':           # set number of averages
           num_avg=int(option[1])
 
-    print ("channels:",channels, "num_avg", num_avg)
-
-
+    #print ("channels:",channels, "num_avg", num_avg)
+    
     # Use Channel 1 pulse input
     # use Channel 3 Ethernet Frame input
 
     # A fixed trigger level (1,4 Volt) is important for proper timing measurement
-#    scope.write("C1:TRIG_LEVEL 1.4")
+    scope.write("C1:TRIG_LEVEL 1.4")
     scope.write("C1:COUPLING DC50")
 
     # Trigger in the centre of the screen; important for maximum estimations
