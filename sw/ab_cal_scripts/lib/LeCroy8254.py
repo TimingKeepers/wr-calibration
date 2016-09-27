@@ -86,21 +86,16 @@ def get_waveforms(scope, channels=[1,2,3,4],num_avg=1):
     # First point (FP=0)
     # Segment Number (SN=0: all segments)
 
-  src_str = "F"
+  src_str = "C"
   scope.write("TRIG_MODE STOP")
 
   for chan in channels.split(','):
-    scope.write(src_str + str(chan)+':TRACE ON')                               # For Function or Channel
-    # Attention! LeCroy can set average in Channel Tab manually but not via
-    # script!? For this we need to setup a function!
-    # Also note that setting up a function does not mean that we need to
-    # administrate the triggers by script (see for loop below where each loop
-    # one sweep is armed and taken.
-    scope.write("VBS 'app.Math."+src_str + str(chan)+".View = True'")
-    scope.write("VBS 'app.Math."+src_str + str(chan)+".Source1 = \"C"+str(chan)+"\"'")
-    scope.write("VBS 'app.Math."+src_str + str(chan)+".Operator1 = \"Average\"'")
-    scope.write("VBS 'app.Math."+src_str + str(chan)+".Operator1Setup.Sweeps = " + str(num_avg))
-    scope.write("VBS 'app.Math."+src_str + str(chan)+".MathMode = \"OneOperator\"'")
+    scope.write(src_str + str(chan)+':TRACE ON')    # For Function or Channel
+    # Note that setting an Average Sweep number does not mean that acquisition
+    # automatically takes the right number of sweeps. This needs to be
+    # administrated by the script (see for loop below where for each loop one
+    # sweep is armed and taken.
+    scope.write("VBS 'app.Acquisition."+src_str + str(chan)+".AverageSweeps = "+str(num_avg)+"'")
 
   scope.write("CLEAR_SWEEPS")
   scope.write("TRIG_MODE SINGLE")
@@ -110,8 +105,8 @@ def get_waveforms(scope, channels=[1,2,3,4],num_avg=1):
     scope.write("ARM;WAIT")
     while ('1' not in scope.ask("*OPC?")):
       pass
-    print(cnt)
-    cnt = cnt +1
+    #print(cnt)
+    #cnt = cnt +1
 
   timestamp = time.localtime()
 
