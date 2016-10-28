@@ -669,7 +669,7 @@ if __name__ == "__main__":
     scope =  vxi11.Instrument(sys.argv[1])    
     #scope =  vxi11.Instrument("192.168.32.243")
     print(scope.ask("*IDN?"))
-    # Returns '*IDN LECROY,HDO4034-MS,LCRY-HDO,7.9.0'
+    # Returns 'LECROY,WAVERUNNER8254M-MS,LCRY4253N20398,8.1.0'
     channels = '1'
     #record_len = 1000
     num_avg = 1
@@ -686,7 +686,7 @@ if __name__ == "__main__":
         if option[0] == '-a':           # set number of averages
           num_avg=int(option[1])
 
-    #print ("channels:",channels, "num_avg", num_avg)
+    print ("channels:",channels, "num_avg", num_avg)
     
     # Use Channel 1 pulse input
     # use Channel 3 Ethernet Frame input
