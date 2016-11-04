@@ -1,0 +1,150 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+      <key type="string" value="clk_ext_mul_i" name="SearchString"/>
+      <key type="string" value="Any" name="TypeName"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="false" name="StartBrowser"/>
+      <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb/clb.ews/html" name="DirectoryName"/>
+      <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb/clb.ews/html/index.htm" name="Index"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="design:clb_top_tb:&lt;Internal>/lib0c012c7c15fe2515c321e8b5dea5b556_comp0c012c533e9b92250ae0e1bce243a135" name="CurrentPath"/>
+      <key type="string" value="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c146f9025cc61e8b58876eb73" name="HdlOutputObject"/>
+      <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top_tb.vhd" name="HdlOutputFile"/>
+    </section>
+    <section name="Browser">
+      <key type="string" value="design.clb_top_tb" name="DetailView"/>
+    </section>
+    <section name="DatabaseView">
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c533f81792505e0e1bcd9c410a6"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c534cd594254520e1bcccf52977"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c535d9b92250ae0e1bc8233a135"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53816ade45c7f0e1bc3fd20584"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c538e13b645cb71e1bc36909c27"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c538ea7d1358561e1bc93d0a513"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c539cc594254520e1bc4bd52977"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53abee8d25cbf0e1bc8a418431"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53bbd594254520e1bc9fe52977"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53e2b7a4254bc0e1bcaaf348e0"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53ef15013588c0e1bc2ab51343"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53ffe4013588c0e1bc92b51343"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c146f9025cc61e8b58876eb73"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c293b80250621e8b5ce07a6e4"/>
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="480" name="offset_y"/>
+    </section>
+    <section name="GenerationStamps">
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c538e13b645cb71e1bc36909c27"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c538e13b645cb71e1bc66909c27"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53ef15013588c0e1bc2ab51343"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53ef15013588c0e1bc5ab51343"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53ffe4013588c0e1bc92b51343"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c5300f4013588c0e1bcc2b51343"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53bbd594254520e1bc9fe52977"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53bbd594254520e1bcffe52977"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53e2b7a4254bc0e1bcaaf348e0"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53e2b7a4254bc0e1bcdaf348e0"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53816ade45c7f0e1bc3fd20584"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53916ade45c7f0e1bc6fd20584"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c538ea7d1358561e1bc93d0a513"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c538ea7d1358561e1bc34d0a513"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c534cd594254520e1bcccf52977"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c534cd594254520e1bc4df52977"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53abee8d25cbf0e1bc8a418431"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53abee8d25cbf0e1bcba418431"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c533f81792505e0e1bcd9c410a6"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c534f81792505e0e1bc0ac410a6"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c539cc594254520e1bc4bd52977"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c539cc594254520e1bc7bd52977"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c535d9b92250ae0e1bc8233a135"/>
+      <key type="string" value="1478257623" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c535d9b92250ae0e1bc9233a135"/>
+    </section>
+    <section name="GeneratedHdlFiles">
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c538e13b645cb71e1bc36909c27"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c538e13b645cb71e1bc66909c27"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53ef15013588c0e1bc2ab51343"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53ef15013588c0e1bc5ab51343"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53ffe4013588c0e1bc92b51343"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c5300f4013588c0e1bcc2b51343"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53bbd594254520e1bc9fe52977"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53bbd594254520e1bcffe52977"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53e2b7a4254bc0e1bcaaf348e0"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53e2b7a4254bc0e1bcdaf348e0"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53816ade45c7f0e1bc3fd20584"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53916ade45c7f0e1bc6fd20584"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c538ea7d1358561e1bc93d0a513"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c538ea7d1358561e1bc34d0a513"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c534cd594254520e1bcccf52977"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c534cd594254520e1bc4df52977"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c53abee8d25cbf0e1bc8a418431"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c53abee8d25cbf0e1bcba418431"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c533f81792505e0e1bcd9c410a6"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c534f81792505e0e1bc0ac410a6"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c539cc594254520e1bc4bd52977"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c539cc594254520e1bc7bd52977"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c535d9b92250ae0e1bc8233a135"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/clb_abs_calibration.ews/../top/fpga.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c535d9b92250ae0e1bc9233a135"/>
+    </section>
+    <section name="SimulatorCompileTimes">
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/wr-cores/ip_cores/general-cores/modules/genrams/genram_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/wr-cores/ip_cores/general-cores/modules/wishbone/wishbone_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/wr-cores/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/wr-cores/modules/wr_endpoint/ep_registers_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/wr-cores/modules/wr_endpoint/endpoint_private_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_spec/top/top/v2_2_1/clb_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_spec/top/top/v2_2_1/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_spec/top/v2_2_1/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_spec/top/v2_2_1/clb_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/clb_ref_design/top/clb_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/clb_ref_design/top/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/ip_cores/general-cores/modules/genrams/genram_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/ip_cores/general-cores/modules/wishbone/wishbone_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/clb_abs_calibration/top/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/clb_abs_calibration/top/clb_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/wr-cores/ip_cores/general-cores/modules/genrams/genram_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/wr-cores/ip_cores/general-cores/modules/wishbone/wishbone_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/clb_abs_calibration/top/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/clb_abs_calibration/top/clb_top_tb.vhd"/>
+    </section>
+    <section name="HierarchicalView">
+      <key type="bool" value="true" name="arch0c012c5327ed2b254011e1bc01a1f704"/>
+      <key type="bool" value="true" name="arch0c012c532a75ae25c880e1bc0bf41c17"/>
+      <key type="bool" value="true" name="arch0c012c534f81792505e0e1bc0ac410a6"/>
+      <key type="bool" value="true" name="arch0c012c53abee8d25cbf0e1bcba418431"/>
+      <key type="bool" value="true" name="comp0c012c530d7bf5258a40e1bc14117ff6"/>
+      <key type="bool" value="true" name="comp0c012c531ed4042547d0e1bc00f508e1"/>
+      <key type="bool" value="true" name="comp0c012c5363d32e2500f0e1bcbac6f3b5"/>
+      <key type="bool" value="true" name="comp0c012c53767bf5258a40e1bc12017ff6"/>
+      <key type="bool" value="true" name="comp0c012c537df7ae25c880e1bcfa851c17"/>
+      <key type="bool" value="true" name="comp0c012c539cc594254520e1bc5bd52977"/>
+      <key type="bool" value="true" name="comp0c012c539f622f2588d0e1bc06451136"/>
+      <key type="bool" value="true" name="comp0c012c53b229f6250a01e1bcd692d981"/>
+      <key type="bool" value="true" name="comp0c012c53c1ce48250330e1bc1af1aaa4"/>
+      <key type="bool" value="true" name="comp0c012c53c3522f2588d0e1bc11451136"/>
+      <key type="bool" value="true" name="comp0c012c53e2b7a4254bc0e1bccaf348e0"/>
+      <key type="bool" value="true" name="comp0c012c53fbd4042547d0e1bc6be508e1"/>
+      <key type="bool" value="true" name="comp0c012c7cf050a025cc61e8b54278eb73"/>
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="FileView">
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="GenerationChecksums">
+      <key type="string" value="D15A57F63A9B509F" name="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/clb_abs_calibration/top/fpga.vhd"/>
+    </section>
+  </sections>
+</CONFIGURATION>

@@ -1,0 +1,121 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53282694254520e1bc17562977")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:32 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "CPU_Default")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 512 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1380541058 "Mon Sep 30 13:37:38 2013")
+      (MODIFIED 1380541311 "Mon Sep 30 13:41:51 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d82694254520e1bcb9562977")
+      (HDL_IDENT
+        (NAME "UDP_TX_CPU")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "ipmux_cpu_in_type")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 152 552 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "UDP_TX_CPU")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d82694254520e1bcc9562977")
+      (HDL_IDENT
+        (NAME "tx_ack")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 88 552 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_ack")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53282694254520e1bc47562977" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53282694254520e1bc47562977")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53282694254520e1bc57562977")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'CPU_Default'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     UDP_TX_CPU : out    ipmux_cpu_in_type;"
+               "--     tx_ack     : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of CPU_Default is"
+               ""
+               "begin"
+               "   tx_ack <= '0';"
+               "   UDP_TX_CPU.Request <= '0';"
+               "   UDP_TX_CPU.EOP <= '0';"
+               "   UDP_TX_CPU.D	 <= (others => '0');"
+               "   UDP_TX_CPU.Addr	<= (others => '0');"
+               "   UDP_TX_CPU.WrEn <= '0';"
+               ""
+               "end architecture rtl ; -- of CPU_Default"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

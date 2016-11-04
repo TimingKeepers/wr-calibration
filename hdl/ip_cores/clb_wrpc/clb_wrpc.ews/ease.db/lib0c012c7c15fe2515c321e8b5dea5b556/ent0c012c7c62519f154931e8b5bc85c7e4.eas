@@ -1,0 +1,611 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c62519f154931e8b5bc85c7e4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c52519f154931e8b58c85c7e4")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/modules/wr_mini_nic/xwr_mini_nic.vhd")
+      (PROPERTY "IMPORTED_LAST" "1445933537")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:29 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445874870")
+    )
+    (HDL_IDENT
+      (NAME "xwr_mini_nic")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 3840 2560)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1375278374 "Wed Jul 31 15:46:14 2013")
+      (MODIFIED 1445934629 "Tue Oct 27 09:30:29 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cb02c80250621e8b5053ba6e4")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c62519f154931e8b5cc85c7e4")
+      (HDL_IDENT
+        (NAME "g_interface_mode")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_interface_mode")
+          (DEF_VALUE "classic")
+        )
+      )
+      (GEOMETRY 1624 152 1704 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 1768 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_interface_mode(classic)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c62519f154931e8b5dc85c7e4")
+      (HDL_IDENT
+        (NAME "g_address_granularity")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_address_granularity")
+          (DEF_VALUE "word")
+        )
+      )
+      (GEOMETRY 1624 280 1704 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 1768 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_address_granularity(word)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c62519f154931e8b5ec85c7e4")
+      (HDL_IDENT
+        (NAME "g_memsize_log2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "14")
+        )
+      )
+      (GEOMETRY 1624 408 1704 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 1768 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_memsize_log2(14)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c62519f154931e8b5fc85c7e4")
+      (HDL_IDENT
+        (NAME "g_buffer_little_endian")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 1624 536 1704 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 1768 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_buffer_little_endian(false)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b51d85c7e4")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b52d85c7e4")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b53d85c7e4")
+      (HDL_IDENT
+        (NAME "mem_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 3800 1880 3880 1960)
+      (SIDE 1)
+      (LABEL
+        (POSITION 3776 1920)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "mem_data_o(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b54d85c7e4")
+      (HDL_IDENT
+        (NAME "mem_addr_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_memsize_log2-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 3800 2008 3880 2088)
+      (SIDE 1)
+      (LABEL
+        (POSITION 3776 2048)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "mem_addr_o(g_memsize_log2-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b55d85c7e4")
+      (HDL_IDENT
+        (NAME "mem_data_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 3800 2264 3880 2344)
+      (SIDE 1)
+      (LABEL
+        (POSITION 3776 2304)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "mem_data_i(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b56d85c7e4")
+      (HDL_IDENT
+        (NAME "mem_wr_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 3800 2136 3880 2216)
+      (SIDE 1)
+      (LABEL
+        (POSITION 3776 2176)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "mem_wr_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b57d85c7e4")
+      (HDL_IDENT
+        (NAME "src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "src_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b58d85c7e4")
+      (HDL_IDENT
+        (NAME "src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b59d85c7e4")
+      (HDL_IDENT
+        (NAME "snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b5ad85c7e4")
+      (HDL_IDENT
+        (NAME "snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b5bd85c7e4")
+      (HDL_IDENT
+        (NAME "txtsu_port_id_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "txtsu_port_id_i(4:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b5cd85c7e4")
+      (HDL_IDENT
+        (NAME "txtsu_frame_id_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "16 - 1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1432 40 1512)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1472)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "txtsu_frame_id_i(16 - 1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b5dd85c7e4")
+      (HDL_IDENT
+        (NAME "txtsu_tsval_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "28 + 4 - 1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1560 40 1640)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1600)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "txtsu_tsval_i(28 + 4 - 1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b5ed85c7e4")
+      (HDL_IDENT
+        (NAME "txtsu_tsincorrect_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1688 40 1768)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "txtsu_tsincorrect_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b5fd85c7e4")
+      (HDL_IDENT
+        (NAME "txtsu_stb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1816 40 1896)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1856)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "txtsu_stb_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b50e85c7e4")
+      (HDL_IDENT
+        (NAME "txtsu_ack_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1944 40 2024)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1984)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "txtsu_ack_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b51e85c7e4")
+      (HDL_IDENT
+        (NAME "wb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2328 40 2408)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2368)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c62519f154931e8b52e85c7e4")
+      (HDL_IDENT
+        (NAME "wb_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c532e13f2654940e1bc5ac405b3" "wrapper")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c532e13f2654940e1bc5ac405b3")
+    (HDL_IDENT
+      (NAME "wrapper")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535263f2654940e1bc8c3505b3")
+        (NAME "wrapper.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'wrapper' of entity 'xwr_mini_nic'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_interface_mode       : t_wishbone_interface_mode := classic;"
+               "--     g_address_granularity  : t_wishbone_address_granularity := word;"
+               "--     g_memsize_log2         : integer := 14;"
+               "--     g_buffer_little_endian : boolean := false);"
+               "--   port ("
+               "--     clk_sys_i           : in     std_logic;"
+               "--     rst_n_i             : in     std_logic;"
+               "--     mem_data_o          : out    std_logic_vector(31 downto 0);"
+               "--     mem_addr_o          : out    std_logic_vector(g_memsize_log2-1 downto 0);"
+               "--     mem_data_i          : in     std_logic_vector(31 downto 0);"
+               "--     mem_wr_o            : out    std_logic;"
+               "--     src_o               : out    t_wrf_source_out;"
+               "--     src_i               : in     t_wrf_source_in;"
+               "--     snk_o               : out    t_wrf_sink_out;"
+               "--     snk_i               : in     t_wrf_sink_in;"
+               "--     txtsu_port_id_i     : in     std_logic_vector(4 downto 0);"
+               "--     txtsu_frame_id_i    : in     std_logic_vector(16 - 1 downto 0);"
+               "--     txtsu_tsval_i       : in     std_logic_vector(28 + 4 - 1 downto 0);"
+               "--     txtsu_tsincorrect_i : in     std_logic;"
+               "--     txtsu_stb_i         : in     std_logic;"
+               "--     txtsu_ack_o         : out    std_logic;"
+               "--     wb_i                : in     t_wishbone_slave_in;"
+               "--     wb_o                : out    t_wishbone_slave_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture wrapper of xwr_mini_nic is"
+               ""
+               "begin"
+               ""
+               "end architecture wrapper ; -- of xwr_mini_nic"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

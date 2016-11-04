@@ -1,0 +1,44 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c539fbc7f558231e1bcf7d45313")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../wr-cores/modules/wr_endpoint/endpoint_private_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 11:31:46 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "endpoint_private_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1442302969 "Tue Sep 15 09:42:49 2015")
+    (MODIFIED 1478255465 "Fri Nov 04 11:31:05 2016")
+  )
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (OBID "pack0c012c7c68d13515c321e8b59e6cb556")
+      (LIBRARY "design")
+      (NAME "wr_fabric_pkg")
+      (SUFFIX "all")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c53492593354431e1bcb3b29863")
+      (LIBRARY "design")
+      (NAME "endpoint_pkg")
+      (SUFFIX "all")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c53b92af52508e0e1bc52a7fff7")
+      (LIBRARY "design")
+      (NAME "genram_pkg")
+      (SUFFIX "all")
+    )
+  )
+)
+(END_OF_FILE)

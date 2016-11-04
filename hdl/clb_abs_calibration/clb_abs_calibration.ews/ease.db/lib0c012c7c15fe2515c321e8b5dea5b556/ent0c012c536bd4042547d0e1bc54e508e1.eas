@@ -1,0 +1,308 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c536bd4042547d0e1bc54e508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1383044468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1383043939")
+    )
+    (HDL_IDENT
+      (NAME "TxWrDataSrcSel")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 1024)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945910 "Mon Sep 23 16:18:30 2013")
+      (MODIFIED 1383049881 "Tue Oct 29 13:31:21 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc64e508e1")
+      (HDL_IDENT
+        (NAME "Dout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Dout(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc74e508e1")
+      (HDL_IDENT
+        (NAME "EOPin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EOPin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc84e508e1")
+      (HDL_IDENT
+        (NAME "EOPout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "EOPout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc94e508e1")
+      (HDL_IDENT
+        (NAME "SelSm")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SelSm")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bca4e508e1")
+      (HDL_IDENT
+        (NAME "SmDin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SmDin(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcb4e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_DATA")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_DATA(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcc4e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_EOP")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_EOP")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcd4e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_VALID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_VALID")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bce4e508e1")
+      (HDL_IDENT
+        (NAME "WrEn")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrEn")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcf4e508e1")
+      (HDL_IDENT
+        (NAME "WrEnIn")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrEnIn")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534759f6250a01e1bcdf92d981" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534759f6250a01e1bcdf92d981")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a9aaf6250a01e1bc14a2d981")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'TxWrDataSrcSel'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Dout        : out    std_logic_vector(15 downto 0);"
+               "--     EOPin       : in     std_logic;"
+               "--     EOPout      : out    std_logic;"
+               "--     SelSm       : in     std_logic;"
+               "--     SmDin       : in     std_logic_vector(15 downto 0);"
+               "--     TX_LL_DATA  : in     std_logic_vector(15 downto 0);"
+               "--     TX_LL_EOP   : in     std_logic;"
+               "--     TX_LL_VALID : in     std_logic;"
+               "--     WrEn        : out    std_logic;"
+               "--     WrEnIn      : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of TxWrDataSrcSel is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of TxWrDataSrcSel"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

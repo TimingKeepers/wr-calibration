@@ -1,0 +1,415 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7caa919f154931e8b503e5c7e4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7caa919f154931e8b54fd5c7e4")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/WRPC/modules/wrc_core/wbp_mux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376302617")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Wed Aug 14 10:33:48 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1374590192")
+    )
+    (HDL_IDENT
+      (NAME "xwbp_mux")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2112 2560)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1375279530 "Wed Jul 31 16:05:30 2013")
+      (MODIFIED 1376467697 "Wed Aug 14 10:08:17 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b513e5c7e4")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b523e5c7e4")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b533e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 1496 2152 1576)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1536)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b543e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2072 1368 2152 1448)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1408)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b553e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 1688 2152 1768)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b563e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2072 1816 2152 1896)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1856)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b573e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_src_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b583e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1432 40 1512)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1472)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b593e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5a3e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5b3e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1752 40 1832)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1792)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_src_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5c3e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1880 40 1960)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1920)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5d3e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 2072 40 2152)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2112)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5e3e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5f3e5c7e4")
+      (HDL_IDENT
+        (NAME "class_core_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 2072 856 2152 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 896)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "class_core_i(7:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7cd16b80250621e8b59888a6e4" "behaviour")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7cd16b80250621e8b59888a6e4")
+    (HDL_IDENT
+      (NAME "behaviour")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c7c989b80250621e8b5eec8a6e4")
+        (NAME "behaviour.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behaviour' of entity 'xwbp_mux'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     clk_sys_i    : in     std_logic;"
+               "--     rst_n_i      : in     std_logic;"
+               "--     ep_src_o     : out    t_wrf_source_out;"
+               "--     ep_src_i     : in     t_wrf_source_in;"
+               "--     ep_snk_o     : out    t_wrf_sink_out;"
+               "--     ep_snk_i     : in     t_wrf_sink_in;"
+               "--     ptp_src_o    : out    t_wrf_source_out;"
+               "--     ptp_src_i    : in     t_wrf_source_in;"
+               "--     ptp_snk_o    : out    t_wrf_sink_out;"
+               "--     ptp_snk_i    : in     t_wrf_sink_in;"
+               "--     ext_src_o    : out    t_wrf_source_out;"
+               "--     ext_src_i    : in     t_wrf_source_in;"
+               "--     ext_snk_o    : out    t_wrf_sink_out;"
+               "--     ext_snk_i    : in     t_wrf_sink_in;"
+               "--     class_core_i : in     std_logic_vector(7 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behaviour of xwbp_mux is"
+               ""
+               "begin"
+               ""
+               "end architecture behaviour ; -- of xwbp_mux"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

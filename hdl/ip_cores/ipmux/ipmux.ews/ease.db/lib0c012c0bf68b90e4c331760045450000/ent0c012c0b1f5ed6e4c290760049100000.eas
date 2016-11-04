@@ -1,0 +1,323 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b1f5ed6e4c290760049100000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "PktBufFlags")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1216 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1315825137 "Mon Sep 12 12:58:57 2011")
+      (MODIFIED 1463043653 "Thu May 12 11:00:53 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c0bd35fd6e4489076003bd00000")
+      (HDL_IDENT
+        (NAME "abits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "15")
+        )
+      )
+      (GEOMETRY 152 472 232 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 296 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "abits(15)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bcf5ed6e4c290760089100000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PktWrPtr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "PktWrPtr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b316ed6e4c2907600b9100000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PktRdPtr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 152 1256 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PktRdPtr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bc26ed6e4c2907600e9100000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Full")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b236ed6e4c29076000a100000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 344 1256 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Empty")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bc5b7ace40690760096320000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WaterMarkHigh")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WaterMarkHigh")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b76b7ace406907600c6320000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WaterMarkLow")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WaterMarkLow")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b1f5ed6e4c290760059100000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b1f5ed6e4c290760059100000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c0b60f57df4cec0e1bc1943a932")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'PktBufFlags'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     abits : integer := 15);"
+               "--   port ("
+               "--     Empty         : out    std_logic;"
+               "--     Full          : out    std_logic;"
+               "--     PktRdPtr      : in     std_logic_vector(abits-1 downto 0);"
+               "--     PktWrPtr      : in     std_logic_vector(abits-1 downto 0);"
+               "--     WaterMarkHigh : out    std_logic;"
+               "--     WaterMarkLow  : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of PktBufFlags is"
+               "   "
+               "   -- Note:"
+               "   -- A buffer size of 32678 (16 bit) words (abits = 15) can contain 65536 bytes which"
+               "   -- corresponds to 7 jumbo frames."
+               "   -- A High Water Mark set to 50% means that a pause request is issued after four jumbo frames were received"
+               "   -- (the fifth on it's way...; place left to store 5, 6 and 7)"
+               "   -- Recall hat 50% of 65536 is 32678 is more than three and less than four jumbo frames of 9014 bytes. Flag"
+               "   -- behavior acts upon the Packet Read and Write pointers (not the actual read and write address pointers!)"
+               "   -- since packets may be signaled as \"bad\" and therefore will not occupy buffer space..."
+               "   "
+               "   -- Jumbo	   Number of   % of abits = 14   % of abits = 15   % of abits = 16"
+               "   --          Bytes       (= 32678 Bytes)   (= 65536 Bytes)   (= 131072 Bytes)"
+               "   -- 1        9014        27,51%	         13,75%	         6,88%"
+               "   -- 2	      18028	      55,02%	         27,51%	         13,75%"
+               "   -- 3	      27042	      82,53%	         41,26%	         20,63%"
+               "   -- 4	      36056	      110,03%	         55,02%	         27,51%"
+               "   -- 5	      45070		                     68,77%	         34,39%"
+               "   -- 6	      54084		                     82,53%	         41,26%"
+               "   -- 7	      63098		                     96,28%	         48,14%"
+               "   -- 8	      72112		                     110,03%	         55,02%"
+               "   -- 9	      81126		                                       61,89%"
+               "   -- 10	      90140		                                       68,77%"
+               "   -- 11	      99154		                                       75,65%"
+               "   -- 12	      108168		                                    82,53%"
+               "   -- 13	      117182		                                    89,40%"
+               "   -- 14	      126196		                                    96,28%"
+               "   -- 15	      135210		                                    103,16%"
+               "   "
+               "   Constant LowLevelPerc: Integer := 30;"
+               "   Constant HighLevelPerc: Integer := 50;"
+               "begin"
+               ""
+               "   Process (PktRdPtr, PktWrPtr)"
+               "   Begin"
+               "      If PktRdPtr = PktWrPtr Then"
+               "         Empty <= '1';"
+               "      Else"
+               "         Empty <= '0';"
+               "      End If;"
+               "      "
+               "      -- Signal Low WaterMark"
+               "      If (Unsigned(PktWrPtr) - Unsigned(PktRdPtr)) < To_Unsigned((2**abits * LowLevelPerc)/100, abits) Then"
+               "         WaterMarkLow <= '1';"
+               "      Else"
+               "         WaterMarkLow <= '0';"
+               "      End If;"
+               ""
+               "      -- Signal High WaterMark"
+               "      If (Unsigned(PktWrPtr) - Unsigned(PktRdPtr)) > To_Unsigned((2**abits * HighLevelPerc)/100, abits) And"
+               "         PktRdPtr /= PktWrPtr Then"
+               "         WaterMarkHigh <= '1';"
+               "      Else"
+               "         WaterMarkHigh <= '0';"
+               "      End If;"
+               ""
+               "      -- Signal Full, as soon as there is no room left for a complete (Jumbo) packet"
+               "      If (Unsigned(PktRdPtr) - Unsigned(PktWrPtr)) <= To_Unsigned(MAX_RESERV_PKT_BUF, abits) And"
+               "         PktRdPtr /= PktWrPtr Then"
+               "         Full <= '1';"
+               "      Else"
+               "         Full <= '0';"
+               "      End If;"
+               "   End Process;"
+               "end architecture rtl ; -- of PktBufFlags"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bccc358af2")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

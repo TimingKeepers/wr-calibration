@@ -1,0 +1,64 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c5f73b0250d11e8b57bbd9ec4")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Wed Aug 14 10:13:19 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "POST_CRC_INTERNAL")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1152 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376466933 "Wed Aug 14 09:55:33 2013")
+      (MODIFIED 1376467987 "Wed Aug 14 10:13:07 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7c5f73b0250d11e8b58bbd9ec4")
+      (HDL_IDENT
+        (NAME "CRCERROR")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY 1112 88 1192 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "CRCERROR")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7cf1c3b0250d11e8b54760aec4" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7cf1c3b0250d11e8b54760aec4")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

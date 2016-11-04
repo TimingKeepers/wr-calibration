@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c53e836c1850601e1bceb8868d3")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478255503")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 11:31:46 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247733")
+  )
+  (FILE "../../wr-cores/ip_cores/general-cores/modules/genrams/genram_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478255502 "Fri Nov 04 11:31:42 2016")
+    (MODIFIED 1478255503 "Fri Nov 04 11:31:43 2016")
+  )
+)
+(END_OF_FILE)

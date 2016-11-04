@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7cf7e1e9158011e8b5a3c32f80")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1445933085")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445875014")
+  )
+  (FILE "../../../wr-cores/ip_cores/general-cores/modules/wishbone/wb_crossbar/xwb_crossbar.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1369316991 "Thu May 23 15:49:51 2013")
+    (MODIFIED 1445933085 "Tue Oct 27 09:04:45 2015")
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,298 @@
+(DATABASE_VERSION 23)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c534a57c1850251e1bc49e2db76")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1478260132")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 5")
+      (PROPERTY "STAMP_TIME" "Fri Nov 04 12:48:52 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.3")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478096835")
+    )
+    (HDL_IDENT
+      (NAME "PacketBuffer")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 1280)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1478260132 "Fri Nov 04 12:48:52 2016")
+      (MODIFIED 1478260132 "Fri Nov 04 12:48:52 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (OBID "pack0c012c538c36c1850601e1bc1b9868d3")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c534a57c1850251e1bc59e2db76")
+      (HDL_IDENT
+        (NAME "abits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "15")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "abits := 15")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c534a57c1850251e1bc69e2db76")
+      (HDL_IDENT
+        (NAME "dbits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "8")
+        )
+      )
+      (GEOMETRY 88 216 168 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "dbits := 8")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bc79e2db76")
+      (HDL_IDENT
+        (NAME "AddrA")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "AddrA(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bc89e2db76")
+      (HDL_IDENT
+        (NAME "AddrB")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "AddrB(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bc99e2db76")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bca9e2db76")
+      (HDL_IDENT
+        (NAME "Din")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "dbits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Din(dbits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bcb9e2db76")
+      (HDL_IDENT
+        (NAME "Q")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "dbits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 472 1448 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "Q(dbits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bcc9e2db76")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a57c1850251e1bcd9e2db76")
+      (HDL_IDENT
+        (NAME "WeA")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "WeA")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534a57c1850251e1bce9e2db76" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534a57c1850251e1bce9e2db76")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c534a57c1850251e1bcf9e2db76")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'PacketBuffer'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     abits : integer := 15;"
+               "--     dbits : integer := 8);"
+               "--   port ("
+               "--     AddrA : in     std_logic_vector(abits-1 downto 0);"
+               "--     AddrB : in     std_logic_vector(abits-1 downto 0);"
+               "--     Clk   : in     std_logic;"
+               "--     Din   : in     std_logic_vector(dbits-1 downto 0);"
+               "--     Q     : out    std_logic_vector(dbits-1 downto 0);"
+               "--     Rst   : in     std_logic;"
+               "--     WeA   : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of PacketBuffer is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of PacketBuffer"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

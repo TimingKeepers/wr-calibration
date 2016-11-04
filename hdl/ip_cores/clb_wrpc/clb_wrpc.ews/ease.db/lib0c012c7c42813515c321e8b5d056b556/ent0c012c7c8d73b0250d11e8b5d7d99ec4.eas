@@ -1,0 +1,107 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c8d73b0250d11e8b5d7d99ec4")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Wed Aug 14 10:13:07 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "AUTOBUF")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1664 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376466904 "Wed Aug 14 09:55:04 2013")
+      (MODIFIED 1376467986 "Wed Aug 14 10:13:06 2013")
+    )
+    (GENERIC
+      (OBID "egen0c012c7c8d73b0250d11e8b5e7d99ec4")
+      (HDL_IDENT
+        (NAME "BUFFER_TYPE")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "string")
+          (DEF_VALUE "\"AUTO\"")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "BUFFER_TYPE(\"AUTO\")")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c8d73b0250d11e8b5f7d99ec4")
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1624 344 1704 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1600 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c8d73b0250d11e8b508d99ec4")
+      (HDL_IDENT
+        (NAME "I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "I")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c31c3b0250d11e8b52a20aec4" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c31c3b0250d11e8b52a20aec4")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

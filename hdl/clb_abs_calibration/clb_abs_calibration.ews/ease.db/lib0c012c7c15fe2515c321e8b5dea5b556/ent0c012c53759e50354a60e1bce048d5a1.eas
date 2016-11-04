@@ -1,0 +1,159 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53759e50354a60e1bce048d5a1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "time_debug")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1152 448)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1392896343 "Thu Feb 20 12:39:03 2014")
+      (MODIFIED 1406022122 "Tue Jul 22 11:42:02 2014")
+    )
+    (PORT
+      (OBID "eprt0c012c53e59e50354a60e1bc5348d5a1")
+      (HDL_IDENT
+        (NAME "time_valid")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1112 152 1192 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "time_valid")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53669e50354a60e1bca348d5a1")
+      (HDL_IDENT
+        (NAME "tm_time_valid")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_time_valid")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ea9e50354a60e1bc4448d5a1")
+      (HDL_IDENT
+        (NAME "time_tai")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1112 280 1192 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "time_tai(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539b9e50354a60e1bca448d5a1")
+      (HDL_IDENT
+        (NAME "tm_tai")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "39" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_tai(39:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53859e50354a60e1bc1148d5a1" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53859e50354a60e1bc1148d5a1")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53859e50354a60e1bc2148d5a1")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'time_debug'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     time_tai      : out    std_logic_vector(7 downto 0);"
+               "--     time_valid    : out    std_logic;"
+               "--     tm_tai        : in     std_logic_vector(39 downto 0);"
+               "--     tm_time_valid : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of time_debug is"
+               ""
+               "begin"
+               "   time_valid <= tm_time_valid;"
+               "   time_tai <= tm_tai(7 downto 0);"
+               "end architecture rtl ; -- of time_debug"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

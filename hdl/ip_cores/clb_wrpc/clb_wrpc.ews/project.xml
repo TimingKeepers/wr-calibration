@@ -1,0 +1,114 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="true" name="WholeWord"/>
+      <key type="string" value="pps_ext_i" name="SearchString"/>
+      <key type="string" value="Any" name="TypeName"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="false" name="StartBrowser"/>
+      <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/html" name="DirectoryName"/>
+      <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/html/index.htm" name="Index"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="design:Toplevel:&lt;Internal>/lib0c012c7c15fe2515c321e8b5dea5b556_comp0c012c53c2dcc02544c0e1bc3b126856" name="CurrentPath"/>
+      <key type="string" value="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c146f9025cc61e8b58876eb73" name="HdlOutputObject"/>
+      <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top_tb.vhd" name="HdlOutputFile"/>
+    </section>
+    <section name="Browser">
+      <key type="string" value="design.clb_wrpc" name="DetailView"/>
+    </section>
+    <section name="GenerationStamps">
+      <key type="string" value="1478256498" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c99ab80250621e8b52ab9a6e4"/>
+      <key type="string" value="1478256498" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c7c99ab80250621e8b530c9a6e4"/>
+      <key type="string" value="1478256498" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c39ab80250621e8b5e189a6e4"/>
+      <key type="string" value="1478256498" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c7c39ab80250621e8b5b689a6e4"/>
+      <key type="string" value="1478256498" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c212c80250621e8b5d83ba6e4"/>
+      <key type="string" value="1478256498" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c7c212c80250621e8b5fb3ba6e4"/>
+    </section>
+    <section name="GeneratedHdlFiles">
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c99ab80250621e8b52ab9a6e4"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c7c99ab80250621e8b530c9a6e4"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c39ab80250621e8b5e189a6e4"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c7c39ab80250621e8b5b689a6e4"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c212c80250621e8b5d83ba6e4"/>
+      <key type="string" value="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc.vhd" name="lib0c012c7c15fe2515c321e8b5dea5b556_arch0c012c7c212c80250621e8b5fb3ba6e4"/>
+    </section>
+    <section name="SimulatorCompileTimes">
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/work.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/clb_wrpc_top.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/../top/clb_wr_core.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wr_core.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/WRPC/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/WRPC/modules/wr_endpoint/ep_registers_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/WRPC/modules/wr_endpoint/endpoint_private_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/../top/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/../top/system.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/system.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/../top/clb_wrpc.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/../top/backannotated.cf"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/backannotated.cf"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/effe.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../top/../top/aap.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/WRPC/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/WRPC/modules/wr_endpoint/ep_registers_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/WRPC/modules/wr_endpoint/endpoint_private_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_tb.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/CLBv2_Design/clb_wrpc/top/fpga.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/CLBv2_Design/clb_wrpc/top/clb_wr_core.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/peter-cherrypicks/CLBv2/fw/WRPC/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/peter-cherrypicks/CLBv2/fw/WRPC/modules/wr_endpoint/ep_registers_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/peter-cherrypicks/CLBv2/fw/WRPC/modules/wr_endpoint/endpoint_private_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../../../WRPC/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../../../WRPC/modules/wr_endpoint/ep_registers_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/../../../WRPC/modules/wr_endpoint/endpoint_private_pkg.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/CLBv2_Design/clb_wrpc/top/clb_top.vhd"/>
+      <key type="int" value="0" name="work::P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/TestsAndBranches/2015_Q3_peter-cherrypicks/CLBv2/fw/ip_cores/clb_wrpc/top/clb_wrpc.vhd"/>
+      <key type="int" value="0" name="work::P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/ReferenceDesigns/fw/ip_cores/clb_wrpc/top/clb_wrpc.vhd"/>
+    </section>
+    <section name="DatabaseView">
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c533bc4822583d0e1bcb3e23ba2"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c535d9b92250ae0e1bc8233a135"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c1050a025cc61e8b5dd68eb73"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c146f9025cc61e8b58876eb73"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c212c80250621e8b5d83ba6e4"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c293b80250621e8b5ce07a6e4"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c39ab80250621e8b5e189a6e4"/>
+      <key type="bool" value="true" name="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c99ab80250621e8b52ab9a6e4"/>
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="GenerationChecksums">
+      <key type="string" value="157F184AA09D776D" name="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/ReferenceDesigns/fw/ip_cores/clb_wrpc/top/clb_wrpc.vhd"/>
+      <key type="string" value="1D6E366A0D88F0AD" name="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/ip_cores/clb_wrpc/top/clb_wrpc.vhd"/>
+      <key type="string" value="4EC542A7B1F2F077" name="P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/clb_wrpc/top/clb_wrpc.vhd"/>
+    </section>
+    <section name="FileView">
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="HierarchicalView">
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+  </sections>
+</CONFIGURATION>

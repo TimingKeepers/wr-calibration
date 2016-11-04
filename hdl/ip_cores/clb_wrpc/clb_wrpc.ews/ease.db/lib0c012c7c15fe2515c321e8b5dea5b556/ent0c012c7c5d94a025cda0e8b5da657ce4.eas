@@ -1,0 +1,106 @@
+(DATABASE_VERSION 23)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c5d94a025cda0e8b5da657ce4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c9c94a025cda0e8b5e6657ce4")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/general_modules/wb_dummys/wb_DummySlave.vhd")
+      (PROPERTY "IMPORTED_LAST" "1478255919")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 5")
+      (PROPERTY "STAMP_TIME" "Fri Nov 04 11:42:20 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.3")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455095097")
+    )
+    (HDL_IDENT
+      (NAME "wb_DummySlave")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 256)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1376405973 "Tue Aug 13 16:59:33 2013")
+      (MODIFIED 1478255919 "Fri Nov 04 11:38:39 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (OBID "pack0c012c7c17fe2515c321e8b5d9b5b556")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (OBID "pack0c012c7cb02c80250621e8b5053ba6e4")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e0add025c490e1bc31d1b5f2")
+      (HDL_IDENT
+        (NAME "Slave_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Slave_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e0add025c490e1bc41d1b5f2")
+      (HDL_IDENT
+        (NAME "Slave_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Slave_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53f256c1854b01e1bcb8c155b1" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53f256c1854b01e1bcb8c155b1")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53f256c1854b01e1bcc8c155b1")
+        (NAME "rtl.vhd")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

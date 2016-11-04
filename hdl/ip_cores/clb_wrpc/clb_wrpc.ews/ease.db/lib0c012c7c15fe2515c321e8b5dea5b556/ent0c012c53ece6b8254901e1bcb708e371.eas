@@ -1,0 +1,26 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53ece6b8254901e1bcb708e371")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Tue Nov 19 14:59:42 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "effe")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 0 0)
+    (SIDE 0)
+    (HDL 0)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1384869582 "Tue Nov 19 14:59:42 2013")
+    )
+  )
+)
+(END_OF_FILE)

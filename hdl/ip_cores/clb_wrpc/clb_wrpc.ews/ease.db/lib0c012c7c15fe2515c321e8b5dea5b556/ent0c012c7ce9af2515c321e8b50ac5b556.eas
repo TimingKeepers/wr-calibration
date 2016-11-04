@@ -1,0 +1,367 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7ce9af2515c321e8b50ac5b556")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "ExternalFileId" "hdlf0c012c7ce9af2515c321e8b5d9c5b556")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/ip_cores/general-cores/modules/wishbone/wb_crossbar/xwb_sdb_crossbar.vhd")
+      (PROPERTY "IMPORTED_LAST" "1445933089")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "wishbone_pkg")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:29 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445875014")
+    )
+    (HDL_IDENT
+      (NAME "xwb_sdb_crossbar")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 4352 1152)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1364392606 "Wed Mar 27 14:56:46 2013")
+      (MODIFIED 1445934629 "Tue Oct 27 09:30:29 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cb02c80250621e8b5053ba6e4")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce9af2515c321e8b51ac5b556")
+      (HDL_IDENT
+        (NAME "g_num_masters")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "natural")
+          (DEF_VALUE "1")
+        )
+      )
+      (GEOMETRY 728 88 808 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 872 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_num_masters(1)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce9af2515c321e8b52ac5b556")
+      (HDL_IDENT
+        (NAME "g_num_slaves")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "natural")
+          (DEF_VALUE "1")
+        )
+      )
+      (GEOMETRY 728 216 808 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 872 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_num_slaves(1)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce9af2515c321e8b53ac5b556")
+      (HDL_IDENT
+        (NAME "g_registered")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 728 344 808 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 872 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_registered(false)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce9af2515c321e8b54ac5b556")
+      (HDL_IDENT
+        (NAME "g_wraparound")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "true")
+        )
+      )
+      (GEOMETRY 728 472 808 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 872 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_wraparound(true)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce9af2515c321e8b55ac5b556")
+      (HDL_IDENT
+        (NAME "g_layout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_sdb_record_array")
+        )
+      )
+      (GEOMETRY 728 600 808 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 872 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_layout()")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce9af2515c321e8b56ac5b556")
+      (HDL_IDENT
+        (NAME "g_sdb_addr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_address")
+        )
+      )
+      (GEOMETRY 728 728 808 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 872 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_sdb_addr()")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce9af2515c321e8b58ac5b556")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce9af2515c321e8b59ac5b556")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce9af2515c321e8b5aac5b556")
+      (HDL_IDENT
+        (NAME "slave_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_masters-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 4312 792 4392 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 4288 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "slave_i(g_num_masters-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce9af2515c321e8b5bac5b556")
+      (HDL_IDENT
+        (NAME "slave_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_masters-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 4312 920 4392 1000)
+      (SIDE 1)
+      (LABEL
+        (POSITION 4288 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "slave_o(g_num_masters-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce9af2515c321e8b5cac5b556")
+      (HDL_IDENT
+        (NAME "master_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_slaves-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 4312 344 4392 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 4288 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "master_i(g_num_slaves-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce9af2515c321e8b5dac5b556")
+      (HDL_IDENT
+        (NAME "master_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_slaves-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 4312 472 4392 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 4288 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "master_o(g_num_slaves-1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c531203f2654940e1bc769405b3" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c531203f2654940e1bc769405b3")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535263f2654940e1bc5c3505b3")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'xwb_sdb_crossbar'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_num_masters : natural := 1;"
+               "--     g_num_slaves  : natural := 1;"
+               "--     g_registered  : boolean := false;"
+               "--     g_wraparound  : boolean := true;"
+               "--     g_layout      : t_sdb_record_array;"
+               "--     g_sdb_addr    : t_wishbone_address);"
+               "--   port ("
+               "--     clk_sys_i : in     std_logic;"
+               "--     rst_n_i   : in     std_logic;"
+               "--     slave_i   : in     t_wishbone_slave_in_array(g_num_masters-1 downto 0);"
+               "--     slave_o   : out    t_wishbone_slave_out_array(g_num_masters-1 downto 0);"
+               "--     master_i  : in     t_wishbone_master_in_array(g_num_slaves-1 downto 0);"
+               "--     master_o  : out    t_wishbone_master_out_array(g_num_slaves-1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of xwb_sdb_crossbar is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of xwb_sdb_crossbar"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

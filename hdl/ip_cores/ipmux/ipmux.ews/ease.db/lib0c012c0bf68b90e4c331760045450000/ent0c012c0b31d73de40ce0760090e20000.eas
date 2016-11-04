@@ -1,0 +1,2029 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b31d73de40ce0760090e20000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "rx_buf2data")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 2368)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1322482963 "Mon Nov 28 13:22:43 2011")
+      (MODIFIED 1462965386 "Wed May 11 13:16:26 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c0bba383de40ce0760095e20000")
+      (HDL_IDENT
+        (NAME "abits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "15")
+        )
+      )
+      (GEOMETRY 152 1368 232 1448)
+      (SIDE 3)
+      (LABEL
+        (POSITION 296 1408)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "abits(15)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bd8383de40ce0760075e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdAddr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdAddr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b5e383de40ce07600c5e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b5e383de40ce07600d5e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2264 40 2344)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2304)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b30483de40ce0760006e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2008 40 2088)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2048)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Empty")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bd2483de40ce0760056e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PktRdPtr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1816 40 1896)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1856)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "PktRdPtr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b46483de40ce0760076e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Din")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Din(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b46483de40ce0760096e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EOFin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EOFin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b51583de40ce0760067e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 472 808 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrReq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b51583de40ce0760077e20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 600 808 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Full")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b2a693de40ce07600aee20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "FragOff")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "11" "0")
+          )
+        )
+      )
+      (GEOMETRY 728 1560 808 1640)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 1600)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FragOff(11:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b0f693de40ce07600cee20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "FragID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 728 1496 808 1576)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FragID(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b9f693de40ce07600eee20000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "MoreFrags")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 1624 808 1704)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 1664)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "MoreFrags")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba8205de486d07600c0d40000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Stream")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 728 408 808 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Stream(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bcaa67de4c7907600ac020000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "UDP_CheckSumErr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 1688 808 1768)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 1728)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "UDP_CheckSumErr")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b1960c0f40f90760063810000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EODout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 216 808 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "EODout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0be8d0c0f40f90760026810000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "SODout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 152 808 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "SODout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b8fbd55f486b07600b2630000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "eth_regs_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 1176 808 1256)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 1216)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "eth_regs_i")
+      )
+    )
+    (ARCH_DECLARATION 3 "arch0c012c0b31d73de40ce07600a0e20000" "fsm")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b31d73de40ce07600a0e20000")
+    (HDL_IDENT
+      (NAME "fsm")
+      (USERNAME 1)
+    )
+    (TYPE 3)
+    (STATE_MACHINE_V2
+      (OBID "fsmx0c012c0bd6499df40dd0e1bc32255d31")
+      (PROPERTIES
+        (PROPERTY "PROPMAP_VERSION" "1")
+        (PROPERTY "TL_FSM_CLOCKPORT" "Clk")
+        (PROPERTY "TL_FSM_IEEEFUNC" "true")
+        (PROPERTY "TL_FSM_MEALY" "1")
+        (PROPERTY "TL_FSM_MOORE" "1")
+        (PROPERTY "TL_FSM_STATEBITS" "3")
+        (PROPERTY "TL_FSM_STATEENCODING" "1")
+      )
+      (ACTION
+        (OBID "lab0c012c0b2f783de40ce076002be20000")
+        (NAME "Initialize")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 1)
+        (VHDL_TEXT "For i In Packet_HeaderRegFile'Range Loop"
+                   "   Packet_HeaderRegFile(i) := (Others => '0');"
+                   "End Loop;"
+                   "Idx := 0;"
+                   "Offset <= MAC_HDR + Idx;"
+                   "WrReqIntern <= '0';"
+                   "IP_CheckSum := (Others => '0');"
+                   "UDP_CheckSum := (Others => '0');"
+                   "IP_Length := (Others => '0');"
+                   "Payload_Length := (Others => '0');"
+                   "ErrorVector <= (Others => '0');"
+                   "FragID <= (Others => '0');"
+                   "MoreFrags <= '0';"
+                   "FragOff <= (Others => '0');"
+                   "StreamIntern <= (NUM_UDP_PRTS => '1', Others =>'0');"
+                   "SOD_Intern <= '0';"
+                   "EODout <= '0';")
+      )
+      (ACTION
+        (OBID "lab0c012c0ba77a3de40ce0760071f20000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Packet_HeaderRegFile(Idx - MEM_ACC_TICKS) := Din;"
+                   "If (Idx - MEM_ACC_TICKS) >= IP_HDR and (Idx - MEM_ACC_TICKS) < UDP_HDR Then"
+                   "   IP_CheckSum := IP_CheckSum + Unsigned(Din);"
+                   "End If;"
+                   "If (Idx - MEM_ACC_TICKS) >= UDP_HDR and (Idx - MEM_ACC_TICKS) < PAYLOAD Then"
+                   "   UDP_CheckSum := UDP_CheckSum + Unsigned(Din);"
+                   "End If;"
+                   "Idx := Idx + 1;"
+                   "Offset <= MAC_HDR + Idx;"
+                   "")
+      )
+      (ACTION
+        (OBID "lab0c012c0b957b3de40ce0760004f20000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Idx := Idx + 1;"
+                   "Offset <= MAC_HDR + Idx;"
+                   "UDP_CheckSumErr <= '0';"
+                   "")
+      )
+      (ACTION
+        (OBID "lab0c012c0bd7b94de486d07600edc40000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "IP_CheckSum (15 Downto 0) := Not(IP_CheckSum(31 downto 16) + IP_CheckSum(15 downto 0));"
+                   "IP_Length := Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_LEN));"
+                   ""
+                   "-- \"The Default Stream\""
+                   "StreamIntern <= (NUM_UDP_PRTS => '1', Others =>'0'); "
+                   "Offset <= 0;"
+                   "Payload_Length := (IP_Length / 2) + MAC_HDR_CNT;"
+                   "--"
+                   ""
+                   "If Packet_HeaderRegFile(MAC_HDR + MAC_IDX_LEN) /= ETH_TYPE_II Then ErrorVector (0) <= '1'; End If;"
+                   "If IP_CheckSum (15 Downto 0) /= 0 Then ErrorVector (1) <= '1'; End If;"
+                   "If Packet_HeaderRegFile(IP_HDR + IP_IDX_VER_LEN_TOS)(IP_VER_LEN'Range) /= IP_VER_LEN Then ErrorVector (2) <= '1'; End If;"
+                   "If Packet_HeaderRegFile(IP_HDR + IP_IDX_TTL_PROT)(IP_PROT_UDP'Range) /= IP_PROT_UDP Then ErrorVector (3) <= '1'; End If;"
+                   ""
+                   "SOD_Intern <= '1';")
+      )
+      (ACTION
+        (OBID "lab0c012c0b720b4de486d076002ec40000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "FragID <= Packet_HeaderRegFile(IP_HDR + IP_IDX_ID);"
+                   "MoreFrags <= Packet_HeaderRegFile(IP_HDR + IP_IDX_FLAGS_FRAGOFF)(IP_FLAGS_MOREFRAGS_INDEX);"
+                   "FragOff <= Packet_HeaderRegFile(IP_HDR + IP_IDX_FLAGS_FRAGOFF)(IP_FRAGOFF_RANGE);"
+                   ""
+                   "-- \"The Default Stream\""
+                   "StreamIntern <= (NUM_UDP_PRTS => '1', Others =>'0'); "
+                   "Offset <= 0;"
+                   "Payload_Length := (IP_Length / 2) + MAC_HDR_CNT;"
+                   "--"
+                   ""
+                   "For i In NUM_UDP_PRTS - 1 downto 0 Loop"
+                   "   If Unsigned(eth_regs_i.UDP_ModPrt(i)) = Unsigned(Packet_HeaderRegFile(UDP_HDR + UDP_IDX_DSTPRT)) Then"
+                   "      StreamIntern(i) <= '1';"
+                   "      Offset <= PAYLOAD;"
+                   "      Payload_Length := (IP_Length / 2) - IP_HDR_CNT - UDP_HDR_CNT;"
+                   "      StreamIntern(NUM_UDP_PRTS) <= '0';"
+                   "   End If;"
+                   "End Loop;"
+                   "")
+      )
+      (ACTION
+        (OBID "lab0c012c0bb8ff5de405f0760033a10000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "If Full = '0' Then"
+                   "   Offset <= Offset + 1;"
+                   "   If SOD_intern = '1' And WrReqIntern = '1' Then"
+                   "      SOD_intern <= '0';"
+                   "   End If;"
+                   "   If Payload_Length = 1 Then"
+                   "      EODout <= '1';"
+                   "   Else"
+                   "      EODout <= '0';"
+                   "   End If;"
+                   "   If Payload_Length > 0 Then"
+                   "      Payload_Length := Payload_Length - 1;"
+                   "      WrReqIntern <= '1';"
+                   "      UDP_CheckSum := UDP_CheckSum + (x\"0000\" & Unsigned(Din));"
+                   "   Else"
+                   "      WrReqIntern <= '0';"
+                   "   End If;"
+                   "Else"
+                   "   WrReqIntern <= '0';"
+                   "End If;")
+      )
+      (ACTION
+        (OBID "lab0c012c0b69e16de483f076004f810000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "PktPtr <= PktPtr + To_Unsigned(Offset,RX_PKT_BUF_ADRSIZE);")
+      )
+      (ACTION
+        (OBID "lab0c012c0b96326de483f07600bf810000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "PktPtr <= (Others => '0');"
+                   "UDP_CheckSumErr <= '0';")
+      )
+      (ACTION
+        (OBID "lab0c012c0bc5267de4c7907600ab020000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "If Full = '0' Then"
+                   "   Offset <= Offset + 1;"
+                   "   If SOD_intern = '1' And WrReqIntern = '1' Then"
+                   "      SOD_intern <= '0';"
+                   "   End If;"
+                   "   WrReqIntern <= '1';"
+                   "Else"
+                   "   WrReqIntern <= '0';"
+                   "End If;")
+      )
+      (ACTION
+        (OBID "lab0c012c0b2c367de4c79076000c020000")
+        (NAME "PrepareUDP_CheckSum")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 1)
+        (VHDL_TEXT "-- For UDP Checksum calculation the items in the UDP header (UDP Source Port,"
+                   "-- UDP Destination Port, UDP Length and UDP Checksum) were already collected"
+                   "-- during header reading."
+                   "-- Add the UDP Pseudo-Header that contains:"
+                   "--   IP Source address"
+                   "--   IP Destination address"
+                   "--   x\"00\" & Protocol"
+                   "--   UDP_Length  (note that actually the UDP_Length is calculated twice!) "
+                   "UDP_CheckSum := UDP_CheckSum + "
+                   "   (x\"0000\" & Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_IP_SRC))) +"
+                   "   (x\"0000\" & Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_IP_SRC + 1))) +"
+                   "   (x\"0000\" & Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_IP_DST))) +"
+                   "   (x\"0000\" & Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_IP_DST + 1))) +"
+                   "   (x\"0000\" & x\"00\" & Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_TTL_PROT)(7 downto 0))) +"
+                   "   (x\"0000\" & Unsigned(Packet_HeaderRegFile(UDP_HDR + UDP_IDX_LEN)));")
+      )
+      (ACTION
+        (OBID "lab0c012c0b95967de4c79076004c020000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "PktPtr <= PktPtr + To_Unsigned(Offset,RX_PKT_BUF_ADRSIZE);")
+      )
+      (ACTION
+        (OBID "lab0c012c0bea487de4c7907600cc020000")
+        (NAME "FinalizeUDP_CheckSum")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 1)
+        (VHDL_TEXT "-- Add the last data word"
+                   "If WrReqIntern = '1' Then"
+                   "   UDP_CheckSum := UDP_CheckSum + (x\"0000\" & Unsigned(Din));"
+                   "End If;"
+                   ""
+                   "UDP_CheckSum (15 Downto 0) := Not(UDP_CheckSum(31 downto 16) + UDP_CheckSum(15 downto 0));"
+                   "If UDP_CheckSum (15 Downto 0) /= 0 Then"
+                   "   UDP_CheckSumErr <= '1';"
+                   "Else"
+                   "   UDP_CheckSumErr <= '0';"
+                   "End If;"
+                   "")
+      )
+      (CONDITION
+        (OBID "lab0c012c0b87783de40ce076001be20000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Rst = '1'")
+      )
+      (CONDITION
+        (OBID "lab0c012c0b5b4a3de40ce07600d0f20000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "EOFin = '1' And Payload_Length = 0")
+      )
+      (CONDITION
+        (OBID "lab0c012c0bf69a3de40ce0760033f20000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Empty = '0'")
+      )
+      (CONDITION
+        (OBID "lab0c012c0bd7ba3de40ce0760053f20000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Idx = MEM_ACC_TICKS + PAYLOAD")
+      )
+      (CONDITION
+        (OBID "lab0c012c0ba4694de486d076007cc40000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Idx = MEM_ACC_TICKS")
+      )
+      (CONDITION
+        (OBID "lab0c012c0b2ab94de486d07600fdc40000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "ErrorVector /= 0")
+      )
+      (CONDITION
+        (OBID "lab0c012c0b53967de4c79076003c020000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "EOFin = '1' And WrReqIntern = '1'")
+      )
+      (CONDITION
+        (OBID "lab0c012c0b4e55c7f4c3117600a6240000")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "StreamIntern(NUM_UDP_PRTS) = '1'")
+      )
+      (FSM_DIAGRAM
+        (OBID "fsm0c012c0b31d73de40ce0760080e20000")
+        (SHEETSIZE 0 0 9600 14400)
+        (FREE_PLACED_TEXT
+          (LABEL
+            (POSITION 4026 3143)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 0)
+            (TEXT "It takes MEM_ACC_TICKS pipeline stages to fetch"
+                  "the data, henche \"Idx - MEM_ACC_TICKS\"")
+          )
+        )
+        (FREE_PLACED_TEXT
+          (LABEL
+            (POSITION 5418 6007)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 0)
+            (TEXT "-- One may want to check if EOF is set at the proper location"
+                  "-- Although this is equal to checking THIS implementation."
+                  "-- EOF should be set on address \"Offset <= IP_HDR + To_Integer(IP_Length/2) - 1;\""
+                  "-- Note: IP_Length is in bytes, NOT in 16 bit words!"
+                  "-- Also note that for Ethernet v2 framing EOF is signalled including padded data"
+                  "-- that might have been added to the MAC frame to ensure that the frame length is"
+                  "-- at least 64 bytes! In such case EOF does not correspond to"
+                  "-- \"IP_HDR + To_Integer(IP_Length/2) - 1;\"")
+          )
+        )
+        (FREE_PLACED_TEXT
+          (LABEL
+            (POSITION 3541 10334)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 0)
+            (TEXT "Note 1:"
+                  "During \"TransferData\" or \"TransferOtherData\""
+                  "a Packet may be padded with zeros. Buffer"
+                  "reading should be done until EOP occus but"
+                  "WrReq should only be asserted during valid"
+                  "Payload data."
+                  ""
+                  "Note 2:"
+                  "The UDP_CheckSum is calculated during"
+                  "\"TransferData\" and NOT during \"TransferOtherData\""
+                  "(which may be used by other protocols). ")
+          )
+        )
+        (FREE_PLACED_TEXT
+          (LABEL
+            (POSITION 403 13737)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 0)
+            (TEXT "Mind the Full situation while the last word"
+                  "is transferred..."
+                  "Leave \"TransferData\" only when the last"
+                  "WrRequest is asserted due to Payload_Length = 0"
+                  "(thus WrReqIntern = '1')."
+                  "With padded packets wait for the MAC to signal"
+                  "EOFin (Payload_Length got 0 earlier)."
+                  "")
+          )
+        )
+        (FREE_PLACED_TEXT
+          (LABEL
+            (POSITION 4956 14063)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 0)
+            (TEXT "Mind the Full situation while the last word"
+                  "is transferred..."
+                  "Leave \"TransferOtherData\" only when the last"
+                  "WrRequest is asserted due to EOFin = '1' and"
+                  "WrReqIntern = '1'."
+                  "")
+          )
+        )
+        (INCLUDED_TEXT
+          (OBID "itxt0c012c0bc9683de40ce076008ae20000")
+          (GEOMETRY 5464 1432 5544 1512)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5632 1472)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 129)
+            (TEXT "State Machine Declarations:"
+                  "Variable Packet_HeaderRegFile: std_logic_v16array(MAC_HDR_CNT + IP_HDR_CNT + UDP_HDR_CNT -1 downto 0);"
+                  "Variable IP_Length: Unsigned(15 downto 0);"
+                  "Variable Payload_Length: Unsigned(15 downto 0);"
+                  "Variable IP_CheckSum : Unsigned(31 downto 0);"
+                  "Variable UDP_CheckSum : Unsigned(31 downto 0);"
+                  "Variable Idx: Integer Range 0 to 31;"
+                  "Constant MEM_ACC_TICKS : Positive := 1;")
+          )
+          (TYPE "State Machine Declarations")
+          (VALUE "Variable Packet_HeaderRegFile: std_logic_v16array(MAC_HDR_CNT + IP_HDR_CNT + UDP_HDR_CNT -1 downto 0);"
+                 "Variable IP_Length: Unsigned(15 downto 0);"
+                 "Variable Payload_Length: Unsigned(15 downto 0);"
+                 "Variable IP_CheckSum : Unsigned(31 downto 0);"
+                 "Variable UDP_CheckSum : Unsigned(31 downto 0);"
+                 "Variable Idx: Integer Range 0 to 31;"
+                 "Constant MEM_ACC_TICKS : Positive := 1;")
+        )
+        (INCLUDED_TEXT
+          (OBID "itxt0c012c0bc9683de40ce076009ae20000")
+          (GEOMETRY 5464 536 5544 616)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5632 576)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 129)
+            (TEXT "Concurrent Statements:"
+                  "RdAddr <= Std_Logic_Vector(PktPtr + To_Unsigned(Offset,RX_PKT_BUF_ADRSIZE));"
+                  "PktRdPtr <= Std_Logic_Vector(PktPtr);"
+                  "WrReq <= WrReqIntern;"
+                  "SODout <= SOD_Intern;"
+                  "Stream <= StreamIntern;")
+          )
+          (TYPE "Concurrent Statements")
+          (VALUE "RdAddr <= Std_Logic_Vector(PktPtr + To_Unsigned(Offset,RX_PKT_BUF_ADRSIZE));"
+                 "PktRdPtr <= Std_Logic_Vector(PktPtr);"
+                 "WrReq <= WrReqIntern;"
+                 "SODout <= SOD_Intern;"
+                 "Stream <= StreamIntern;")
+        )
+        (INCLUDED_TEXT
+          (OBID "itxt0c012c0bc9683de40ce07600aae20000")
+          (GEOMETRY 5464 2264 5544 2344)
+          (SIDE 3)
+          (LABEL
+            (POSITION 5632 2304)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 129)
+            (TEXT "Declarations after Signals:"
+                  "Signal Offset: Integer Range 0 to MAX_RESERV_PKT_BUF;"
+                  "Signal PktPtr: Unsigned(abits-1 downto 0);"
+                  "Signal ErrorVector: Unsigned(7 downto 0);"
+                  "Signal WrReqIntern: Std_Logic;"
+                  "Signal SOD_Intern: Std_Logic;"
+                  "Signal StreamIntern: Std_Logic_Vector(NUM_UDP_PRTS downto 0);")
+          )
+          (TYPE "Declarations after Signals")
+          (VALUE "Signal Offset: Integer Range 0 to MAX_RESERV_PKT_BUF;"
+                 "Signal PktPtr: Unsigned(abits-1 downto 0);"
+                 "Signal ErrorVector: Unsigned(7 downto 0);"
+                 "Signal WrReqIntern: Std_Logic;"
+                 "Signal SOD_Intern: Std_Logic;"
+                 "Signal StreamIntern: Std_Logic_Vector(NUM_UDP_PRTS downto 0);")
+        )
+        (GLOBAL
+          (OBID "fsmp0c012c0b31d73de40ce07600b0e20000")
+          (GEOMETRY 168 168 232 232)
+          (LABEL
+            (POSITION 264 168)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 0)
+            (FORMAT 129)
+            (TEXT "FSM Properties:"
+                  "Clock : Clk (Rising edge)"
+                  "State assignment : Enumerate"
+                  "State decoding : Case construct"
+                  "Actions on transitions : Clocked"
+                  "Actions on states : Clocked"
+                  "")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0ba6783de40ce07600dae20000")
+          (HDL_IDENT
+            (NAME "Idle")
+            (USERNAME 1)
+          )
+          (GEOMETRY 1664 1856 3840 2432)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2719 1950)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "1:Idle")
+          )
+          (NUMBER 1)
+          (ACTION
+            (OBID "act0c012c0ba6783de40ce07600eae20000")
+            (GEOMETRY 1816 1944 1896 2024)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1920 1984)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Initialize")
+            )
+            (ACTION "lab0c012c0b2f783de40ce076002be20000")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0b35793de40ce076000fe20000")
+          (HDL_IDENT
+            (NAME "HeaderChecks")
+            (USERNAME 1)
+          )
+          (GEOMETRY 1664 5440 3840 7296)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2728 5489)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "4:HeaderChecks")
+          )
+          (NUMBER 4)
+          (ACTION
+            (OBID "act0c012c0b46b94de486d07600ddc40000")
+            (GEOMETRY 1752 6296 1832 6376)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1856 6336)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "IP_CheckSum (15 Downto 0) := Not(IP_CheckSum(31 downto 16) + IP_CheckSum(15 downto 0));"
+                    "IP_Length := Unsigned(Packet_HeaderRegFile(IP_HDR + IP_IDX_LEN));"
+                    ""
+                    "-- \"The Default Stream\""
+                    "StreamIntern <= (NUM_UDP_PRTS => '1', Others =>'0'); "
+                    "Offset <= 0;"
+                    "Payload_Length := (IP_Length / 2) + MAC_HDR_CNT;"
+                    "--"
+                    ""
+                    "If Packet_HeaderRegFile(MAC_HDR + MAC_IDX_LEN) /= ETH_TYPE_II Then ErrorVector (0) <= '1'; End If;"
+                    "If IP_CheckSum (15 Downto 0) /= 0 Then ErrorVector (1) <= '1'; End If;"
+                    "If Packet_HeaderRegFile(IP_HDR + IP_IDX_VER_LEN_TOS)(IP_VER_LEN'Range) /= IP_VER_LEN Then ErrorVector (2) <= '1'; End If;"
+                    "If Packet_HeaderRegFile(IP_HDR + IP_IDX_TTL_PROT)(IP_PROT_UDP'Range) /= IP_PROT_UDP Then ErrorVector (3) <= '1'; End If;"
+                    ""
+                    "SOD_Intern <= '1';")
+            )
+            (ACTION "lab0c012c0bd7b94de486d07600edc40000")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0ba77a3de40ce0760052f20000")
+          (HDL_IDENT
+            (NAME "ReadHeader")
+            (USERNAME 1)
+          )
+          (GEOMETRY 1664 3712 3840 4992)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2761 3757)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "3:ReadHeader")
+          )
+          (NUMBER 3)
+          (ACTION
+            (OBID "act0c012c0ba77a3de40ce0760062f20000")
+            (GEOMETRY 1752 4312 1832 4392)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1856 4352)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Packet_HeaderRegFile(Idx - MEM_ACC_TICKS) := Din;"
+                    "If (Idx - MEM_ACC_TICKS) >= IP_HDR and (Idx - MEM_ACC_TICKS) < UDP_HDR Then"
+                    "   IP_CheckSum := IP_CheckSum + Unsigned(Din);"
+                    "End If;"
+                    "If (Idx - MEM_ACC_TICKS) >= UDP_HDR and (Idx - MEM_ACC_TICKS) < PAYLOAD Then"
+                    "   UDP_CheckSum := UDP_CheckSum + Unsigned(Din);"
+                    "End If;"
+                    "Idx := Idx + 1;"
+                    "Offset <= MAC_HDR + Idx;"
+                    "")
+            )
+            (ACTION "lab0c012c0ba77a3de40ce0760071f20000")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0b957b3de40ce0760014f20000")
+          (HDL_IDENT
+            (NAME "StartMemAcc")
+            (USERNAME 1)
+          )
+          (GEOMETRY 1664 2816 3840 3328)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2732 2913)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "2:StartMemAcc")
+          )
+          (NUMBER 2)
+          (ACTION
+            (OBID "act0c012c0b957b3de40ce0760024f20000")
+            (GEOMETRY 1752 3032 1832 3112)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1856 3072)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Idx := Idx + 1;"
+                    "Offset <= MAC_HDR + Idx;"
+                    "UDP_CheckSumErr <= '0';"
+                    "")
+            )
+            (ACTION "lab0c012c0b957b3de40ce0760004f20000")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0b720b4de486d076003ec40000")
+          (HDL_IDENT
+            (NAME "StatusOut")
+            (USERNAME 1)
+          )
+          (GEOMETRY 1216 7680 3392 10240)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2232 7807)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "5:StatusOut")
+          )
+          (NUMBER 5)
+          (ACTION
+            (OBID "act0c012c0b720b4de486d076004ec40000")
+            (GEOMETRY 1304 8856 1384 8936)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1408 8896)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "FragID <= Packet_HeaderRegFile(IP_HDR + IP_IDX_ID);"
+                    "MoreFrags <= Packet_HeaderRegFile(IP_HDR + IP_IDX_FLAGS_FRAGOFF)(IP_FLAGS_MOREFRAGS_INDEX);"
+                    "FragOff <= Packet_HeaderRegFile(IP_HDR + IP_IDX_FLAGS_FRAGOFF)(IP_FRAGOFF_RANGE);"
+                    ""
+                    "-- \"The Default Stream\""
+                    "StreamIntern <= (NUM_UDP_PRTS => '1', Others =>'0'); "
+                    "Offset <= 0;"
+                    "Payload_Length := (IP_Length / 2) + MAC_HDR_CNT;"
+                    "--"
+                    ""
+                    "For i In NUM_UDP_PRTS - 1 downto 0 Loop"
+                    "   If Unsigned(eth_regs_i.UDP_ModPrt(i)) = Unsigned(Packet_HeaderRegFile(UDP_HDR + UDP_IDX_DSTPRT)) Then"
+                    "      StreamIntern(i) <= '1';"
+                    "      Offset <= PAYLOAD;"
+                    "      Payload_Length := (IP_Length / 2) - IP_HDR_CNT - UDP_HDR_CNT;"
+                    "      StreamIntern(NUM_UDP_PRTS) <= '0';"
+                    "   End If;"
+                    "End Loop;"
+                    "")
+            )
+            (ACTION "lab0c012c0b720b4de486d076002ec40000")
+          )
+          (ACTION
+            (OBID "act0c012c0b2c367de4c79076001c020000")
+            (GEOMETRY 1304 10008 1384 10088)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1408 10048)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "PrepareUDP_CheckSum")
+            )
+            (ACTION "lab0c012c0b2c367de4c79076000c020000")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0bb8ff5de405f0760043a10000")
+          (HDL_IDENT
+            (NAME "TransferData")
+            (USERNAME 1)
+          )
+          (GEOMETRY 1216 10624 3392 13184)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2308 10692)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "6:TransferData")
+          )
+          (NUMBER 6)
+          (ACTION
+            (OBID "act0c012c0bb8ff5de405f0760053a10000")
+            (GEOMETRY 1304 11864 1384 11944)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1408 11904)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "If Full = '0' Then"
+                    "   Offset <= Offset + 1;"
+                    "   If SOD_intern = '1' And WrReqIntern = '1' Then"
+                    "      SOD_intern <= '0';"
+                    "   End If;"
+                    "   If Payload_Length = 1 Then"
+                    "      EODout <= '1';"
+                    "   Else"
+                    "      EODout <= '0';"
+                    "   End If;"
+                    "   If Payload_Length > 0 Then"
+                    "      Payload_Length := Payload_Length - 1;"
+                    "      WrReqIntern <= '1';"
+                    "      UDP_CheckSum := UDP_CheckSum + (x\"0000\" & Unsigned(Din));"
+                    "   Else"
+                    "      WrReqIntern <= '0';"
+                    "   End If;"
+                    "Else"
+                    "   WrReqIntern <= '0';"
+                    "End If;")
+            )
+            (ACTION "lab0c012c0bb8ff5de405f0760033a10000")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c0bc5267de4c7907600bb020000")
+          (HDL_IDENT
+            (NAME "TransferOtherData")
+            (USERNAME 1)
+          )
+          (GEOMETRY 4544 11008 6720 13184)
+          (SIDE 0)
+          (LABEL
+            (POSITION 5631 11067)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "7:TransferOtherData")
+          )
+          (NUMBER 7)
+          (ACTION
+            (OBID "act0c012c0bc5267de4c7907600cb020000")
+            (GEOMETRY 4632 12056 4712 12136)
+            (SIDE 0)
+            (LABEL
+              (POSITION 4736 12096)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "If Full = '0' Then"
+                    "   Offset <= Offset + 1;"
+                    "   If SOD_intern = '1' And WrReqIntern = '1' Then"
+                    "      SOD_intern <= '0';"
+                    "   End If;"
+                    "   WrReqIntern <= '1';"
+                    "Else"
+                    "   WrReqIntern <= '0';"
+                    "End If;")
+            )
+            (ACTION "lab0c012c0bc5267de4c7907600ab020000")
+          )
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b07783de40ce076000be20000")
+          (GEOMETRY 2752 960 2752 1856)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2752 960)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+          )
+          (PRIORITY -1)
+          (ASYNC 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc42255d31")
+            (GEOMETRY 2744 952 2760 968)
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc52255d31")
+            (GEOMETRY 2744 1848 2760 1864)
+            (STATE "stat0c012c0ba6783de40ce07600dae20000")
+          )
+          (ACTION
+            (OBID "act0c012c0b2f783de40ce076003be20000")
+            (GEOMETRY 2712 1432 2792 1512)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2816 1472)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Initialize")
+            )
+            (ACTION "lab0c012c0b2f783de40ce076002be20000")
+            (INDEX 0)
+          )
+          (ACTION
+            (OBID "act0c012c0b96326de483f07600cf810000")
+            (GEOMETRY 2712 1624 2792 1704)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2816 1664)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "PktPtr <= (Others => '0');"
+                    "UDP_CheckSumErr <= '0';")
+            )
+            (ACTION "lab0c012c0b96326de483f07600bf810000")
+            (INDEX 0)
+          )
+          (CONDITION "lab0c012c0b87783de40ce076001be20000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2685 1341)
+            (ARROW_MPOS 2752 1408)
+            (ARROW_EPOS 2819 1341)
+            (LABEL
+              (POSITION 2608 1232)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Rst = '1'")
+            )
+          )
+          (POINTS            (POINT 2752 960)
+            (POINT 2752 1856)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b37b93de40ce07600efe20000")
+          (GEOMETRY 2304 2176 7168 13760)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2304 13184)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc62255d31")
+            (GEOMETRY 2296 13176 2312 13192)
+            (STATE "stat0c012c0bb8ff5de405f0760043a10000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc72255d31")
+            (GEOMETRY 3832 2168 3848 2184)
+            (STATE "stat0c012c0ba6783de40ce07600dae20000")
+          )
+          (ACTION
+            (OBID "act0c012c0b69e16de483f076005f810000")
+            (GEOMETRY 2264 13528 2344 13608)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2368 13568)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "PktPtr <= PktPtr + To_Unsigned(Offset,RX_PKT_BUF_ADRSIZE);")
+            )
+            (ACTION "lab0c012c0b69e16de483f076004f810000")
+            (INDEX 0)
+          )
+          (ACTION
+            (OBID "act0c012c0b98967de4c79076007c020000")
+            (GEOMETRY 2264 13656 2344 13736)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2368 13696)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "FinalizeUDP_CheckSum")
+            )
+            (ACTION "lab0c012c0bea487de4c7907600cc020000")
+            (INDEX 0)
+          )
+          (CONDITION "lab0c012c0b5b4a3de40ce07600d0f20000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2237 13341)
+            (ARROW_MPOS 2304 13408)
+            (ARROW_EPOS 2371 13341)
+            (LABEL
+              (POSITION 2405 13320)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "EOFin = '1' And Payload_Length = 0")
+            )
+          )
+          (POINTS            (POINT 2304 13184)
+            (POINT 2304 13760)
+            (POINT 7168 13760)
+            (POINT 7168 2176)
+            (POINT 3840 2176)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b3e4a3de40ce07600f0f20000")
+          (GEOMETRY 3328 7296 5632 11008)
+          (SIDE 0)
+          (LABEL
+            (POSITION 3328 7296)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc82255d31")
+            (GEOMETRY 3320 7288 3336 7304)
+            (STATE "stat0c012c0b35793de40ce076000fe20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc92255d31")
+            (GEOMETRY 5624 11000 5640 11016)
+            (STATE "stat0c012c0bc5267de4c7907600bb020000")
+          )
+          (CONDITION "lab0c012c0b2ab94de486d07600fdc40000")
+          (ARROW
+            (NUMBER 1)
+            (ARROW_BPOS 4413 7555)
+            (ARROW_MPOS 4480 7488)
+            (ARROW_EPOS 4413 7421)
+            (LABEL
+              (POSITION 4204 7308)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "ErrorVector /= 0")
+            )
+          )
+          (POINTS            (POINT 3328 7296)
+            (POINT 3328 7488)
+            (POINT 5632 7488)
+            (POINT 5632 11008)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0ba77a3de40ce07600f2f20000")
+          (GEOMETRY 2752 2432 2752 2816)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2752 2432)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bca2255d31")
+            (GEOMETRY 2744 2424 2760 2440)
+            (STATE "stat0c012c0ba6783de40ce07600dae20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcb2255d31")
+            (GEOMETRY 2744 2808 2760 2824)
+            (STATE "stat0c012c0b957b3de40ce0760014f20000")
+          )
+          (CONDITION "lab0c012c0bf69a3de40ce0760033f20000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2685 2557)
+            (ARROW_MPOS 2752 2624)
+            (ARROW_EPOS 2819 2557)
+            (LABEL
+              (POSITION 2874 2534)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Empty = '0'")
+            )
+          )
+          (POINTS            (POINT 2752 2432)
+            (POINT 2752 2816)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b56ba3de40ce0760043f20000")
+          (GEOMETRY 2752 4992 2752 5440)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2752 4992)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcc2255d31")
+            (GEOMETRY 2744 4984 2760 5000)
+            (STATE "stat0c012c0ba77a3de40ce0760052f20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcd2255d31")
+            (GEOMETRY 2744 5432 2760 5448)
+            (STATE "stat0c012c0b35793de40ce076000fe20000")
+          )
+          (CONDITION "lab0c012c0bd7ba3de40ce0760053f20000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2685 5149)
+            (ARROW_MPOS 2752 5216)
+            (ARROW_EPOS 2819 5149)
+            (LABEL
+              (POSITION 2859 5115)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Idx = MEM_ACC_TICKS + PAYLOAD")
+            )
+          )
+          (POINTS            (POINT 2752 4992)
+            (POINT 2752 5440)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0bb18b3de40ce0760044f20000")
+          (GEOMETRY 2752 3328 2752 3712)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2752 3328)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bce2255d31")
+            (GEOMETRY 2744 3320 2760 3336)
+            (STATE "stat0c012c0b957b3de40ce0760014f20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcf2255d31")
+            (GEOMETRY 2744 3704 2760 3720)
+            (STATE "stat0c012c0ba77a3de40ce0760052f20000")
+          )
+          (CONDITION "lab0c012c0ba4694de486d076007cc40000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2685 3453)
+            (ARROW_MPOS 2752 3520)
+            (ARROW_EPOS 2819 3453)
+            (LABEL
+              (POSITION 2880 3443)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Idx = MEM_ACC_TICKS")
+            )
+          )
+          (POINTS            (POINT 2752 3328)
+            (POINT 2752 3712)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b040b4de486d076005ec40000")
+          (GEOMETRY 2304 7296 2304 7680)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2304 7296)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc03255d31")
+            (GEOMETRY 2296 7288 2312 7304)
+            (STATE "stat0c012c0b35793de40ce076000fe20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc13255d31")
+            (GEOMETRY 2296 7672 2312 7688)
+            (STATE "stat0c012c0b720b4de486d076003ec40000")
+          )
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2237 7421)
+            (ARROW_MPOS 2304 7488)
+            (ARROW_EPOS 2371 7421)
+            (LABEL
+              (POSITION 2304 7360)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (POINTS            (POINT 2304 7296)
+            (POINT 2304 7680)
+)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c0b742b4de486d076006ec40000")
+          (GEOMETRY 1424 2925 1664 3264)
+          (SIDE 0)
+          (LABEL
+            (POSITION 1664 3264)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc23255d31")
+            (GEOMETRY 1656 3256 1672 3272)
+            (STATE "stat0c012c0b957b3de40ce0760014f20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc33255d31")
+            (GEOMETRY 1656 2917 1672 2933)
+            (STATE "stat0c012c0b957b3de40ce0760014f20000")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 1491 3156)
+            (ARROW_MPOS 1424 3089)
+            (ARROW_EPOS 1357 3156)
+            (LABEL
+              (POSITION 1424 2961)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 1664 3264 1344 3264 1344 2925 1664 2925)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c0bc42b4de486d076007ec40000")
+          (GEOMETRY 1424 4152 1664 4544)
+          (SIDE 0)
+          (LABEL
+            (POSITION 1664 4544)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc43255d31")
+            (GEOMETRY 1656 4536 1672 4552)
+            (STATE "stat0c012c0ba77a3de40ce0760052f20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc53255d31")
+            (GEOMETRY 1656 4144 1672 4160)
+            (STATE "stat0c012c0ba77a3de40ce0760052f20000")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 1491 4409)
+            (ARROW_MPOS 1424 4342)
+            (ARROW_EPOS 1357 4409)
+            (LABEL
+              (POSITION 1424 4214)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 1664 4544 1344 4544 1344 4152 1664 4152)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c0bb8ff5de405f0760063a10000")
+          (GEOMETRY 976 11693 1216 12032)
+          (SIDE 0)
+          (LABEL
+            (POSITION 1216 12032)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc63255d31")
+            (GEOMETRY 1208 12024 1224 12040)
+            (STATE "stat0c012c0bb8ff5de405f0760043a10000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc73255d31")
+            (GEOMETRY 1208 11685 1224 11701)
+            (STATE "stat0c012c0bb8ff5de405f0760043a10000")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 1043 11924)
+            (ARROW_MPOS 976 11857)
+            (ARROW_EPOS 909 11924)
+            (LABEL
+              (POSITION 976 11729)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 1216 12032 896 12032 896 11693 1216 11693)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0bcbff5de405f0760073a10000")
+          (GEOMETRY 2304 10240 2304 10624)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2304 10240)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc83255d31")
+            (GEOMETRY 2296 10232 2312 10248)
+            (STATE "stat0c012c0b720b4de486d076003ec40000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc93255d31")
+            (GEOMETRY 2296 10616 2312 10632)
+            (STATE "stat0c012c0bb8ff5de405f0760043a10000")
+          )
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2237 10365)
+            (ARROW_MPOS 2304 10432)
+            (ARROW_EPOS 2371 10365)
+            (LABEL
+              (POSITION 2304 10304)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (POINTS            (POINT 2304 10240)
+            (POINT 2304 10624)
+)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c0b46226de483f07600af810000")
+          (GEOMETRY 1424 1965 1664 2304)
+          (SIDE 0)
+          (LABEL
+            (POSITION 1664 2304)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bca3255d31")
+            (GEOMETRY 1656 2296 1672 2312)
+            (STATE "stat0c012c0ba6783de40ce07600dae20000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcb3255d31")
+            (GEOMETRY 1656 1957 1672 1973)
+            (STATE "stat0c012c0ba6783de40ce07600dae20000")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 1491 2196)
+            (ARROW_MPOS 1424 2129)
+            (ARROW_EPOS 1357 2196)
+            (LABEL
+              (POSITION 1424 2001)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 1664 2304 1344 2304 1344 1965 1664 1965)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c0bc5267de4c7907600db020000")
+          (GEOMETRY 4304 11885 4544 12224)
+          (SIDE 0)
+          (LABEL
+            (POSITION 4544 12224)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcc3255d31")
+            (GEOMETRY 4536 12216 4552 12232)
+            (STATE "stat0c012c0bc5267de4c7907600bb020000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcd3255d31")
+            (GEOMETRY 4536 11877 4552 11893)
+            (STATE "stat0c012c0bc5267de4c7907600bb020000")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 4371 12116)
+            (ARROW_MPOS 4304 12049)
+            (ARROW_EPOS 4237 12116)
+            (LABEL
+              (POSITION 4304 11921)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 4544 12224 4224 12224 4224 11885 4544 11885)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b82967de4c79076002c020000")
+          (GEOMETRY 3840 2176 7168 13760)
+          (SIDE 0)
+          (LABEL
+            (POSITION 5632 13184)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bce3255d31")
+            (GEOMETRY 5624 13176 5640 13192)
+            (STATE "stat0c012c0bc5267de4c7907600bb020000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bcf3255d31")
+            (GEOMETRY 3832 2168 3848 2184)
+            (STATE "stat0c012c0ba6783de40ce07600dae20000")
+          )
+          (ACTION
+            (OBID "act0c012c0b95967de4c79076005c020000")
+            (GEOMETRY 5592 13528 5672 13608)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5696 13568)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "PktPtr <= PktPtr + To_Unsigned(Offset,RX_PKT_BUF_ADRSIZE);")
+            )
+            (ACTION "lab0c012c0b95967de4c79076004c020000")
+            (INDEX 0)
+          )
+          (CONDITION "lab0c012c0b53967de4c79076003c020000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 5565 13341)
+            (ARROW_MPOS 5632 13408)
+            (ARROW_EPOS 5699 13341)
+            (LABEL
+              (POSITION 5745 13300)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "EOFin = '1' And WrReqIntern = '1'")
+            )
+          )
+          (POINTS            (POINT 5632 13184)
+            (POINT 5632 13760)
+            (POINT 7168 13760)
+            (POINT 7168 2176)
+            (POINT 3840 2176)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c0b6d55c7f4c311760096240000")
+          (GEOMETRY 3392 9664 5184 11008)
+          (SIDE 0)
+          (LABEL
+            (POSITION 3392 9664)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc04255d31")
+            (GEOMETRY 3384 9656 3400 9672)
+            (STATE "stat0c012c0b720b4de486d076003ec40000")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c0bd6499df40dd0e1bc14255d31")
+            (GEOMETRY 5176 11000 5192 11016)
+            (STATE "stat0c012c0bc5267de4c7907600bb020000")
+          )
+          (CONDITION "lab0c012c0b4e55c7f4c3117600a6240000")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 3901 9731)
+            (ARROW_MPOS 3968 9664)
+            (ARROW_EPOS 3901 9597)
+            (LABEL
+              (POSITION 3968 9536)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "StreamIntern(NUM_UDP_PRTS) = '1'")
+            )
+          )
+          (POINTS            (POINT 3392 9664)
+            (POINT 5184 9664)
+            (POINT 5184 11008)
+)
+        )
+      )
+    )
+  )
+)
+(END_OF_FILE)

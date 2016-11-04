@@ -1,0 +1,387 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0bdeee5de405f0760050a10000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "RxStreamSel")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1280 1344)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1322643181 "Wed Nov 30 09:53:01 2011")
+      (MODIFIED 1462965516 "Wed May 11 13:18:36 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b5fee5de405f0760090a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Stream")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Stream(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bdbfe5de405f07600b0a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Din")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Din(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bdbfe5de405f07600c0a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "SODin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SODin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bdbfe5de405f07600d0a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EODin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EODin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b2d0f5de405f0760081a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 1240 792 1320 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrReq(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b4f0f5de405f07600a1a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReqin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrReqin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b0f1f5de405f0760012a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Fullout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Fullout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bf32f5de405f0760042a10000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 1240 856 1320 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Full(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b2a34b7f44451760062080000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EOFin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EOFin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b47a22bf40e007600cd550000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RXo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 1240 600 1320 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RXo(NUM_UDP_PRTS:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0bdeee5de405f0760060a10000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0bdeee5de405f0760060a10000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5304e09f1502d0e1bc32524240")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'RxStreamSel'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Din     : in     std_logic_vector(15 downto 0);"
+               "--     EODin   : in     std_logic;"
+               "--     EOFin   : in     std_logic;"
+               "--     Full    : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     Fullout : out    std_logic;"
+               "--     RXo     : out    dbus_type_array(NUM_UDP_PRTS downto 0);"
+               "--     SODin   : in     std_logic;"
+               "--     Stream  : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     WrReq   : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     WrReqin : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of RxStreamSel is"
+               ""
+               "begin"
+               "   Process (Full, Din, EOFin, EODin, Stream, WrReqin)"
+               "--   Process (Full, Din, EOFin, EODin, SODin, Stream, WrReqin)"
+               "   Begin       "
+               "      -- Default is all zero"
+               "      Fullout <= '0';"
+               "      For i In NUM_UDP_PRTS downto 0 Loop"
+               "         RXo(i).D <= (Others => '0');"
+               "--         RXo(i).SOD <= '0';"
+               "         RXo(i).EOD <= '0';"
+               "         WrReq(i) <= '0';"
+               "      End Loop;"
+               ""
+               "      -- Now connect the selected stream"
+               "      For i In Stream'Range Loop"
+               "         If Stream(i) = '1' Then"
+               "            RXo(i).D <= Din;"
+               "            -- On the data link layer, where the transactions with the MAC take place, a frame is defined"
+               "            -- as all data that are signaled rx_data_valid by the MAC. These data range from the first byte"
+               "            -- after the Start of Frame Delimiter (SFD) to the last data byte before the first Frame Control"
+               "            -- Sequence (FCS)."
+               "            -- Note that for Ethernet v2 framing (see also: http://en.wikipedia.org/wiki/EtherType) this"
+               "            -- also includes padded data that might have been inserted to ensure that the frame length is"
+               "            -- at least 64 bytes."
+               "            -- Start and End of Data are asserted at the start and end of the "
+               "            -- payload data of the mac frame (without padded data)"
+               "--            RXo(i).SOD <= SODin;"
+               "            RXo(i).EOD <= EODin;"
+               "            WrReq(i) <= WrReqin;"
+               "            Fullout <= Full(i);"
+               "         End If;"
+               "      End Loop;"
+               "      -- The exception is the CPU stream where the End Of Frame Signalling from the MAC is routed directly to"
+               "      -- the EOD of the CPU channel. There is no other means to know the end of a Frame since unknown Frames"
+               "      -- are not decoded."
+               "      RXo(NUM_UDP_PRTS).EOD <= EOFin;"
+               "   End Process;"
+               ""
+               "end architecture rtl ; -- of RxStreamSel"
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bcfc358af2")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

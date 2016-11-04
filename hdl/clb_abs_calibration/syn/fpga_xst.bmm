@@ -1,0 +1,114 @@
+/* FILE : fpga.bmm
+*  Define a BRAM map for the LM32 memory "xwb_dpram".
+*  Run ISE Translate -> "Floorplan Area/IO/Logic (PlanAhead)" once (without this BMM file
+*  attached to the ISE Project) to find out that there are 16 ramloops and each RAMB36E1
+*  Note: *THE RAMLOOP ORDER WITHIN A BUS_BLOCK IS VERY IMPORTANT!!!*
+*        Define ramloop 15 downto 0 and databits 31 downto 0 !!! Otherwise the memory
+*        content will be swapped and the program fails to execute. Aperently the ramloop
+*        number and bit definitions are not read by data2mem.
+*
+*
+* Address space LM32 memory "xwb_dpram"
+*  g_dpram_size = 131072/4 = 32768 (128 KByte = 32 KWord)
+*  This size is in 32 bit words => byte size = 4 * 32768 = 131072 bytes)
+* (old:
+* g_dpram_size = 90112/4 = 22528
+* This size is in 32 bit words => byte size = 4 * 22528 = 90112 bytes)
+*
+* ATTENTION PARITY!
+* Although the memory is implemented in RAMB36E1 the address same MUST be defined as
+* RAMB32 (insetad of RAMB36) since we are NOT using parity! If the address space is
+* defined as RAMB36 then data2mem is expecting an extra nibble for each 32 bit instruction
+* in the ".elf" file and since this nibble is not provided, the ramblocks will be filled
+* such that a nibble shift is accumulating in the data.
+* Note that this can be examined using the command
+* "data2mem -bm fpga_bd.bmm -bt fpga_elf.bit -d > dump.txt"
+*
+* ATTENTION Xilinx Synthesis
+* XST implements the 22K * 32 bit as:
+*     22 blocks of 1K * 32 bits
+*
+* Xilinx implements the 32K * 32 bit as:
+*     32 blocks of 32K * 1 bit
+
+****************************************************************************************/
+
+ADDRESS_SPACE lm32_wrpc_memory COMBINED [0x00000000:0x0001FFFF]
+  ADDRESS_RANGE RAMB32
+    BUS_BLOCK
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [31];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [30];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [29];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [28];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [27];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [26];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [25];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [24];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [23];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [22];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [21];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [20];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [19];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [18];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [17];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [16];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [15];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [14];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [13];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [12];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [11];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [10];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [9];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [8];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [7];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [6];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [5];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [4];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [3];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [2];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [1];
+      u0/U_WR_CORE/WRPC/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [0];
+    END_BUS_BLOCK;
+  END_ADDRESS_RANGE;
+END_ADDRESS_SPACE;
+
+/*
+ADDRESS_SPACE lm32_2nd_memory COMBINED [0x00000000:0x0001FFFF]
+  ADDRESS_RANGE RAMB32
+    BUS_BLOCK
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [31];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [30];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [29];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [28];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [27];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [26];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [25];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[3].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [24];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [23];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [22];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [21];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [20];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [19];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [18];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [17];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[2].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [16];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [15];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [14];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [13];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [12];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [11];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [10];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [9];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[1].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [8];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [7];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [6];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [5];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [4];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [3];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [2];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [1];
+      u11/DPRAM/GEN_NO_INITF.GEN_BYTESEL[0].U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [0];
+    END_BUS_BLOCK;
+  END_ADDRESS_RANGE;
+END_ADDRESS_SPACE;
+*/

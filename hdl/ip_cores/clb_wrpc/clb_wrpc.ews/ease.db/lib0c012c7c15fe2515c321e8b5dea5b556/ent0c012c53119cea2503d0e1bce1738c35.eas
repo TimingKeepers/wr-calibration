@@ -1,0 +1,195 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53119cea2503d0e1bce1738c35")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Dec 16 15:53:46 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "DecodeS")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1472 1024)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1387186449 "Mon Dec 16 10:34:09 2013")
+      (MODIFIED 1387205625 "Mon Dec 16 15:53:45 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c53a19cea2503d0e1bc65738c35")
+      (HDL_IDENT
+        (NAME "rx_k_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 216 1512 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_k_o(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e19cea2503d0e1bcb5738c35")
+      (HDL_IDENT
+        (NAME "rx_rbclk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1432 344 1512 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_rbclk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53429cea2503d0e1bcf5738c35")
+      (HDL_IDENT
+        (NAME "rx_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 472 1512 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_data_o(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53139cea2503d0e1bc36738c35")
+      (HDL_IDENT
+        (NAME "S")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "S")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53759cea2503d0e1bc76738c35")
+      (HDL_IDENT
+        (NAME "rst_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1432 664 1512 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rst_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53119cea2503d0e1bc12738c35" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53119cea2503d0e1bc12738c35")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53219cea2503d0e1bc22738c35")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'DecodeS'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     S          : out    std_logic;"
+               "--     rst_i      : in     std_logic;"
+               "--     rx_data_o  : in     std_logic_vector(15 downto 0);"
+               "--     rx_k_o     : in     std_logic_vector(1 downto 0);"
+               "--     rx_rbclk_o : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of DecodeS is"
+               ""
+               "begin"
+               "   Process (rx_rbclk_o, rst_i)"
+               "   Begin"
+               "      If rst_i = '1' Then"
+               "	     S <= '0';"
+               "	  ElsIf Rising_Edge(rx_rbclk_o) Then"
+               "	     If rx_data_o = x\"FB55\" and rx_k_o = \"10\" Then"
+               "		    S <= '1';"
+               "		 Else"
+               "            S <= '0';"
+               "		 End If;"
+               "	  End If;"
+               "   End Process;"
+               "   "
+               "end architecture rtl ; -- of DecodeS"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

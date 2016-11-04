@@ -1,0 +1,26 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c7c8112e9158011e8b506d32f80")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c5334d1042547d0e1bc50c508e1")
+    (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/wr-cores/modules/wr_tbi_phy/disparity_gen_pkg.vhd")
+    (PROPERTY "IMPORTED_LAST" "1455099453")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Feb 10 11:18:42 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455095267")
+  )
+  (HDL_IDENT
+    (NAME "disparity_gen_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1369317656 "Thu May 23 16:00:56 2013")
+    (MODIFIED 1455099453 "Wed Feb 10 11:17:33 2016")
+  )
+  (EXTERNAL 1)
+)
+(END_OF_FILE)

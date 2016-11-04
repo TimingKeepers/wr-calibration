@@ -1,0 +1,197 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53bd3b83658f51e1bc6a826865")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c53ad3b83658f51e1bc3a826865")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/ip_cores/general-cores/modules/common/gc_extend_pulse.vhd")
+      (PROPERTY "IMPORTED_LAST" "1446556635")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Nov 03 15:26:49 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445875013")
+    )
+    (HDL_IDENT
+      (NAME "gc_extend_pulse")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1446556635 "Tue Nov 03 14:17:15 2015")
+      (MODIFIED 1446559113 "Tue Nov 03 14:58:33 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53dd1aa335ce71e1bc20511f71")
+        (LIBRARY "design")
+        (NAME "gencores_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b92af52508e0e1bc52a7fff7")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c53bd3b83658f51e1bc7a826865")
+      (HDL_IDENT
+        (NAME "g_width")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "natural")
+          (DEF_VALUE "1000")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_width(1000)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53bd3b83658f51e1bc8a826865")
+      (HDL_IDENT
+        (NAME "clk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53bd3b83658f51e1bc9a826865")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53bd3b83658f51e1bcaa826865")
+      (HDL_IDENT
+        (NAME "pulse_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pulse_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53bd3b83658f51e1bcba826865")
+      (HDL_IDENT
+        (NAME "extended_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "extended_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53bd3b83658f51e1bcca826865" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53bd3b83658f51e1bcca826865")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53524b83658f51e1bc16926865")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'gc_extend_pulse'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_width : natural := 1000);"
+               "--   port ("
+               "--     clk_i      : in     std_logic;"
+               "--     rst_n_i    : in     std_logic;"
+               "--     pulse_i    : in     std_logic;"
+               "--     extended_o : out    std_logic := '0');"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of gc_extend_pulse is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of gc_extend_pulse"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

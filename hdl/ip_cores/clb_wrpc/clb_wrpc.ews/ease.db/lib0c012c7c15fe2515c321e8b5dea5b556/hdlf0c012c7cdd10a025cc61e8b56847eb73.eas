@@ -1,0 +1,18 @@
+(DATABASE_VERSION 16)
+(HDL_FILE
+  (OBID "hdlf0c012c7cdd10a025cc61e8b56847eb73")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 8")
+    (PROPERTY "STAMP_TIME" "Tue Aug 13 11:52:29 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+  )
+  (FILE "../../ipmux/modules/emac_package.vhd")
+  (OBJSTAMP
+    (DESIGNER "mgebyehu")
+    (CREATED 1376387549 "Tue Aug 13 11:52:29 2013")
+    (MODIFIED 1376387549 "Tue Aug 13 11:52:29 2013")
+  )
+)
+(END_OF_FILE)

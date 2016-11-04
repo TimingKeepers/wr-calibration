@@ -1,0 +1,185 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b8d6c57f44c7176006f740000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "PowerOnRst")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 576 256)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1333118680 "Fri Mar 30 16:44:40 2012")
+      (MODIFIED 1410527737 "Fri Sep 12 15:15:37 2014")
+    )
+    (PORT
+      (OBID "eprt0c012c0b0e6c57f44c717600af740000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 536 88 616 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 512 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b9e6c57f44c717600cf740000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RstIn")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RstIn")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b8d6c57f44c7176007f740000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b8d6c57f44c7176007f740000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5304e09f1502d0e1bcb1524240")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'PowerOnRst'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Rst   : out    std_logic;"
+               "--     RstIn : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "Library UNISIM;"
+               "use UNISIM.vcomponents.all;"
+               ""
+               "architecture rtl of PowerOnRst is"
+               "   ----- component IBUFG -----"
+               "   component IBUFG"
+               "     generic ("
+               "        CAPACITANCE : string := \"DONT_CARE\";"
+               "        IBUF_DELAY_VALUE : string := \"0\";"
+               "        IBUF_LOW_PWR : boolean := TRUE;"
+               "        IOSTANDARD : string := \"DEFAULT\""
+               "     );"
+               "     port ("
+               "        O : out std_ulogic;"
+               "        I : in std_ulogic"
+               "     );"
+               "   end component;"
+               ""
+               "   ----- component STARTUPE2 (7-Family Start-up) -----"
+               "   component STARTUPE2"
+               "     generic ("
+               "        PROG_USR : string := \"FALSE\";"
+               "        SIM_CCLK_FREQ : real := 0.0"
+               "   );"
+               "     port ("
+               "        CFGCLK : out std_ulogic;"
+               "        CFGMCLK : out std_ulogic;"
+               "        EOS : out std_ulogic;"
+               "        PREQ : out std_ulogic;"
+               "        CLK : in std_ulogic;"
+               "        GSR : in std_ulogic;"
+               "        GTS : in std_ulogic;"
+               "        KEYCLEARB : in std_ulogic;"
+               "        PACK : in std_ulogic;"
+               "        USRCCLKO : in std_ulogic;"
+               "        USRCCLKTS : in std_ulogic;"
+               "        USRDONEO : in std_ulogic;"
+               "        USRDONETS : in std_ulogic"
+               "     );"
+               "   end component;"
+               ""
+               "   Signal RstIntern: std_logic;"
+               "   Signal EOSIntern: std_logic;"
+               "--   Signal EOSdel: std_logic;"
+               "   "
+               "begin"
+               "   -- STARTUPE2: 7-family STARTUP Block"
+               "   -- Xilinx 7 Series FPGA Libraries Guide for HDL Designs, ug768 version 13.1"
+               "   STARTUPE2_inst : STARTUPE2"
+               "      generic map ("
+               "      PROG_USR => \"FALSE\", -- Activate program event security feature"
+               "      SIM_CCLK_FREQ => 0.0"
+               "	  )"
+               "      port map ("
+               "         CFGCLK => open, -- 1-bit Configuration main clock output"
+               "         CFGMCLK => open, -- 1-bit Configuration internal oscillator clock output"
+               "         EOS => EOSIntern, -- 1-bit Active high output signal indicating the End Of Configuration."
+               "         PREQ => open, -- 1-bit PROGRAM request to fabric output"
+               "         CLK => '0', -- 1-bit User start-up clock input"
+               "         GSR => '0', -- 1-bit Global Set/Reset input (GSR cannot be used for the port name)"
+               "         GTS => '0', -- 1-bit Global 3-state input (GTS cannot be used for the port name)"
+               "         KEYCLEARB => '0', -- 1-bit Clear AES Decrypter Key input from Battery-Backed RAM (BBRAM)"
+               "         PACK => '0', -- 1-bit PROGRAM acknowledge input"
+               "         USRCCLKO => '0', -- 1-bit User CCLK input"
+               "         USRCCLKTS => '0', -- 1-bit User CCLK 3-state enable input"
+               "         USRDONEO => '0', -- 1-bit User DONE pin output control"
+               "         USRDONETS => '0' -- 1-bit User DONE 3-state enable output"
+               "      );"
+               ""
+               "   RESET_IBUFG: IBUFG"
+               "     port map ("
+               "        O => RstIntern,"
+               "        I => RstIn"
+               "     );"
+               "   "
+               "   Rst <= RstIntern Or Not EOSIntern;"
+               "   "
+               "end architecture rtl ; -- of PowerOnRst"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document_root>
+  <section type="section_root" name="section_root">
+    <sections>
+      <section type="tool" name="ISE">
+        <properties>
+          <property key="defaultsimulator" value="true"/>
+          <property key="directory" value="../xilinx"/>
+          <property key="enable" value="true"/>
+          <property key="namespace" value="TlXilinx"/>
+          <property key="type" value="simulator"/>
+          <property key="vendor" value="Xilinx"/>
+        </properties>
+        <sections>
+          <section type="button" name="IseProjUpdate">
+            <properties>
+              <property key="bitmap" value="ise_new"/>
+              <property key="enable" value="true"/>
+              <property key="procedure" value="TlXilinx::IseProjUpdate"/>
+              <property key="show" value="ease, companion"/>
+              <property key="tooltip" value="Create/update Xilinx Project file"/>
+            </properties>
+          </section>
+          <section type="button" name="IseSyn">
+            <properties>
+              <property key="bitmap" value="iseprj"/>
+              <property key="enable" value="true"/>
+              <property key="procedure" value="TlXilinx::IseSyn"/>
+              <property key="show" value="ease, companion"/>
+              <property key="tooltip" value="Start Xilinx ISE with project"/>
+            </properties>
+          </section>
+          <section type="button" name="XilinxProjNav">
+            <properties>
+              <property key="bitmap" value="ise"/>
+              <property key="enable" value="true"/>
+              <property key="procedure" value="TlXilinx::ProjectNavigator"/>
+              <property key="show" value="ease, companion"/>
+              <property key="tooltip" value="Start Xilinx ISE"/>
+            </properties>
+          </section>
+          <section type="button" name="XilinxCoregen">
+            <properties>
+              <property key="bitmap" value="coregen"/>
+              <property key="enable" value="true"/>
+              <property key="procedure" value="TlXilinx::CoreGen"/>
+              <property key="show" value="ease, companion"/>
+              <property key="tooltip" value="Start Xilinx Coregen"/>
+            </properties>
+          </section>
+          <section type="button" name="XilinxCompileMarker">
+            <properties>
+              <property key="bitmap" value="isimmarker"/>
+              <property key="enable" value="true"/>
+              <property key="procedure" value="TlXilinx::CompileFiles"/>
+              <property key="show" value="ease, companion"/>
+              <property key="threaded" value="true"/>
+              <property key="tooltip" value="Compile all HDL files for marker with ISE"/>
+            </properties>
+          </section>
+          <section type="button" name="XilinxStartSimulation">
+            <properties>
+              <property key="bitmap" value="isim"/>
+              <property key="enable" value="true"/>
+              <property key="procedure" value="TlXilinx::SimulateMarkerUnit"/>
+              <property key="show" value="ease, companion"/>
+              <property key="tooltip" value="Start simulation for the toplevel marker"/>
+            </properties>
+          </section>
+        </sections>
+      </section>
+      <section type="Simulator" name="Simulator">
+        <properties>
+          <property key="Simulator" value="ISE"/>
+        </properties>
+      </section>
+      <section type="VendorVersion" name="Xilinx">
+        <properties>
+          <property key="ISE" value="14.5"/>
+        </properties>
+      </section>
+    </sections>
+  </section>
+</document_root>

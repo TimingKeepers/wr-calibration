@@ -1,0 +1,119 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c5070a025cc61e8b57d5beb73")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Tue Aug 13 12:14:57 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "MULT18X18")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1024 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376388869 "Tue Aug 13 12:14:29 2013")
+      (MODIFIED 1376388869 "Tue Aug 13 12:14:29 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7c5070a025cc61e8b58d5beb73")
+      (HDL_IDENT
+        (NAME "P")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "35" "0")
+          )
+        )
+      )
+      (GEOMETRY 984 88 1064 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 960 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "P(35:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c5070a025cc61e8b59d5beb73")
+      (HDL_IDENT
+        (NAME "A")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "17" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "A(17:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c5070a025cc61e8b5ad5beb73")
+      (HDL_IDENT
+        (NAME "B")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "17" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "B(17:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c5070a025cc61e8b5bd5beb73" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c5070a025cc61e8b5bd5beb73")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

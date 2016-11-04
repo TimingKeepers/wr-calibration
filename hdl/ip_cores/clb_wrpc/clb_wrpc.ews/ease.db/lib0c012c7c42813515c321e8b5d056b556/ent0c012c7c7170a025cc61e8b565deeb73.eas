@@ -1,0 +1,41 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c7170a025cc61e8b565deeb73")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Tue Aug 13 12:15:05 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "TIMEGRP")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376388887 "Tue Aug 13 12:14:47 2013")
+      (MODIFIED 1376388887 "Tue Aug 13 12:14:47 2013")
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c7170a025cc61e8b575deeb73" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c7170a025cc61e8b575deeb73")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

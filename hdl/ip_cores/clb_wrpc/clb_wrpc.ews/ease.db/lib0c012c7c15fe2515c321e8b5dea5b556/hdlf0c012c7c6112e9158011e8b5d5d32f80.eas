@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7c6112e9158011e8b5d5d32f80")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1445933556")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445874870")
+  )
+  (FILE "../../../wr-cores/modules/wr_tbi_phy/disparity_gen_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1369317654 "Thu May 23 16:00:54 2013")
+    (MODIFIED 1445933556 "Tue Oct 27 09:12:36 2015")
+  )
+)
+(END_OF_FILE)

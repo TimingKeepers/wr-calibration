@@ -1,0 +1,273 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b87c5bce40b8076002e820000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "PauseReqLogic")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1216 832)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1321950328 "Tue Nov 22 09:25:28 2011")
+      (MODIFIED 1384440418 "Thu Nov 14 15:46:58 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c0bc7c5bce40b8076006e820000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PauseReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "PauseReq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bc7c5bce40b8076007e820000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PauseVal")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "PauseVal(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bb8c5bce40b807600ce820000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WaterMarkHigh")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WaterMarkHigh")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b49c5bce40b807600ee820000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WaterMarkLow")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WaterMarkLow")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b4ac5bce40b8076000f820000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b4ac5bce40b8076001f820000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53aa3d48250a01e1bcded5f047")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PauseAck")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "PauseAck")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b87c5bce40b8076003e820000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b87c5bce40b8076003e820000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5304e09f1502d0e1bca1524240")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'PauseReqLogic'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Clk           : in     std_logic;"
+               "--     PauseAck      : in     std_logic;"
+               "--     PauseReq      : out    std_logic;"
+               "--     PauseVal      : out    std_logic_vector(15 downto 0);"
+               "--     Rst           : in     std_logic;"
+               "--     WaterMarkHigh : in     std_logic;"
+               "--     WaterMarkLow  : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of PauseReqLogic is"
+               "begin"
+               "   Process (Clk, Rst)"
+               "      Variable WaterMarkLow_del: Std_logic;"
+               "      Variable WaterMarkHigh_del: Std_logic;"
+               "   Begin"
+               "      If Rst = '1' Then"
+               "         WaterMarkLow_del := '1';"
+               "         WaterMarkHigh_del := '0';"
+               "         PauseReq <= '0';"
+               "         PauseVal <= x\"0000\";"
+               "      ElsIf Rising_Edge(Clk) Then"
+               "        -- Remove any pending Pause Request when Ack"
+               "	    If PauseAck = '1' Then"
+               "            PauseReq <= '0';"
+               "            PauseVal <= x\"0000\";"
+               "         -- If Rising_Edge(WaterMarkLow) Then \"Cancel\" Pause Request"
+               "		 -- note that PauseVal may be updated to the current value when a former PauseReq is still pending"
+               "         ElsIf WaterMarkLow = '1' and WaterMarkLow_del = '0' Then"
+               "            PauseReq <= '1';"
+               "            PauseVal <= x\"0000\";"
+               "         -- If Rising_Edge(WaterMarkHigh) Then Pause Request 65535"
+               "         -- Pause_Quantas (= 512 bit times)"
+               "         -- is 65535 * 512 * 800 ps (for 1 Gbit Ethernet) = ~26.8 ms"
+               "         -- See IEEE802.3-2005 Annex 31B"
+               "		 -- note that PauseVal may be updated to the current value when a former PauseReq is still pending"
+               "         ElsIf WaterMarkHigh = '1' and WaterMarkHigh_del = '0' Then"
+               "            PauseReq <= '1';"
+               "            PauseVal <= x\"FFFF\";"
+               "         End If;"
+               "         -- Pipeline"
+               "         WaterMarkLow_del := WaterMarkLow;"
+               "         WaterMarkHigh_del := WaterMarkHigh;"
+               "      End If;"
+               "   End Process;"
+               "   "
+               "end architecture rtl ; -- of PauseReqLogic"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

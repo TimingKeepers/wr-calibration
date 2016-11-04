@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7c488d5a150970e8b590272832")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1455099465")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Feb 10 11:18:42 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455095268")
+  )
+  (FILE "../../wr-cores/platform/xilinx/wr_gtp_phy/wr_gtx_phy_kintex7.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1369823364 "Wed May 29 12:29:24 2013")
+    (MODIFIED 1455099465 "Wed Feb 10 11:17:45 2016")
+  )
+)
+(END_OF_FILE)

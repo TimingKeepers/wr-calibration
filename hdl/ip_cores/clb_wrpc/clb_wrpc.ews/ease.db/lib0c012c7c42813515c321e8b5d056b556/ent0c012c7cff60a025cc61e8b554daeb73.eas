@@ -1,0 +1,107 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7cff60a025cc61e8b554daeb73")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Tue Aug 13 12:14:54 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "IDELAYCTRL")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 896 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376388863 "Tue Aug 13 12:14:23 2013")
+      (MODIFIED 1376388863 "Tue Aug 13 12:14:23 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7cff60a025cc61e8b564daeb73")
+      (HDL_IDENT
+        (NAME "RDY")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 88 936 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RDY")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cff60a025cc61e8b574daeb73")
+      (HDL_IDENT
+        (NAME "REFCLK")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "REFCLK")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cff60a025cc61e8b584daeb73")
+      (HDL_IDENT
+        (NAME "RST")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RST")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7cff60a025cc61e8b594daeb73" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7cff60a025cc61e8b594daeb73")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,788 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5396faf62586e0e1bc836758f6")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "ipmux_regs_and_rxtxcpu")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1536 1152)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1383051113 "Tue Oct 29 13:51:53 2013")
+      (MODIFIED 1462965326 "Wed May 11 13:15:26 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c532d2133750c51e1bc97341c36")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5337faf62586e0e1bc746758f6")
+      (HDL_IDENT
+        (NAME "wb_ipmux_reg_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_reg_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5337faf62586e0e1bc846758f6")
+      (HDL_IDENT
+        (NAME "wb_ipmux_reg_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_reg_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e10bf62586e0e1bca56758f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "eth_regs_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_type")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1496 88 1576 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "eth_regs_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b73bf62586e0e1bc7b9758f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b73bf62586e0e1bc8b9758f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53c4b217254ce0e1bce1d66fc2")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "CPU_Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "ipmux_cpu_in_type")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1496 280 1576 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "CPU_Tx")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533bb217254ce0e1bc0dd66fc2")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "CPU_AccGnt")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1496 216 1576 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "CPU_AccGnt")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536b97772582c0e1bc1c64e7f4")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rx_Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rx_Empty(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535f97772582c0e1bc8c64e7f4")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Tx_Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Tx_Full(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5391a7772582c0e1bcfc64e7f4")
+      (HDL_IDENT
+        (NAME "Flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Flush(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538a28772582c0e1bca374e7f4")
+      (HDL_IDENT
+        (NAME "wb_ipmux_rx_tx_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_rx_tx_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538a28772582c0e1bcb374e7f4")
+      (HDL_IDENT
+        (NAME "wb_ipmux_rx_tx_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_rx_tx_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d388772582c0e1bc3c74e7f4")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "cpu_rx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "cpu_rx")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d9a8772582c0e1bc7c74e7f4")
+      (HDL_IDENT
+        (NAME "cpu_rdreq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "cpu_rdreq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ab68d1350a61e1bc0f206ed4")
+      (HDL_IDENT
+        (NAME "div_ratio")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 472 1576 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "div_ratio(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ab68d1350a61e1bc1f206ed4")
+      (HDL_IDENT
+        (NAME "numwords")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "13" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 536 1576 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "numwords(13:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ab68d1350a61e1bc2f206ed4")
+      (HDL_IDENT
+        (NAME "numpackets")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "9" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 600 1576 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "numpackets(9:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536d35bd354ea0e1bcd8e79a52")
+      (HDL_IDENT
+        (NAME "udptstctrl")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 664 1576 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "udptstctrl(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5352f691450f31e1bc6df30687")
+      (HDL_IDENT
+        (NAME "TxStreamDebug")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "11" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 984 1576 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "TxStreamDebug(11:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b58319558430e1bce6a321a4")
+      (HDL_IDENT
+        (NAME "PacketsDone")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 1048 1576 1128)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PacketsDone(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5396faf62586e0e1bcb36758f6" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5396faf62586e0e1bcb36758f6")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5396faf62586e0e1bcc36758f6")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'ipmux_regs_and_rxtxcpu'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     CPU_AccGnt       : in     std_logic;"
+               "--     CPU_Tx           : out    ipmux_cpu_in_type;"
+               "--     Clk              : in     std_logic;"
+               "--     Flush            : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     PacketsDone      : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Rst              : in     std_logic;"
+               "--     Rx_Empty         : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     TxStreamDebug    : in     std_logic_vector(11 downto 0);"
+               "--     Tx_Full          : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     cpu_rdreq        : out    std_logic;"
+               "--     cpu_rx           : in     dbus_type;"
+               "--     div_ratio        : out    std_logic_vector(31 downto 0);"
+               "--     eth_regs_o       : out    eth_regs_type;"
+               "--     numpackets       : out    std_logic_vector(9 downto 0);"
+               "--     numwords         : out    std_logic_vector(13 downto 0);"
+               "--     udptstctrl       : out    std_logic_vector(2 downto 0);"
+               "--     wb_ipmux_reg_i   : in     t_wishbone_slave_in;"
+               "--     wb_ipmux_reg_o   : out    t_wishbone_slave_out;"
+               "--     wb_ipmux_rx_tx_i : in     t_wishbone_slave_in;"
+               "--     wb_ipmux_rx_tx_o : out    t_wishbone_slave_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of ipmux_regs_and_rxtxcpu is"
+               ""
+               "  signal ack_reg: std_logic;   -- internal acknowledeg for wb_ipmux_reg"
+               "  signal wr_reg: std_logic;    -- internal write"
+               "  signal rd_reg: std_logic;    -- internal read"
+               ""
+               "  signal ack_txrx: std_logic;  -- internal acknowledeg for wb_ipmux_rx_tx"
+               "  signal rd_rx: std_logic;     -- internal read"
+               "  signal wr_tx: std_logic;     -- internal read"
+               ""
+               "  "
+               "  -- actual wishbone registers "
+               "  signal MAC_Mod            : std_logic_vector(47 downto 0);					-- Module MAC address"
+               "  signal MAC_Srv            : std_logic_vector(47 downto 0);					-- Server MAC address"
+               "  signal IP_Mod             : std_logic_vector(31 downto 0);					-- Module IP address"
+               "  signal IP_Srv             : std_logic_vector(31 downto 0);					-- Server IP address"
+               "  signal UDP_SrvPrt         : std_logic_v16array(NUM_UDP_PRTS-1 downto 0);     -- Server Port"
+               "  signal UDP_ModPrt         : std_logic_v16array(NUM_UDP_PRTS-1 downto 0);     -- Module Port"
+               "  "
+               "  signal reg_flush          : std_logic_vector(4 downto 0);                    -- Access Control Status Register -> Flush"
+               "  signal reg_tx_request     : std_logic;       	                            -- Access Control Status Register -> Tx_Request"
+               ""
+               "  signal reg_div_ratio      : std_logic_vector(31 downto 0);                   -- packet test generator: divide ratio (counts * 16 ns ticks)"
+               "  signal reg_numwords       : std_logic_vector(13 downto 0);                   -- packet test generator: number of words per packet "
+               "  signal reg_numpackets     : std_logic_vector( 9 downto 0);                   -- packet test generator: number of packets per burst"
+               "  signal reg_udptstcntr     : std_logic_vector( 2 downto 0);                   -- packet test generator: control register (continuously or trigger)"
+               "   "
+               "begin"
+               "-- =============================================================================="
+               "-- Implement IPMUX Register acces via wb_ipmux_reg_i and wb_ipmux_reg_o"
+               "-- =============================================================================="
+               "	"
+               "  -- generate acknowledge output signal"
+               "  gen_ack_reg : process(Clk, Rst)"
+               "  begin"
+               "      if Rst = '1' then"
+               "	 ack_reg <= '0';"
+               "	elsif rising_edge(Clk) then"
+               "          ack_reg <= wb_ipmux_reg_i.cyc and wb_ipmux_reg_i.stb and not ack_reg;         -- because timing is always honored"
+               "      end if;"
+               "  end process gen_ack_reg;"
+               "  wb_ipmux_reg_o.ack <= ack_reg;"
+               "  "
+               "  -- generate other wishbone signals"
+               "  wb_ipmux_reg_o.err <= '0';"
+               "  wb_ipmux_reg_o.rty <= '0';"
+               "  wb_ipmux_reg_o.stall <= '0';"
+               "  wb_ipmux_reg_o.int <= '0';"
+               "  "
+               "  -- generate wishbone write and read access signal"
+               "  wr_reg <= wb_ipmux_reg_i.cyc and wb_ipmux_reg_i.stb and wb_ipmux_reg_i.we;"
+               "  rd_reg <= wb_ipmux_reg_i.cyc and wb_ipmux_reg_i.stb and not wb_ipmux_reg_i.we;"
+               "  "
+               "  -- assign wishbone data output"
+               "  wb_read_reg : process(Clk, Rst)"
+               "	begin"
+               "    if Rst = '1' then"
+               "      wb_ipmux_reg_o.dat <= (others => '0');"
+               "    elsif rising_edge(Clk) then"
+               "      if (rd_reg = '1') then"
+               "        case to_integer(unsigned(wb_ipmux_reg_i.adr(7 downto 2))) is"
+               "          when 16#00# => wb_ipmux_reg_o.dat <= MAC_Srv(31 downto 0);"
+               "          when 16#01# => wb_ipmux_reg_o.dat <= x\"0000\" & MAC_Srv(47 downto 32);"
+               "          when 16#02# => wb_ipmux_reg_o.dat <= MAC_Mod(31 downto 0);"
+               "          when 16#03# => wb_ipmux_reg_o.dat <= x\"0000\" & MAC_Mod(47 downto 32);"
+               "          when 16#04# => wb_ipmux_reg_o.dat <= IP_Srv;"
+               "          when 16#05# => wb_ipmux_reg_o.dat <= IP_Mod;"
+               "          when 16#06# => wb_ipmux_reg_o.dat <= UDP_SrvPrt(0) & UDP_ModPrt(0);"
+               "          when 16#07# => wb_ipmux_reg_o.dat <= UDP_SrvPrt(1) & UDP_ModPrt(1);"
+               "          when 16#08# => wb_ipmux_reg_o.dat <= UDP_SrvPrt(2) & UDP_ModPrt(2);"
+               "          when 16#09# => wb_ipmux_reg_o.dat <= UDP_SrvPrt(3) & UDP_ModPrt(3);"
+               "          when 16#0A# => wb_ipmux_reg_o.dat <= \"0000\" & Tx_Full & \"000\" & Rx_Empty & \"000\" & reg_flush & \"000000\" & CPU_AccGnt & reg_tx_request;"
+               "    "
+               "          when 16#10# => wb_ipmux_reg_o.dat <= reg_div_ratio;"
+               "          when 16#11# => wb_ipmux_reg_o.dat <= x\"0000\" & \"00\" & reg_numwords;"
+               "          when 16#12# => wb_ipmux_reg_o.dat <= x\"00000\" & \"00\" & reg_numpackets;"
+               "          when 16#13# => wb_ipmux_reg_o.dat <= x\"0000000\" & '0' & reg_udptstcntr;"
+               "          when 16#14# => wb_ipmux_reg_o.dat <= x\"0000\" & PacketsDone & TxStreamDebug;"
+               "          when others => wb_ipmux_reg_o.dat <= (others => '0');"
+               "                         report (\"### IPMUX_Registers: Illegal read address\");"
+               "        end case;"
+               "      end if;"
+               "    end if;"
+               "  end process wb_read_reg;"
+               ""
+               "   -- assign the registers with wishbone data input"
+               "  wb_write_reg: process(Clk, Rst)"
+               "  begin"
+               "    if (Rst = '1') then"
+               "      MAC_Mod <= (others => '0');"
+               "      MAC_Srv <= (others => '0');"
+               "      IP_Mod <= (others => '0');"
+               "      IP_Srv <= (others => '0');"
+               "      for i in 0 to (NUM_UDP_PRTS-1) loop"
+               "        UDP_SrvPrt(i) <= (others => '0');"
+               "        UDP_ModPrt(i) <= (others => '0');"
+               "      end loop;"
+               ""
+               "      reg_tx_request <= '0';"
+               "      reg_flush <= (others => '0');"
+               "      reg_div_ratio  <= std_logic_vector(to_unsigned(2422,32));  -- default = 1 / (2422 * 16 ns) = 25,8 KHz"
+               "      reg_numwords   <= std_logic_vector(to_unsigned(4,14));     -- default = 4 words payload  per UDP packet (gives minimum size Ethernet packets of 60 bytes)"
+               "      reg_numpackets <= std_logic_vector(to_unsigned(16,10));    -- default = bunches of 16 packets"
+               "      reg_udptstcntr <= (others => '0');                         -- default = no continuous, no trigger"
+               ""
+               "    elsif rising_edge(Clk) then"
+               "      if (wr_reg = '1') then"
+               "        case to_integer(unsigned(wb_ipmux_reg_i.adr(7 downto 2))) is"
+               "          when 16#00# => MAC_Srv(31 downto 0)  <= wb_ipmux_reg_i.dat;"
+               "          when 16#01# => MAC_Srv(47 downto 32) <= wb_ipmux_reg_i.dat(15 downto 0);"
+               "          when 16#02# => MAC_Mod(31 downto 0)  <= wb_ipmux_reg_i.dat;"
+               "          when 16#03# => MAC_Mod(47 downto 32) <= wb_ipmux_reg_i.dat(15 downto 0);"
+               "          when 16#04# => IP_Srv                <= wb_ipmux_reg_i.dat;"
+               "          when 16#05# => IP_Mod                <= wb_ipmux_reg_i.dat;"
+               "          when 16#06# => UDP_SrvPrt(0)         <= wb_ipmux_reg_i.dat(31 downto 16);"
+               "                         UDP_ModPrt(0)         <= wb_ipmux_reg_i.dat(15 downto 0);"
+               "          when 16#07# => UDP_SrvPrt(1)         <= wb_ipmux_reg_i.dat(31 downto 16);"
+               "                         UDP_ModPrt(1)         <= wb_ipmux_reg_i.dat(15 downto 0);"
+               "          when 16#08# => UDP_SrvPrt(2)         <= wb_ipmux_reg_i.dat(31 downto 16);"
+               "                         UDP_ModPrt(2)         <= wb_ipmux_reg_i.dat(15 downto 0);"
+               "          when 16#09# => UDP_SrvPrt(3)         <= wb_ipmux_reg_i.dat(31 downto 16);"
+               "                         UDP_ModPrt(3)         <= wb_ipmux_reg_i.dat(15 downto 0);"
+               "          when 16#0A# => reg_tx_request        <= wb_ipmux_reg_i.dat(0);             -- Tx Request"
+               "                         reg_flush             <= wb_ipmux_reg_i.dat(12 downto 8);   -- Flush"
+               "          when 16#10# => reg_div_ratio         <= wb_ipmux_reg_i.dat;"
+               "          when 16#11# => reg_numwords          <= wb_ipmux_reg_i.dat(13 downto 0);"
+               "          when 16#12# => reg_numpackets        <= wb_ipmux_reg_i.dat( 9 downto 0);"
+               "          when 16#13# => reg_udptstcntr        <= wb_ipmux_reg_i.dat( 2 downto 0);"
+               "        --when 16#14# =>                                                             -- Read Only"
+               "          when others => report (\"### IPMUX_Registers: Illegal write address\");"
+               "        end case;"
+               "      end if;"
+               "    end if;"
+               "  end process wb_write_reg;"
+               ""
+               "  -- assign the registers to the output pins"
+               "  eth_regs_o.MAC_Mod    <= MAC_Mod;"
+               "  eth_regs_o.MAC_Srv    <= MAC_Srv;"
+               "  eth_regs_o.IP_Mod     <= IP_Mod;"
+               "  eth_regs_o.IP_Srv     <= IP_Srv;"
+               "  eth_regs_o.UDP_SrvPrt <= UDP_SrvPrt;"
+               "  eth_regs_o.UDP_ModPrt <= UDP_ModPrt;"
+               "  "
+               "  div_ratio             <= reg_div_ratio;"
+               "  numwords              <= reg_numwords;"
+               "  numpackets            <= reg_numpackets;"
+               "  udptstctrl            <= reg_udptstcntr;"
+               "  "
+               "  CPU_Tx.Request        <= reg_tx_request;"
+               "  Flush                 <= reg_flush;"
+               ""
+               "-- =============================================================================="
+               "-- Implement IPMUX Tx/Rx CPU interface via wb_ipmux_rx_tx_i and wb_ipmux_rx_tx_o"
+               "-- =============================================================================="
+               ""
+               "  -- generate acknowledge output signal"
+               "  gen_ack_txrx : process(Clk, Rst)"
+               "  begin"
+               "    if Rst = '1' then"
+               "	    ack_txrx <= '0';"
+               "	  elsif rising_edge(Clk) then"
+               "      ack_txrx <= wb_ipmux_rx_tx_i.cyc and wb_ipmux_rx_tx_i.stb and not ack_txrx;         -- because timing is always honoured"
+               "    end if;"
+               "  end process gen_ack_txrx;"
+               "  wb_ipmux_rx_tx_o.ack <= ack_txrx;"
+               ""
+               "  -- generate other wishbone signals"
+               "  wb_ipmux_rx_tx_o.err <= '0';"
+               "  wb_ipmux_rx_tx_o.rty <= '0';"
+               "  wb_ipmux_rx_tx_o.stall <= '0';"
+               "  wb_ipmux_rx_tx_o.int <= '0';"
+               ""
+               "  -- generate wishbone write and read access signal"
+               "  wr_tx <= wb_ipmux_rx_tx_i.cyc and wb_ipmux_rx_tx_i.stb and wb_ipmux_rx_tx_i.we;"
+               "  rd_rx <= wb_ipmux_rx_tx_i.cyc and wb_ipmux_rx_tx_i.stb and not wb_ipmux_rx_tx_i.we;"
+               ""
+               "  cpu_rdreq <= rd_rx;"
+               "  wb_ipmux_rx_tx_o.dat <= x\"000\" & \"000\" & cpu_rx.EOD & cpu_rx.D;     -- assign wishbone data output"
+               ""
+               "	-- Check for address range"
+               "  addr_range_check: process(wb_ipmux_rx_tx_i.adr, wr_tx, rd_rx, cpu_rx)"
+               "	  Constant AddrRange: integer := TX_PKT_BUF_ADRSIZE-1;"
+               "	  Variable Addr: std_logic_vector (TX_PKT_BUF_ADRSIZE-1 downto 0);"
+               "  begin"
+               "    Addr(Addr'left downto AddrRange) := (others => '0');"
+               "    -- In case TX_PKT_BUF_ADRSIZE = 14 then Range 0x0000-0x7FFC (14 downto 2) = 0x0000-0x1FFF (12 downto 0)"
+               "	  Addr(AddrRange - 1 downto 0) := wb_ipmux_rx_tx_i.adr(AddrRange + 1 downto 2);"
+               "	  case to_integer(unsigned(Addr)) is"
+               "      when 16#0000# to MAX_RESERV_PKT_BUF => CPU_TX.Addr <= Addr;"
+               "                                             CPU_Tx.WrEn <= wr_tx;"
+               "		  when others                         => CPU_TX.Addr <= (others => '0');"
+               "                                             CPU_Tx.WrEn <= '0';"
+               "    	                                       report (\"### IPMUX_CPU_RX_TX: Illegal address\");"
+               "      end case;"
+               "  end process addr_range_check;"
+               ""
+               "  CPU_Tx.D    <= wb_ipmux_rx_tx_i.dat(15 downto 0);"
+               "  CPU_Tx.EOP  <= wb_ipmux_rx_tx_i.dat(16);"
+               "	"
+               "end architecture rtl ; -- of ipmux_regs_and_rxtxcpu"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c530928772582c0e1bc0374e7f4")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

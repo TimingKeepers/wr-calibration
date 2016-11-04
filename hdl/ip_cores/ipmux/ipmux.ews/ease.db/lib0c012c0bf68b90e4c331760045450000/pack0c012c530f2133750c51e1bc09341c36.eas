@@ -1,0 +1,34 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c530f2133750c51e1bc09341c36")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c53ee2133750c51e1bcc8341c36")
+    (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv3/CLBv3/hdl/wr-cores/modules/fabric/wr_fabric_pkg.vhd")
+    (PROPERTY "IMPORTED_LAST" "1468336809")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Jul 12 17:20:34 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1468335974")
+  )
+  (HDL_IDENT
+    (NAME "wr_fabric_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1462964976 "Wed May 11 13:09:36 2016")
+    (MODIFIED 1468336809 "Tue Jul 12 17:20:09 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c532d2133750c51e1bc97341c36")
+      (LIBRARY "design")
+      (NAME "wishbone_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

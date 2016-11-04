@@ -1,0 +1,119 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53447bf5258a40e1bcd8f07ff6")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "low")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 256)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1373026749 "Fri Jul 05 14:19:09 2013")
+      (MODIFIED 1382004548 "Thu Oct 17 12:09:08 2013")
+    )
+    (GENERIC
+      (OBID "egen0c012c53447bf5258a40e1bce8f07ff6")
+      (HDL_IDENT
+        (NAME "n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "8")
+        )
+      )
+      (GEOMETRY 24 152 104 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 168 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "n(8)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53447bf5258a40e1bcf8f07ff6")
+      (HDL_IDENT
+        (NAME "o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "n-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 280 88 360 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 256 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "o(n-1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53447bf5258a40e1bc09f07ff6" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53447bf5258a40e1bc09f07ff6")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53447bf5258a40e1bc29f07ff6")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'low'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     n : integer := 8);"
+               "--   port("
+               "--     o : out    std_logic_vector(n-1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of low is"
+               ""
+               "begin"
+               "   o <= (others => '0');"
+               "end architecture structure ; -- of low"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53447bf5258a40e1bc39f07ff6")
+        (NAME "structure.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,18 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c536bc5bc458911e1bc6a0252b5")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Fri Jan 30 11:28:06 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+  )
+  (FILE "../../../wr-cores/platform/xilinx/ext_pll_10_to_125m.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1422613686 "Fri Jan 30 11:28:06 2015")
+    (MODIFIED 1422613686 "Fri Jan 30 11:28:06 2015")
+  )
+)
+(END_OF_FILE)

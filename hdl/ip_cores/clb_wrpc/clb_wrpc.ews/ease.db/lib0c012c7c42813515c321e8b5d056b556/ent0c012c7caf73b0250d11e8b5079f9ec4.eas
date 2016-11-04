@@ -1,0 +1,41 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7caf73b0250d11e8b5079f9ec4")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Wed Aug 14 10:13:21 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "TBLOCK")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376466938 "Wed Aug 14 09:55:38 2013")
+      (MODIFIED 1376467987 "Wed Aug 14 10:13:07 2013")
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c12c3b0250d11e8b51070aec4" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c12c3b0250d11e8b51070aec4")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

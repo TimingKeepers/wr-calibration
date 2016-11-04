@@ -1,0 +1,34 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c7cd620a025cc61e8b58457eb73")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c7caf43b0250d11e8b5b7979ec4")
+    (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/designs/clb_abs_calibration_V3/fw/general_packages/EMAC16bit_package.vhd")
+    (PROPERTY "IMPORTED_LAST" "1455099375")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Feb 10 11:18:42 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455095097")
+  )
+  (HDL_IDENT
+    (NAME "EMAC16bit_Package")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1376387693 "Tue Aug 13 11:54:53 2013")
+    (MODIFIED 1455099375 "Wed Feb 10 11:16:15 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7c74da9b150201e8b552f62174")
+      (LIBRARY "design")
+      (NAME "V_ARRAY_Package")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

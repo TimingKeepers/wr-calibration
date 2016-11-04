@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7ce5fe2515c321e8b51fa5b556")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1455099450")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Feb 10 11:18:42 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455097401")
+  )
+  (FILE "../../wr-cores/modules/wr_softpll_ng/xwr_softpll_ng.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364389580 "Wed Mar 27 14:06:20 2013")
+    (MODIFIED 1455099450 "Wed Feb 10 11:17:30 2016")
+  )
+)
+(END_OF_FILE)

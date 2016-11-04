@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c530d2133750c51e1bc57341c36")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478260407")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 12:55:37 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247734")
+  )
+  (FILE "../../../wr-cores/ip_cores/general-cores/modules/wishbone/wishbone_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1462964944 "Wed May 11 13:09:04 2016")
+    (MODIFIED 1478260407 "Fri Nov 04 12:53:27 2016")
+  )
+)
+(END_OF_FILE)

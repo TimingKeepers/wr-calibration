@@ -1,0 +1,163 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5396719f1502d0e1bc4af24240")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "SYSCON")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 512 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1285232400 "Thu Sep 23 11:00:00 2010")
+      (MODIFIED 1410527737 "Fri Sep 12 15:15:37 2014")
+    )
+    (PORT
+      (OBID "eprt0c012c5396719f1502d0e1bc5af24240")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RST_I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 600 552 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RST_I")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5396719f1502d0e1bc6af24240")
+      (HDL_IDENT
+        (NAME "ClkI_p")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 152 552 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ClkI_p")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5396719f1502d0e1bc7af24240")
+      (HDL_IDENT
+        (NAME "ClkI_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 216 552 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ClkI_n")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5396719f1502d0e1bc8af24240" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5396719f1502d0e1bc8af24240")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5396719f1502d0e1bcaaf24240")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'SYSCON'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     ClkI_n : out    std_logic;"
+               "--     ClkI_p : out    std_logic;"
+               "--     RST_I  : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of SYSCON is"
+               ""
+               "begin"
+               "   Process"
+               "      -- 200 MHz = 5 ns, 125 MHz = 8 ns, 100 MHz = 10 ns, 27 MHz = 37 ns"
+               "      Constant ClockPeriod: Time := 8 ns;"
+               "      Variable Clock: Std_Logic;"
+               "      -- RST_I is de-asserted after 5 CLK_I cycles"
+               "      Variable RstCount: Integer range 0 to 127 := 64;"
+               "   Begin"
+               "      If now = 0 ns Then"
+               "	     Clock := '0';"
+               "      Else"
+               "	     Clock := Not Clock;"
+               "		 If clock = '0' and RstCount > 0 Then"
+               "			RstCount := RstCount - 1;"
+               "		 End If;"
+               "      End If;"
+               "      "
+               "	  ClkI_p <= Clock;"
+               "	  ClkI_n <= Not Clock;"
+               "	  "
+               "	  If RstCount > 0 Then"
+               "		RST_I <= '1';"
+               "	  Else"
+               "		RST_I <= '0';"
+               "      End If;"
+               "      "
+               "	  Wait for ClockPeriod / 2;"
+               "  End Process;"
+               ""
+               "end architecture rtl ; -- of SYSCON"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c5396719f1502d0e1bcbaf24240")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

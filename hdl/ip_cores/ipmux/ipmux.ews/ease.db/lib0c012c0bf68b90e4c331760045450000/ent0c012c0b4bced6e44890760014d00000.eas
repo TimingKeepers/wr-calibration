@@ -1,0 +1,435 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b4bced6e44890760014d00000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "tx_pkt2mac")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 2816)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1315826868 "Mon Sep 12 13:27:48 2011")
+      (MODIFIED 1462965618 "Wed May 11 13:20:18 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c530f2133750c51e1bc09341c36")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c0b70ded6e44890760045d00000")
+      (HDL_IDENT
+        (NAME "abits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "15")
+        )
+      )
+      (GEOMETRY 152 1304 232 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 296 1344)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "abits(15)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bbbced6e44890760064d00000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 2584 808 2664)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 2624)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bebced6e44890760084d00000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 2648 808 2728)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 2688)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b0eced6e448907600e4d00000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PktRdPtr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "PktRdPtr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bbeced6e44890760005d00000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2392 40 2472)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2432)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Empty")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b8fced6e44890760025d00000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdAddr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdAddr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0beceed6e44890760007d00000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EOP")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EOP")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53937c35250321e1bcf40499c0")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Din")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Din(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53157c35250321e1bc750499c0")
+      (HDL_IDENT
+        (NAME "src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 408 808 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53157c35250321e1bc850499c0")
+      (HDL_IDENT
+        (NAME "src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 472 808 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b4bced6e44890760024d00000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b4bced6e44890760024d00000")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a56c35250321e1bce30499c0")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'tx_pkt2mac'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     abits : integer := 15);"
+               "--   port ("
+               "--     Clk      : in     std_logic;"
+               "--     Din      : in     std_logic_vector(15 downto 0);"
+               "--     EOP      : in     std_logic;"
+               "--     Empty    : in     std_logic;"
+               "--     PktRdPtr : out    std_logic_vector(abits-1 downto 0);"
+               "--     RdAddr   : out    std_logic_vector(abits-1 downto 0);"
+               "--     Rst      : in     std_logic;"
+               "--     src_i    : in     t_wrf_source_in;"
+               "--     src_o    : out    t_wrf_source_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of tx_pkt2mac is"
+               "  -- State Machine Options:"
+               "  --  Clock : Clk (Rising edge)."
+               "  --  State assignment : Enumerate."
+               "  --  State decoding : Case construct."
+               "  --  Actions on transitions : Clocked."
+               "  --  Actions on states : Clocked."
+               ""
+               "  type state_type is (Idle, wrf_status, Frame, Stall, EndCycle) ;"
+               "  signal state : state_type  ;  -- Current State"
+               "  Signal Offset: Integer Range 0 to MAX_RESERV_PKT_BUF;"
+               "  Signal PktPtr: Unsigned(abits-1 downto 0);"
+               ""
+               "begin"
+               "  RdAddr <= Std_Logic_Vector(PktPtr + To_Unsigned(Offset,TX_PKT_BUF_ADRSIZE));"
+               "  PktRdPtr <= Std_Logic_Vector(PktPtr);"
+               "  src_o.adr <= c_WRF_STATUS when state = wrf_status else c_WRF_DATA;"
+               "  src_o.dat <= x\"0204\" when state = wrf_status else Din; -- Status word derived from figure 7 (wrpc_hdl.pdf)"
+               "  src_o.we  <= '1'; -- source is writing by definition"
+               "  src_o.sel <= (others => '1'); -- we live in a 16 bit domain"
+               "  "
+               "  state_decoding: process (Clk, Rst) is"
+               "  begin"
+               "    if (Rst = '1') then"
+               "      state <= Idle ;"
+               "      -- Initialize:"
+               "      PktPtr <= (Others => '0');"
+               "      -- Pkt_Str <= (Others => '0');"
+               "      Offset <= 0;"
+               "	  src_o.cyc <= '0';"
+               "	  src_o.stb <= '0';"
+               "    elsif (rising_edge(Clk)) then"
+               "      case state is"
+               "        when Idle =>"
+               "          src_o.cyc <= '0';"
+               "          src_o.stb <= '0';"
+               "          Offset <= 0;"
+               "          if (Empty = '0') then"
+               "            state <= wrf_status ;"
+               "            src_o.cyc <= '1';"
+               "            src_o.stb <= '1';"
+               "          else"
+               "            state <= Idle ;"
+               "          end if ;"
+               "		  "
+               "        when wrf_status =>"
+               "          if (src_i.stall = '0') then"
+               "            src_o.stb <= '1';"
+               "            state <= Frame ;"
+               "            Offset <= Offset + 1; -- read in advance (it takes data one cycle to e available)"
+               "          else"
+               "            state <= wrf_status ;"
+               "          end if ;"
+               ""
+               "        when Frame =>"
+               "          state <= Frame;"
+               "		  if (src_i.stall = '1') then  -- stall then take back the pipeline data pointer"
+               "            Offset <= Offset - 1;"
+               "            state <= Stall;"
+               "            src_o.stb <= '0';"
+               "		  elsif (src_i.stall = '0') then"
+               "            if (EOP = '1') then"
+               "              state <= EndCycle ;"
+               "              src_o.stb <= '0';"
+               "              PktPtr <= PktPtr +To_Unsigned(Offset,TX_PKT_BUF_ADRSIZE);"
+               "              Offset <= 0;"
+               "            else"
+               "              src_o.stb <= '1';"
+               "              Offset <= Offset + 1;"
+               "			end if;"
+               "          end if ;"
+               ""
+               "        when Stall =>"
+               "          src_o.stb <= '0';"
+               "          if (src_i.stall = '0') then"
+               "            src_o.stb <= '1';"
+               "            state <= Frame ;"
+               "            Offset <= Offset + 1; -- read in advance (it takes data one cycle to e available)"
+               "          end if ;"
+               "		  "
+               "        when EndCycle =>"
+               "          src_o.stb <= '0';"
+               "          if (src_i.stall = '0') then"
+               "           state <= Idle;"
+               "           src_o.cyc <= '0';  -- cyc should only be '0' after ack_i was seen (which equals to stall = '0')"
+               "		  else"
+               "           state <= EndCycle ;"
+               " 		  end if;"
+               "      end case ;"
+               "    end if ; --  Reset & Clock"
+               "  end process state_decoding ;"
+               ""
+               "end architecture rtl ; -- of tx_pkt2mac"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53aa6c35250321e1bc640499c0")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

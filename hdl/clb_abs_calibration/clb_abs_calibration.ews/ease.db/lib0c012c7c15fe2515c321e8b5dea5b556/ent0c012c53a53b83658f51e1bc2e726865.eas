@@ -1,0 +1,178 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53a53b83658f51e1bc2e726865")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c53853b83658f51e1bcdd726865")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/platform/xilinx/ext_pll_10_to_125m.vhd")
+      (PROPERTY "IMPORTED_LAST" "1446556506")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Nov 03 14:18:29 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445874898")
+    )
+    (HDL_IDENT
+      (NAME "ext_pll_10_to_125m")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1216 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1446556506 "Tue Nov 03 14:15:06 2015")
+      (MODIFIED 1446556561 "Tue Nov 03 14:16:01 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5b017a6e4")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a53b83658f51e1bc3e726865")
+        (LIBRARY "ieee")
+        (NAME "std_logic_arith")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c42813515c321e8b51156b556")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a53b83658f51e1bc4e726865")
+      (HDL_IDENT
+        (NAME "clk_ext_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_ext_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a53b83658f51e1bc5e726865")
+      (HDL_IDENT
+        (NAME "clk_ext_mul_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 88 1256 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "clk_ext_mul_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a53b83658f51e1bc6e726865")
+      (HDL_IDENT
+        (NAME "rst_a_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_a_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a53b83658f51e1bc7e726865")
+      (HDL_IDENT
+        (NAME "locked_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 216 1256 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "locked_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53a53b83658f51e1bc8e726865" "xilinx")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53a53b83658f51e1bc8e726865")
+    (HDL_IDENT
+      (NAME "xilinx")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a53b83658f51e1bc9e726865")
+        (NAME "xilinx.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'xilinx' of entity 'ext_pll_10_to_125m'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk_ext_i     : in     std_logic;"
+               "--     clk_ext_mul_o : out    std_logic;"
+               "--     rst_a_i       : in     std_logic;"
+               "--     locked_o      : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture xilinx of ext_pll_10_to_125m is"
+               ""
+               "begin"
+               ""
+               "end architecture xilinx ; -- of ext_pll_10_to_125m"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

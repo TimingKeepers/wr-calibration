@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c7c9c94a025cda0e8b5e6657ce4")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478255919")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 11:42:20 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455095097")
+  )
+  (FILE "../../../general_modules/wb_dummys/wb_DummySlave.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1376405824 "Tue Aug 13 16:57:04 2013")
+    (MODIFIED 1478255919 "Fri Nov 04 11:38:39 2016")
+  )
+)
+(END_OF_FILE)

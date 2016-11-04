@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7c35903515c321e8b50cd5b556")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1445933505")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445875014")
+  )
+  (FILE "../../../wr-cores/ip_cores/general-cores/modules/wishbone/wb_uart/xwb_simple_uart.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364396371 "Wed Mar 27 15:59:31 2013")
+    (MODIFIED 1445933505 "Tue Oct 27 09:11:45 2015")
+  )
+)
+(END_OF_FILE)

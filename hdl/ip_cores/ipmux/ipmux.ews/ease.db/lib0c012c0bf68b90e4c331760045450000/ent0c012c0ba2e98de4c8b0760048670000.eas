@@ -1,0 +1,594 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0ba2e98de4c8b0760048670000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "txfifos")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2048 832)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1322819114 "Fri Dec 02 10:45:14 2011")
+      (MODIFIED 1463056996 "Thu May 12 14:43:16 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c532b2133750c51e1bc56341c36")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b07600a8670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b07600b8670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Full(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b07600c8670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2008 664 2088 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RdClk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b07600d8670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b07600e8670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrClk(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b0760029670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 152 2088 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RdReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba2e98de4c8b0760039670000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Valid")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 216 2088 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Valid(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0beff02bf40560760038060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "TXi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TXi(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b02922bf40e007600bc550000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "TXo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 88 2088 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "TXo(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b41055ff48150e1bc0a3107a3")
+      (HDL_IDENT
+        (NAME "Flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Flush(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53916081450b50e1bc6124b280")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Packet")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 344 2088 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Packet(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c532d7081450b50e1bc7324b280")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Packet_RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 408 2088 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Packet_RdReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b2f219558430e1bc65a321a4")
+      (HDL_IDENT
+        (NAME "PacketsDone")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 536 2088 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PacketsDone(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0ba2e98de4c8b0760049670000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0ba2e98de4c8b0760049670000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c0b60f57df4cec0e1bc8b63a932")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'txfifos'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Flush        : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Full         : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Packet       : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Packet_RdReq : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     PacketsDone  : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     RdClk        : in     std_logic;"
+               "--     RdReq        : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Rst          : in     std_logic;"
+               "--     TXi          : in     dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     TXo          : out    dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     Valid        : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrClk        : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrReq        : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of txfifos is"
+               "  component Reg1En"
+               "    Port"
+               "    ("
+               "     Clk : in std_logic;"
+               "     En  : in std_logic;"
+               "     D   : in std_logic;"
+               "     Q   : out std_logic;"
+               "     Rst : in std_logic"
+               "    );"
+               "  end component ;"
+               "  "
+               "  constant fifo_size: natural := 8192;"
+               "  constant full_threshold: natural := fifo_size - 16;"
+               ""
+               "  constant d_i_null: std_logic_vector(0 downto 0) := (others => '0');"
+               "  "
+               "  type std_logic_v9array is array ( natural range <> ) of std_logic_vector(8 downto 0);"
+               "  type std_logic_v18array is array ( natural range <> ) of std_logic_vector(17 downto 0);"
+               "  "
+               "  signal Din_Intern      : std_logic_v18array(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Dout_Intern     : std_logic_v18array(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Empty_Intern    : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Valid_Intern    : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal NotEmpty_Intern : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal RdReq_Intern    : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Rst_Intern      : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Rst_Intern_n    : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal WrReq_EOD       : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Empty_EOD       : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Full_data       : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "  signal Full_EOD        : std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               ""
+               "begin"
+               ""
+               "  GenTxFifos: For i In 0 to NUM_UDP_PRTS-1 Generate"
+               "      "
+               "    Din_Intern(i)(17) <= '0';"
+               "    Din_Intern(i)(16) <= TXi(i).EOD;"
+               "    Din_Intern(i)(15 downto 0) <= TXi(i).D;"
+               "    TXo(i).EOD <= Dout_Intern(i)(16);"
+               "    TXo(i).D <= Dout_Intern(i)(15 downto 0);"
+               "    "
+               "    NotEmpty_Intern(i) <= Not Empty_Intern(i);"
+               "    RdReq_Intern(i) <= Not Valid_Intern(i) Or RdReq(i);"
+               "    Valid(i) <= Valid_Intern(i);"
+               "    Full(i) <= Full_data(i) Or Full_EOD(i);"
+               "    Rst_Intern(i)   <=     Flush(i) Or Rst;"
+               "    Rst_Intern_n(i) <= not(Flush(i) Or Rst);"
+               ""
+               "    ValidReg: Reg1En"
+               "      Port Map"
+               "       ("
+               "         Clk       => RdClk,"
+               "         En        => RdReq_Intern(i),"
+               "         D         => NotEmpty_Intern(i),"
+               "         Q         => Valid_Intern(i),"
+               "         Rst       => Rst_Intern(i)"
+               "       );"
+               ""
+               "    -- There are two FIFOs implemented for each channel:"
+               "    -- 1) tx_data_fifo that receives the packet payload data (in 16 bit words, plus an End Of Data bit)"
+               "    -- 2) tx_eod_fifo  is written only when an End Of Data is written to to tx_data_fifo"
+               "    -- The latter FIFO holds no actual data, rather the flag structure of the FIFO is used to signal"
+               "    -- that a complete packet (including EOD) was written to the data FIFO such that it is ready to be"
+               "    -- readout in one go."
+               "    -- This avoids the situation where an input stream is serviced by IPMUX while the packet trailer (EOD)"
+               "    -- is still under way (which may take any time) thereby blocking transfers of any other IPMUX input streams."
+               "    "
+               "    tx_data_fifo: generic_async_fifo"
+               "      generic map("
+               "        g_data_width             => 18,"
+               "        g_size                   => fifo_size,"
+               "        g_with_rd_empty          => true,"
+               "        g_with_wr_almost_full    => true,"
+               "        g_almost_full_threshold  => full_threshold"
+               "      )"
+               "      port map"
+               "      ("
+               "        rst_n_i            => Rst_Intern_n(i),"
+               "        clk_wr_i           => WrClk(i),"
+               "        d_i                => Din_Intern(i),"
+               "        we_i               => WrReq(i),"
+               "        wr_empty_o         => open,"
+               "        wr_full_o          => open,"
+               "        wr_almost_empty_o  => open,"
+               "        wr_almost_full_o   => Full_data(i),"
+               "        wr_count_o         => open,"
+               "        clk_rd_i           => RdClk,"
+               "        q_o                => Dout_Intern(i),"
+               "        rd_i               => RdReq_Intern(i),"
+               "        rd_empty_o         => Empty_Intern(i),"
+               "        rd_full_o          => open,"
+               "        rd_almost_empty_o  => open,"
+               "        rd_almost_full_o   => open,"
+               "        rd_count_o         => open"
+               "      );"
+               ""
+               "    WrReq_EOD(i) <= WrReq(i) And TXi(i).EOD;"
+               "    Packet(i) <= Not Empty_EOD(i);"
+               "    "
+               "    -- PacketsDone signals weather a stream is done with the transfer of a complete packet from it's tx_data_fifo to the packet buffer."
+               "    -- so as soon as the tx_eod_fifo is not empty (Empty_EOD(i) = '0') then there is data to be shipped for the associated stream, until"
+               "    -- all data out of the tx_data_fifo was read, up to the EOD bit (Dout_Intern(i)(16) = '1')"
+               "    process (RdClk, Rst_Intern_n(i))"
+               "    begin"
+               "      if Rst_Intern_n(i) = '0' then"
+               "        PacketsDone(i) <= '1';"
+               "      elsif rising_edge(RdClk) then"
+               "        if Empty_EOD(i) = '0' then"
+               "          PacketsDone(i) <= '0';"
+               "        elsif Dout_Intern(i)(16) = '1' then"
+               "          PacketsDone(i) <= '1';"
+               "        end if;"
+               "      end if;"
+               "    end process;"
+               "    "
+               "      tx_eod_fifo: generic_async_fifo"
+               "      generic map("
+               "        g_data_width             => 1,"
+               "        g_size                   => fifo_size,"
+               "        g_with_rd_empty          => true,"
+               "        g_with_wr_almost_full    => true,"
+               "        g_almost_full_threshold  => full_threshold"
+               "      )"
+               "      port map"
+               "      ("
+               "        rst_n_i            => Rst_Intern_n(i),"
+               "        clk_wr_i           => WrClk(i),"
+               "        d_i                => d_i_null,       -- Only FIFO flag functionality is used (no data input)"
+               "        we_i               => WrReq_EOD(i),   -- Write when EOD is signalled"
+               "        wr_empty_o         => open,"
+               "        wr_full_o          => open,"
+               "        wr_almost_empty_o  => open,"
+               "        wr_almost_full_o   => Full_EOD(i),"
+               "        wr_count_o         => open,"
+               "        clk_rd_i           => RdClk,"
+               "        q_o                => open,"
+               "        rd_i               => Packet_RdReq(i),"
+               "        rd_empty_o         => Empty_EOD(i),"
+               "        rd_full_o          => open,"
+               "        rd_almost_empty_o  => open,"
+               "        rd_almost_full_o   => open,"
+               "        rd_count_o         => open"
+               "      );"
+               "  End Generate GenTxFifos;"
+               "end architecture rtl ; -- of txfifos"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bc0d358af2")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

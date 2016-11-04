@@ -1,0 +1,600 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c988d5a150970e8b5c0272832")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c488d5a150970e8b590272832")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/platform/xilinx/wr_gtp_phy/wr_gtx_phy_kintex7.vhd")
+      (PROPERTY "IMPORTED_LAST" "1445933596")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:29 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445874898")
+    )
+    (HDL_IDENT
+      (NAME "wr_gtx_phy_kintex7")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2752 2176)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1369823369 "Wed May 29 12:29:29 2013")
+      (MODIFIED 1445934628 "Tue Oct 27 09:30:28 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c14f1e9158011e8b522d32f80")
+        (LIBRARY "design")
+        (NAME "gencores_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c42813515c321e8b51156b556")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c8112e9158011e8b506d32f80")
+        (LIBRARY "design")
+        (NAME "disparity_gen_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c988d5a150970e8b5d0272832")
+      (HDL_IDENT
+        (NAME "g_simulation")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "0")
+        )
+      )
+      (GEOMETRY 88 1368 168 1448)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 1408)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_simulation(0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b5e0272832")
+      (HDL_IDENT
+        (NAME "clk_gtx_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_gtx_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b501272832")
+      (HDL_IDENT
+        (NAME "tx_data_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 88 2792 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_data_i(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b511272832")
+      (HDL_IDENT
+        (NAME "tx_k_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 216 2792 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_k_i(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b521272832")
+      (HDL_IDENT
+        (NAME "tx_disparity_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2712 472 2792 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_disparity_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b531272832")
+      (HDL_IDENT
+        (NAME "tx_enc_err_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2712 600 2792 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_enc_err_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b541272832")
+      (HDL_IDENT
+        (NAME "rx_rbclk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2712 1112 2792 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1152)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_rbclk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b551272832")
+      (HDL_IDENT
+        (NAME "rx_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 728 2792 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_data_o(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b561272832")
+      (HDL_IDENT
+        (NAME "rx_k_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 856 2792 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 896)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_k_o(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b571272832")
+      (HDL_IDENT
+        (NAME "rx_enc_err_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2712 1240 2792 1320)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1280)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_enc_err_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b581272832")
+      (HDL_IDENT
+        (NAME "rx_bitslide_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 1368 2792 1448)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1408)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_bitslide_o(4:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b591272832")
+      (HDL_IDENT
+        (NAME "rst_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2712 1496 2792 1576)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1536)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rst_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b5a1272832")
+      (HDL_IDENT
+        (NAME "loopen_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 1624 2792 1704)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1664)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "loopen_i(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b5b1272832")
+      (HDL_IDENT
+        (NAME "pad_txn_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pad_txn_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b5c1272832")
+      (HDL_IDENT
+        (NAME "pad_txp_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pad_txp_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b5d1272832")
+      (HDL_IDENT
+        (NAME "pad_rxn_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pad_rxn_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c988d5a150970e8b5e1272832")
+      (HDL_IDENT
+        (NAME "pad_rxp_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pad_rxp_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c2b3d1b150bf0e8b50d930a21")
+      (HDL_IDENT
+        (NAME "tx_out_clk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tx_out_clk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a5b7b458ff0e1bcb8a6fe84")
+      (HDL_IDENT
+        (NAME "tx_locked_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tx_locked_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534a5b7b458ff0e1bcc8a6fe84")
+      (HDL_IDENT
+        (NAME "tx_prbs_sel_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY 2712 1752 2792 1832)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1792)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_prbs_sel_i(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5352413c558e80e1bc8eb7f120")
+      (HDL_IDENT
+        (NAME "rdy_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2712 1880 2792 1960)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2688 1920)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rdy_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53c123f2654940e1bc8be405b3" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53c123f2654940e1bc8be405b3")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535263f2654940e1bcfb3505b3")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'wr_gtx_phy_kintex7'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_simulation : integer := 0);"
+               "--   port ("
+               "--     clk_gtx_i      : in     std_logic;"
+               "--     tx_data_i      : in     std_logic_vector(15 downto 0);"
+               "--     tx_k_i         : in     std_logic_vector(1 downto 0);"
+               "--     tx_disparity_o : out    std_logic;"
+               "--     tx_enc_err_o   : out    std_logic;"
+               "--     rx_rbclk_o     : out    std_logic;"
+               "--     rx_data_o      : out    std_logic_vector(15 downto 0);"
+               "--     rx_k_o         : out    std_logic_vector(1 downto 0);"
+               "--     rx_enc_err_o   : out    std_logic;"
+               "--     rx_bitslide_o  : out    std_logic_vector(4 downto 0);"
+               "--     rst_i          : in     std_logic;"
+               "--     loopen_i       : in     std_logic_vector(2 downto 0);"
+               "--     pad_txn_o      : out    std_logic;"
+               "--     pad_txp_o      : out    std_logic;"
+               "--     pad_rxn_i      : in     std_logic := '0';"
+               "--     pad_rxp_i      : in     std_logic := '0';"
+               "--     tx_out_clk_o   : out    std_logic;"
+               "--     tx_locked_o    : out    std_logic;"
+               "--     tx_prbs_sel_i  : in     std_logic_vector(2 downto 0);"
+               "--     rdy_o          : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of wr_gtx_phy_kintex7 is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of wr_gtx_phy_kintex7"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

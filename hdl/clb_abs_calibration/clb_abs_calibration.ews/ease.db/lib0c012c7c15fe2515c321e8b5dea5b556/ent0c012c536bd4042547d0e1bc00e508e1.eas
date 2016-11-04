@@ -1,0 +1,176 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c536bd4042547d0e1bc00e508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1383044468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:32 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1383043939")
+    )
+    (HDL_IDENT
+      (NAME "Calc_UDP_PseudoHeader")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1664 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945910 "Mon Sep 23 16:18:30 2013")
+      (MODIFIED 1383049880 "Tue Oct 29 13:31:20 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c74da9b150201e8b552f62174")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc10e508e1")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc20e508e1")
+      (HDL_IDENT
+        (NAME "Eth_Regs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_out_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Eth_Regs")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc30e508e1")
+      (HDL_IDENT
+        (NAME "PseudoHeader")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 1624 88 1704 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1600 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PseudoHeader(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc40e508e1")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534759f6250a01e1bcde92d981" "a0")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534759f6250a01e1bcde92d981")
+    (HDL_IDENT
+      (NAME "a0")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a9aaf6250a01e1bc13a2d981")
+        (NAME "a0.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'a0' of entity 'Calc_UDP_PseudoHeader'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Clk          : in     std_logic;"
+               "--     Eth_Regs     : in     eth_regs_out_type;"
+               "--     PseudoHeader : out    std_logic_vector(31 downto 0);"
+               "--     Rst          : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture a0 of Calc_UDP_PseudoHeader is"
+               ""
+               "begin"
+               ""
+               "end architecture a0 ; -- of Calc_UDP_PseudoHeader"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

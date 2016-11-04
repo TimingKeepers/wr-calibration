@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c532320a3650241e1bca145cf72")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1455099469")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Feb 10 11:18:42 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1455095269")
+  )
+  (FILE "../../wr-cores/top/kintex7_ref_design/wr_core_demo/ext_pll_10_to_62_5m.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1446642226 "Wed Nov 04 14:03:46 2015")
+    (MODIFIED 1455099469 "Wed Feb 10 11:17:49 2016")
+  )
+)
+(END_OF_FILE)

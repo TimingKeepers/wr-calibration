@@ -1,0 +1,24 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c53b92af52508e0e1bc52a7fff7")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../wr-cores/ip_cores/general-cores/modules/genrams/genram_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Sep 15 09:41:50 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "genram_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1381999259 "Thu Oct 17 10:40:59 2013")
+    (MODIFIED 1442302543 "Tue Sep 15 09:35:43 2015")
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,205 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0bc07d54050d10e1bc3f38d355")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "Calc_UDP_PseudoHeader")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 576 448)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1346754316 "Tue Sep 04 12:25:16 2012")
+      (MODIFIED 1462965147 "Wed May 11 13:12:27 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b137d54050d10e1bcbf38d355")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b137d54050d10e1bccf38d355")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b937d54050d10e1bc8048d355")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "eth_regs_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "eth_regs_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bf47d54050d10e1bce048d355")
+      (HDL_IDENT
+        (NAME "PseudoHeader")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 536 216 616 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 512 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PseudoHeader(31:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0be07d54050d10e1bc5f38d355" "a0")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0be07d54050d10e1bc5f38d355")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "a0")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c0b187d54050d10e1bc4e48d355")
+        (NAME "a0.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'a0' of entity 'Calc_UDP_PseudoHeader'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Clk          : in     std_logic;"
+               "--     PseudoHeader : out    std_logic_vector(31 downto 0);"
+               "--     Rst          : in     std_logic;"
+               "--     eth_regs_i   : in     eth_regs_type);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture a0 of Calc_UDP_PseudoHeader is"
+               ""
+               "begin"
+               "   Process (Clk, Rst)"
+               "      Variable PseudoHdr : Unsigned(31 downto 0);"
+               "   Begin"
+               "      If Rst = '1' Then "
+               "         PseudoHdr := (Others => '0');"
+               "      ElsIf Rising_Edge(Clk) Then"
+               "         -- The UDP CheckSum is calculated using an UDP Pseudo-Header that contains:"
+               "         -- IP Source address"
+               "         -- IP Destination address"
+               "         -- x\"00\" & Protocol"
+               "         -- UDP_Length"
+               "         -- Note: UDP Length is to be added when this value is known"
+               "         PseudoHdr := "
+               "            (x\"0000\" & Unsigned(eth_regs_i.IP_Mod(31 downto 16))) +"
+               "            (x\"0000\" & Unsigned(eth_regs_i.IP_Mod(15 downto 0))) +"
+               "            (x\"0000\" & Unsigned(eth_regs_i.IP_Srv(31 downto 16))) +"
+               "            (x\"0000\" & Unsigned(eth_regs_i.IP_Srv(15 downto 0))) +"
+               "            (x\"0000\" & x\"0011\");"
+               "      End If;"
+               "      PseudoHeader <= Std_Logic_Vector(PseudoHdr);"
+               "   End Process;"
+               "end architecture a0 ; -- of Calc_UDP_PseudoHeader"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bcac358af2")
+        (NAME "a0.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

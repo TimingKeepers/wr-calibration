@@ -1,0 +1,519 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c536bd4042547d0e1bc4cd508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1383044468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1383043939")
+    )
+    (HDL_IDENT
+      (NAME "rx_buf2data")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1920 1664)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945910 "Mon Sep 23 16:18:30 2013")
+      (MODIFIED 1383049881 "Tue Oct 29 13:31:21 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c74da9b150201e8b552f62174")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c536bd4042547d0e1bc5cd508e1")
+      (HDL_IDENT
+        (NAME "abits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "15")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "abits(15)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc6cd508e1")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc7cd508e1")
+      (HDL_IDENT
+        (NAME "Din")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Din(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc8cd508e1")
+      (HDL_IDENT
+        (NAME "EODout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 344 1960 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "EODout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc9cd508e1")
+      (HDL_IDENT
+        (NAME "EOFin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EOFin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcacd508e1")
+      (HDL_IDENT
+        (NAME "Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Empty")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcbcd508e1")
+      (HDL_IDENT
+        (NAME "FragID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 472 1960 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FragID(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcccd508e1")
+      (HDL_IDENT
+        (NAME "FragOff")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "11" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 600 1960 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FragOff(11:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcdcd508e1")
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Full")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcecd508e1")
+      (HDL_IDENT
+        (NAME "MoreFrags")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 728 1960 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "MoreFrags")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcfcd508e1")
+      (HDL_IDENT
+        (NAME "PktRdPtr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 856 1960 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PktRdPtr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc0dd508e1")
+      (HDL_IDENT
+        (NAME "RdAddr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "abits-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 984 1960 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RdAddr(abits-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc1dd508e1")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc2dd508e1")
+      (HDL_IDENT
+        (NAME "SODout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 1112 1960 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "SODout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc3dd508e1")
+      (HDL_IDENT
+        (NAME "Stream")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 1240 1960 1320)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1280)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Stream(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc4dd508e1")
+      (HDL_IDENT
+        (NAME "UDP_CheckSumErr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 1368 1960 1448)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1408)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "UDP_CheckSumErr")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc5dd508e1")
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 1496 1960 1576)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrReq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc6dd508e1")
+      (HDL_IDENT
+        (NAME "eth_regs_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_out_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "eth_regs_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534759f6250a01e1bc3f92d981" "fsm")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534759f6250a01e1bc3f92d981")
+    (HDL_IDENT
+      (NAME "fsm")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a9aaf6250a01e1bc73a2d981")
+        (NAME "fsm.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'fsm' of entity 'rx_buf2data'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     abits : integer := 15);"
+               "--   port("
+               "--     Clk             : in     std_logic;"
+               "--     Din             : in     std_logic_vector(15 downto 0);"
+               "--     EODout          : out    std_logic;"
+               "--     EOFin           : in     std_logic;"
+               "--     Empty           : in     std_logic;"
+               "--     FragID          : out    std_logic_vector(15 downto 0);"
+               "--     FragOff         : out    std_logic_vector(11 downto 0);"
+               "--     Full            : in     std_logic;"
+               "--     MoreFrags       : out    std_logic;"
+               "--     PktRdPtr        : out    std_logic_vector(abits-1 downto 0);"
+               "--     RdAddr          : out    std_logic_vector(abits-1 downto 0);"
+               "--     Rst             : in     std_logic;"
+               "--     SODout          : out    std_logic;"
+               "--     Stream          : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     UDP_CheckSumErr : out    std_logic;"
+               "--     WrReq           : out    std_logic;"
+               "--     eth_regs_o      : in     eth_regs_out_type);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture fsm of rx_buf2data is"
+               ""
+               "begin"
+               ""
+               "end architecture fsm ; -- of rx_buf2data"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

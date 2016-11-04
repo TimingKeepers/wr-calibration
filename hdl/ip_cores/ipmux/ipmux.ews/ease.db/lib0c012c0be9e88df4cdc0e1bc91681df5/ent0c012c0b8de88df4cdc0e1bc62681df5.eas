@@ -1,0 +1,90 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b8de88df4cdc0e1bc62681df5")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "OBUF")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 192)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1339583895 "Wed Jun 13 12:38:15 2012")
+      (MODIFIED 1339592408 "Wed Jun 13 15:00:08 2012")
+    )
+    (PORT
+      (OBID "eprt0c012c0b8de88df4cdc0e1bc72681df5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "I")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b8de88df4cdc0e1bc82681df5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 280 88 360 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 256 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (ARCH_DECLARATION 5 "arch0c012c0b8de88df4cdc0e1bc92681df5" "OBUF_V")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b8de88df4cdc0e1bc92681df5")
+    (HDL_IDENT
+      (NAME "OBUF_V")
+      (USERNAME 1)
+    )
+    (TYPE 5)
+    (EXTERNAL_FILE
+      (OBID "extf0c012c0b8de88df4cdc0e1bca2681df5")
+      (HDL_IDENT
+      )
+      (FILE "$VHDLLIBS/src/xilinx_ise_series_12_4_M81d/vhdl/src/unisims/unisim_VCOMP.vhd")
+    )
+  )
+)
+(END_OF_FILE)

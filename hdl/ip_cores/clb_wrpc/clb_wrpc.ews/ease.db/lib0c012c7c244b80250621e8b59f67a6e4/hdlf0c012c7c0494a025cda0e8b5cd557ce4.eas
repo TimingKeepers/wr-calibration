@@ -1,0 +1,18 @@
+(DATABASE_VERSION 16)
+(HDL_FILE
+  (OBID "hdlf0c012c7c0494a025cda0e8b5cd557ce4")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 8")
+    (PROPERTY "STAMP_TIME" "Tue Aug 13 16:57:04 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+  )
+  (FILE "../modules/wb_dummys/wb_DummySlave.vhd")
+  (OBJSTAMP
+    (DESIGNER "mgebyehu")
+    (CREATED 1376405824 "Tue Aug 13 16:57:04 2013")
+    (MODIFIED 1376405824 "Tue Aug 13 16:57:04 2013")
+  )
+)
+(END_OF_FILE)

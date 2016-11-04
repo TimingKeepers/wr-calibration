@@ -1,0 +1,5 @@
++incdir+../../wr-cores/ip_cores/general-cores/modules/wishbone/wb_lm32/src
++incdir+../../wr-cores/ip_cores/general-cores/modules/wishbone/wb_spi
++incdir+../../wr-cores/sim
+
+

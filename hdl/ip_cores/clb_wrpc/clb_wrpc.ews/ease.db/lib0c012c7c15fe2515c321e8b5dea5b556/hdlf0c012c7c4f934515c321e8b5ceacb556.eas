@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7c4f934515c321e8b5ceacb556")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1445933526")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445874898")
+  )
+  (FILE "../../../wr-cores/modules/wr_endpoint/endpoint_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364474356 "Thu Mar 28 13:39:16 2013")
+    (MODIFIED 1445933526 "Tue Oct 27 09:12:06 2015")
+  )
+)
+(END_OF_FILE)

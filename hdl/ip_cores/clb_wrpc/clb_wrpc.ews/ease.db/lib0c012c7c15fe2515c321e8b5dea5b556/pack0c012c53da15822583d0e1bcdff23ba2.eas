@@ -1,0 +1,24 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c53da15822583d0e1bcdff23ba2")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../../wr-cores/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Mon Sep 14 16:39:14 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "wbgen2_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1378374061 "Thu Sep 05 11:41:01 2013")
+    (MODIFIED 1442241444 "Mon Sep 14 16:37:24 2015")
+  )
+)
+(END_OF_FILE)

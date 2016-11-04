@@ -1,0 +1,566 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b37d606f4844176000da60000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "ClkDist")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1920 1472)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1331719539 "Wed Mar 14 11:05:39 2012")
+      (MODIFIED 1462965162 "Wed May 11 13:12:42 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b6cd606f4844176009da60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk62_5")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk62_5")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b6cd606f484417600ada60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk125")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk125")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b989236f4c8d07600b5f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Emptyi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 88 1960 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Emptyi(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b989236f4c8d07600f5f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdReqo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 152 1960 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RdReqo(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b989236f4c8d0760006f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 408 1960 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RdClk(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bca9236f4c8d07600d6f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Emptyo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Emptyo(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bab9236f4c8d0760017f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdReqi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdReqi(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bb5a236f4c8d0760098f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReqo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 1048 1960 1128)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrReqo(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bb5a236f4c8d07600a8f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Fulli")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 984 1960 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Fulli(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bb5a236f4c8d07600b8f50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 1304 1960 1384)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1344)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrClk(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bbaa236f4c8d076002af50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReqi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrReqi(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bbaa236f4c8d076003af50000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Fullo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Fullo(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bd0802bf405607600e0060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "UDP_Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Tx(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bf6802bf40560760011060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "UDP_Rx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Rx(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b85f02bf40560760047060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 216 1960 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Rx(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0be7f02bf40560760067060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1880 1112 1960 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Tx(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b37d606f4844176001da60000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b37d606f4844176001da60000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5304e09f1502d0e1bc65424240")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'ClkDist'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Clk125  : in     std_logic;"
+               "--     Clk62_5 : in     std_logic;"
+               "--     Emptyi  : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Emptyo  : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Fulli   : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Fullo   : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     RdClk   : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     RdReqi  : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     RdReqo  : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Rx      : in     dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     Tx      : out    dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     UDP_Rx  : out    dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     UDP_Tx  : in     dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrClk   : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrReqi  : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrReqo  : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of ClkDist is"
+               ""
+               "begin"
+               "   -- The RdClk and WrClk signals are assigned here."
+               "   -- This creates one delta delay in simulation!"
+               "   -- In order to keep clock and data signals alligned all signals"
+               "   -- are simply fed forward (although also adding one delta delay)."
+               ""
+               "   -- RX side"
+               "   Emptyo <= Emptyi;"
+               "   RdReqo <= RdReqi;"
+               "   UDP_Rx <= Rx;"
+               "   "
+               "   RdClk(0) <= Clk62_5;"
+               "   RdClk(1) <= Clk62_5;"
+               "   RdClk(2) <= Clk62_5;"
+               "   RdClk(3) <= Clk62_5;"
+               "   RdClk(4) <= Clk62_5;    -- The Fifo connected to the CPU which is running on 62,5 MHz"
+               ""
+               "   -- Tx Side"
+               "   Fullo <= Fulli;"
+               "   WrReqo <= WrReqi;"
+               "   Tx <= UDP_Tx;"
+               ""
+               "   WrClk(0) <= Clk62_5;"
+               "   WrClk(1) <= Clk62_5;"
+               "   WrClk(2) <= Clk62_5;"
+               "   WrClk(3) <= Clk62_5;"
+               "   "
+               "end architecture rtl ; -- of ClkDist"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bcbc358af2")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

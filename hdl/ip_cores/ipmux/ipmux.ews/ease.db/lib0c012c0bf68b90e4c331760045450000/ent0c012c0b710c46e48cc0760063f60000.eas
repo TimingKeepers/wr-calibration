@@ -1,0 +1,326 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b710c46e48cc0760063f60000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "TxWrDataSrcSel")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 896 1984)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1315225623 "Mon Sep 05 14:27:03 2011")
+      (MODIFIED 1463053703 "Thu May 12 13:48:23 2016")
+    )
+    (PORT
+      (OBID "eprt0c012c0b540c46e48cc07600c3f60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "SmDin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1624 40 1704)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1664)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SmDin(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b260c46e48cc07600e3f60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "TX_LL_VALID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_VALID")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b960c46e48cc0760004f60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrEn")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 1560 936 1640)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 1600)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrEn")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b270c46e48cc0760024f60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Dout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 856 1304 936 1384)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 1344)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Dout(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0baa0c46e48cc0760064f60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "TX_LL_DATA")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_DATA(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b511c46e48cc07600e4f60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "SelSm")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1816 40 1896)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1856)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SelSm")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bc89f96e406f07600ff060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "TX_LL_EOP")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_EOP")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0baa00a6e406f07600c1160000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EOPout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 1432 936 1512)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 1472)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "EOPout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bc55848e4c5c07600cd050000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrEnIn")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1688 40 1768)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1728)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrEnIn")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b456848e4c5c076003e050000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EOPin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1496 40 1576)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "EOPin")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b710c46e48cc0760073f60000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b710c46e48cc0760073f60000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5304e09f1502d0e1bc30624240")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'TxWrDataSrcSel'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Dout        : out    std_logic_vector(15 downto 0);"
+               "--     EOPin       : in     std_logic;"
+               "--     EOPout      : out    std_logic;"
+               "--     SelSm       : in     std_logic;"
+               "--     SmDin       : in     std_logic_vector(15 downto 0);"
+               "--     TX_LL_DATA  : in     std_logic_vector(15 downto 0);"
+               "--     TX_LL_EOP   : in     std_logic;"
+               "--     TX_LL_VALID : in     std_logic;"
+               "--     WrEn        : out    std_logic;"
+               "--     WrEnIn      : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of TxWrDataSrcSel is"
+               ""
+               "begin"
+               "   WrEn <= WrEnIn When SelSm = '1' Else TX_LL_VALID;"
+               "   Dout <= SmDin When SelSm = '1' Else TX_LL_DATA;"
+               "   EOPout <= EOPin When SelSm = '1' Else TX_LL_EOP;"
+               "end architecture rtl ; -- of TxWrDataSrcSel"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,181 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c535bd4042547d0e1bc58d508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1383044468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1383043939")
+    )
+    (HDL_IDENT
+      (NAME "Reg1en")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 384 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945909 "Mon Sep 23 16:18:29 2013")
+      (MODIFIED 1383049881 "Tue Oct 29 13:31:21 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc68d508e1")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc78d508e1")
+      (HDL_IDENT
+        (NAME "D")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "D")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc88d508e1")
+      (HDL_IDENT
+        (NAME "En")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "En")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc98d508e1")
+      (HDL_IDENT
+        (NAME "Q")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 344 88 424 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 320 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Q")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bca8d508e1")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534759f6250a01e1bc2f92d981" "a0")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534759f6250a01e1bc2f92d981")
+    (HDL_IDENT
+      (NAME "a0")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a9aaf6250a01e1bc63a2d981")
+        (NAME "a0.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'a0' of entity 'Reg1en'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Clk : in     std_logic;"
+               "--     D   : in     std_logic;"
+               "--     En  : in     std_logic;"
+               "--     Q   : out    std_logic;"
+               "--     Rst : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture a0 of Reg1en is"
+               ""
+               "begin"
+               ""
+               "end architecture a0 ; -- of Reg1en"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

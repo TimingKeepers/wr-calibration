@@ -1,0 +1,31 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c539536c1850601e1bcb77868d3")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c538536c1850601e1bc877868d3")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 11:31:47 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+  )
+  (HDL_IDENT
+    (NAME "wishbone_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478255449 "Fri Nov 04 11:30:49 2016")
+    (MODIFIED 1478255449 "Fri Nov 04 11:30:49 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (OBID "pack0c012c53b92af52508e0e1bc52a7fff7")
+      (LIBRARY "design")
+      (NAME "genram_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,87 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53d11f93650241e1bcb635cf72")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Nov 04 14:05:00 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "flut")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 512 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1446637853 "Wed Nov 04 12:50:53 2015")
+      (MODIFIED 1446642300 "Wed Nov 04 14:05:00 2015")
+    )
+    (PORT
+      (OBID "eprt0c012c53e21f93650241e1bcbb35cf72")
+      (HDL_IDENT
+        (NAME "aap")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "1")
+          )
+        )
+      )
+      (GEOMETRY 472 216 552 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "aap(3:1)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53e11f93650241e1bce635cf72" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53e11f93650241e1bce635cf72")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53e11f93650241e1bcf635cf72")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'flut'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     aap : out    std_logic_vector(3 downto 1));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of flut is"
+               ""
+               "begin"
+               "  aap <= (others => '0');"
+               "end architecture rtl ; -- of flut"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

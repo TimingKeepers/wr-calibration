@@ -1,0 +1,605 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0bb60c8de4c8b07600d5770000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "TxStreamSel")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 1088)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1322827883 "Fri Dec 02 13:11:23 2011")
+      (MODIFIED 1462965689 "Wed May 11 13:21:29 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b870c8de4c8b0760026770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b870c8de4c8b0760036770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b8d0c8de4c8b07600b6770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Stream")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "natural")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 152 1448 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Stream(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b3f6c8de4c8b07600a7770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Validin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Validin(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b227c8de4c8b07600c7770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdReqOut")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdReqOut(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba3fc8de4c8b076008b770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdReqin")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1368 664 1448 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RdReqin")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b939e8de4c8b076001e770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Dout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 472 1448 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Dout(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b939e8de4c8b076002e770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "EODout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 536 1448 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "EODout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b939e8de4c8b076003e770000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Validout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 728 1448 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Validout")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b533bcde445c0760093d60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "ConnectReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ConnectReq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b399bcde445c07600b5d60000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Connected")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 280 1448 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Connected")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b16922bf40e007600dc550000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "TXi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TXi(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53826081450b50e1bcb124b280")
+      (HDL_IDENT
+        (NAME "Packet")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Packet(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53dd7081450b50e1bcc324b280")
+      (HDL_IDENT
+        (NAME "Packet_RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Packet_RdReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5312f691450f31e1bc1df30687")
+      (HDL_IDENT
+        (NAME "TxStreamDebug")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "11" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TxStreamDebug(11:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b373f1ee485907600fd750000" "fsm")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b373f1ee485907600fd750000")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "fsm")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c0b1d0860054290e1bc10312f32")
+        (NAME "fsm.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'fsm' of entity 'TxStreamSel'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Clk           : in     std_logic;"
+               "--     ConnectReq    : in     std_logic;"
+               "--     Connected     : out    std_logic;"
+               "--     Dout          : out    std_logic_vector(15 downto 0);"
+               "--     EODout        : out    std_logic;"
+               "--     Packet        : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Packet_RdReq  : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     RdReqOut      : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     RdReqin       : in     std_logic;"
+               "--     Rst           : in     std_logic;"
+               "--     Stream        : out    natural range NUM_UDP_PRTS-1 downto 0;"
+               "--     TXi           : in     dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     TxStreamDebug : out    std_logic_vector(11 downto 0);"
+               "--     Validin       : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Validout      : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture fsm of TxStreamSel is"
+               ""
+               "  type state_type is (Idle, SearchConnect, ReadUntilEOP, State_Connected) ;"
+               "  signal state : state_type  ;  -- Current State"
+               ""
+               "  Signal StreamPointer: Natural Range NUM_UDP_PRTS - 1 Downto 0;"
+               ""
+               "begin"
+               ""
+               "  TxStreamDebug(3  downto  0) <= std_logic_vector(to_unsigned(2**StreamPointer,4));"
+               "  TxStreamDebug(4)            <= ConnectReq;"
+               "  TxStreamDebug(7  downto  5) <= (others => '0');"
+               "  TxStreamDebug(11 downto  8) <= packet;"
+               "  "
+               "   -- Pipeline between entity \"TxFifos\" and \"TxBuffers/tx_data2buf\""
+               "   -- This will ease the timing of the system"
+               "   Process (Clk, Rst)"
+               "   Begin"
+               "      If Rst = '1' Then"
+               "         Stream <= 0;"
+               "         Dout <= (Others => '0');"
+               "         EODout <= '0';"
+               "         Validout <= '0';"
+               "      ElsIf Rising_Edge(Clk) Then"
+               "         -- Pipeline between entity \"TxFifos\" and \"TxBuffers/tx_data2buf\""
+               "         -- This will ease the timing of the system"
+               "         Stream <= StreamPointer;"
+               "         Dout <= TXi(StreamPointer).D;"
+               "         EODout <= TXi(StreamPointer).EOD;"
+               "         If state = ReadUntilEOP Then"
+               "            If Validin(StreamPointer) = '0' Or RdReqin = '1' Then"
+               "               Validout <= Validin(StreamPointer);"
+               "            Else"
+               "               Validout <= '0';"
+               "            End If;"
+               "         Else"
+               "            Validout <= '0';"
+               "         End If;"
+               "      End If;"
+               "   End Process;"
+               "   "
+               "   process (state, StreamPointer)"
+               "   Begin"
+               "      -- By default, do not RdReqout any of the input FIFOs"
+               "      RdReqout <= (Others => '0');"
+               "      If state = ReadUntilEOP Then"
+               "         -- Overrule the RdReqout <= (Others => '0') above if needed:"
+               "         RdReqout(StreamPointer) <= '1';"
+               "      End If;"
+               "   End Process;"
+               ""
+               "   state_decoding: Process (Clk, Rst) Is"
+               "   Begin"
+               "      If (Rst = '1') Then"
+               "         state <= Idle ;"
+               "         StreamPointer <= 0;"
+               "         Connected <= '0';"
+               "         Packet_RdReq <= (others => '0');"
+               "      ElsIf (rising_edge(Clk)) Then"
+               "         Case state Is"
+               "           When Idle =>"
+               "             -- One of the input pipelines contains data"
+               "             -- and the TxBuffer is ready to accept a connection"
+               "             If (Unsigned(Packet) /= 0 And ConnectReq = '1') Then"
+               "               state <= SearchConnect ;"
+               "               -- IncStreamPointer:"
+               "               -- Forcing a Stream Increment forces a round-"
+               "               -- robbin (otherwise the input fifo that keeps"
+               "               -- \"not-empty\" asserted, holds the stream)"
+               "               If StreamPointer = NUM_UDP_PRTS - 1 Then"
+               "                  StreamPointer <= 0;"
+               "               Else"
+               "                  StreamPointer <= StreamPointer + 1;"
+               "               End If;"
+               "             Else"
+               "               state <= Idle;"
+               "               Connected <= '0';"
+               "             End If ;"
+               ""
+               "          When SearchConnect =>"
+               "             If (Packet(StreamPointer) = '1') Then"
+               "               state <= State_Connected;"
+               "               "
+               "               -- Read one entry from the fifo that keeps track of the amount of packets in the data fifo"
+               "               Packet_RdReq(StreamPointer) <= '1';"
+               "               Connected <= '1';"
+               ""
+               "               -- The pointed input doesn't contain data"
+               "             Else"
+               "               state <= SearchConnect;"
+               "               -- IncStreamPointer:"
+               "               If StreamPointer = NUM_UDP_PRTS - 1 Then"
+               "                  StreamPointer <= 0;"
+               "               Else"
+               "                  StreamPointer <= StreamPointer + 1;"
+               "               End If;"
+               "             End If ;"
+               "             "
+               "           When State_Connected =>"
+               "             -- Signal \"ConnectReq\" is the handshake with the tx_data2buf state machine."
+               "             -- If connect = 0 then the \"tx_data2buf\" machine advanced (i.e. it got out of"
+               "             -- the Idle state)."
+               "             Packet_RdReq(StreamPointer) <= '0';"
+               "             If (ConnectReq = '0') Then"
+               "               state <= ReadUntilEOP ;"
+               "               Connected <= '0';"
+               "             Else"
+               "               state <= State_Connected ;"
+               "               Connected <= '1';"
+               "             End If ;"
+               "             "
+               "           When ReadUntilEOP =>"
+               "             If (TXi(StreamPointer).EOD = '1') Then"
+               "               state <= Idle ;"
+               "               Connected <= '0';"
+               "             Else"
+               "               state <= ReadUntilEOP ;"
+               "               Connected <= '0';"
+               "             End If ;"
+               "             "
+               "         End Case ;"
+               "      End If ;"
+               "   End Process state_decoding ;"
+               ""
+               "end architecture fsm ; -- of TxStreamSel"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bc1d358af2")
+        (NAME "fsm.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

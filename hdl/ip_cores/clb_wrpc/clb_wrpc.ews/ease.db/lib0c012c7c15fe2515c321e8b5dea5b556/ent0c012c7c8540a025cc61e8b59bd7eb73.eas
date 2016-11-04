@@ -1,0 +1,95 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c8540a025cc61e8b59bd7eb73")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c7540a025cc61e8b54bd7eb73")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/modules/wrpc_stimuli/clock_gen125MHz.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376388184")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Tue Aug 13 12:03:04 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1372948721")
+    )
+    (HDL_IDENT
+      (NAME "clock_gen125MHz")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2432 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376388184 "Tue Aug 13 12:03:04 2013")
+      (MODIFIED 1376388184 "Tue Aug 13 12:03:04 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cf420a025cc61e8b54057eb73")
+        (LIBRARY "work")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c8540a025cc61e8b5abd7eb73")
+      (HDL_IDENT
+        (NAME "clk_125m_pllref_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2392 88 2472 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2368 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "clk_125m_pllref_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c8540a025cc61e8b5bbd7eb73")
+      (HDL_IDENT
+        (NAME "clk_125m_pllref_p_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2392 216 2472 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2368 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "clk_125m_pllref_p_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c8540a025cc61e8b5cbd7eb73" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c8540a025cc61e8b5cbd7eb73")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

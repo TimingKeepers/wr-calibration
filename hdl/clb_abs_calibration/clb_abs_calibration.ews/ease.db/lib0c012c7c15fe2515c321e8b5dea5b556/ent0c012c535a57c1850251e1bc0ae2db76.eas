@@ -1,0 +1,582 @@
+(DATABASE_VERSION 23)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c535a57c1850251e1bc0ae2db76")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/ip_cores/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1478260133")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 5")
+      (PROPERTY "STAMP_TIME" "Fri Nov 04 12:48:53 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.3")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478096835")
+    )
+    (HDL_IDENT
+      (NAME "ipmux_regs_and_rxtxcpu")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2560 1408)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1478260133 "Fri Nov 04 12:48:53 2016")
+      (MODIFIED 1478260133 "Fri Nov 04 12:48:53 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (OBID "pack0c012c7c74da9b150201e8b552f62174")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (OBID "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (OBID "pack0c012c539536c1850601e1bcb77868d3")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc1ae2db76")
+      (HDL_IDENT
+        (NAME "CPU_AccGnt")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "CPU_AccGnt")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc2ae2db76")
+      (HDL_IDENT
+        (NAME "CPU_Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "ipmux_cpu_in_type")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2520 88 2600 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "CPU_Tx")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc3ae2db76")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc4ae2db76")
+      (HDL_IDENT
+        (NAME "Flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 2520 216 2600 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "Flush(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc5ae2db76")
+      (HDL_IDENT
+        (NAME "PacketsDone")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "PacketsDone(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc6ae2db76")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc7ae2db76")
+      (HDL_IDENT
+        (NAME "Rx_Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Rx_Empty(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc8ae2db76")
+      (HDL_IDENT
+        (NAME "TxStreamDebug")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "11" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "TxStreamDebug(11:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc9ae2db76")
+      (HDL_IDENT
+        (NAME "Tx_Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "Tx_Full(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bcaae2db76")
+      (HDL_IDENT
+        (NAME "cpu_rdreq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2520 344 2600 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "cpu_rdreq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bcbae2db76")
+      (HDL_IDENT
+        (NAME "cpu_rx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "cpu_rx")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bccae2db76")
+      (HDL_IDENT
+        (NAME "div_ratio")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 2520 472 2600 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "div_ratio(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bcdae2db76")
+      (HDL_IDENT
+        (NAME "eth_regs_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_type")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2520 600 2600 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "eth_regs_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bceae2db76")
+      (HDL_IDENT
+        (NAME "numpackets")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "9" "0")
+          )
+        )
+      )
+      (GEOMETRY 2520 728 2600 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "numpackets(9:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bcfae2db76")
+      (HDL_IDENT
+        (NAME "numwords")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "13" "0")
+          )
+        )
+      )
+      (GEOMETRY 2520 856 2600 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "numwords(13:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc0be2db76")
+      (HDL_IDENT
+        (NAME "udptstctrl")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY 2520 984 2600 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "udptstctrl(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc1be2db76")
+      (HDL_IDENT
+        (NAME "wb_ipmux_reg_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "wb_ipmux_reg_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc2be2db76")
+      (HDL_IDENT
+        (NAME "wb_ipmux_reg_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2520 1112 2600 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "wb_ipmux_reg_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc3be2db76")
+      (HDL_IDENT
+        (NAME "wb_ipmux_rx_tx_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1240 40 1320)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1280)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 3)
+        (TEXT "wb_ipmux_rx_tx_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a57c1850251e1bc4be2db76")
+      (HDL_IDENT
+        (NAME "wb_ipmux_rx_tx_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2520 1240 2600 1320)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2496 1280)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 3)
+        (TEXT "wb_ipmux_rx_tx_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c535a57c1850251e1bc5be2db76" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c535a57c1850251e1bc5be2db76")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535a57c1850251e1bc6be2db76")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'ipmux_regs_and_rxtxcpu'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     CPU_AccGnt       : in     std_logic;"
+               "--     CPU_Tx           : out    ipmux_cpu_in_type;"
+               "--     Clk              : in     std_logic;"
+               "--     Flush            : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     PacketsDone      : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Rst              : in     std_logic;"
+               "--     Rx_Empty         : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     TxStreamDebug    : in     std_logic_vector(11 downto 0);"
+               "--     Tx_Full          : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     cpu_rdreq        : out    std_logic;"
+               "--     cpu_rx           : in     dbus_type;"
+               "--     div_ratio        : out    std_logic_vector(31 downto 0);"
+               "--     eth_regs_o       : out    eth_regs_type;"
+               "--     numpackets       : out    std_logic_vector(9 downto 0);"
+               "--     numwords         : out    std_logic_vector(13 downto 0);"
+               "--     udptstctrl       : out    std_logic_vector(2 downto 0);"
+               "--     wb_ipmux_reg_i   : in     t_wishbone_slave_in;"
+               "--     wb_ipmux_reg_o   : out    t_wishbone_slave_out;"
+               "--     wb_ipmux_rx_tx_i : in     t_wishbone_slave_in;"
+               "--     wb_ipmux_rx_tx_o : out    t_wishbone_slave_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of ipmux_regs_and_rxtxcpu is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of ipmux_regs_and_rxtxcpu"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,189 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5311ecea25ca31e1bcc2941340")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c53f001042547d0e1bccf7508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc.vhd")
+      (PROPERTY "IMPORTED_LAST" "1387205693")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:32 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1387205681")
+    )
+    (HDL_IDENT
+      (NAME "DecodeS")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1387187729 "Mon Dec 16 10:55:29 2013")
+      (MODIFIED 1387210351 "Mon Dec 16 17:12:31 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c5311ecea25ca31e1bcd2941340")
+      (HDL_IDENT
+        (NAME "S")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "S")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5311ecea25ca31e1bce2941340")
+      (HDL_IDENT
+        (NAME "rst_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5311ecea25ca31e1bcf2941340")
+      (HDL_IDENT
+        (NAME "rx_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rx_data_o(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5311ecea25ca31e1bc03941340")
+      (HDL_IDENT
+        (NAME "rx_k_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rx_k_o(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5311ecea25ca31e1bc13941340")
+      (HDL_IDENT
+        (NAME "rx_rbclk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rx_rbclk_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53e341fa258171e1bcf074f392" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53e341fa258171e1bcf074f392")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53f662fa258171e1bce374f392")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'DecodeS'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     S          : out    std_logic;"
+               "--     rst_i      : in     std_logic;"
+               "--     rx_data_o  : in     std_logic_vector(15 downto 0);"
+               "--     rx_k_o     : in     std_logic_vector(1 downto 0);"
+               "--     rx_rbclk_o : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of DecodeS is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of DecodeS"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

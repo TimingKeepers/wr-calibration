@@ -1,0 +1,160 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c805d9a150970e8b5b2282832")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Mon Aug 12 12:06:44 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "pro_test")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1856 448)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1370084616 "Sat Jun 01 13:03:36 2013")
+      (MODIFIED 1376301970 "Mon Aug 12 12:06:10 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5b017a6e4")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce15d9a150970e8b5c7282832")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk_sys")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cc35d9a150970e8b508282832")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "local_reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1816 216 1896 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "local_reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ca07d9a150970e8b518382832")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "button1_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "button1_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7ca05d9a150970e8b5e2282832" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7ca05d9a150970e8b5e2282832")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c7ca05d9a150970e8b5f2282832")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'pro_test'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     button1_i     : in     std_logic;"
+               "--     clk_sys       : in     std_logic;"
+               "--     local_reset_n : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of pro_test is"
+               "signal count : std_logic_vector(11 downto 0):=(others => '0');"
+               "signal local_reset_n_d0 : std_logic:='0';"
+               "signal local_reset_n_d1 : std_logic:= '0';"
+               "begin"
+               "process(clk_sys, button1_i)"
+               "begin"
+               "if(rising_edge(clk_sys)) then "
+               ""
+               "        local_reset_n_d0 <= not  button1_i;"
+               "        local_reset_n_d1 <=  local_reset_n_d0;"
+               "        local_reset_n <=  local_reset_n_d1;"
+               "end if;"
+               "end process;"
+               ""
+               "end architecture rtl ; -- of pro_test"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c7c493b80250621e8b5f017a6e4")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

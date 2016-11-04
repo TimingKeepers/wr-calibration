@@ -1,0 +1,2139 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b688b90e4c3317600d5450000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "System")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1856 3456)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1309259910 "Tue Jun 28 13:18:30 2011")
+      (MODIFIED 1462965575 "Wed May 11 13:19:35 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c532d2133750c51e1bc97341c36")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c530f2133750c51e1bc09341c36")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b4b19f1502d0e1bc25434240")
+      (HDL_IDENT
+        (NAME "UDP_Rx_Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1816 344 1896 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "UDP_Rx_Empty(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b4b19f1502d0e1bc35434240")
+      (HDL_IDENT
+        (NAME "UDP_Rx_RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Rx_RdReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b4b19f1502d0e1bc45434240")
+      (HDL_IDENT
+        (NAME "UDP_Rx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1816 472 1896 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "UDP_Rx(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ed5abf15c411e1bc7f676946")
+      (HDL_IDENT
+        (NAME "Fire")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1496 40 1576)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Fire(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53478cbf15c411e1bce9a76946")
+      (HDL_IDENT
+        (NAME "TxFireCPU")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TxFireCPU")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531d7a77254f01e1bc40d474b0")
+      (HDL_IDENT
+        (NAME "wb_ipmux_reg_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1880 40 1960)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1920)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_reg_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531d7a77254f01e1bc50d474b0")
+      (HDL_IDENT
+        (NAME "wb_ipmux_reg_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1944 40 2024)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1984)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_reg_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53965b77254f01e1bcc6e474b0")
+      (HDL_IDENT
+        (NAME "wb_ipmux_rx_tx_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2136 40 2216)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2176)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_rx_tx_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53965b77254f01e1bcd6e474b0")
+      (HDL_IDENT
+        (NAME "wb_ipmux_rx_tx_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_ipmux_rx_tx_o")
+      )
+    )
+    (ARCH_DECLARATION 1 "arch0c012c0b688b90e4c3317600e5450000" "structure")
+    (CONFIG_DECL "conf0c012c0b8f7e90e4c5f17600aa130000" "Functional")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b688b90e4c3317600e5450000")
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 1)
+    (SCHEMATIC
+      (OBID "diag0c012c0b688b90e4c3317600c5450000")
+      (SHEETSIZE 0 0 14400 9600)
+      (PORT
+        (OBID "aprt0c012c53b4b19f1502d0e1bc65434240")
+        (HDL_IDENT
+          (NAME "UDP_Rx_Empty")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (MODE 2)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "NUM_UDP_PRTS-1" "0")
+            )
+          )
+        )
+        (GEOMETRY 9112 4056 9192 4136)
+        (SIDE 3)
+        (LABEL
+          (POSITION 9216 4096)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 1)
+          (ALIGNMENT 3)
+          (FORMAT 35)
+          (TEXT "UDP_Rx_Empty(NUM_UDP_PRTS-1:0)")
+        )
+        (PORT "eprt0c012c53b4b19f1502d0e1bc25434240")
+        (CONNECTION
+          (OBID "ncon0c012c53b4b19f1502d0e1bc66434240")
+          (GEOMETRY 9088 4096 9088 4096)
+          (SIDE 0)
+          (LABEL
+            (POSITION 9088 4064)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 8)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c53b4b19f1502d0e1bc85434240")
+        (HDL_IDENT
+          (NAME "UDP_Rx_RdReq")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (MODE 1)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "NUM_UDP_PRTS-1" "0")
+            )
+          )
+        )
+        (GEOMETRY 9112 4120 9192 4200)
+        (SIDE 3)
+        (LABEL
+          (POSITION 9216 4160)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 1)
+          (ALIGNMENT 3)
+          (FORMAT 35)
+          (TEXT "UDP_Rx_RdReq(NUM_UDP_PRTS-1:0)")
+        )
+        (PORT "eprt0c012c53b4b19f1502d0e1bc35434240")
+        (CONNECTION
+          (OBID "ncon0c012c53b4b19f1502d0e1bc76434240")
+          (GEOMETRY 9088 4160 9088 4160)
+          (SIDE 0)
+          (LABEL
+            (POSITION 9088 4128)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 8)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c53b4b19f1502d0e1bca5434240")
+        (HDL_IDENT
+          (NAME "UDP_Rx")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "dbus_type_array")
+            (MODE 2)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "NUM_UDP_PRTS-1" "0")
+            )
+          )
+        )
+        (GEOMETRY 9112 3992 9192 4072)
+        (SIDE 3)
+        (LABEL
+          (POSITION 9216 4032)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 1)
+          (ALIGNMENT 3)
+          (FORMAT 35)
+          (TEXT "UDP_Rx(NUM_UDP_PRTS-1:0)")
+        )
+        (PORT "eprt0c012c53b4b19f1502d0e1bc45434240")
+        (CONNECTION
+          (OBID "ncon0c012c53b4b19f1502d0e1bc86434240")
+          (GEOMETRY 9088 4032 9088 4032)
+          (SIDE 0)
+          (LABEL
+            (POSITION 9088 4000)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 8)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c53ed5abf15c411e1bc8f676946")
+        (HDL_IDENT
+          (NAME "Fire")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (MODE 1)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "3" "0")
+            )
+          )
+        )
+        (GEOMETRY 6552 3672 6632 3752)
+        (SIDE 1)
+        (LABEL
+          (POSITION 6528 3712)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "Fire(3:0)")
+        )
+        (PORT "eprt0c012c53ed5abf15c411e1bc7f676946")
+        (CONNECTION
+          (OBID "ncon0c012c53ed5abf15c411e1bccf676946")
+          (GEOMETRY 6656 3712 6656 3712)
+          (SIDE 2)
+          (LABEL
+            (POSITION 6656 3744)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c53478cbf15c411e1bcf9a76946")
+        (HDL_IDENT
+          (NAME "TxFireCPU")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (MODE 1)
+          )
+        )
+        (GEOMETRY 6552 3800 6632 3880)
+        (SIDE 1)
+        (LABEL
+          (POSITION 6528 3840)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "TxFireCPU")
+        )
+        (PORT "eprt0c012c53478cbf15c411e1bce9a76946")
+        (CONNECTION
+          (OBID "ncon0c012c53478cbf15c411e1bc3aa76946")
+          (GEOMETRY 6656 3840 6656 3840)
+          (SIDE 2)
+          (LABEL
+            (POSITION 6656 3872)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c531d7a77254f01e1bc60d474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_reg_i")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_in")
+            (MODE 1)
+          )
+        )
+        (GEOMETRY 6552 4568 6632 4648)
+        (SIDE 1)
+        (LABEL
+          (POSITION 6528 4608)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "wb_ipmux_reg_i")
+        )
+        (PORT "eprt0c012c531d7a77254f01e1bc40d474b0")
+        (CONNECTION
+          (OBID "ncon0c012c531d7a77254f01e1bce0d474b0")
+          (GEOMETRY 6656 4608 6656 4608)
+          (SIDE 2)
+          (LABEL
+            (POSITION 6656 4640)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c531d7a77254f01e1bc80d474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_reg_o")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_out")
+            (MODE 2)
+          )
+        )
+        (GEOMETRY 6552 4632 6632 4712)
+        (SIDE 1)
+        (LABEL
+          (POSITION 6528 4672)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "wb_ipmux_reg_o")
+        )
+        (PORT "eprt0c012c531d7a77254f01e1bc50d474b0")
+        (CONNECTION
+          (OBID "ncon0c012c531d7a77254f01e1bcf0d474b0")
+          (GEOMETRY 6656 4672 6656 4672)
+          (SIDE 2)
+          (LABEL
+            (POSITION 6656 4704)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c53965b77254f01e1bce6e474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_rx_tx_i")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_in")
+            (MODE 1)
+          )
+        )
+        (GEOMETRY 6552 4760 6632 4840)
+        (SIDE 1)
+        (LABEL
+          (POSITION 6528 4800)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "wb_ipmux_rx_tx_i")
+        )
+        (PORT "eprt0c012c53965b77254f01e1bcc6e474b0")
+        (CONNECTION
+          (OBID "ncon0c012c53965b77254f01e1bc67e474b0")
+          (GEOMETRY 6656 4800 6656 4800)
+          (SIDE 2)
+          (LABEL
+            (POSITION 6656 4832)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt0c012c53965b77254f01e1bc07e474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_rx_tx_o")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_out")
+            (MODE 2)
+          )
+        )
+        (GEOMETRY 6552 4824 6632 4904)
+        (SIDE 1)
+        (LABEL
+          (POSITION 6528 4864)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "wb_ipmux_rx_tx_o")
+        )
+        (PORT "eprt0c012c53965b77254f01e1bcd6e474b0")
+        (CONNECTION
+          (OBID "ncon0c012c53965b77254f01e1bc77e474b0")
+          (GEOMETRY 6656 4864 6656 4864)
+          (SIDE 2)
+          (LABEL
+            (POSITION 6656 4896)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (COMPONENT
+        (OBID "comp0c012c539ef09f1502d0e1bcdbe24240")
+        (HDL_IDENT
+          (NAME "u0")
+          (USERNAME 1)
+        )
+        (GEOMETRY 7104 3584 8832 5952)
+        (SIDE 0)
+        (LABEL
+          (POSITION 7104 3584)
+          (SCALE 80)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 5)
+          (TEXT "u0:fpga")
+        )
+        (ENTITY "lib0c012c0bf68b90e4c331760045450000" "ent0c012c0be80640f483c07600bab50000")
+        (GENERIC
+          (OBID "igen0c012c53eb4abf15c411e1bc82576946")
+          (HDL_IDENT
+            (NAME "Simulation")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "boolean")
+              (DEF_VALUE "False")
+            )
+          )
+          (GEOMETRY 7704 5336 7784 5416)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7848 5376)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 129)
+            (TEXT "Simulation(False)")
+          )
+          (GENERIC "egen0c012c53eb4abf15c411e1bc52576946")
+        )
+        (PORT
+          (OBID "cprt0c012c539ef09f1502d0e1bcfbe24240")
+          (HDL_IDENT
+            (NAME "RstIn")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 5592 7144 5672)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 5632)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "RstIn")
+          )
+          (PORT "eprt0c012c0be80640f483c0760069b50000")
+          (CONNECTION
+            (OBID "ncon0c012c539ef09f1502d0e1bc0ce24240")
+            (GEOMETRY 7040 5632 7040 5632)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 5600)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c539ef09f1502d0e1bc9ce24240")
+          (HDL_IDENT
+            (NAME "UDP_Rx_Empty")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "NUM_UDP_PRTS-1" "0")
+              )
+            )
+          )
+          (GEOMETRY 8792 4056 8872 4136)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4096)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "UDP_Rx_Empty(NUM_UDP_PRTS-1:0)")
+          )
+          (PORT "eprt0c012c0b1a1640f483c0760093d50000")
+          (CONNECTION
+            (OBID "ncon0c012c539ef09f1502d0e1bcace24240")
+            (GEOMETRY 8896 4096 8896 4096)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4128)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c539ef09f1502d0e1bcbce24240")
+          (HDL_IDENT
+            (NAME "UDP_Rx_RdReq")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "NUM_UDP_PRTS-1" "0")
+              )
+            )
+          )
+          (GEOMETRY 8792 4120 8872 4200)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4160)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "UDP_Rx_RdReq(NUM_UDP_PRTS-1:0)")
+          )
+          (PORT "eprt0c012c0b1a1640f483c07600d3d50000")
+          (CONNECTION
+            (OBID "ncon0c012c539ef09f1502d0e1bccce24240")
+            (GEOMETRY 8896 4160 8896 4160)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4192)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c539ef09f1502d0e1bc5de24240")
+          (HDL_IDENT
+            (NAME "UDP_Rx")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "dbus_type_array")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "NUM_UDP_PRTS-1" "0")
+              )
+            )
+          )
+          (GEOMETRY 8792 3992 8872 4072)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4032)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "UDP_Rx(NUM_UDP_PRTS-1:0)")
+          )
+          (PORT "eprt0c012c0b8ac11bf441b0760050b30000")
+          (CONNECTION
+            (OBID "ncon0c012c539ef09f1502d0e1bc6de24240")
+            (GEOMETRY 8896 4032 8896 4032)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4064)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5339719f1502d0e1bccbf24240")
+          (HDL_IDENT
+            (NAME "ClkI_p")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 5144 7144 5224)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 5184)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "ClkI_p")
+          )
+          (PORT "eprt0c012c5339719f1502d0e1bcabf24240")
+          (CONNECTION
+            (OBID "ncon0c012c5339719f1502d0e1bc4cf24240")
+            (GEOMETRY 7040 5184 7040 5184)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 5152)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5339719f1502d0e1bcebf24240")
+          (HDL_IDENT
+            (NAME "ClkI_n")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 5208 7144 5288)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 5248)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "ClkI_n")
+          )
+          (PORT "eprt0c012c5339719f1502d0e1bcbbf24240")
+          (CONNECTION
+            (OBID "ncon0c012c5339719f1502d0e1bc5cf24240")
+            (GEOMETRY 7040 5248 7040 5248)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 5216)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c53ac5abf15c411e1bc5b676946")
+          (HDL_IDENT
+            (NAME "Fire")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "3" "0")
+              )
+            )
+          )
+          (GEOMETRY 7064 3672 7144 3752)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 3712)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "Fire(3:0)")
+          )
+          (PORT "eprt0c012c53ac5abf15c411e1bc1b676946")
+          (CONNECTION
+            (OBID "ncon0c012c53ac5abf15c411e1bc6b676946")
+            (GEOMETRY 7040 3712 7040 3712)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 3680)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c53448cbf15c411e1bcf8a76946")
+          (HDL_IDENT
+            (NAME "TxFireCPU")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 3800 7144 3880)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 3840)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "TxFireCPU")
+          )
+          (PORT "eprt0c012c53448cbf15c411e1bcb8a76946")
+          (CONNECTION
+            (OBID "ncon0c012c53448cbf15c411e1bc09a76946")
+            (GEOMETRY 7040 3840 7040 3840)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 3808)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5325aa9225c3b0e1bcf416ac63")
+          (HDL_IDENT
+            (NAME "snk_i")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wrf_sink_in")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 8792 4568 8872 4648)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4608)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "snk_i")
+          )
+          (PORT "eprt0c012c5325aa9225c3b0e1bc7416ac63")
+          (CONNECTION
+            (OBID "ncon0c012c5325aa9225c3b0e1bc0516ac63")
+            (GEOMETRY 8896 4608 8896 4608)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4640)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5325aa9225c3b0e1bc1516ac63")
+          (HDL_IDENT
+            (NAME "snk_o")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wrf_sink_out")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 8792 4632 8872 4712)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4672)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "snk_o")
+          )
+          (PORT "eprt0c012c5325aa9225c3b0e1bc8416ac63")
+          (CONNECTION
+            (OBID "ncon0c012c5325aa9225c3b0e1bc2516ac63")
+            (GEOMETRY 8896 4672 8896 4672)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4704)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c536b7a77254f01e1bc9fc474b0")
+          (HDL_IDENT
+            (NAME "wb_ipmux_reg_i")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wishbone_slave_in")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 4568 7144 4648)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 4608)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "wb_ipmux_reg_i")
+          )
+          (PORT "eprt0c012c536b7a77254f01e1bc1fc474b0")
+          (CONNECTION
+            (OBID "ncon0c012c536b7a77254f01e1bcafc474b0")
+            (GEOMETRY 7040 4608 7040 4608)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 4576)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c536b7a77254f01e1bcbfc474b0")
+          (HDL_IDENT
+            (NAME "wb_ipmux_reg_o")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wishbone_slave_out")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 7064 4632 7144 4712)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 4672)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "wb_ipmux_reg_o")
+          )
+          (PORT "eprt0c012c536b7a77254f01e1bc2fc474b0")
+          (CONNECTION
+            (OBID "ncon0c012c536b7a77254f01e1bccfc474b0")
+            (GEOMETRY 7040 4672 7040 4672)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 4640)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c53955b77254f01e1bc46e474b0")
+          (HDL_IDENT
+            (NAME "wb_ipmux_rx_tx_i")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wishbone_slave_in")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7064 4760 7144 4840)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 4800)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "wb_ipmux_rx_tx_i")
+          )
+          (PORT "eprt0c012c53955b77254f01e1bcc5e474b0")
+          (CONNECTION
+            (OBID "ncon0c012c53955b77254f01e1bc56e474b0")
+            (GEOMETRY 7040 4800 7040 4800)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 4768)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c53955b77254f01e1bc66e474b0")
+          (HDL_IDENT
+            (NAME "wb_ipmux_rx_tx_o")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wishbone_slave_out")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 7064 4824 7144 4904)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7168 4864)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "wb_ipmux_rx_tx_o")
+          )
+          (PORT "eprt0c012c53955b77254f01e1bcd5e474b0")
+          (CONNECTION
+            (OBID "ncon0c012c53955b77254f01e1bc76e474b0")
+            (GEOMETRY 7040 4864 7040 4864)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7040 4832)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5387ac8725c8e0e1bc7cf35a86")
+          (HDL_IDENT
+            (NAME "src_o")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wrf_source_out")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 8792 4312 8872 4392)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4352)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "src_o")
+          )
+          (PORT "eprt0c012c5387ac8725c8e0e1bcfbf35a86")
+          (CONNECTION
+            (OBID "ncon0c012c5387ac8725c8e0e1bc8cf35a86")
+            (GEOMETRY 8896 4352 8896 4352)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4384)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5387ac8725c8e0e1bc9cf35a86")
+          (HDL_IDENT
+            (NAME "src_i")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "t_wrf_source_in")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 8792 4376 8872 4456)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8768 4416)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "src_i")
+          )
+          (PORT "eprt0c012c5387ac8725c8e0e1bc0cf35a86")
+          (CONNECTION
+            (OBID "ncon0c012c5387ac8725c8e0e1bcacf35a86")
+            (GEOMETRY 8896 4416 8896 4416)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8896 4448)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+      )
+      (COMPONENT
+        (OBID "comp0c012c5347719f1502d0e1bceaf24240")
+        (HDL_IDENT
+          (NAME "u1")
+          (USERNAME 1)
+        )
+        (GEOMETRY 5440 4992 5952 5760)
+        (SIDE 0)
+        (LABEL
+          (POSITION 5440 4992)
+          (SCALE 80)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 5)
+          (TEXT "u1:SYSCON")
+        )
+        (ENTITY "lib0c012c0bf68b90e4c331760045450000" "ent0c012c5396719f1502d0e1bc4af24240")
+        (PORT
+          (OBID "cprt0c012c5357719f1502d0e1bcfaf24240")
+          (HDL_IDENT
+            (NAME "RST_I")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 5912 5592 5992 5672)
+          (SIDE 1)
+          (LABEL
+            (POSITION 5888 5632)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "RST_I")
+          )
+          (PORT "eprt0c012c5396719f1502d0e1bc5af24240")
+          (CONNECTION
+            (OBID "ncon0c012c5357719f1502d0e1bc0bf24240")
+            (GEOMETRY 6016 5632 6016 5632)
+            (SIDE 2)
+            (LABEL
+              (POSITION 6016 5664)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5357719f1502d0e1bc1bf24240")
+          (HDL_IDENT
+            (NAME "ClkI_p")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 5912 5144 5992 5224)
+          (SIDE 1)
+          (LABEL
+            (POSITION 5888 5184)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "ClkI_p")
+          )
+          (PORT "eprt0c012c5396719f1502d0e1bc6af24240")
+          (CONNECTION
+            (OBID "ncon0c012c5357719f1502d0e1bc2bf24240")
+            (GEOMETRY 6016 5184 6016 5184)
+            (SIDE 2)
+            (LABEL
+              (POSITION 6016 5216)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt0c012c5357719f1502d0e1bc3bf24240")
+          (HDL_IDENT
+            (NAME "ClkI_n")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 5912 5208 5992 5288)
+          (SIDE 1)
+          (LABEL
+            (POSITION 5888 5248)
+            (SCALE 64)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "ClkI_n")
+          )
+          (PORT "eprt0c012c5396719f1502d0e1bc7af24240")
+          (CONNECTION
+            (OBID "ncon0c012c5357719f1502d0e1bc4bf24240")
+            (GEOMETRY 6016 5248 6016 5248)
+            (SIDE 2)
+            (LABEL
+              (POSITION 6016 5280)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c533a719f1502d0e1bc6cf24240")
+        (HDL_IDENT
+          (NAME "RST_I")
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc29e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc39e1e621")
+          (LABEL
+            (POSITION 6528 5616)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6016 5632 7040 5632)
+          (PORT
+            (OBID "cprt0c012c5357719f1502d0e1bcfaf24240")
+            (NAME "RST_I")
+          )
+          (PORT
+            (OBID "cprt0c012c539ef09f1502d0e1bcfbe24240")
+            (NAME "RstIn")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c536a719f1502d0e1bc8cf24240")
+        (HDL_IDENT
+          (NAME "ClkI_p")
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc49e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc59e1e621")
+          (LABEL
+            (POSITION 6528 5168)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6016 5184 7040 5184)
+          (PORT
+            (OBID "cprt0c012c5357719f1502d0e1bc1bf24240")
+            (NAME "ClkI_p")
+          )
+          (PORT
+            (OBID "cprt0c012c5339719f1502d0e1bccbf24240")
+            (NAME "ClkI_p")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c538a719f1502d0e1bcacf24240")
+        (HDL_IDENT
+          (NAME "ClkI_n")
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc69e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc79e1e621")
+          (LABEL
+            (POSITION 6528 5232)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6016 5248 7040 5248)
+          (PORT
+            (OBID "cprt0c012c5357719f1502d0e1bc3bf24240")
+            (NAME "ClkI_n")
+          )
+          (PORT
+            (OBID "cprt0c012c5339719f1502d0e1bcebf24240")
+            (NAME "ClkI_n")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53c5b19f1502d0e1bca6434240")
+        (HDL_IDENT
+          (NAME "UDP_Rx")
+          (ATTRIBUTES
+            (TYPE "dbus_type_array")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "NUM_UDP_PRTS-1" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc89e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc99e1e621")
+          (LABEL
+            (POSITION 8992 4016)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 8896 4032 9088 4032)
+          (PORT
+            (OBID "cprt0c012c539ef09f1502d0e1bc5de24240")
+            (NAME "UDP_Rx")
+          )
+          (PORT
+            (OBID "aprt0c012c53b4b19f1502d0e1bca5434240")
+            (NAME "UDP_Rx")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53e5b19f1502d0e1bcc6434240")
+        (HDL_IDENT
+          (NAME "UDP_Rx_Empty")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "NUM_UDP_PRTS-1" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bca9e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcb9e1e621")
+          (LABEL
+            (POSITION 8992 4080)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 8896 4096 9088 4096)
+          (PORT
+            (OBID "cprt0c012c539ef09f1502d0e1bc9ce24240")
+            (NAME "UDP_Rx_Empty")
+          )
+          (PORT
+            (OBID "aprt0c012c53b4b19f1502d0e1bc65434240")
+            (NAME "UDP_Rx_Empty")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c5306b19f1502d0e1bce6434240")
+        (HDL_IDENT
+          (NAME "UDP_Rx_RdReq")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "NUM_UDP_PRTS-1" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcc9e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcd9e1e621")
+          (LABEL
+            (POSITION 8992 4144)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 8896 4160 9088 4160)
+          (PORT
+            (OBID "cprt0c012c539ef09f1502d0e1bcbce24240")
+            (NAME "UDP_Rx_RdReq")
+          )
+          (PORT
+            (OBID "aprt0c012c53b4b19f1502d0e1bc85434240")
+            (NAME "UDP_Rx_RdReq")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c531e5abf15c411e1bcdf676946")
+        (HDL_IDENT
+          (NAME "Fire")
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "3" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bce9e1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcf9e1e621")
+          (LABEL
+            (POSITION 6848 3696)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6656 3712 7040 3712)
+          (PORT
+            (OBID "aprt0c012c53ed5abf15c411e1bc8f676946")
+            (NAME "Fire")
+          )
+          (PORT
+            (OBID "cprt0c012c53ac5abf15c411e1bc5b676946")
+            (NAME "Fire")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53778cbf15c411e1bc4aa76946")
+        (HDL_IDENT
+          (NAME "TxFireCPU")
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc0ae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc1ae1e621")
+          (LABEL
+            (POSITION 6848 3824)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6656 3840 7040 3840)
+          (PORT
+            (OBID "aprt0c012c53478cbf15c411e1bcf9a76946")
+            (NAME "TxFireCPU")
+          )
+          (PORT
+            (OBID "cprt0c012c53448cbf15c411e1bcf8a76946")
+            (NAME "TxFireCPU")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c536d7a77254f01e1bc01d474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_reg_i")
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_in")
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc2ae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc3ae1e621")
+          (LABEL
+            (POSITION 6848 4592)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6656 4608 7040 4608)
+          (PORT
+            (OBID "aprt0c012c531d7a77254f01e1bc60d474b0")
+            (NAME "wb_ipmux_reg_i")
+          )
+          (PORT
+            (OBID "cprt0c012c536b7a77254f01e1bc9fc474b0")
+            (NAME "wb_ipmux_reg_i")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c537d7a77254f01e1bc21d474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_reg_o")
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_out")
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc4ae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc5ae1e621")
+          (LABEL
+            (POSITION 6848 4656)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6656 4672 7040 4672)
+          (PORT
+            (OBID "cprt0c012c536b7a77254f01e1bcbfc474b0")
+            (NAME "wb_ipmux_reg_o")
+          )
+          (PORT
+            (OBID "aprt0c012c531d7a77254f01e1bc80d474b0")
+            (NAME "wb_ipmux_reg_o")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53d65b77254f01e1bc87e474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_rx_tx_i")
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_in")
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc6ae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc7ae1e621")
+          (LABEL
+            (POSITION 6848 4784)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6656 4800 7040 4800)
+          (PORT
+            (OBID "aprt0c012c53965b77254f01e1bce6e474b0")
+            (NAME "wb_ipmux_rx_tx_i")
+          )
+          (PORT
+            (OBID "cprt0c012c53955b77254f01e1bc46e474b0")
+            (NAME "wb_ipmux_rx_tx_i")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53f65b77254f01e1bca7e474b0")
+        (HDL_IDENT
+          (NAME "wb_ipmux_rx_tx_o")
+          (ATTRIBUTES
+            (TYPE "t_wishbone_slave_out")
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc8ae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bc9ae1e621")
+          (LABEL
+            (POSITION 6848 4848)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 6656 4864 7040 4864)
+          (PORT
+            (OBID "aprt0c012c53965b77254f01e1bc07e474b0")
+            (NAME "wb_ipmux_rx_tx_o")
+          )
+          (PORT
+            (OBID "cprt0c012c53955b77254f01e1bc66e474b0")
+            (NAME "wb_ipmux_rx_tx_o")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53b0dc8725c8e0e1bc1ef35a86")
+        (HDL_IDENT
+          (NAME "src_o")
+          (ATTRIBUTES
+            (TYPE "t_wrf_source_out")
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcaae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcbae1e621")
+          (LABEL
+            (POSITION 9088 4592)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 6)
+            (FORMAT 4099)
+          )
+          (WIRE 8896 4608 9280 4608)
+          (WIRE 9280 4352 9280 4608)
+          (WIRE 8896 4352 9280 4352)
+          (PORT
+            (OBID "cprt0c012c5325aa9225c3b0e1bcf416ac63")
+            (NAME "snk_i")
+          )
+          (PORT
+            (OBID "cprt0c012c5387ac8725c8e0e1bc7cf35a86")
+            (NAME "src_o")
+          )
+        )
+      )
+      (NET
+        (OBID "net0c012c53b0dc8725c8e0e1bc2ef35a86")
+        (HDL_IDENT
+          (NAME "snk_o")
+          (ATTRIBUTES
+            (TYPE "t_wrf_sink_out")
+          )
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bccae1e621")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt0c012c53c87f21450c31e1bcdae1e621")
+          (LABEL
+            (POSITION 9120 4656)
+            (SCALE 64)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 6)
+            (FORMAT 4099)
+          )
+          (WIRE 8896 4672 9344 4672)
+          (WIRE 9344 4416 9344 4672)
+          (WIRE 8896 4416 9344 4416)
+          (PORT
+            (OBID "cprt0c012c5325aa9225c3b0e1bc1516ac63")
+            (NAME "snk_o")
+          )
+          (PORT
+            (OBID "cprt0c012c5387ac8725c8e0e1bc9cf35a86")
+            (NAME "src_i")
+          )
+        )
+      )
+    )
+  )
+  (CONFIGURATION
+    (NAME "Functional")
+    (OBID "conf0c012c0b8f7e90e4c5f17600aa130000")
+    (BINDING
+      (ENTITY "" "ent0c012c0b688b90e4c3317600d5450000")
+      (ARCHITECTURE "arch0c012c0b688b90e4c3317600e5450000")
+      (DIAGRAM "diag0c012c0b688b90e4c3317600c5450000")
+      (CONFIG_ELEMENT
+        (COMPONENT "comp0c012c539ef09f1502d0e1bcdbe24240")
+        (BINDING
+          (ENTITY "" "ent0c012c0be80640f483c07600bab50000")
+          (ARCHITECTURE "arch0c012c0be80640f483c07600cab50000")
+          (DIAGRAM "diag0c012c0be80640f483c07600dab50000")
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c0bdb8141f44750760087f20000")
+            (BINDING
+              (ENTITY "" "ent0c012c0b4fe906e4c4e076002e650000")
+              (ARCHITECTURE "arch0c012c0b20f906e4c4e076007e650000")
+              (DIAGRAM "diag0c012c0b20f906e4c4e076006e650000")
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b41f906e4c4e07600ae650000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b41f906e4c4e076008e650000")
+                  (ARCHITECTURE "arch0c012c0b42f906e4c4e07600de650000")
+                  (DIAGRAM "diag0c012c0b42f906e4c4e07600ce650000")
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0b710c46e48cc0760083f60000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b710c46e48cc0760063f60000")
+                      (ARCHITECTURE "arch0c012c0b710c46e48cc0760073f60000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0b1f5ed6e4c290760069100000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b1f5ed6e4c290760049100000")
+                      (ARCHITECTURE "arch0c012c0b1f5ed6e4c290760059100000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0b4bced6e44890760044d00000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b4bced6e44890760014d00000")
+                      (ARCHITECTURE "arch0c012c0b4bced6e44890760024d00000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0b3daa61f446c07600f8810000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b154c06e4c4e07600af650000")
+                      (ARCHITECTURE "arch0c012c0b154c06e4c4e07600bf650000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0bf07d54050d10e1bc6f38d355")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0bc07d54050d10e1bc3f38d355")
+                      (ARCHITECTURE "arch0c012c0be07d54050d10e1bc5f38d355")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c530e0031450c31e1bc1852e621")
+                    (BINDING
+                      (ENTITY "" "ent0c012c53480031450c31e1bccf12e621")
+                      (ARCHITECTURE "arch0c012c53480031450c31e1bc9f12e621")
+                    )
+                  )
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b014e29e4ca207600ec320000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b014e29e4ca207600cc320000")
+                  (ARCHITECTURE "arch0c012c0b014e29e4ca207600dc320000")
+                  (DIAGRAM "diag0c012c0b014e29e4ca207600bc320000")
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0b4dce29e4ca20760045420000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b4dce29e4ca20760025420000")
+                      (ARCHITECTURE "arch0c012c0b4dce29e4ca20760035420000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0beb6c69e44e2176009d270000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b1f5ed6e4c290760049100000")
+                      (ARCHITECTURE "arch0c012c0b1f5ed6e4c290760059100000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0b87c5bce40b8076004e820000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b87c5bce40b8076002e820000")
+                      (ARCHITECTURE "arch0c012c0b87c5bce40b8076003e820000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0bcf71c0f405907600a5010000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b31d73de40ce0760090e20000")
+                      (ARCHITECTURE "arch0c012c0b31d73de40ce07600a0e20000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c0bf481c0f4059076000b010000")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0bdeee5de405f0760050a10000")
+                      (ARCHITECTURE "arch0c012c0bdeee5de405f0760060a10000")
+                    )
+                  )
+                  (CONFIG_ELEMENT
+                    (COMPONENT "comp0c012c53c70131450c31e1bcff62e621")
+                    (BINDING
+                      (ENTITY "" "ent0c012c53480031450c31e1bccf12e621")
+                      (ARCHITECTURE "arch0c012c53480031450c31e1bc9f12e621")
+                    )
+                  )
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b19e36de483f07600e1910000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b09e36de483f07600c1910000")
+                  (ARCHITECTURE "arch0c012c0b09e36de483f07600d1910000")
+                  (CONFIG_ELEMENT
+                    (BLOCK "GenRxFifos")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0b09e36de483f07600c1910000")
+                      (ARCHITECTURE "arch0c012c0b09e36de483f07600d1910000")
+                      (BLOCK "GenRxFifos")
+                    )
+                  )
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b84e98de4c8b0760059670000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0ba2e98de4c8b0760048670000")
+                  (ARCHITECTURE "arch0c012c0ba2e98de4c8b0760049670000")
+                  (CONFIG_ELEMENT
+                    (BLOCK "GenTxFifos")
+                    (BINDING
+                      (ENTITY "" "ent0c012c0ba2e98de4c8b0760048670000")
+                      (ARCHITECTURE "arch0c012c0ba2e98de4c8b0760049670000")
+                      (BLOCK "GenTxFifos")
+                    )
+                  )
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0ba89e8de4c8b076000f770000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0bb60c8de4c8b07600d5770000")
+                  (ARCHITECTURE "arch0c012c0b373f1ee485907600fd750000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c5396faf62586e0e1bc936758f6")
+                (BINDING
+                  (ENTITY "" "ent0c012c5396faf62586e0e1bc836758f6")
+                  (ARCHITECTURE "arch0c012c5396faf62586e0e1bcb36758f6")
+                )
+              )
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c0bfd8236f4c8d0760024f50000")
+            (BINDING
+              (ENTITY "" "ent0c012c0b37d606f4844176000da60000")
+              (ARCHITECTURE "arch0c012c0b37d606f4844176001da60000")
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c53e9119f1502d0e1bcc0f24240")
+            (BINDING
+              (ENTITY "" "ent0c012c0b8d6c57f44c7176006f740000")
+              (ARCHITECTURE "arch0c012c0b8d6c57f44c7176007f740000")
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c53b5819f1502d0e1bce1034240")
+            (BINDING
+              (ENTITY "" "ent0c012c53b3819f1502d0e1bc41034240")
+              (ARCHITECTURE "IBUFDS_GTE2_V")
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c53e94abf15c411e1bc40576946")
+            (BINDING
+              (ENTITY "" "ent0c012c0bb15b1df482507600d2740000")
+              (ARCHITECTURE "arch0c012c0bb15b1df482507600e2740000")
+              (DIAGRAM "diag0c012c0bb15b1df482507600c2740000")
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b825b1df48250760013740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b23ffaee443e07600e3c70000")
+                  (ARCHITECTURE "arch0c012c0b23ffaee443e07600f3c70000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0bb25b1df48250760073740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b23ffaee443e07600e3c70000")
+                  (ARCHITECTURE "arch0c012c0b23ffaee443e07600f3c70000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0bd25b1df482507600d3740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b23ffaee443e07600e3c70000")
+                  (ARCHITECTURE "arch0c012c0b23ffaee443e07600f3c70000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0ba35b1df48250760034740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b23ffaee443e07600e3c70000")
+                  (ARCHITECTURE "arch0c012c0b23ffaee443e07600f3c70000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b845b1df48250760094740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b4ad607e44bf07600b9130000")
+                  (ARCHITECTURE "arch0c012c0b4ad607e44bf07600c9130000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0bb45b1df48250760025740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b4ad607e44bf07600b9130000")
+                  (ARCHITECTURE "arch0c012c0b4ad607e44bf07600c9130000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0be45b1df482507600b5740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b4ad607e44bf07600b9130000")
+                  (ARCHITECTURE "arch0c012c0b4ad607e44bf07600c9130000")
+                )
+              )
+              (CONFIG_ELEMENT
+                (COMPONENT "comp0c012c0b055b1df48250760046740000")
+                (BINDING
+                  (ENTITY "" "ent0c012c0b4ad607e44bf07600b9130000")
+                  (ARCHITECTURE "arch0c012c0b4ad607e44bf07600c9130000")
+                )
+              )
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c531f5cbf15c411e1bcc6976946")
+            (BINDING
+              (ENTITY "" "ent0c012c0b76c658e44ff0760016740000")
+              (ARCHITECTURE "arch0c012c0b76c658e44ff07600f7740000")
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c5363f942254721e1bc61544511")
+            (BINDING
+              (ENTITY "" "ent0c012c5363f942254721e1bc51544511")
+              (ARCHITECTURE "arch0c012c5363f942254721e1bc81544511")
+            )
+          )
+          (CONFIG_ELEMENT
+            (COMPONENT "comp0c012c5394d64375c151e1bca584ed15")
+            (BINDING
+              (ENTITY "" "ent0c012c53e3d64375c151e1bc0484ed15")
+              (ARCHITECTURE "xilinx")
+              (CONFIG_ELEMENT
+                (INSTANCE "clkin1_buf")
+                (BINDING
+                  (ENTITY "" "ent0c012c0baae88df4cdc0e1bcd1681df5")
+                  (ARCHITECTURE "BUFG_V")
+                )
+              )
+              (CONFIG_ELEMENT
+                (INSTANCE "clk_65_5_buf")
+                (BINDING
+                  (ENTITY "" "ent0c012c0baae88df4cdc0e1bcd1681df5")
+                  (ARCHITECTURE "BUFG_V")
+                )
+              )
+              (CONFIG_ELEMENT
+                (INSTANCE "clk_125_buf")
+                (BINDING
+                  (ENTITY "" "ent0c012c0baae88df4cdc0e1bcd1681df5")
+                  (ARCHITECTURE "BUFG_V")
+                )
+              )
+            )
+          )
+        )
+      )
+      (CONFIG_ELEMENT
+        (COMPONENT "comp0c012c5347719f1502d0e1bceaf24240")
+        (BINDING
+          (ENTITY "" "ent0c012c5396719f1502d0e1bc4af24240")
+          (ARCHITECTURE "arch0c012c5396719f1502d0e1bc8af24240")
+        )
+      )
+    )
+  )
+)
+(END_OF_FILE)

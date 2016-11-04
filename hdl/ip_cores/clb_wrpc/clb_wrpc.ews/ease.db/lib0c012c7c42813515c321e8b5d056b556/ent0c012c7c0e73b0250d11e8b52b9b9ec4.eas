@@ -1,0 +1,85 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c0e73b0250d11e8b52b9b9ec4")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Wed Aug 14 10:13:09 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "IBUF_HSTL_IV")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376466912 "Wed Aug 14 09:55:12 2013")
+      (MODIFIED 1376467986 "Wed Aug 14 10:13:06 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7c0e73b0250d11e8b53b9b9ec4")
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 280 88 360 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 256 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c0e73b0250d11e8b54b9b9ec4")
+      (HDL_IDENT
+        (NAME "I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "I")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c51c3b0250d11e8b52630aec4" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c51c3b0250d11e8b52630aec4")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

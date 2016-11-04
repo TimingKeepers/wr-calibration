@@ -1,0 +1,447 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53e7b3483543d0e1bcd8e72610")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Mar 11 12:56:39 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "nanobeacon")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 1216)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1401174910 "Tue May 27 09:15:10 2014")
+      (MODIFIED 1426074999 "Wed Mar 11 12:56:39 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e7b3483543d0e1bce8e72610")
+      (HDL_IDENT
+        (NAME "wb_nanobeacon_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_nanobeacon_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e7b3483543d0e1bcf8e72610")
+      (HDL_IDENT
+        (NAME "wb_nanobeacon_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_nanobeacon_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e7b3483543d0e1bc09e72610")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e7b3483543d0e1bc19e72610")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e7b3483543d0e1bcb9e72610")
+      (HDL_IDENT
+        (NAME "ref_clk_lock")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_lock")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e7b3483543d0e1bcc9e72610")
+      (HDL_IDENT
+        (NAME "ref_clk_62_5")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_62_5")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539fb3483543d0e1bc6a182610")
+      (HDL_IDENT
+        (NAME "tm_cycles_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_cycles_i(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539fb3483543d0e1bc7a182610")
+      (HDL_IDENT
+        (NAME "tm_tai_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "39" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_tai_i(39:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53afb3483543d0e1bc8a182610")
+      (HDL_IDENT
+        (NAME "tm_time_valid_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_time_valid_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f0c3483543d0e1bcdb182610")
+      (HDL_IDENT
+        (NAME "time_offset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "time_offset(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5301c3483543d0e1bceb182610")
+      (HDL_IDENT
+        (NAME "timeslice_start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "timeslice_start")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53c8c3483543d0e1bc6c182610")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "PB_V_LED_SHDN")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PB_V_LED_SHDN")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530ac3483543d0e1bcac182610")
+      (HDL_IDENT
+        (NAME "NB_TRIGGER")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "NB_TRIGGER")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53e7b3483543d0e1bcf9e72610" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53e7b3483543d0e1bcf9e72610")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53e7b3483543d0e1bc0ae72610")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'nanobeacon'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     NB_TRIGGER      : out    std_logic;"
+               "--     PB_V_LED_SHDN   : out    std_logic;"
+               "--     Rst             : in     std_logic;"
+               "--     clk_sys_i       : in     std_logic;"
+               "--     ref_clk_62_5    : in     std_logic;"
+               "--     ref_clk_lock    : in     std_logic;"
+               "--     time_offset     : in     std_logic_vector(27 downto 0);"
+               "--     timeslice_start : in     std_logic;"
+               "--     tm_cycles_i     : in     std_logic_vector(27 downto 0);"
+               "--     tm_tai_i        : in     std_logic_vector(39 downto 0);"
+               "--     tm_time_valid_i : in     std_logic;"
+               "--     wb_nanobeacon_i : in     t_wishbone_master_out;"
+               "--     wb_nanobeacon_o : out    t_wishbone_master_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of nanobeacon is"
+               "  component wb_DummySlave is"
+               "    port("
+               "      Slave_i : in     t_wishbone_slave_in;"
+               "      Slave_o : out    t_wishbone_slave_out);"
+               "  end component wb_DummySlave;"
+               "  "
+               "  component xwb_nanobeacon is"
+               "    generic("
+               "      g_interface_mode      : t_wishbone_interface_mode:=CLASSIC;"
+               "      g_address_granularity : t_wishbone_address_granularity:=WORD"
+               "    );"
+               "    port("
+               "      NB_TRIGGER      : out    std_logic;"
+               "      PB_V_LED_SHDN   : out    std_logic;"
+               "      rst_n_i         : in     std_logic;"
+               "      clk_sys_i       : in     std_logic;"
+               "      ref_clk_62_5    : in     std_logic;"
+               "      ref_clk_lock    : in     std_logic;"
+               "      time_offset     : in     std_logic_vector(27 downto 0);"
+               "      timeslice_start : in     std_logic;"
+               "      tm_cycles_i     : in     std_logic_vector(27 downto 0);"
+               "      tm_tai_i        : in     std_logic_vector(39 downto 0);"
+               "      tm_time_valid_i : in     std_logic;"
+               "      slave_i : in     t_wishbone_master_out;"
+               "      slave_o : out    t_wishbone_master_in"
+               "    );"
+               "  end component xwb_nanobeacon;"
+               ""
+               "  signal rst_n_internal: std_logic;"
+               "  "
+               "begin"
+               "  -- u0:wb_DummySlave"
+               "    -- port map("
+               "      -- Slave_i => wb_nanobeacon_i,"
+               "      -- Slave_o => wb_nanobeacon_o"
+               "    -- );"
+               "  "
+               "  -- NB_TRIGGER <= '0';"
+               "  -- PB_V_LED_SHDN <= '1';"
+               ""
+               "  rst_n_internal <= not Rst;"
+               "  "
+               "  u0: xwb_nanobeacon"
+               "    generic map ("
+               "      g_interface_mode      => PIPELINED,"
+               "      g_address_granularity => BYTE"
+               "    )"
+               "    port map ("
+               "      NB_TRIGGER      => NB_TRIGGER,"
+               "      PB_V_LED_SHDN   => PB_V_LED_SHDN,"
+               "      rst_n_i         => rst_n_internal,"
+               "      clk_sys_i       => clk_sys_i,"
+               "      ref_clk_62_5    => ref_clk_62_5,"
+               "      ref_clk_lock    => ref_clk_lock,"
+               "      time_offset     => time_offset,"
+               "      timeslice_start => timeslice_start,"
+               "      tm_cycles_i     => tm_cycles_i,"
+               "      tm_tai_i        => tm_tai_i,"
+               "      tm_time_valid_i => tm_time_valid_i,"
+               "      slave_i         => wb_nanobeacon_i,"
+               "      slave_o         => wb_nanobeacon_o"
+               "    );"
+               " "
+               "end architecture rtl ; -- of nanobeacon"
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53f7b3483543d0e1bc4ae72610")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

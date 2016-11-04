@@ -1,0 +1,34 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c7cb02c80250621e8b5053ba6e4")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c7cb02c80250621e8b5f43ba6e4")
+    (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/wr-cores/ip_cores/general-cores/modules/wishbone/wishbone_pkg.vhd")
+    (PROPERTY "IMPORTED_LAST" "1445933510")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445875014")
+  )
+  (HDL_IDENT
+    (NAME "wishbone_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364389294 "Wed Mar 27 14:01:34 2013")
+    (MODIFIED 1445933510 "Tue Oct 27 09:11:50 2015")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7c17fe2515c321e8b5d9b5b556")
+      (LIBRARY "design")
+      (NAME "genram_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

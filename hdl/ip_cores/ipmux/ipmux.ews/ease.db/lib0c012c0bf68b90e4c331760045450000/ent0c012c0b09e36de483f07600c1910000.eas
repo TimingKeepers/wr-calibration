@@ -1,0 +1,414 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b09e36de483f07600c1910000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "rxfifos")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2048 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1322663568 "Wed Nov 30 15:32:48 2011")
+      (MODIFIED 1462965489 "Wed May 11 13:18:09 2016")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c532b2133750c51e1bc56341c36")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b72133750c51e1bc44341c36")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53a82133750c51e1bc05341c36")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b1be36de483f0760032910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 152 2088 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrReq(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b1be36de483f0760042910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 216 2088 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Full(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b98f36de483f0760093910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdClk(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b98f36de483f07600a3910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0be9f36de483f07600d3910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2008 408 2088 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrClk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bd4146de483f0760044910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdReq(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b35146de483f0760054910000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Empty(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b9ef02bf40560760008060000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RXo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RXo(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b44a22bf40e0076006d550000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "RXi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 88 2088 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RXi(NUM_UDP_PRTS:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0bb0055ff48150e1bca93107a3")
+      (HDL_IDENT
+        (NAME "Flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Flush(NUM_UDP_PRTS:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b09e36de483f07600d1910000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b09e36de483f07600d1910000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c0b60f57df4cec0e1bcd053a932")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'rxfifos'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Empty : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     Flush : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     Full  : out    std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     RXi   : in     dbus_type_array(NUM_UDP_PRTS downto 0);"
+               "--     RXo   : out    dbus_type_array(NUM_UDP_PRTS downto 0);"
+               "--     RdClk : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     RdReq : in     std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "--     Rst   : in     std_logic;"
+               "--     WrClk : in     std_logic;"
+               "--     WrReq : in     std_logic_vector(NUM_UDP_PRTS downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of rxfifos is"
+               ""
+               "  type std_logic_v9array is array ( natural range <> ) of std_logic_vector(8 downto 0);"
+               "  type std_logic_v18array is array ( natural range <> ) of std_logic_vector(17 downto 0);"
+               "   "
+               "  Signal Din_Intern: std_logic_v18array(NUM_UDP_PRTS downto 0);"
+               "  Signal Dout_Intern: std_logic_v18array(NUM_UDP_PRTS downto 0);"
+               "  Signal Rst_Intern_n: std_logic_vector(NUM_UDP_PRTS downto 0);"
+               "   "
+               "begin"
+               ""
+               "  GenRxFifos: For i In 0 to NUM_UDP_PRTS Generate"
+               "      "
+               "  Din_Intern(i)(17) <= '0';"
+               "  Din_Intern(i)(16) <= RXi(i).EOD;"
+               "  Din_Intern(i)(15 downto 0) <= RXi(i).D;"
+               "  RXo(i).EOD <= Dout_Intern(i)(16);"
+               "  RXo(i).D <= Dout_Intern(i)(15 downto 0);"
+               "  Rst_Intern_n(i) <= not(Flush(i) Or Rst);"
+               "      "
+               "  rxfifo: generic_async_fifo"
+               "    generic map("
+               "      g_data_width             => 18,"
+               "      g_size                   => 8192,"
+               "      g_with_rd_empty          => true,"
+               "      g_with_wr_almost_full    => true,"
+               "      g_almost_full_threshold  => 8176"
+               "    )"
+               "    port map"
+               "    ("
+               "      rst_n_i            => Rst_Intern_n(i),"
+               "      clk_wr_i           => WrClk,"
+               "      d_i                => Din_Intern(i),"
+               "      we_i               => WrReq(i),"
+               "      wr_empty_o         => open,"
+               "      wr_full_o          => open,"
+               "      wr_almost_empty_o  => open,"
+               "      wr_almost_full_o   => Full(i),"
+               "      wr_count_o         => open,"
+               "      clk_rd_i          => RdClk(i),"
+               "      q_o               => Dout_Intern(i),"
+               "      rd_i              => RdReq(i),"
+               "      rd_empty_o        => Empty(i),"
+               "      rd_full_o         => open,"
+               "      rd_almost_empty_o => open,"
+               "      rd_almost_full_o  => open,"
+               "      rd_count_o        => open"
+               "    );"
+               "   End Generate GenRxFifos;"
+               "   "
+               "end architecture rtl ; -- of rxfifos"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53cf87bf15c731e1bcec358af2")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

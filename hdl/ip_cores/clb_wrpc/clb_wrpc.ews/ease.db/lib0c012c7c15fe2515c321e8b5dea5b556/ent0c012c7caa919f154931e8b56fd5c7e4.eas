@@ -1,0 +1,1399 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7caa919f154931e8b56fd5c7e4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7caa919f154931e8b54fd5c7e4")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/WRPC/modules/wrc_core/wbp_mux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376302617")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Mon Aug 12 12:31:37 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1374590192")
+    )
+    (HDL_IDENT
+      (NAME "wbp_mux")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2944 3776)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1375279530 "Wed Jul 31 16:05:30 2013")
+      (MODIFIED 1376303496 "Mon Aug 12 12:31:36 2013")
+    )
+    (GENERIC
+      (OBID "egen0c012c7caa919f154931e8b57fd5c7e4")
+      (HDL_IDENT
+        (NAME "g_aw")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "2")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_aw(2)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7caa919f154931e8b58fd5c7e4")
+      (HDL_IDENT
+        (NAME "g_dw")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "16")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_dw(16)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7caa919f154931e8b59fd5c7e4")
+      (HDL_IDENT
+        (NAME "g_sw")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "2")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_sw(2)")
+      )
+    )
+    (META_GENERIC
+      (OBID "mgen0c012c7caa919f154931e8b5afd5c7e4")
+      (GEOMETRY 48 48 208 208)
+      (SIDE 3)
+      (LABEL
+        (POSITION 272 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 1)
+        (TEXT "3 generics")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5bfd5c7e4")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5cfd5c7e4")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5dfd5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_adr_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_aw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_snk_adr_i(g_aw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5efd5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_dat_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_dw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_snk_dat_i(g_dw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5ffd5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_sel_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_sw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_snk_sel_i(g_sw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b500e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_cyc_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_snk_cyc_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b510e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_stb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_snk_stb_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b520e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_ack_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 280 2984 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_snk_ack_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b530e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_err_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 408 2984 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_snk_err_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b540e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_snk_stall_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 536 2984 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_snk_stall_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b550e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_adr_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_aw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 664 2984 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_adr_o(g_aw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b560e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_dat_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_dw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 792 2984 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_dat_o(g_dw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b570e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_sel_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_sw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 920 2984 1000)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_sel_o(g_sw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b580e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_cyc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 1048 2984 1128)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1088)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_cyc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b590e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_stb_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 1176 2984 1256)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ep_src_stb_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5a0e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_ack_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_src_ack_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5b0e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_err_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_src_err_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5c0e5c7e4")
+      (HDL_IDENT
+        (NAME "ep_src_stall_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1432 40 1512)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1472)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ep_src_stall_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5d0e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_adr_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_aw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1560 40 1640)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1600)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_adr_i(g_aw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5e0e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_dat_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_dw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1688 40 1768)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_dat_i(g_dw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5f0e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_sel_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_sw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1816 40 1896)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1856)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_sel_i(g_sw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b501e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_cyc_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1944 40 2024)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1984)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_cyc_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b511e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_stb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2072 40 2152)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2112)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_snk_stb_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b521e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_ack_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 1304 2984 1384)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_snk_ack_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b531e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_err_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 1432 2984 1512)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1472)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_snk_err_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b541e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_snk_stall_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 1560 2984 1640)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1600)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_snk_stall_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b551e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_adr_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_aw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 1688 2984 1768)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_src_adr_o(g_aw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b561e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_dat_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_dw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 1816 2984 1896)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1856)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_src_dat_o(g_dw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b571e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_sel_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_sw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 1944 2984 2024)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 1984)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_src_sel_o(g_sw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b581e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_cyc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 2072 2984 2152)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2112)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_src_cyc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b591e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_stb_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 2200 2984 2280)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2240)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ptp_src_stb_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5a1e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_ack_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_src_ack_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5b1e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_err_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2328 40 2408)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2368)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_src_err_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5c1e5c7e4")
+      (HDL_IDENT
+        (NAME "ptp_src_stall_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2456 40 2536)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2496)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ptp_src_stall_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5d1e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_adr_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_aw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2584 40 2664)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2624)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_adr_i(g_aw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5e1e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_dat_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_dw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2712 40 2792)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2752)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_dat_i(g_dw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5f1e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_sel_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_sw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2840 40 2920)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2880)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_sel_i(g_sw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b502e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_cyc_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2968 40 3048)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3008)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_cyc_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b512e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_stb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3096 40 3176)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3136)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_snk_stb_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b522e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_ack_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 2328 2984 2408)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2368)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_snk_ack_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b532e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_err_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 2456 2984 2536)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2496)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_snk_err_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b542e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_snk_stall_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 2584 2984 2664)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2624)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_snk_stall_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b552e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_adr_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_aw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 2712 2984 2792)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2752)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_src_adr_o(g_aw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b562e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_dat_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_dw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 2840 2984 2920)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 2880)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_src_dat_o(g_dw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b572e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_sel_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_sw-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2904 2968 2984 3048)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 3008)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_src_sel_o(g_sw-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b582e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_cyc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 3096 2984 3176)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 3136)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_src_cyc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b592e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_stb_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2904 3224 2984 3304)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2880 3264)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ext_src_stb_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5a2e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_ack_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3224 40 3304)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3264)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_src_ack_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5b2e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_err_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3352 40 3432)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3392)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_src_err_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5c2e5c7e4")
+      (HDL_IDENT
+        (NAME "ext_src_stall_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3480 40 3560)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3520)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ext_src_stall_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7caa919f154931e8b5d2e5c7e4")
+      (HDL_IDENT
+        (NAME "class_core_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 3608 40 3688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3648)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "class_core_i(7:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7cd16b80250621e8b50888a6e4" "behaviour")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7cd16b80250621e8b50888a6e4")
+    (HDL_IDENT
+      (NAME "behaviour")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c7c989b80250621e8b55ec8a6e4")
+        (NAME "behaviour.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behaviour' of entity 'wbp_mux'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_aw : integer := 2;"
+               "--     g_dw : integer := 16;"
+               "--     g_sw : integer := 2);"
+               "--   port("
+               "--     clk_sys_i       : in     std_logic;"
+               "--     rst_n_i         : in     std_logic;"
+               "--     ep_snk_adr_i    : in     std_logic_vector(g_aw-1 downto 0);"
+               "--     ep_snk_dat_i    : in     std_logic_vector(g_dw-1 downto 0);"
+               "--     ep_snk_sel_i    : in     std_logic_vector(g_sw-1 downto 0);"
+               "--     ep_snk_cyc_i    : in     std_logic;"
+               "--     ep_snk_stb_i    : in     std_logic;"
+               "--     ep_snk_ack_o    : out    std_logic;"
+               "--     ep_snk_err_o    : out    std_logic;"
+               "--     ep_snk_stall_o  : out    std_logic;"
+               "--     ep_src_adr_o    : out    std_logic_vector(g_aw-1 downto 0);"
+               "--     ep_src_dat_o    : out    std_logic_vector(g_dw-1 downto 0);"
+               "--     ep_src_sel_o    : out    std_logic_vector(g_sw-1 downto 0);"
+               "--     ep_src_cyc_o    : out    std_logic;"
+               "--     ep_src_stb_o    : out    std_logic;"
+               "--     ep_src_ack_i    : in     std_logic;"
+               "--     ep_src_err_i    : in     std_logic;"
+               "--     ep_src_stall_i  : in     std_logic;"
+               "--     ptp_snk_adr_i   : in     std_logic_vector(g_aw-1 downto 0);"
+               "--     ptp_snk_dat_i   : in     std_logic_vector(g_dw-1 downto 0);"
+               "--     ptp_snk_sel_i   : in     std_logic_vector(g_sw-1 downto 0);"
+               "--     ptp_snk_cyc_i   : in     std_logic;"
+               "--     ptp_snk_stb_i   : in     std_logic;"
+               "--     ptp_snk_ack_o   : out    std_logic;"
+               "--     ptp_snk_err_o   : out    std_logic;"
+               "--     ptp_snk_stall_o : out    std_logic;"
+               "--     ptp_src_adr_o   : out    std_logic_vector(g_aw-1 downto 0);"
+               "--     ptp_src_dat_o   : out    std_logic_vector(g_dw-1 downto 0);"
+               "--     ptp_src_sel_o   : out    std_logic_vector(g_sw-1 downto 0);"
+               "--     ptp_src_cyc_o   : out    std_logic;"
+               "--     ptp_src_stb_o   : out    std_logic;"
+               "--     ptp_src_ack_i   : in     std_logic;"
+               "--     ptp_src_err_i   : in     std_logic;"
+               "--     ptp_src_stall_i : in     std_logic;"
+               "--     ext_snk_adr_i   : in     std_logic_vector(g_aw-1 downto 0);"
+               "--     ext_snk_dat_i   : in     std_logic_vector(g_dw-1 downto 0);"
+               "--     ext_snk_sel_i   : in     std_logic_vector(g_sw-1 downto 0);"
+               "--     ext_snk_cyc_i   : in     std_logic;"
+               "--     ext_snk_stb_i   : in     std_logic;"
+               "--     ext_snk_ack_o   : out    std_logic;"
+               "--     ext_snk_err_o   : out    std_logic;"
+               "--     ext_snk_stall_o : out    std_logic;"
+               "--     ext_src_adr_o   : out    std_logic_vector(g_aw-1 downto 0);"
+               "--     ext_src_dat_o   : out    std_logic_vector(g_dw-1 downto 0);"
+               "--     ext_src_sel_o   : out    std_logic_vector(g_sw-1 downto 0);"
+               "--     ext_src_cyc_o   : out    std_logic;"
+               "--     ext_src_stb_o   : out    std_logic;"
+               "--     ext_src_ack_i   : in     std_logic;"
+               "--     ext_src_err_i   : in     std_logic;"
+               "--     ext_src_stall_i : in     std_logic;"
+               "--     class_core_i    : in     std_logic_vector(7 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behaviour of wbp_mux is"
+               ""
+               "begin"
+               ""
+               "end architecture behaviour ; -- of wbp_mux"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

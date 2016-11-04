@@ -1,0 +1,111 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7cbf73b0250d11e8b500bf9ec4")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Wed Aug 14 10:13:21 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "USR_ACCESS_VIRTEX5")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376466939 "Wed Aug 14 09:55:39 2013")
+      (MODIFIED 1376467987 "Wed Aug 14 10:13:07 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7cbf73b0250d11e8b510bf9ec4")
+      (HDL_IDENT
+        (NAME "CFGCLK")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "CFGCLK")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cbf73b0250d11e8b520bf9ec4")
+      (HDL_IDENT
+        (NAME "DATA")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "DATA(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cbf73b0250d11e8b530bf9ec4")
+      (HDL_IDENT
+        (NAME "DATAVALID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "DATAVALID")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c12c3b0250d11e8b59070aec4" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c12c3b0250d11e8b59070aec4")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

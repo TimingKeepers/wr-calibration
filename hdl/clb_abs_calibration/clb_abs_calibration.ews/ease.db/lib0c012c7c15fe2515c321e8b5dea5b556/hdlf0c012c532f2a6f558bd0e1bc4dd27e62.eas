@@ -1,0 +1,18 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c532f2a6f558bd0e1bc4dd27e62")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Mon Sep 14 12:35:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+  )
+  (FILE "../../clb_wrpc/top/clb_wrpc.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1442226930 "Mon Sep 14 12:35:30 2015")
+    (MODIFIED 1442226930 "Mon Sep 14 12:35:30 2015")
+  )
+)
+(END_OF_FILE)

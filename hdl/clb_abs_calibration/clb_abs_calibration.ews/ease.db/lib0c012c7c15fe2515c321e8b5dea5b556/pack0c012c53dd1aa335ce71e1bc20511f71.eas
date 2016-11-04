@@ -1,0 +1,31 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c53dd1aa335ce71e1bc20511f71")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c7cf3f1e9158011e8b5f1d32f80")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:34 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+  )
+  (HDL_IDENT
+    (NAME "gencores_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1396351453 "Tue Apr 01 13:24:13 2014")
+    (MODIFIED 1396351453 "Tue Apr 01 13:24:13 2014")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c53b92af52508e0e1bc52a7fff7")
+      (LIBRARY "design")
+      (NAME "genram_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

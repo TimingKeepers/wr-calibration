@@ -1,0 +1,21 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c7c46fe2515c321e8b504b5b556")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1445933096")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Oct 27 09:30:30 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1445875014")
+  )
+  (FILE "../../../wr-cores/ip_cores/general-cores/modules/wishbone/wb_lm32/generated/xwb_lm32.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364389323 "Wed Mar 27 14:02:03 2013")
+    (MODIFIED 1445933096 "Tue Oct 27 09:04:56 2015")
+  )
+)
+(END_OF_FILE)

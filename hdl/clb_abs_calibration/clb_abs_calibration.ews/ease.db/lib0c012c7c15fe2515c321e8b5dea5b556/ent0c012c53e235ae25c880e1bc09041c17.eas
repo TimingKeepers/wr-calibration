@@ -1,0 +1,953 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53e235ae25c880e1bc09041c17")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Mar 11 12:56:39 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "stmachine")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1088 5120)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1391088430 "Thu Jan 30 14:27:10 2014")
+      (MODIFIED 1426069704 "Wed Mar 11 11:28:24 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536335ae25c880e1bc4c041c17")
+      (HDL_IDENT
+        (NAME "pps_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pps_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d145ae25c880e1bc2d041c17")
+      (HDL_IDENT
+        (NAME "ref_clk_62_5")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_62_5")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e855ae25c880e1bc14541c17")
+      (HDL_IDENT
+        (NAME "tm_cycles_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_cycles_i(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e855ae25c880e1bc24541c17")
+      (HDL_IDENT
+        (NAME "tm_tai_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "39" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_tai_i(39:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e855ae25c880e1bc34541c17")
+      (HDL_IDENT
+        (NAME "tm_time_valid_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_time_valid_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533d65ae25c880e1bc35f41c17")
+      (HDL_IDENT
+        (NAME "Fullo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "STM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 4056 40 4136)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4096)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Fullo(STM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533d65ae25c880e1bc45f41c17")
+      (HDL_IDENT
+        (NAME "UDP_Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "STM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 4184 40 4264)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4224)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Tx(STM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533d65ae25c880e1bc55f41c17")
+      (HDL_IDENT
+        (NAME "WrReqi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "STM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 4120 40 4200)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4160)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrReqi(STM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5334e7ae25c880e1bc75651c17")
+      (HDL_IDENT
+        (NAME "wb_stmach_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 4440 40 4520)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4480)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_stmach_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5344e7ae25c880e1bc85651c17")
+      (HDL_IDENT
+        (NAME "wb_stmach_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 4376 40 4456)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4416)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_stmach_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5313c1af258010e1bc69b37916")
+      (HDL_IDENT
+        (NAME "tdc_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_tdc_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1048 472 1128 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tdc_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537e23bf250511e1bca974f166")
+      (HDL_IDENT
+        (NAME "tdc_download")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "c_tdc_channels-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1048 536 1128 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tdc_download(c_tdc_channels-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536563bf250511e1bc4884f166")
+      (HDL_IDENT
+        (NAME "hydro_download")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 2776 1128 2856)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 2816)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "hydro_download")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53c0a8cf25ce90e1bc0290f752")
+      (HDL_IDENT
+        (NAME "time_offset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY 1048 664 1128 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "time_offset(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b22ccf25ce90e1bc82b0f752")
+      (HDL_IDENT
+        (NAME "timeslice_start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 728 1128 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "timeslice_start")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ed2d10358101e1bcdc51c273")
+      (HDL_IDENT
+        (NAME "hydro_dout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "C_AES_FIFO_WORD_SIZE-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1048 2584 1128 2664)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 2624)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "hydro_dout(C_AES_FIFO_WORD_SIZE-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ed2d10358101e1bcfc51c273")
+      (HDL_IDENT
+        (NAME "hydro_empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1048 2712 1128 2792)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 2752)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "hydro_empty")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53fa3840350a20e1bc12c7ae00")
+      (HDL_IDENT
+        (NAME "ref_clk_lock")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_lock")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5364017035cfa0e1bc4f54df01")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 4888 40 4968)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4928)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5364017035cfa0e1bc5f54df01")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 4952 40 5032)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4992)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53992a4735c061e1bcfa484105")
+      (HDL_IDENT
+        (NAME "r_enable_tdc_ch")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 1048 984 1128 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "r_enable_tdc_ch(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ae726d358141e1bc5d0356e1")
+      (HDL_IDENT
+        (NAME "r_veto_value")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY 1048 1048 1128 1128)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "r_veto_value(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ae726d358141e1bc7d0356e1")
+      (HDL_IDENT
+        (NAME "s_hits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_hits")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1048 1112 1128 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "s_hits")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538180ae350751e1bc0ca505c1")
+      (HDL_IDENT
+        (NAME "dpram_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 4568 40 4648)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4608)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dpram_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538180ae350751e1bc2ca505c1")
+      (HDL_IDENT
+        (NAME "dpram_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 4632 40 4712)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4672)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dpram_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53cc8c5f35c931e1bc5ef5b823")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "tdc_enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 856 1128 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tdc_enable")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533d8c5f35c931e1bc9ef5b823")
+      (HDL_IDENT
+        (NAME "tdc_flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 920 1128 1000)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 960)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tdc_flush")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537d8c5f35c931e1bcdef5b823")
+      (HDL_IDENT
+        (NAME "aes_enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 2840 1128 2920)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 2880)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "aes_enable")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53cd8c5f35c931e1bc1ff5b823")
+      (HDL_IDENT
+        (NAME "aes_flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 2904 1128 2984)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 2944)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "aes_flush")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533939a145cd21e1bcc1524c94")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "aes_locked")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1048 2968 1128 3048)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 3008)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "aes_locked")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a900a5454e01e1bc6a95a121")
+      (HDL_IDENT
+        (NAME "hydro_full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1048 2648 1128 2728)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 2688)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "hydro_full")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a0d0a545ca30e1bc7f874d77")
+      (HDL_IDENT
+        (NAME "front_end_full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1048 4888 1128 4968)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1024 4928)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "front_end_full")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53f235ae25c880e1bc39041c17" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53f235ae25c880e1bc39041c17")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53fea65435c640e1bccf14da81")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'stmachine'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Fullo           : in     std_logic_vector(STM_UDP_PRTS-1 downto 0);"
+               "--     Rst             : in     std_logic;"
+               "--     UDP_Tx          : out    dbus_type_array(STM_UDP_PRTS-1 downto 0);"
+               "--     WrReqi          : out    std_logic_vector(STM_UDP_PRTS-1 downto 0);"
+               "--     aes_enable      : out    std_logic;"
+               "--     aes_flush       : out    std_logic;"
+               "--     aes_locked      : in     std_logic;"
+               "--     clk_sys_i       : in     std_logic;"
+               "--     dpram_i         : in     t_wishbone_master_in;"
+               "--     dpram_o         : out    t_wishbone_master_out;"
+               "--     front_end_full  : out    std_logic;"
+               "--     hydro_dout      : in     std_logic_vector(C_AES_FIFO_WORD_SIZE-1 downto 0);"
+               "--     hydro_download  : out    std_logic;"
+               "--     hydro_empty     : in     std_logic;"
+               "--     hydro_full      : in     std_logic;"
+               "--     pps_i           : in     std_logic;"
+               "--     r_enable_tdc_ch : in     std_logic_vector(31 downto 0);"
+               "--     r_veto_value    : in     std_logic_vector(31 downto 0);"
+               "--     ref_clk_62_5    : in     std_logic;"
+               "--     ref_clk_lock    : in     std_logic;"
+               "--     s_hits          : in     t_hits;"
+               "--     tdc_download    : out    std_logic_vector(c_tdc_channels-1 downto 0);"
+               "--     tdc_enable      : out    std_logic;"
+               "--     tdc_flush       : out    std_logic;"
+               "--     tdc_i           : in     t_tdc_out;"
+               "--     time_offset     : out    std_logic_vector(27 downto 0);"
+               "--     timeslice_start : out    std_logic;"
+               "--     tm_cycles_i     : in     std_logic_vector(27 downto 0);"
+               "--     tm_tai_i        : in     std_logic_vector(39 downto 0);"
+               "--     tm_time_valid_i : in     std_logic;"
+               "--     wb_stmach_i     : in     t_wishbone_master_out;"
+               "--     wb_stmach_o     : out    t_wishbone_master_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of stmachine is"
+               ""
+               "  component xwb_stmach is"
+               "    generic("
+               "      g_interface_mode      : t_wishbone_interface_mode:=CLASSIC;"
+               "      g_address_granularity : t_wishbone_address_granularity:=WORD"
+               "    "
+               "    );"
+               "    port("
+               "      clk_sys_i       : in     std_logic;"
+               "      rst_n_i         : in     std_logic;"
+               "      ------clocks"
+               "      ref_clk_62_5    : in     std_logic; "
+               "      ref_clk_lock    : in     std_logic;"
+               "      irq_o           : out    std_logic;"
+               "      ---ip mux interface"
+               "      fullo           : in std_logic_vector(STM_UDP_PRTS-1 downto 0);"
+               "      WrReqi          : out std_logic_vector(STM_UDP_PRTS-1 downto 0);"
+               "      UDP_Tx          : out dbus_type_array(STM_UDP_PRTS-1 downto 0);"
+               "      ------tdc interface"
+               "      tdc_enable      : out    std_logic;"
+               "      tdc_flush       : out    std_logic;"
+               "      s_hits          : in     t_hits;"
+               "	    r_enable_tdc_ch : in     std_logic_vector(31 downto 0);"
+               "      tdc_download    : out    std_logic_vector(c_tdc_channels-1 downto 0);"
+               "      tdc_i           : in     t_tdc_out;"
+               "      ---aes interface"
+               "      aes_enable      : out    std_logic;"
+               "      aes_flush       : out    std_logic;"
+               "      aes_locked      : in     std_logic;"
+               "      hydro_dout      : in     std_logic_vector(C_AES_FIFO_WORD_SIZE-1 downto 0);"
+               "      hydro_download  : out    std_logic;"
+               "      hydro_empty     : in     std_logic;"
+               "      hydro_full      : in     std_logic;"
+               "      ----time_slice"
+               "      time_offset     : out    std_logic_vector(31 downto 0);"
+               "      timeslice_start : out    std_logic;"
+               "      pps_i           : in     std_logic;   "
+               "      ----super_time"
+               "      tm_cycles_i     : in     std_logic_vector(27 downto 0);"
+               "      tm_tai_i        : in     std_logic_vector(39 downto 0);"
+               "      tm_time_valid_i : in     std_logic;"
+               "      ----whisbone"
+               "      desc_o          : out t_wishbone_device_descriptor;"
+               "      Slave_i         : in     t_wishbone_slave_in;"
+               "      Slave_o         : out    t_wishbone_slave_out;"
+               "      ----whisbone DPRAM (monitoring)"
+               "      dpram_i         : in     t_wishbone_master_in;"
+               "      dpram_o         : out    t_wishbone_master_out"
+               "      );"
+               ""
+               "  end component;"
+               "  "
+               "  component wb_DummySlave"
+               "    port ("
+               "      Slave_i: in  t_wishbone_slave_in;"
+               "      Slave_o: out t_wishbone_slave_out"
+               "    );"
+               "  end component wb_DummySlave;"
+               ""
+               "  signal time_offset_internal: std_logic_vector(31 downto 0);"
+               "  signal rst_n               : std_logic;"
+               "  "
+               "begin"
+               "  "
+               "  rst_n <= not Rst;"
+               "  "
+               "  time_offset <= time_offset_internal(27 downto 0);"
+               "   "
+               "  wrap_stmach:xwb_stmach"
+               "    generic map ("
+               "      g_interface_mode       => PIPELINED,"
+               "      g_address_granularity  => BYTE"
+               "    )"
+               "    port map("
+               "      clk_sys_i       => clk_sys_i,"
+               "      rst_n_i         => rst_n,"
+               "      ------clocks"
+               "      ref_clk_62_5    => ref_clk_62_5,"
+               "      ref_clk_lock    => ref_clk_lock,"
+               "      irq_o           => front_end_full,"
+               "      ---ip mux interface"
+               "      fullo           => Fullo,"
+               "      WrReqi          => WrReqi,"
+               "      UDP_Tx          => UDP_Tx,"
+               "      ------tdc interface"
+               "      tdc_enable      => tdc_enable,"
+               "      tdc_flush       => tdc_flush,"
+               "      s_hits          => s_hits,"
+               "	     r_enable_tdc_ch => r_enable_tdc_ch,"
+               "      tdc_download    => tdc_download,"
+               "      tdc_i           => tdc_i,"
+               "      ---aes interace"
+               "      aes_enable      => aes_enable,"
+               "      aes_flush       => aes_flush,"
+               "      aes_locked      => aes_locked,"
+               "      hydro_dout      => hydro_dout,    "
+               "      hydro_download  => hydro_download,"
+               "      hydro_empty     => hydro_empty,   "
+               "      hydro_full      => hydro_full,   "
+               "      ----time_slice"
+               "      time_offset     => time_offset_internal,"
+               "      timeslice_start => timeslice_start,"
+               "      pps_i           => pps_i,"
+               "      ----------super_time"
+               "      tm_cycles_i     => tm_cycles_i,    "
+               "      tm_tai_i        => tm_tai_i,       "
+               "      tm_time_valid_i => tm_time_valid_i,"
+               "      ----whisbone"
+               "      desc_o          => open,"
+               "      Slave_i         => wb_stmach_i,"
+               "      Slave_o         => wb_stmach_o,"
+               "      ----whisbone DPRAM (monitoring)"
+               "      dpram_i         => dpram_i,"
+               "      dpram_o         => dpram_o     "
+               "    );"
+               ""
+               "end architecture rtl ; -- of stmachine"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

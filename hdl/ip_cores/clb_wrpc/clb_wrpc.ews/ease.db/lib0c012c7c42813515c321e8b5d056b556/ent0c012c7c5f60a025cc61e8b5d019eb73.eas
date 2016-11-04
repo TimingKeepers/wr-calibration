@@ -1,0 +1,107 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c5f60a025cc61e8b5d019eb73")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Tue Aug 13 12:14:49 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "CAPTUREE2")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1472 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1376388853 "Tue Aug 13 12:14:13 2013")
+      (MODIFIED 1376388853 "Tue Aug 13 12:14:13 2013")
+    )
+    (GENERIC
+      (OBID "egen0c012c7c5f60a025cc61e8b5e019eb73")
+      (HDL_IDENT
+        (NAME "ONESHOT")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "string")
+          (DEF_VALUE "\"TRUE\"")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "ONESHOT(\"TRUE\")")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c5f60a025cc61e8b5f019eb73")
+      (HDL_IDENT
+        (NAME "CAP")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "CAP")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c5f60a025cc61e8b50119eb73")
+      (HDL_IDENT
+        (NAME "CLK")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "CLK")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c5f60a025cc61e8b51119eb73" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c5f60a025cc61e8b51119eb73")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

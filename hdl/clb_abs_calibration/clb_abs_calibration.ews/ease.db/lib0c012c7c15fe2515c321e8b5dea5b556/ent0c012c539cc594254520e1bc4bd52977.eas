@@ -1,0 +1,208 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c539cc594254520e1bc4bd52977")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "RdOutAll")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1280 448)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1380539593 "Mon Sep 30 13:13:13 2013")
+      (MODIFIED 1423130300 "Thu Feb 05 10:58:20 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534dc594254520e1bc2ed52977")
+      (HDL_IDENT
+        (NAME "UDP_Rx_Empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Rx_Empty(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537dc594254520e1bc7ed52977")
+      (HDL_IDENT
+        (NAME "UDP_Rx_RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Rx_RdReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c532fbe48250330e1bc85e1aaa4")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "ReadOut")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1240 280 1320 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ReadOut")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e8ce48250330e1bcfff1aaa4")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e8ce48250330e1bc0002aaa4")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c539cc594254520e1bc7bd52977" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c539cc594254520e1bc7bd52977")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c539cc594254520e1bc8bd52977")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'RdOutAll'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Clk          : in     std_logic;"
+               "--     ReadOut      : in     std_logic;"
+               "--     Rst          : in     std_logic;"
+               "--     UDP_Rx_Empty : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     UDP_Rx_RdReq : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of RdOutAll is"
+               ""
+               "begin"
+               "   Process (Clk, Rst)"
+               "   begin"
+               "      If Rst = '1' Then"
+               "         UDP_Rx_RdReq <= (others => '0');"
+               "	  ElsIf Rising_Edge(Clk) Then"
+               "	     If ReadOut = '1' Then"
+               "            For i In 0 to NUM_UDP_PRTS-1 loop"
+               "	           UDP_Rx_RdReq(i) <= not UDP_Rx_Empty(i);"
+               "	        end loop;"
+               "	     End If;"
+               "      End If;"
+               "   end Process;"
+               "end architecture rtl ; -- of RdOutAll"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53fde594254520e1bc1a162977")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,343 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c538e13b645cb71e1bc36909c27")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Mar 11 13:38:26 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "USB_FanOut")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1416311272 "Tue Nov 18 12:47:52 2014")
+      (MODIFIED 1426077506 "Wed Mar 11 13:38:26 2015")
+    )
+    (PORT
+      (OBID "eprt0c012c537f13b645cb71e1bc5c909c27")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Tx2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Tx2")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53df13b645cb71e1bcbc909c27")
+      (HDL_IDENT
+        (NAME "Rx1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rx1")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c532023b645cb71e1bc1d909c27")
+      (HDL_IDENT
+        (NAME "Rx2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rx2")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530523b645cb71e1bc0f909c27")
+      (HDL_IDENT
+        (NAME "USBEXT_TX1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 536 808 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USBEXT_TX1")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530523b645cb71e1bc2f909c27")
+      (HDL_IDENT
+        (NAME "USBEXT_TX2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 728 808 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USBEXT_TX2")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530523b645cb71e1bc4f909c27")
+      (HDL_IDENT
+        (NAME "USBEXT_RX1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 600 808 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USBEXT_RX1")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530523b645cb71e1bc6f909c27")
+      (HDL_IDENT
+        (NAME "USBEXT_RX2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 792 808 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USBEXT_RX2")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531b23b645cb71e1bc33a09c27")
+      (HDL_IDENT
+        (NAME "USB_RX1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 152 808 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USB_RX1")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531b23b645cb71e1bc73a09c27")
+      (HDL_IDENT
+        (NAME "USB_RX2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 344 808 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USB_RX2")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531b23b645cb71e1bc93a09c27")
+      (HDL_IDENT
+        (NAME "USB_TX2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 280 808 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USB_TX2")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ac53005582f0e1bc94e441e7")
+      (HDL_IDENT
+        (NAME "Tx1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Tx1")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b373005582f0e1bce4e441e7")
+      (HDL_IDENT
+        (NAME "USB_TX1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 88 808 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "USB_TX1")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c538e13b645cb71e1bc66909c27" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c538e13b645cb71e1bc66909c27")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c538343b645cb71e1bc28a09c27")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'USB_FanOut'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Rx1        : out    std_logic;"
+               "--     Rx2        : out    std_logic;"
+               "--     Tx1        : in     std_logic;"
+               "--     Tx2        : in     std_logic;"
+               "--     USBEXT_RX1 : in     std_logic;"
+               "--     USBEXT_RX2 : in     std_logic;"
+               "--     USBEXT_TX1 : out    std_logic;"
+               "--     USBEXT_TX2 : out    std_logic;"
+               "--     USB_RX1    : in     std_logic;"
+               "--     USB_RX2    : in     std_logic;"
+               "--     USB_TX1    : out    std_logic;"
+               "--     USB_TX2    : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of USB_FanOut is"
+               ""
+               "begin"
+               ""
+               "USB_TX1    <= Tx1;"
+               "USBEXT_TX1 <= Tx1;"
+               "Rx1        <= USB_RX1 Or USBEXT_RX1;"
+               ""
+               "USB_TX2    <= Tx2;"
+               "USBEXT_TX2 <= Tx2;"
+               "Rx2        <= USB_RX2 Or USBEXT_RX2;"
+               ""
+               "end architecture structure ; -- of USB_FanOut"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

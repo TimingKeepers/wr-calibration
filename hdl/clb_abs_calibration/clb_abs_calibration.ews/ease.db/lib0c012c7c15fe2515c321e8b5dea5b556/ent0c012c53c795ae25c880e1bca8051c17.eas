@@ -1,0 +1,672 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53c795ae25c880e1bca8051c17")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Mar 11 12:56:39 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "aes")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 1856)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1391090044 "Thu Jan 30 14:54:04 2014")
+      (MODIFIED 1426069689 "Wed Mar 11 11:28:09 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5345e7ae25c880e1bcf6651c17")
+      (HDL_IDENT
+        (NAME "wb_aes_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1560 40 1640)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1600)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_aes_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5345e7ae25c880e1bc07651c17")
+      (HDL_IDENT
+        (NAME "wb_aes_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1496 40 1576)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_aes_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e617be258c00e1bcba12ad71")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1688 40 1768)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1728)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e617be258c00e1bcca12ad71")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1752 40 1832)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1792)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535b2ccf25ce90e1bc1bf0f752")
+      (HDL_IDENT
+        (NAME "pps_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pps_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535b2ccf25ce90e1bc2bf0f752")
+      (HDL_IDENT
+        (NAME "tm_cycles_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1240 40 1320)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1280)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_cycles_i(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535b2ccf25ce90e1bc3bf0f752")
+      (HDL_IDENT
+        (NAME "tm_tai_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "39" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_tai_i(39:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535b2ccf25ce90e1bc4bf0f752")
+      (HDL_IDENT
+        (NAME "tm_time_valid_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1368 40 1448)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1408)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tm_time_valid_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535c2ccf25ce90e1bc9cf0f752")
+      (HDL_IDENT
+        (NAME "time_offset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "time_offset(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535c2ccf25ce90e1bcacf0f752")
+      (HDL_IDENT
+        (NAME "timeslice_start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "timeslice_start")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e88ddf254c31e1bc6357cb70")
+      (HDL_IDENT
+        (NAME "ref_clk_125")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_125")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53529ddf254c31e1bcd357cb70")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "audio_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "audio_in")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53639ddf254c31e1bc1457cb70")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "rd")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rd")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5398fc10358101e1bc4a51c273")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "audio_clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 280 1448 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "audio_clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5399fc10358101e1bc8a51c273")
+      (HDL_IDENT
+        (NAME "audio_on_off")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "audio_on_off")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53291d10358101e1bc8b51c273")
+      (HDL_IDENT
+        (NAME "dout")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "C_AES_FIFO_WORD_SIZE-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dout(C_AES_FIFO_WORD_SIZE-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53102d10358101e1bc1c51c273")
+      (HDL_IDENT
+        (NAME "full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "full")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53502d10358101e1bc5c51c273")
+      (HDL_IDENT
+        (NAME "empty")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "empty")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53cf3840350a20e1bc25c7ae00")
+      (HDL_IDENT
+        (NAME "ref_clk_lock")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_lock")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d7753e358d21e1bc8d865423")
+      (HDL_IDENT
+        (NAME "ref_clk_62_5")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_62_5")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a9c5f35c931e1bcd136b823")
+      (HDL_IDENT
+        (NAME "enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "enable")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535a9c5f35c931e1bcf136b823")
+      (HDL_IDENT
+        (NAME "flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "flush")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539839a145cd21e1bc81524c94")
+      (HDL_IDENT
+        (NAME "Locked")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Locked")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53c795ae25c880e1bcc8051c17" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53c795ae25c880e1bcc8051c17")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53192ccf25ce90e1bc05b0f752")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'aes'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Locked          : out    std_logic;"
+               "--     Rst             : in     std_logic;"
+               "--     audio_clk       : out    std_logic;"
+               "--     audio_in        : in     std_logic;"
+               "--     audio_on_off    : out    std_logic;"
+               "--     clk_sys_i       : in     std_logic;"
+               "--     dout            : out    std_logic_vector(C_AES_FIFO_WORD_SIZE-1 downto 0);"
+               "--     empty           : out    std_logic;"
+               "--     enable          : in     std_logic;"
+               "--     flush           : in     std_logic;"
+               "--     full            : out    std_logic;"
+               "--     pps_i           : in     std_logic;"
+               "--     rd              : in     std_logic;"
+               "--     ref_clk_125     : in     std_logic;"
+               "--     ref_clk_62_5    : in     std_logic;"
+               "--     ref_clk_lock    : in     std_logic;"
+               "--     time_offset     : in     std_logic_vector(27 downto 0);"
+               "--     timeslice_start : in     std_logic;"
+               "--     tm_cycles_i     : in     std_logic_vector(27 downto 0);"
+               "--     tm_tai_i        : in     std_logic_vector(39 downto 0);"
+               "--     tm_time_valid_i : in     std_logic;"
+               "--     wb_aes_i        : in     t_wishbone_master_out;"
+               "--     wb_aes_o        : out    t_wishbone_master_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of aes is"
+               "   component xwb_aes is"
+               "      Generic ("
+               "         g_interface_mode    	  : t_wishbone_interface_mode      := CLASSIC;"
+               "         g_address_granularity	: t_wishbone_address_granularity := WORD;"
+               "         g_debug_mode           : string                         := \"false\"  -- false disables the sampling rate change; "
+               "                                                                             -- true enables the sampling rate change."
+               "      );"
+               "      port("
+               "         clk_sys_i	: in std_logic;"
+               "         rst_n_i		: in std_logic;"
+               ""
+               "         -----WISHBONE SIGNALS"
+               "         slave_i		: in t_wishbone_slave_in;"
+               "         slave_o		: out t_wishbone_slave_out;"
+               "         desc_o  	  : out t_wishbone_device_descriptor;"
+               ""
+               "         ------AES SIGNALS"
+               "         aes_i	    :in  t_aes_in;"
+               "         aes_o      :out t_aes_out"
+               "		);"
+               "   end component xwb_aes;"
+               ""
+               "   signal internal_rst_n: std_logic;"
+               "	 signal internal_aes_in: t_aes_in;"
+               "	 signal internal_aes_out: t_aes_out;"
+               "	"
+               "begin"
+               "   internal_rst_n <= not Rst;"
+               ""
+               "   internal_aes_in.enable           <= enable;               -- std_logic;                                       enable the aes module"
+               "   internal_aes_in.flush            <= flush;                -- std_logic;                                       flush the aes module (reset the data path)   "
+               "   internal_aes_in.audio_in         <= audio_in;             -- std_logic;                                       AES3 audio input"
+               "   internal_aes_in.fifo_rd          <= rd;                   -- std_logic;                                       rd from decoded audio fifo"
+               "   internal_aes_in.fifo_rd_clk      <= ref_clk_62_5;         -- std_logic;                                       rd clk for the fifo"
+               "   internal_aes_in.clk125M          <= ref_clk_125;          -- std_logic;                                       125 MHz clock input"
+               "   internal_aes_in.timeslice_start  <= timeslice_start;      -- std_logic;                                       start of a new time slice"
+               "   internal_aes_in.timeoffset       <= \"0000\" & time_offset; -- std_logic_vector(C_TIMEOFFSET_SIZE-1 downto 0);  time offset between start of time slice"
+               ""
+               "   dout         <= internal_aes_out.fifo_dout;           -- std_logic_vector(C_AES_FIFO_WORD_SIZE-1 downto 0);  data from decoded audio fifo"
+               "   empty        <= internal_aes_out.fifo_empty;          -- std_logic;                                     decoded audio fifo empty"
+               "   full         <= internal_aes_out.fifo_full;           -- std_logic;                                     decoded audio fifo full"
+               "   audio_clk    <= internal_aes_out.audio_clk;           -- std_logic;                                     25 MHz clk output for AES3 digitizer;"
+               "   audio_on_off <= internal_aes_out.audio_on_off;        -- std_logic;                                     Power on/off the audio instrumentoff;"
+               "   locked       <= internal_aes_out.locked;              -- std_logic;                                     aes module is locked"
+               "   "
+               "   wrap_aes: xwb_aes"
+               "      generic map ("
+               "         g_interface_mode      => PIPELINED,"
+               "         g_address_granularity => BYTE,"
+               "         g_debug_mode          => \"false\""
+               "      )"
+               "      port map ("
+               "         clk_sys_i        => clk_sys_i,"
+               "		     rst_n_i          => internal_rst_n,"
+               "         slave_i          => wb_aes_i,"
+               "         slave_o          => wb_aes_o,"
+               "         desc_o           => open,"
+               "         aes_i            => internal_aes_in,"
+               "         aes_o            => internal_aes_out"
+               "      );		 "
+               "		"
+               "		"
+               "end architecture structure ; -- of aes"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

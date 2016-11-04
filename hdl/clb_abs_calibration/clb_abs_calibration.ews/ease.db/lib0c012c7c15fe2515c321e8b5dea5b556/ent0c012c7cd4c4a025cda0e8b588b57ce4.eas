@@ -1,0 +1,120 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7cd4c4a025cda0e8b588b57ce4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7cc4c4a025cda0e8b538b57ce4")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/clb_abs_calibration/fw/modules/wb_dummys/wb_DummySink.vhd")
+      (PROPERTY "IMPORTED_LAST" "1445935137")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Oct 27 10:05:14 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1442997926")
+    )
+    (HDL_IDENT
+      (NAME "wb_DummySink")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1376406605 "Tue Aug 13 17:10:05 2013")
+      (MODIFIED 1445936713 "Tue Oct 27 10:05:13 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cd4c4a025cda0e8b598b57ce4")
+      (HDL_IDENT
+        (NAME "snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cd4c4a025cda0e8b5a8b57ce4")
+      (HDL_IDENT
+        (NAME "snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c531283f265ce20e1bc94569201" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c531283f265ce20e1bc94569201")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a4e3f265ce20e1bc28e69201")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'wb_DummySink'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     snk_i : out    t_wrf_sink_in;"
+               "--     snk_o : in     t_wrf_sink_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of wb_DummySink is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of wb_DummySink"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

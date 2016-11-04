@@ -1,0 +1,24 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c532115822583d0e1bc42f23ba2")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../wr-cores/modules/wr_endpoint/ep_registers_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 11:31:46 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "ep_wbgen2_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1378373906 "Thu Sep 05 11:38:26 2013")
+    (MODIFIED 1478255465 "Fri Nov 04 11:31:05 2016")
+  )
+)
+(END_OF_FILE)

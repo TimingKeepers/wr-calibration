@@ -1,0 +1,24 @@
+(DATABASE_VERSION 16)
+(PACKAGE_FILE
+  (OBID "pack0c012c5369a571254850e1bc7ef248a2")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../../WRPC_130823/modules/wr_softpll_ng/softpll_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Fri Aug 23 14:51:02 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "softpll_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1377262230 "Fri Aug 23 14:50:30 2013")
+    (MODIFIED 1377262230 "Fri Aug 23 14:50:30 2013")
+  )
+)
+(END_OF_FILE)

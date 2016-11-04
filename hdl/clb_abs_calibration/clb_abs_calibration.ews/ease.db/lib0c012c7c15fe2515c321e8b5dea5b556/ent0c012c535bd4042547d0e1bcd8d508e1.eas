@@ -1,0 +1,389 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c535bd4042547d0e1bcd8d508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1383044468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 25 11:21:33 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1383043939")
+    )
+    (HDL_IDENT
+      (NAME "txfifos")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2048 1408)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945909 "Mon Sep 23 16:18:29 2013")
+      (MODIFIED 1383049881 "Tue Oct 29 13:31:21 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c74da9b150201e8b552f62174")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c535bd4042547d0e1bce8d508e1")
+      (HDL_IDENT
+        (NAME "Vendor")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "String")
+          (DEF_VALUE "\"ALT\"")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "Vendor(\"ALT\")")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c535bd4042547d0e1bcf8d508e1")
+      (HDL_IDENT
+        (NAME "Threshold")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "natural")
+          (DEF_VALUE "496")
+        )
+      )
+      (GEOMETRY 88 216 168 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "Threshold(496)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc09d508e1")
+      (HDL_IDENT
+        (NAME "Flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Flush(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc19d508e1")
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 472 2088 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Full(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc29d508e1")
+      (HDL_IDENT
+        (NAME "RdClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdClk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc39d508e1")
+      (HDL_IDENT
+        (NAME "RdReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RdReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc49d508e1")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc59d508e1")
+      (HDL_IDENT
+        (NAME "TXi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TXi(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc69d508e1")
+      (HDL_IDENT
+        (NAME "TXo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 600 2088 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "TXo(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc79d508e1")
+      (HDL_IDENT
+        (NAME "Valid")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 728 2088 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Valid(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc89d508e1")
+      (HDL_IDENT
+        (NAME "WrClk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrClk(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc99d508e1")
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1240 40 1320)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1280)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrReq(NUM_UDP_PRTS-1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534759f6250a01e1bcbf92d981" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534759f6250a01e1bcbf92d981")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a9aaf6250a01e1bcf3a2d981")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'txfifos'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     Vendor    : String := \"ALT\";"
+               "--     Threshold : natural := 496);"
+               "--   port("
+               "--     Flush : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Full  : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     RdClk : in     std_logic;"
+               "--     RdReq : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     Rst   : in     std_logic;"
+               "--     TXi   : in     dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     TXo   : out    dbus_type_array(NUM_UDP_PRTS-1 downto 0);"
+               "--     Valid : out    std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrClk : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0);"
+               "--     WrReq : in     std_logic_vector(NUM_UDP_PRTS-1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of txfifos is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of txfifos"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,362 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7cadc1e9158011e8b552b32f80")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c7dc1e9158011e8b522b32f80")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/WRPC/ip_cores/etherbone-core/hdl/EB_SPEC_Test/EB_CORE.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376302605")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 8")
+      (PROPERTY "STAMP_TIME" "Mon Aug 12 12:31:37 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1372938590")
+    )
+    (HDL_IDENT
+      (NAME "EB_CORE")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2816 1728)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mgebyehu")
+      (CREATED 1369316570 "Thu May 23 15:42:50 2013")
+      (MODIFIED 1376303496 "Mon Aug 12 12:31:36 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5a017a6e4")
+        (LIBRARY "ieee")
+        (NAME "numeric_std")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c65f5f9158011e8b512262f80")
+        (LIBRARY "work")
+        (NAME "EB_HDR_PKG")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c1bf5f9158011e8b5d9262f80")
+        (LIBRARY "work")
+        (NAME "wb32_package")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7cadc1e9158011e8b562b32f80")
+      (HDL_IDENT
+        (NAME "g_master_slave")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "STRING")
+          (DEF_VALUE "\"SLAVE\"")
+        )
+      )
+      (GEOMETRY 344 152 424 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 488 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_master_slave(\"SLAVE\")")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7cadc1e9158011e8b572b32f80")
+      (HDL_IDENT
+        (NAME "g_sdb_address")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector(63 downto 0)")
+        )
+      )
+      (GEOMETRY 344 280 424 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 488 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_sdb_address()")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b582b32f80")
+      (HDL_IDENT
+        (NAME "clk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b592b32f80")
+      (HDL_IDENT
+        (NAME "nRst_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2776 792 2856 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "nRst_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b5a2b32f80")
+      (HDL_IDENT
+        (NAME "snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2776 280 2856 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b5b2b32f80")
+      (HDL_IDENT
+        (NAME "snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2776 152 2856 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b5c2b32f80")
+      (HDL_IDENT
+        (NAME "src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2776 664 2856 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b5d2b32f80")
+      (HDL_IDENT
+        (NAME "src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2776 536 2856 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b5e2b32f80")
+      (HDL_IDENT
+        (NAME "cfg_slave_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2776 1112 2856 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 1152)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "cfg_slave_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b5f2b32f80")
+      (HDL_IDENT
+        (NAME "cfg_slave_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2776 984 2856 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "cfg_slave_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b503b32f80")
+      (HDL_IDENT
+        (NAME "master_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2776 1560 2856 1640)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 1600)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "master_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cadc1e9158011e8b513b32f80")
+      (HDL_IDENT
+        (NAME "master_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2776 1432 2856 1512)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 1472)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "master_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7cd16b80250621e8b5d788a6e4" "behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7cd16b80250621e8b5d788a6e4")
+    (HDL_IDENT
+      (NAME "behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c7c989b80250621e8b52ec8a6e4")
+        (NAME "behavioral.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavioral' of entity 'EB_CORE'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_master_slave : STRING := \"SLAVE\";"
+               "--     g_sdb_address  : std_logic_vector(63 downto 0));"
+               "--   port("
+               "--     clk_i       : in     std_logic;"
+               "--     nRst_i      : in     std_logic;"
+               "--     snk_i       : in     t_wrf_sink_in;"
+               "--     snk_o       : out    t_wrf_sink_out;"
+               "--     src_o       : out    t_wrf_source_out;"
+               "--     src_i       : in     t_wrf_source_in;"
+               "--     cfg_slave_o : out    t_wishbone_slave_out;"
+               "--     cfg_slave_i : in     t_wishbone_slave_in;"
+               "--     master_o    : out    t_wishbone_master_out;"
+               "--     master_i    : in     t_wishbone_master_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavioral of EB_CORE is"
+               ""
+               "begin"
+               ""
+               "end architecture behavioral ; -- of EB_CORE"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

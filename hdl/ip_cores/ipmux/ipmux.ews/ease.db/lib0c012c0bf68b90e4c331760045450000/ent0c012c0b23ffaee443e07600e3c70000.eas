@@ -1,0 +1,218 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c0b23ffaee443e07600e3c70000")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Jul 12 17:11:29 2016")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "Debounce")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 512 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1324023602 "Fri Dec 16 09:20:02 2011")
+      (MODIFIED 1339514630 "Tue Jun 12 17:23:50 2012")
+    )
+    (GENERIC
+      (OBID "egen0c012c0b84b0bee443e07600c7c70000")
+      (HDL_IDENT
+        (NAME "Simulation")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "False")
+        )
+      )
+      (GEOMETRY 24 152 104 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 168 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "Simulation(False)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b93ffaee443e0760024c70000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "I")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0be3ffaee443e0760044c70000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 88 552 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0b74ffaee443e0760064c70000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c0ba4ffaee443e0760084c70000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c0b23ffaee443e07600f3c70000" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c0b23ffaee443e07600f3c70000")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c0b60f57df4cec0e1bce303a932")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'Debounce'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     Simulation : boolean := False);"
+               "--   port("
+               "--     Clk : in     std_logic;"
+               "--     I   : in     std_logic;"
+               "--     O   : out    std_logic;"
+               "--     Rst : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of Debounce is"
+               ""
+               "begin"
+               "   Process (Clk, Rst)"
+               "      Variable Meta_1, Meta_2, TerminalCount: Std_Logic;"
+               "      Variable Cnt: Unsigned (11 downto 0);"
+               "   Begin"
+               "      If Rst = '1' Then"
+               "         Meta_1 := '0';"
+               "         Meta_2 := '0';"
+               "         Cnt := (Others => '0');"
+               "         TerminalCount := '0';"
+               "         O <= '0';"
+               "      ElsIf Rising_Edge(Clk) Then"
+               "         Meta_2 := Meta_1;"
+               "         Meta_1 := I;"
+               ""
+               "         If Meta_2 = '1' Then"
+               "            If Simulation = True Then"
+               "               TerminalCount := Cnt(Cnt'Right);"
+               "            Else"
+               "               TerminalCount := Cnt(Cnt'Left);"
+               "            End If;"
+               "            "
+               "            If TerminalCount = '1' Then"
+               "               O <= '1';"
+               "            Else"
+               "               Cnt := Cnt + 1;"
+               "               O <= '0';"
+               "            End If;"
+               "         Else"
+               "            Cnt := (Others => '0');"
+               "            O <= '0';"
+               "         End If;"
+               "      End If;"
+               "   End Process;"
+               "end architecture rtl ; -- of Debounce"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)
