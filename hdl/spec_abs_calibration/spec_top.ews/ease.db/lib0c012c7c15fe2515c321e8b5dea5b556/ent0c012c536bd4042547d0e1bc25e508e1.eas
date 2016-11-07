@@ -1,0 +1,581 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c536bd4042547d0e1bc25e508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1383044468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Tue Oct 29 13:31:22 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1383043939")
+    )
+    (HDL_IDENT
+      (NAME "TxBuffers")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 2048)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945910 "Mon Sep 23 16:18:30 2013")
+      (MODIFIED 1383049881 "Tue Oct 29 13:31:21 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c74da9b150201e8b552f62174")
+        (LIBRARY "design")
+        (NAME "V_ARRAY_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc35e508e1")
+      (HDL_IDENT
+        (NAME "CPU_AccGnt")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "CPU_AccGnt")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc45e508e1")
+      (HDL_IDENT
+        (NAME "Connect")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Connect")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc55e508e1")
+      (HDL_IDENT
+        (NAME "Connected")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Connected")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc65e508e1")
+      (HDL_IDENT
+        (NAME "FragID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "FragID(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc75e508e1")
+      (HDL_IDENT
+        (NAME "FragOff")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "11" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "FragOff(11:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc85e508e1")
+      (HDL_IDENT
+        (NAME "MoreFrag")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "MoreFrag")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc95e508e1")
+      (HDL_IDENT
+        (NAME "Stream")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "natural range NUM_UDP_PRTS-1 downto 0")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Stream")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bca5e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_DATA")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_DATA(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcb5e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_EOP")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_EOP")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcc5e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_RDREQ")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "TX_LL_RDREQ")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcd5e508e1")
+      (HDL_IDENT
+        (NAME "TX_LL_VALID")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "TX_LL_VALID")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bce5e508e1")
+      (HDL_IDENT
+        (NAME "UDP_TX_CPU")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "ipmux_cpu_in_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_TX_CPU")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bcf5e508e1")
+      (HDL_IDENT
+        (NAME "eth_regs_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "eth_regs_out_type")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1240 40 1320)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1280)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "eth_regs_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc16e508e1")
+      (HDL_IDENT
+        (NAME "tx_clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1496 40 1576)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tx_clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc26e508e1")
+      (HDL_IDENT
+        (NAME "tx_collision")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1624 40 1704)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1664)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tx_collision")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc56e508e1")
+      (HDL_IDENT
+        (NAME "tx_overflow")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 728 1448 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_overflow")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc66e508e1")
+      (HDL_IDENT
+        (NAME "tx_reset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1752 40 1832)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1792)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tx_reset")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc76e508e1")
+      (HDL_IDENT
+        (NAME "tx_retransmit")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1880 40 1960)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1920)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tx_retransmit")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536bd4042547d0e1bc86e508e1")
+      (HDL_IDENT
+        (NAME "tx_underrun")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 856 1448 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "tx_underrun")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5332c14525cfb0e1bc3747e675")
+      (HDL_IDENT
+        (NAME "src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1368 40 1448)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1408)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5332c14525cfb0e1bc4747e675")
+      (HDL_IDENT
+        (NAME "src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 472 1448 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534759f6250a01e1bcaf92d981" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534759f6250a01e1bcaf92d981")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a9aaf6250a01e1bce3a2d981")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'TxBuffers'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     CPU_AccGnt    : out    std_logic;"
+               "--     Connect       : out    std_logic;"
+               "--     Connected     : in     std_logic;"
+               "--     FragID        : in     std_logic_vector(15 downto 0);"
+               "--     FragOff       : in     std_logic_vector(11 downto 0);"
+               "--     MoreFrag      : in     std_logic;"
+               "--     Stream        : in     natural range NUM_UDP_PRTS-1 downto 0;"
+               "--     TX_LL_DATA    : in     std_logic_vector(15 downto 0);"
+               "--     TX_LL_EOP     : in     std_logic;"
+               "--     TX_LL_RDREQ   : out    std_logic;"
+               "--     TX_LL_VALID   : in     std_logic;"
+               "--     UDP_TX_CPU    : in     ipmux_cpu_in_type;"
+               "--     eth_regs_o    : in     eth_regs_out_type;"
+               "--     tx_clk        : in     std_logic;"
+               "--     tx_collision  : in     std_logic;"
+               "--     tx_overflow   : out    std_logic;"
+               "--     tx_reset      : in     std_logic;"
+               "--     tx_retransmit : in     std_logic;"
+               "--     tx_underrun   : out    std_logic;"
+               "--     src_i         : in     t_wrf_source_in;"
+               "--     src_o         : out    t_wrf_source_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of TxBuffers is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of TxBuffers"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

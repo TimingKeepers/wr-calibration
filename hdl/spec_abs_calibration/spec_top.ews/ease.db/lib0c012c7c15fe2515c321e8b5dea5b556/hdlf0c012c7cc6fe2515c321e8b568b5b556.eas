@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c7cc6fe2515c321e8b568b5b556")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271222")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247733")
+  )
+  (FILE "../../wr-cores/ip_cores/general-cores/modules/genrams/memory_loader_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364389236 "Wed Mar 27 14:00:36 2013")
+    (MODIFIED 1478271222 "Fri Nov 04 15:53:42 2016")
+  )
+)
+(END_OF_FILE)

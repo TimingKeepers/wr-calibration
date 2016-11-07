@@ -1,0 +1,44 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c5328e3cd554e21e1bcf11215d1")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../wr-cores/ip_cores/etherbone-core/hdl/eb_slave_core/eb_internals_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Wed Aug 26 15:16:43 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "eb_internals_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1440497282 "Tue Aug 25 12:08:02 2015")
+    (MODIFIED 1440593830 "Wed Aug 26 14:57:10 2015")
+  )
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7cb02c80250621e8b5053ba6e4")
+      (LIBRARY "work")
+      (NAME "wishbone_pkg")
+      (SUFFIX "all")
+    )
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+      (LIBRARY "work")
+      (NAME "wr_fabric_pkg")
+      (SUFFIX "all")
+    )
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c5394e3cd554e21e1bc530215d1")
+      (LIBRARY "work")
+      (NAME "eb_hdr_pkg")
+      (SUFFIX "all")
+    )
+  )
+)
+(END_OF_FILE)

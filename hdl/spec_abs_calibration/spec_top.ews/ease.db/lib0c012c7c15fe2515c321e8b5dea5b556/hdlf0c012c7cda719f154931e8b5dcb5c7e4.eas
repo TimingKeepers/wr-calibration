@@ -1,0 +1,21 @@
+(DATABASE_VERSION 16)
+(HDL_FILE
+  (OBID "hdlf0c012c7cda719f154931e8b5dcb5c7e4")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1377508750")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Mon Sep 23 11:32:56 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1377505429")
+  )
+  (FILE "../../../WRPC/ip_cores/general-cores/modules/wishbone/wb_slave_adapter/wb_slave_adapter.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1375279021 "Wed Jul 31 15:57:01 2013")
+    (MODIFIED 1377508750 "Mon Aug 26 11:19:10 2013")
+  )
+)
+(END_OF_FILE)

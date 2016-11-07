@@ -1,0 +1,26 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c7cb4a34515c321e8b521bcb556")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c7cb4a34515c321e8b5f0bcb556")
+    (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/wr-cores/modules/wrc_core/wrc_syscon_pkg.vhd")
+    (PROPERTY "IMPORTED_LAST" "1478271445")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Mon Nov 07 12:24:33 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247260")
+  )
+  (HDL_IDENT
+    (NAME "sysc_wbgen2_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364474443 "Thu Mar 28 13:40:43 2013")
+    (MODIFIED 1478517606 "Mon Nov 07 12:20:06 2016")
+  )
+  (EXTERNAL 1)
+)
+(END_OF_FILE)

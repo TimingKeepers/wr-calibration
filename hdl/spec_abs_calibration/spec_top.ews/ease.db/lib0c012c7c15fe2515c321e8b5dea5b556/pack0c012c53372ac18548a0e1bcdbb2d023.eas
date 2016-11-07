@@ -1,0 +1,37 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c53372ac18548a0e1bcdbb2d023")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c53272ac18548a0e1bcabb2d023")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+  )
+  (HDL_IDENT
+    (NAME "etherbone_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478271603 "Fri Nov 04 16:00:03 2016")
+    (MODIFIED 1478271603 "Fri Nov 04 16:00:03 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (OBID "pack0c012c7cb02c80250621e8b5053ba6e4")
+      (LIBRARY "work")
+      (NAME "wishbone_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c7c68d13515c321e8b59e6cb556")
+      (LIBRARY "work")
+      (NAME "wr_fabric_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

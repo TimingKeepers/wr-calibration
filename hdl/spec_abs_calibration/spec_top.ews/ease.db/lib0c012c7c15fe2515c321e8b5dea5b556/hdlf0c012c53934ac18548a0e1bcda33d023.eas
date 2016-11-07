@@ -1,0 +1,18 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c53934ac18548a0e1bcda33d023")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:07:37 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+  )
+  (FILE "../../wr-cores/ip_cores/etherbone-core/hdl/eb_slave_core/etherbone_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478272057 "Fri Nov 04 16:07:37 2016")
+    (MODIFIED 1478272057 "Fri Nov 04 16:07:37 2016")
+  )
+)
+(END_OF_FILE)

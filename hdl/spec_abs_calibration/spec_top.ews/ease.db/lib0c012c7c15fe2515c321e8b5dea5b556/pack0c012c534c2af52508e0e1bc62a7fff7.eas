@@ -1,0 +1,32 @@
+(DATABASE_VERSION 17)
+(PACKAGE_FILE
+  (OBID "pack0c012c534c2af52508e0e1bc62a7fff7")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../wr-cores/ip_cores/general-cores/modules/wishbone/wishbone_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Thu Aug 20 17:03:01 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "wishbone_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1381999300 "Thu Oct 17 10:41:40 2013")
+    (MODIFIED 1440082762 "Thu Aug 20 16:59:22 2015")
+  )
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c53b92af52508e0e1bc52a7fff7")
+      (LIBRARY "design")
+      (NAME "genram_pkg")
+      (SUFFIX "all")
+    )
+  )
+)
+(END_OF_FILE)

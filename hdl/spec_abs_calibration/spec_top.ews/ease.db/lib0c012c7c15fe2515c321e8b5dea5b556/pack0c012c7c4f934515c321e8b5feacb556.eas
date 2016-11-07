@@ -1,0 +1,40 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c7c4f934515c321e8b5feacb556")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c7c4f934515c321e8b5ceacb556")
+    (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/WR_Calibration/wr-calibration/hdl/wr-cores/modules/wr_endpoint/endpoint_pkg.vhd")
+    (PROPERTY "IMPORTED_LAST" "1478271336")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Mon Nov 07 12:24:33 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247310")
+  )
+  (HDL_IDENT
+    (NAME "endpoint_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364474356 "Thu Mar 28 13:39:16 2013")
+    (MODIFIED 1478517606 "Mon Nov 07 12:20:06 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (OBID "pack0c012c7cb02c80250621e8b5053ba6e4")
+      (LIBRARY "work")
+      (NAME "wishbone_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c7c68d13515c321e8b59e6cb556")
+      (LIBRARY "work")
+      (NAME "wr_fabric_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

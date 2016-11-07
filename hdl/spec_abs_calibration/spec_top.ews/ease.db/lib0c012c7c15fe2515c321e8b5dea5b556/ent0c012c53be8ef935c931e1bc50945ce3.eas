@@ -1,0 +1,391 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53be8ef935c931e1bc50945ce3")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 6")
+      (PROPERTY "STAMP_TIME" "Tue Jul 22 15:50:47 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "CLB2v2_1_Support")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1402988778 "Tue Jun 17 09:06:18 2014")
+      (MODIFIED 1406037047 "Tue Jul 22 15:50:47 2014")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c42813515c321e8b51156b556")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "all")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c534cbef935c931e1bc5ca45ce3")
+      (HDL_IDENT
+        (NAME "g_use_clbv2_1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 88 280 168 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_use_clbv2_1(false)")
+      )
+      (GENERIC "egen0c012c53a5f14b254720e1bc73d11096")
+      (ACT_VALUE "g_use_clbv2_1")
+    )
+    (PORT
+      (OBID "eprt0c012c53a89ef935c931e1bc5c945ce3")
+      (HDL_IDENT
+        (NAME "audio_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "audio_in")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a89ef935c931e1bc6c945ce3")
+      (HDL_IDENT
+        (NAME "audio_clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "audio_clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53a89ef935c931e1bc7c945ce3")
+      (HDL_IDENT
+        (NAME "audio_on_off")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "audio_on_off")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ea9ef935c931e1bc1d945ce3")
+      (HDL_IDENT
+        (NAME "PIEZO_CLK_P")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 664 808 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PIEZO_CLK_P")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ea9ef935c931e1bc2d945ce3")
+      (HDL_IDENT
+        (NAME "PIEZO_AES_OUT_P")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 536 808 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PIEZO_AES_OUT_P")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53fa9ef935c931e1bc3d945ce3")
+      (HDL_IDENT
+        (NAME "PIEZO_ON_OFF")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 792 808 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PIEZO_ON_OFF")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53cddef935c931e1bc8ca45ce3")
+      (HDL_IDENT
+        (NAME "HYDRO_CLK")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 88 808 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "HYDRO_CLK")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534edef935c931e1bcbca45ce3")
+      (HDL_IDENT
+        (NAME "HYDRO_AES_OUT")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 24 808 104)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "HYDRO_AES_OUT")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53aedef935c931e1bceca45ce3")
+      (HDL_IDENT
+        (NAME "HYDRO_ON_OFF")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 152 808 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "HYDRO_ON_OFF")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534beef935c931e1bcada45ce3")
+      (HDL_IDENT
+        (NAME "PIEZO_AES_OUT_N")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 600 808 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PIEZO_AES_OUT_N")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530ceef935c931e1bceda45ce3")
+      (HDL_IDENT
+        (NAME "PIEZO_CLK_N")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 728 808 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "PIEZO_CLK_N")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53be8ef935c931e1bcd0945ce3" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53be8ef935c931e1bcd0945ce3")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53be8ef935c931e1bce0945ce3")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'CLB2v2_1_Support'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_use_clbv2_1 : boolean := false);"
+               "--   port ("
+               "--     HYDRO_AES_OUT   : in     std_logic;"
+               "--     HYDRO_CLK       : out    std_logic;"
+               "--     HYDRO_ON_OFF    : out    std_logic;"
+               "--     PIEZO_AES_OUT_N : in     std_logic;"
+               "--     PIEZO_AES_OUT_P : in     std_logic;"
+               "--     PIEZO_CLK_N     : out    std_logic;"
+               "--     PIEZO_CLK_P     : out    std_logic;"
+               "--     PIEZO_ON_OFF    : out    std_logic;"
+               "--     audio_clk       : in     std_logic;"
+               "--     audio_in        : out    std_logic;"
+               "--     audio_on_off    : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of CLB2v2_1_Support is"
+               ""
+               "begin"
+               "   -- The CLBv2.1 uses single ended pins:"
+               "   --  \"HYDRO_CLK\""
+               "   --  \"HYDRO_AES_OUT\""
+               "   --  \"HYDRO_ON_OFF\""
+               " "
+               "   -- The CLBv2.2 (and higher) uses LVDS pins:"
+               "   -- \"PIEZO_CLK_P\""
+               "   -- \"PIEZO_CLK_N\""
+               "   -- \"PIEZO_AES_OUT_P\""
+               "   -- \"PIEZO_AES_OUT_N\""
+               "   -- \"PIEZO_ON_OFF\""
+               ""
+               "   gen_clbv2_1_support : if(g_use_clbv2_1) generate"
+               "     HYDRO_CLK <= audio_clk;"
+               "     audio_in <= HYDRO_AES_OUT;"
+               "     HYDRO_ON_OFF <= audio_on_off;"
+               "   end generate gen_clbv2_1_support;"
+               ""
+               "   gen_aes_buf : if(not g_use_clbv2_1) generate"
+               "	  u0: IBUFDS"
+               "      generic map("
+               "        CAPACITANCE      => \"DONT_CARE\","
+               "        DIFF_TERM        => TRUE,"
+               "        IBUF_DELAY_VALUE => \"0\","
+               "        IBUF_LOW_PWR     => TRUE,"
+               "        IFD_DELAY_VALUE  => \"AUTO\","
+               "        IOSTANDARD       => \"DEFAULT\","
+               "        DQS_BIAS         => \"FALSE\""
+               "      )"
+               "      port map("
+               "        I  => PIEZO_AES_OUT_P,"
+               "        IB => PIEZO_AES_OUT_N,"
+               "        O  => audio_in"
+               "      );"
+               ""
+               "    u1: OBUFDS"
+               "      generic map("
+               "        CAPACITANCE      => \"DONT_CARE\","
+               "        IOSTANDARD       => \"DEFAULT\","
+               "        SLEW             => \"SLOW\""
+               "      )"
+               "      port map("
+               "        I  => audio_clk,"
+               "        O  => PIEZO_CLK_P,"
+               "        OB => PIEZO_CLK_N"
+               "      );"
+               "      "
+               "    PIEZO_ON_OFF <= audio_on_off;"
+               ""
+               "   end generate gen_aes_buf;"
+               "end architecture rtl ; -- of CLB2v2_1_Support"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53be8ef935c931e1bc01945ce3")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

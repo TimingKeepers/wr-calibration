@@ -1,0 +1,182 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c533b543e354c70e1bcc01241a2")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c53f8aaf52508e0e1bcea08fff7")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/lm32_2nd/modules/metastabilizer.vhd")
+      (PROPERTY "IMPORTED_LAST" "1407403443")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 6")
+      (PROPERTY "STAMP_TIME" "Thu Aug 07 11:24:03 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1407402463")
+    )
+    (HDL_IDENT
+      (NAME "MetaStabelizer")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1152 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1407403443 "Thu Aug 07 11:24:03 2014")
+      (MODIFIED 1407403443 "Thu Aug 07 11:24:03 2014")
+    )
+    (GENERIC
+      (OBID "egen0c012c533b543e354c70e1bcd01241a2")
+      (HDL_IDENT
+        (NAME "g_simulation")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "0")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_simulation(0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533b543e354c70e1bce01241a2")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533b543e354c70e1bcf01241a2")
+      (HDL_IDENT
+        (NAME "RESET")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RESET")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533b543e354c70e1bc011241a2")
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1112 344 1192 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533b543e354c70e1bc111241a2")
+      (HDL_IDENT
+        (NAME "O_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1112 472 1192 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O_n")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c533b543e354c70e1bc211241a2" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c533b543e354c70e1bc211241a2")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c533b543e354c70e1bc311241a2")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'MetaStabelizer'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_simulation : integer := 0);"
+               "--   port ("
+               "--     Clk   : in     std_logic;"
+               "--     RESET : in     std_logic;"
+               "--     O     : out    std_logic;"
+               "--     O_n   : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of MetaStabelizer is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of MetaStabelizer"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

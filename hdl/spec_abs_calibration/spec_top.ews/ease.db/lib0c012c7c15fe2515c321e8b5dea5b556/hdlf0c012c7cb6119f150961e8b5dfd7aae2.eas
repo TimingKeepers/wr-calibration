@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c7cb6119f150961e8b5dfd7aae2")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271386")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247310")
+  )
+  (FILE "../../wr-cores/modules/wr_endpoint/xwr_endpoint.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1375277419 "Wed Jul 31 15:30:19 2013")
+    (MODIFIED 1478271386 "Fri Nov 04 15:56:26 2016")
+  )
+)
+(END_OF_FILE)

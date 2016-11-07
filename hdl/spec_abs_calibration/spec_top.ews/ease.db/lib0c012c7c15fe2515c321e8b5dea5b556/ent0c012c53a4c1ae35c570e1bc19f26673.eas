@@ -1,0 +1,104 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53a4c1ae35c570e1bc19f26673")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 6")
+      (PROPERTY "STAMP_TIME" "Tue Aug 12 15:54:46 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "aap")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 704 704)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1407851594 "Tue Aug 12 15:53:14 2014")
+      (MODIFIED 1407851623 "Tue Aug 12 15:53:43 2014")
+    )
+    (PORT
+      (OBID "eprt0c012c5376c1ae35c570e1bcdbf26673")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "ap")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ap")
+      )
+    )
+    (ARCH_DECLARATION 1 "arch0c012c53b4c1ae35c570e1bc39f26673" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53b4c1ae35c570e1bc39f26673")
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 1)
+    (SCHEMATIC
+      (OBID "diag0c012c53a4c1ae35c570e1bc29f26673")
+      (PROPERTIES
+        (PROPERTY "SheetInfoFontSize" "8")
+      )
+      (SHEETSIZE 0 0 6400 4266)
+      (PORT
+        (OBID "aprt0c012c5376c1ae35c570e1bcebf26673")
+        (HDL_IDENT
+          (NAME "ap")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "dbus_type_array")
+            (MODE 1)
+          )
+        )
+        (GEOMETRY 600 920 680 1000)
+        (SIDE 1)
+        (LABEL
+          (POSITION 576 960)
+          (SCALE 64)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "ap")
+        )
+        (PORT "eprt0c012c5376c1ae35c570e1bcdbf26673")
+        (CONNECTION
+          (OBID "ncon0c012c5376c1ae35c570e1bcfbf26673")
+          (GEOMETRY 704 960 704 960)
+          (SIDE 2)
+          (LABEL
+            (POSITION 704 960)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+    )
+  )
+)
+(END_OF_FILE)

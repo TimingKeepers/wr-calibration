@@ -1,0 +1,285 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c535bd4042547d0e1bcbad508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c534bd4042547d0e1bc37d508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/ipmux/top/ipmux.vhd")
+      (PROPERTY "IMPORTED_LAST" "1379945909")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 23 17:01:14 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1379945769")
+    )
+    (HDL_IDENT
+      (NAME "ipmux_wrf_snk")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1280 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379945909 "Mon Sep 23 16:18:29 2013")
+      (MODIFIED 1379948474 "Mon Sep 23 17:01:14 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bccad508e1")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bcdad508e1")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bcead508e1")
+      (HDL_IDENT
+        (NAME "rd_req")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rd_req")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bcfad508e1")
+      (HDL_IDENT
+        (NAME "rx_data")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1240 88 1320 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_data(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc0bd508e1")
+      (HDL_IDENT
+        (NAME "rx_data_valid")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 216 1320 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_data_valid")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc1bd508e1")
+      (HDL_IDENT
+        (NAME "rx_eof")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 344 1320 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_eof")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc2bd508e1")
+      (HDL_IDENT
+        (NAME "rx_error")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 472 1320 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_error")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc3bd508e1")
+      (HDL_IDENT
+        (NAME "snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535bd4042547d0e1bc4bd508e1")
+      (HDL_IDENT
+        (NAME "snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 600 1320 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "snk_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c535bd4042547d0e1bc5bd508e1" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c535bd4042547d0e1bc5bd508e1")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535bd4042547d0e1bc6bd508e1")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'ipmux_wrf_snk'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Clk           : in     std_logic;"
+               "--     Rst           : in     std_logic;"
+               "--     rd_req        : in     std_logic;"
+               "--     rx_data       : out    std_logic_vector(15 downto 0);"
+               "--     rx_data_valid : out    std_logic;"
+               "--     rx_eof        : out    std_logic;"
+               "--     rx_error      : out    std_logic;"
+               "--     snk_i         : in     t_wrf_sink_in;"
+               "--     snk_o         : out    t_wrf_sink_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of ipmux_wrf_snk is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of ipmux_wrf_snk"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

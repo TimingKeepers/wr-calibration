@@ -1,0 +1,59 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5352daf52508e0e1bc7958fff7")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Oct 17 11:30:04 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "low")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 192)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1382001957 "Thu Oct 17 11:25:57 2013")
+      (MODIFIED 1382001960 "Thu Oct 17 11:26:00 2013")
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5352daf52508e0e1bca958fff7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5352daf52508e0e1bca958fff7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5352daf52508e0e1bcb958fff7")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'low'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of low is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of low"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

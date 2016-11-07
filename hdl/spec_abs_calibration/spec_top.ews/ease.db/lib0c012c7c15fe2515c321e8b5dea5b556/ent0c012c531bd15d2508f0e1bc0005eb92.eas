@@ -1,0 +1,98 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c531bd15d2508f0e1bc0005eb92")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Tue Jan 14 14:29:36 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "effe")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 640 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1389698481 "Tue Jan 14 12:21:21 2014")
+      (MODIFIED 1389706176 "Tue Jan 14 14:29:36 2014")
+    )
+    (PORT
+      (OBID "eprt0c012c53cfd15d2508f0e1bc0305eb92")
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 600 344 680 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 576 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c532bd15d2508f0e1bc3005eb92" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c532bd15d2508f0e1bc3005eb92")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c532bd15d2508f0e1bc4005eb92")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'effe'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     O : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of effe is"
+               "	function f_is_synthesis return boolean is"
+               "	begin"
+               "	-- synthesis translate_off"
+               "	  return false;"
+               "	-- synthesis translate_on"
+               "	  return true;"
+               "	end f_is_synthesis; "
+               "begin"
+               "   O <= '1' when f_is_synthesis else '0';"
+               "   "
+               "   -- process"
+               "   -- begin"
+               "      -- if f_is_synthesis then"
+               "	   -- O <='1';"
+               "	   -- else"
+               "	   -- o <='0';"
+               "      -- end if;"
+               "   -- End Process;"
+               "end architecture rtl ; -- of effe"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,892 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7ce5fe2515c321e8b53fa5b556")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7ce5fe2515c321e8b51fa5b556")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra_WP5_1/peterj/WR_Calibration/designs/spec_abs_calibration/fw/wr-cores/modules/wr_softpll_ng/xwr_softpll_ng.vhd")
+      (PROPERTY "IMPORTED_LAST" "1443192498")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Fri Sep 25 16:53:25 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1443192192")
+    )
+    (HDL_IDENT
+      (NAME "xwr_softpll_ng")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2496 3520)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1364389580 "Wed Mar 27 14:06:20 2013")
+      (MODIFIED 1443192804 "Fri Sep 25 16:53:24 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cb02c80250621e8b5053ba6e4")
+        (LIBRARY "work")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53682593354431e1bcc0b29863")
+        (LIBRARY "work")
+        (NAME "softpll_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b54fa5b556")
+      (HDL_IDENT
+        (NAME "g_tag_bits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_tag_bits()")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b55fa5b556")
+      (HDL_IDENT
+        (NAME "g_num_ref_inputs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "1")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_num_ref_inputs(1)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b56fa5b556")
+      (HDL_IDENT
+        (NAME "g_num_outputs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "1")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_num_outputs(1)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b58fa5b556")
+      (HDL_IDENT
+        (NAME "g_with_debug_fifo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_with_debug_fifo(false)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b59fa5b556")
+      (HDL_IDENT
+        (NAME "g_with_ext_clock_input")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_with_ext_clock_input(false)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b5bfa5b556")
+      (HDL_IDENT
+        (NAME "g_reverse_dmtds")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "true")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_reverse_dmtds(true)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b5cfa5b556")
+      (HDL_IDENT
+        (NAME "g_divide_input_by_2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_divide_input_by_2(false)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b500b5b556")
+      (HDL_IDENT
+        (NAME "g_interface_mode")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_interface_mode")
+          (DEF_VALUE "pipelined")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_interface_mode(pipelined)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7ce5fe2515c321e8b510b5b556")
+      (HDL_IDENT
+        (NAME "g_address_granularity")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_address_granularity")
+          (DEF_VALUE "byte")
+        )
+      )
+      (GEOMETRY 0 -768 80 -688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 -728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_address_granularity(byte)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c53f8ea7b458ff0e1bcce16fe84")
+      (HDL_IDENT
+        (NAME "g_ref_clock_rate")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "125000000")
+        )
+      )
+      (GEOMETRY 88 24 168 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_ref_clock_rate(125000000)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c53f8ea7b458ff0e1bcde16fe84")
+      (HDL_IDENT
+        (NAME "g_ext_clock_rate")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "10000000")
+        )
+      )
+      (GEOMETRY 88 152 168 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_ext_clock_rate(10000000)")
+      )
+    )
+    (META_GENERIC
+      (OBID "mgen0c012c7ce5fe2515c321e8b541b5b556")
+      (HDL_IDENT
+      )
+      (GEOMETRY 48 48 208 208)
+      (SIDE 3)
+      (LABEL
+        (POSITION 272 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 1)
+        (TEXT "14 generics")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b520b5b556")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b530b5b556")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1432 40 1512)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1472)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b540b5b556")
+      (HDL_IDENT
+        (NAME "clk_ref_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_ref_inputs-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_ref_i(g_num_ref_inputs-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b550b5b556")
+      (HDL_IDENT
+        (NAME "clk_fb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_outputs-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_fb_i(g_num_outputs-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b560b5b556")
+      (HDL_IDENT
+        (NAME "clk_dmtd_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_dmtd_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b570b5b556")
+      (HDL_IDENT
+        (NAME "clk_ext_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_ext_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b590b5b556")
+      (HDL_IDENT
+        (NAME "dac_dmtd_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 984 2536 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_dmtd_data_o(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b5a0b5b556")
+      (HDL_IDENT
+        (NAME "dac_dmtd_load_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2456 1112 2536 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 1152)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_dmtd_load_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b5b0b5b556")
+      (HDL_IDENT
+        (NAME "dac_out_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 1560 2536 1640)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 1600)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_out_data_o(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b5c0b5b556")
+      (HDL_IDENT
+        (NAME "dac_out_sel_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 1688 2536 1768)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 1728)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_out_sel_o(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b5d0b5b556")
+      (HDL_IDENT
+        (NAME "dac_out_load_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2456 1816 2536 1896)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 1856)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_out_load_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b5e0b5b556")
+      (HDL_IDENT
+        (NAME "out_enable_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_outputs-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 2392 2536 2472)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 2432)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "out_enable_i(g_num_outputs-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b5f0b5b556")
+      (HDL_IDENT
+        (NAME "out_locked_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_outputs-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 3032 2536 3112)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 3072)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "out_locked_o(g_num_outputs-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b501b5b556")
+      (HDL_IDENT
+        (NAME "slave_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2392 40 2472)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2432)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "slave_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b511b5b556")
+      (HDL_IDENT
+        (NAME "slave_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "slave_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b521b5b556")
+      (HDL_IDENT
+        (NAME "debug_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 472 2536 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "debug_o(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ce5fe2515c321e8b531b5b556")
+      (HDL_IDENT
+        (NAME "dbg_fifo_irq_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2456 600 2536 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dbg_fifo_irq_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f8ea7b458ff0e1bcee16fe84")
+      (HDL_IDENT
+        (NAME "clk_ext_mul_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_ext_mul_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f8ea7b458ff0e1bcfe16fe84")
+      (HDL_IDENT
+        (NAME "pps_csync_p1_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2648 40 2728)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2688)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pps_csync_p1_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f8ea7b458ff0e1bc0f16fe84")
+      (HDL_IDENT
+        (NAME "pps_ext_a_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2776 40 2856)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2816)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pps_ext_a_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f8ea7b458ff0e1bc1f16fe84")
+      (HDL_IDENT
+        (NAME "out_status_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4*g_num_outputs-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2456 3160 2536 3240)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2432 3200)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "out_status_o(4*g_num_outputs-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5331413c558e80e1bc3da7f120")
+      (HDL_IDENT
+        (NAME "clk_ext_mul_locked_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+          (DEF_VALUE "'1'")
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_ext_mul_locked_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c533be550654e31e1bc7f58b3f4" "wrapper")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c533be550654e31e1bc7f58b3f4")
+    (HDL_IDENT
+      (NAME "wrapper")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535ef550654e31e1bc5af8b3f4")
+        (NAME "wrapper_1.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'wrapper' of entity 'xwr_softpll_ng'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_tag_bits             : integer;"
+               "--     g_num_ref_inputs       : integer := 1;"
+               "--     g_num_outputs          : integer := 1;"
+               "--     g_with_debug_fifo      : boolean := false;"
+               "--     g_with_ext_clock_input : boolean := false;"
+               "--     g_reverse_dmtds        : boolean := true;"
+               "--     g_divide_input_by_2    : boolean := false;"
+               "--     g_interface_mode       : t_wishbone_interface_mode := pipelined;"
+               "--     g_address_granularity  : t_wishbone_address_granularity := byte;"
+               "--     g_ref_clock_rate       : integer := 125000000;"
+               "--     g_ext_clock_rate       : integer := 10000000);"
+               "--   port ("
+               "--     clk_sys_i            : in     std_logic;"
+               "--     rst_n_i              : in     std_logic;"
+               "--     clk_ref_i            : in     std_logic_vector(g_num_ref_inputs-1 downto 0);"
+               "--     clk_fb_i             : in     std_logic_vector(g_num_outputs-1 downto 0);"
+               "--     clk_dmtd_i           : in     std_logic;"
+               "--     clk_ext_i            : in     std_logic;"
+               "--     dac_dmtd_data_o      : out    std_logic_vector(15 downto 0);"
+               "--     dac_dmtd_load_o      : out    std_logic;"
+               "--     dac_out_data_o       : out    std_logic_vector(15 downto 0);"
+               "--     dac_out_sel_o        : out    std_logic_vector(3 downto 0);"
+               "--     dac_out_load_o       : out    std_logic;"
+               "--     out_enable_i         : in     std_logic_vector(g_num_outputs-1 downto 0);"
+               "--     out_locked_o         : out    std_logic_vector(g_num_outputs-1 downto 0);"
+               "--     slave_i              : in     t_wishbone_slave_in;"
+               "--     slave_o              : out    t_wishbone_slave_out;"
+               "--     debug_o              : out    std_logic_vector(5 downto 0);"
+               "--     dbg_fifo_irq_o       : out    std_logic;"
+               "--     clk_ext_mul_i        : in     std_logic;"
+               "--     pps_csync_p1_i       : in     std_logic;"
+               "--     pps_ext_a_i          : in     std_logic;"
+               "--     out_status_o         : out    std_logic_vector(4*g_num_outputs-1 downto 0);"
+               "--     clk_ext_mul_locked_i : in     std_logic := '1');"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture wrapper of xwr_softpll_ng is"
+               ""
+               "begin"
+               ""
+               "end architecture wrapper ; -- of xwr_softpll_ng"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

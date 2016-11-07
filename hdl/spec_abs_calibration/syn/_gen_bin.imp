@@ -1,0 +1,41 @@
+setMode -pff
+setMode -pff
+addConfigDevice  -name "spec_top_elf.bin" -path .
+setSubmode -pffparallel
+setAttribute -configdevice -attr multibootBpiType -value ""
+addDesign -version 0 -name "0"
+setAttribute -configdevice -attr compressed -value "FALSE"
+setAttribute -configdevice -attr compressed -value "FALSE"
+setAttribute -configdevice -attr autoSize -value "FALSE"
+setAttribute -configdevice -attr fileFormat -value "bin"
+setAttribute -configdevice -attr fillValue -value "FF"
+setAttribute -configdevice -attr swapBit -value "FALSE"
+setAttribute -configdevice -attr dir -value "UP"
+setAttribute -configdevice -attr multiboot -value "FALSE"
+setAttribute -configdevice -attr multiboot -value "FALSE"
+setAttribute -configdevice -attr spiSelected -value "FALSE"
+setAttribute -configdevice -attr spiSelected -value "FALSE"
+addPromDevice -p 1 -size 32768 -name 32M
+setMode -pff
+setMode -pff
+setMode -pff
+setSubmode -pffparallel
+setMode -pff
+addDeviceChain -index 0
+setMode -pff
+addDeviceChain -index 0
+setMode -pff
+setSubmode -pffparallel
+setMode -pff
+setMode -pff
+setMode -pff
+addDeviceChain -index 0
+addDevice -p 1 -file "spec_top_elf.bit"
+setAttribute -design -attr endAddress -value "16abdc"
+setAttribute -design -attr endAddress -value "16abdc"
+setMode -pff
+setSubmode -pffparallel
+setAttribute -configdevice -attr swapBit -value "FALSE"
+generate
+setCurrentDesign -version 0
+quit

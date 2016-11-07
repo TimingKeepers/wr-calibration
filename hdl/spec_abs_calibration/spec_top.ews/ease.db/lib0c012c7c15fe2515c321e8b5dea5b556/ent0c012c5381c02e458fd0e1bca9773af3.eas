@@ -1,0 +1,130 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5381c02e458fd0e1bca9773af3")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Feb 17 11:47:06 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "DummyTx")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1152 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1424100376 "Mon Feb 16 16:26:16 2015")
+      (MODIFIED 1424170025 "Tue Feb 17 11:47:05 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f1c02e458fd0e1bc2f773af3")
+      (HDL_IDENT
+        (NAME "WrReqi")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-2" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "WrReqi(NUM_UDP_PRTS-2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f1c02e458fd0e1bc4f773af3")
+      (HDL_IDENT
+        (NAME "UDP_Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type_array")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "NUM_UDP_PRTS-2" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "UDP_Tx(NUM_UDP_PRTS-2:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5391c02e458fd0e1bcc9773af3" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5391c02e458fd0e1bcc9773af3")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53a4c02e458fd0e1bc95873af3")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'DummyTx'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     UDP_Tx : out    dbus_type_array(NUM_UDP_PRTS-2 downto 0);"
+               "--     WrReqi : out    std_logic_vector(NUM_UDP_PRTS-2 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of DummyTx is"
+               ""
+               "begin"
+               "     GEN_DummyTx: for i in 0 to NUM_UDP_PRTS-2 generate "
+               "       WrReqi(i) <= '0';"
+               "       UDP_TX(i).D <= (Others => '0');"
+               "       UDP_TX(i).EOD <= '0';"
+               "     end generate;"
+               "end architecture structure ; -- of DummyTx"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,18 @@
+(DATABASE_VERSION 17)
+(HDL_FILE
+  (OBID "hdlf0c012c5373543e450b01e1bc1b95ba03")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 10")
+    (PROPERTY "STAMP_TIME" "Tue Feb 17 14:42:15 2015")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.0")
+  )
+  (FILE "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/fixes-by-greg-and-peter/CLBv2/fw/CLBv2_Design/clb_spec/clb_spec.ews/../../../wr-cores/modules/wrc_core/xwr_core.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1424180535 "Tue Feb 17 14:42:15 2015")
+    (MODIFIED 1424180535 "Tue Feb 17 14:42:15 2015")
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,266 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5327ed2b254011e1bcd0a1f704")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Feb 17 12:07:39 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "KC705_Support")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 704 832)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1387454066 "Thu Dec 19 12:54:26 2013")
+      (MODIFIED 1424171259 "Tue Feb 17 12:07:39 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c42813515c321e8b51156b556")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "all")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c531aed2b254011e1bc63a1f704")
+      (HDL_IDENT
+        (NAME "g_use_clbv2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "true")
+        )
+      )
+      (GEOMETRY 88 664 168 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_use_clbv2(true)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53faed2b254011e1bc93a1f704")
+      (HDL_IDENT
+        (NAME "clk_20m_vcxo_p_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_20m_vcxo_p_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53faed2b254011e1bca3a1f704")
+      (HDL_IDENT
+        (NAME "clk_20m_vcxo_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_20m_vcxo_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53bbed2b254011e1bc24a1f704")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk20_vcxo")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk20_vcxo")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537fed2b254011e1bc95a1f704")
+      (HDL_IDENT
+        (NAME "clk20_vcxo_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 536 744 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "clk20_vcxo_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5352fd2b254011e1bc78a1f704")
+      (HDL_IDENT
+        (NAME "sda_tristate")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 216 744 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "sda_tristate")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5333fd2b254011e1bcd8a1f704")
+      (HDL_IDENT
+        (NAME "scl_tristate")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 152 744 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "scl_tristate")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5327ed2b254011e1bc01a1f704" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5327ed2b254011e1bc01a1f704")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5327ed2b254011e1bc11a1f704")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'KC705_Support'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_use_clbv2 : boolean := true);"
+               "--   port ("
+               "--     clk20_vcxo       : in     std_logic;"
+               "--     clk20_vcxo_o     : out    std_logic;"
+               "--     clk_20m_vcxo_n_i : in     std_logic;"
+               "--     clk_20m_vcxo_p_i : in     std_logic;"
+               "--     scl_tristate     : out    std_logic;"
+               "--     sda_tristate     : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of KC705_Support is"
+               ""
+               "begin"
+               "   gen_kc705_support : if(not g_use_clbv2) generate"
+               ""
+               "      -- pins clk_20m_vcxo_p/n_i are used for the KC705 application since placement "
+               "      -- of single ended clk_20m_vcxo_i at FPGA pin F13 results in a MAP error. "
+               "      -- G13/F13 is a differential pair. F13 is the negative input that apparently"
+               "      -- cannot be routed as a single ended clock input."
+               "      -- Solved by instantiating an IBUFGDS where clk_20m_vcxo_p_i is left open and"
+               "      -- clk_20m_vcxo_n_i is driven by the 20MHz Soft-PLL FMC board"
+               "	  u1: IBUFGDS"
+               "		generic map("
+               "		  CAPACITANCE      => \"DONT_CARE\","
+               "		  DIFF_TERM        => FALSE,"
+               "		  IBUF_DELAY_VALUE => \"0\","
+               "		  IBUF_LOW_PWR     => TRUE,"
+               "		  IOSTANDARD       => \"DEFAULT\")"
+               "		port map("
+               "		  O  => clk20_vcxo_o,"
+               "		  I  => clk_20m_vcxo_p_i,"
+               "		  IB => clk_20m_vcxo_n_i);"
+               ""
+               "	  -- KC705 + SoftPLL this signals need to be 'Z' for SoftPLL use"
+               "      scl_tristate <= 'Z';	"
+               "      sda_tristate <= 'Z';"
+               "	  "
+               "   end generate gen_kc705_support;"
+               ""
+               "   gen_clbv2_support : if(g_use_clbv2) generate"
+               "	  u1: IBUF"
+               "		generic map("
+               "		  CAPACITANCE      => \"DONT_CARE\","
+               "		  IBUF_DELAY_VALUE => \"0\","
+               "		  IBUF_LOW_PWR     => TRUE,"
+               "		  IFD_DELAY_VALUE  => \"AUTO\","
+               "		  IOSTANDARD       => \"DEFAULT\")"
+               "		port map("
+               "		  O  => clk20_vcxo_o,"
+               "		  I  => clk20_vcxo);"
+               "   end generate gen_clbv2_support;"
+               "end architecture rtl ; -- of KC705_Support"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

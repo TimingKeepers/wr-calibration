@@ -1,0 +1,97 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c536dbaf52508e0e1bc0528fff7")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c535dbaf52508e0e1bcc428fff7")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/lm32_2nd/modules/dummys/dummy_tdc.vhd")
+      (PROPERTY "IMPORTED_LAST" "1382001639")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 18 17:33:49 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1382001174")
+    )
+    (HDL_IDENT
+      (NAME "dummy_tdc")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 640 192)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1382001622 "Thu Oct 17 11:20:22 2013")
+      (MODIFIED 1424277229 "Wed Feb 18 17:33:49 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5b017a6e4")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536dbaf52508e0e1bc1528fff7")
+      (HDL_IDENT
+        (NAME "tdc_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_tdc_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tdc_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c537ebaf52508e0e1bcfd28fff7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c537ebaf52508e0e1bcfd28fff7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53c1eaf52508e0e1bcf478fff7")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'dummy_tdc'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     tdc_i : out    t_tdc_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of dummy_tdc is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of dummy_tdc"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

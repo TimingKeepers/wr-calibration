@@ -1,0 +1,43 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c53b3d80285ce71e1bc2151fe41")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c53a3d80285ce71e1bcf051fe41")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Mon Nov 07 15:18:38 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+  )
+  (HDL_IDENT
+    (NAME "eb_internals_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478528315 "Mon Nov 07 15:18:35 2016")
+    (MODIFIED 1478528315 "Mon Nov 07 15:18:35 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (OBID "pack0c012c7cb02c80250621e8b5053ba6e4")
+      (LIBRARY "work")
+      (NAME "wishbone_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c7c68d13515c321e8b59e6cb556")
+      (LIBRARY "work")
+      (NAME "wr_fabric_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c530e2ac18548a0e1bc5ae2d023")
+      (LIBRARY "work")
+      (NAME "eb_hdr_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

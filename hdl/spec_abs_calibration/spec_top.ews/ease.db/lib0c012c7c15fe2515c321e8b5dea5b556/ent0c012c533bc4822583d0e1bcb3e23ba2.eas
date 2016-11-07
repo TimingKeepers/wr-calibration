@@ -1,0 +1,370 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c533bc4822583d0e1bcb3e23ba2")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 30 13:41:51 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "ipmux_in")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1216 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1378372787 "Thu Sep 05 11:19:47 2013")
+      (MODIFIED 1380540658 "Mon Sep 30 13:30:58 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534f05822583d0e1bc32f23ba2")
+        (LIBRARY "design")
+        (NAME "endpoint_private_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c532115822583d0e1bc42f23ba2")
+        (LIBRARY "design")
+        (NAME "ep_wbgen2_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5345d4822583d0e1bcd7e23ba2")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e5d4822583d0e1bc18e23ba2")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ead4822583d0e1bc19e23ba2")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "pcs_dreq_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1176 280 1256 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "pcs_dreq_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ebd4822583d0e1bc59e23ba2")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53fcd4822583d0e1bc99e23ba2")
+      (HDL_IDENT
+        (NAME "snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53735c92250ae0e1bcf4d4a135")
+      (HDL_IDENT
+        (NAME "rx_data")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 472 1256 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_data(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53345c92250ae0e1bc35d4a135")
+      (HDL_IDENT
+        (NAME "rx_eof")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 536 1256 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_eof")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f45c92250ae0e1bc75d4a135")
+      (HDL_IDENT
+        (NAME "rx_data_valid")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 600 1256 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rx_data_valid")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c533bc4822583d0e1bce3e23ba2" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c533bc4822583d0e1bce3e23ba2")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c533bc4822583d0e1bcf3e23ba2")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'ipmux_in'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Rst           : in     std_logic;"
+               "--     clk_sys_i     : in     std_logic;"
+               "--     pcs_dreq_i    : in     std_logic;"
+               "--     rx_data       : out    std_logic_vector(15 downto 0);"
+               "--     rx_data_valid : out    std_logic;"
+               "--     rx_eof        : out    std_logic;"
+               "--     snk_i         : in     t_wrf_sink_in;"
+               "--     snk_o         : out    t_wrf_sink_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of ipmux_in is"
+               ""
+               "-- general signals"
+               "  signal q_valid    : std_logic;"
+               "--  signal q_valid_p1 : std_logic;"
+               "--  signal q_valid_p2 : std_logic;"
+               "  signal q_data     : std_logic_vector(15 downto 0);"
+               "--  signal q_data_p1  : std_logic_vector(15 downto 0);"
+               "--  signal q_data_p2  : std_logic_vector(15 downto 0);"
+               ""
+               "  signal snk_valid : std_logic;"
+               "  signal eof_p1 : std_logic;"
+               "  signal snk_cyc_d0                         : std_logic;"
+               ""
+               "  signal snk_out : t_wrf_sink_out;"
+               "  signal stall_int    : std_logic;"
+               ""
+               "begin  -- behavioral"
+               ""
+               "  p_detect_frame : process(clk_sys_i, Rst)"
+               "  begin"
+               "    if rising_edge(clk_sys_i) then"
+               "      if Rst = '1' then"
+               "        snk_cyc_d0 <= '0';"
+               "      else"
+               "        snk_cyc_d0 <= snk_i.cyc;"
+               "      end if;"
+               "    end if;"
+               "  end process;"
+               ""
+               "  eof_p1    <= snk_cyc_d0 and not snk_i.cyc;"
+               "  snk_valid <= (snk_i.cyc and snk_i.stb and snk_i.we) and not stall_int;"
+               ""
+               "  p_pipeline : process (clk_sys_i, Rst)"
+               "  begin  -- process"
+               "    if rising_edge(clk_sys_i) then"
+               "      if(Rst = '1') then"
+               "        q_valid    <= '0';"
+               "--        q_valid_p1 <= '0';"
+               "        q_data     <= (others => '0');"
+               "--        q_data_p1  <= (Others => '0');"
+               "      else"
+               ""
+               "	  if(snk_valid = '1' and snk_i.adr = c_WRF_DATA) then"
+               "          q_data     <= snk_i.dat;"
+               "          q_valid    <= pcs_dreq_i;"
+               "        else"
+               "          q_valid    <= '0';"
+               "        end if;"
+               ""
+               "        -- if stall_int = '0' then"
+               "          -- q_data_p1  <= q_data;"
+               "          -- q_valid_p1 <= q_valid;"
+               "	    -- end if;"
+               ""
+               "		end if;"
+               "    end if;"
+               "  end process;"
+               ""
+               "--  stall_int <= (not (pcs_dreq_i) or (snk_i.cyc xor snk_cyc_d0));"
+               "  stall_int <= not (pcs_dreq_i);"
+               ""
+               "  snk_out.stall <= stall_int;"
+               ""
+               "  snk_out.err <= '0';"
+               "  snk_out.rty <= '0';"
+               ""
+               "  p_gen_ack : process(clk_sys_i, Rst)"
+               "  begin"
+               "    if(Rst = '1') then"
+               "      snk_out.ack <= '0';"
+               "    elsif rising_edge(clk_sys_i) then"
+               "      snk_out.ack <= snk_valid;"
+               "    end if;"
+               "  end process;"
+               "  "
+               "  snk_o <= snk_out;"
+               "  "
+               "--  pcs_fab_o.data    <= q_data_p1;"
+               "  rx_data    <= q_data;"
+               "--  pcs_fab_o.sof     <= '0';"
+               "  rx_eof     <= eof_p1;"
+               "--  pcs_fab_o.bytesel <= '0';"
+               "--  pcs_fab_o.error   <= '0';"
+               "--  pcs_fab_o.dvalid  <= q_valid_p1;"
+               "  rx_data_valid  <= q_valid;"
+               ""
+               "end architecture rtl ; -- of ipmux_in"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c532f0694254520e1bc91462977")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

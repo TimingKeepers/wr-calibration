@@ -1,0 +1,32 @@
+(DATABASE_VERSION 16)
+(PACKAGE_FILE
+  (OBID "pack0c012c53ee3af52508e0e1bcaea7fff7")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../lm32_2nd/modules/lm32_2nd_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Fri Oct 18 15:35:15 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "lm32_2nd_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1381999598 "Thu Oct 17 10:46:38 2013")
+    (MODIFIED 1382102637 "Fri Oct 18 15:23:57 2013")
+  )
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+      (LIBRARY "design")
+      (NAME "wishbone_pkg")
+      (SUFFIX "all")
+    )
+  )
+)
+(END_OF_FILE)

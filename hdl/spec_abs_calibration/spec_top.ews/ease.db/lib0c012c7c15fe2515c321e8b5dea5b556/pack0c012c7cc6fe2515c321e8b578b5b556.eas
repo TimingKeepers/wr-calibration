@@ -1,0 +1,46 @@
+(DATABASE_VERSION 16)
+(PACKAGE_FILE
+  (OBID "pack0c012c7cc6fe2515c321e8b578b5b556")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c7cc6fe2515c321e8b568b5b556")
+    (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/WRPC/ip_cores/general-cores/modules/genrams/memory_loader_pkg.vhd")
+    (PROPERTY "IMPORTED_LAST" "1377508717")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Mon Sep 23 11:32:56 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1377505429")
+  )
+  (HDL_IDENT
+    (NAME "memory_loader_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1364389236 "Wed Mar 27 14:00:36 2013")
+    (MODIFIED 1377508717 "Mon Aug 26 11:18:37 2013")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7c493b80250621e8b5a017a6e4")
+      (LIBRARY "ieee")
+      (NAME "numeric_std")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7c493b80250621e8b5c017a6e4")
+      (LIBRARY "std")
+      (NAME "textio")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (PACKAGE "pack0c012c7c17fe2515c321e8b5d9b5b556")
+      (LIBRARY "design")
+      (NAME "genram_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

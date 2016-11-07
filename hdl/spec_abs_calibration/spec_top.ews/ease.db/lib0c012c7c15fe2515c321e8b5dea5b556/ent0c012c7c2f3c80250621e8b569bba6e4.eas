@@ -1,0 +1,126 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c2f3c80250621e8b569bba6e4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c963c80250621e8b587aba6e4")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/modules/wb_dummys/wb_DummyMaster.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376639717")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 23 11:32:56 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1376639713")
+    )
+    (HDL_IDENT
+      (NAME "wb_DummyMaster")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1376306162 "Mon Aug 12 13:16:02 2013")
+      (MODIFIED 1377852179 "Fri Aug 30 10:42:59 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c17fe2515c321e8b5d9b5b556")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cb02c80250621e8b5053ba6e4")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c2f3c80250621e8b589bba6e4")
+      (HDL_IDENT
+        (NAME "Master_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 216 808 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Master_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538b9dd025c490e1bc79c1b5f2")
+      (HDL_IDENT
+        (NAME "Master_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 344 808 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Master_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c535eadd025c490e1bc9cd1b5f2" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c535eadd025c490e1bc9cd1b5f2")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53ec3ed025c490e1bc30e1b5f2")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'wb_DummyMaster'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Master_o : out    t_wishbone_master_out;"
+               "--     Master_i : in     t_wishbone_master_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of wb_DummyMaster is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of wb_DummyMaster"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

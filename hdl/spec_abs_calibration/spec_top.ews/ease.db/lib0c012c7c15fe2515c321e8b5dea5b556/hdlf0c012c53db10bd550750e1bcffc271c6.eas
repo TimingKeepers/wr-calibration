@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c53db10bd550750e1bcffc271c6")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478515218")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Mon Nov 07 12:14:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247768")
+  )
+  (FILE "../../wr-cores/ip_cores/gn4124-core/hdl/gn4124core/rtl/spartan6/gn4124_core.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1440416189 "Mon Aug 24 13:36:29 2015")
+    (MODIFIED 1478515218 "Mon Nov 07 11:40:18 2016")
+  )
+)
+(END_OF_FILE)

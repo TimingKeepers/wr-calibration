@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c532be43e450b01e1bc27d5ba03")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271494")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247261")
+  )
+  (FILE "../../wr-cores/top/spec_1_1/wr_core_demo/spec_reset_gen.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1424182962 "Tue Feb 17 15:22:42 2015")
+    (MODIFIED 1478271494 "Fri Nov 04 15:58:14 2016")
+  )
+)
+(END_OF_FILE)

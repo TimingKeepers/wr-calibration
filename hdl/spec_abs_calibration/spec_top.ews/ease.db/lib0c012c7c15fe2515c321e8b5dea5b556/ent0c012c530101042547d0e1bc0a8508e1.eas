@@ -1,0 +1,1233 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c530101042547d0e1bc0a8508e1")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c53f001042547d0e1bccf7508e1")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top.vhd")
+      (PROPERTY "IMPORTED_LAST" "1380550468")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 30 16:15:15 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1380543255")
+    )
+    (HDL_IDENT
+      (NAME "clb_wrpc_top")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1216 5440)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1379930128 "Mon Sep 23 11:55:28 2013")
+      (MODIFIED 1380550515 "Mon Sep 30 16:15:15 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c42813515c321e8b51156b556")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534f05822583d0e1bc32f23ba2")
+        (LIBRARY "design")
+        (NAME "endpoint_private_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c530101042547d0e1bc1a8508e1")
+      (HDL_IDENT
+        (NAME "g_simulation")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "0")
+        )
+      )
+      (GEOMETRY 88 4696 168 4776)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 4736)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_simulation(0)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c530101042547d0e1bc2a8508e1")
+      (HDL_IDENT
+        (NAME "g_dpram_size")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "90112/ 4")
+        )
+      )
+      (GEOMETRY 88 4824 168 4904)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 4864)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_dpram_size(90112/ 4)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc4a8508e1")
+      (HDL_IDENT
+        (NAME "LED_ACT")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 3032 40 3112)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3072)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "LED_ACT")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc5a8508e1")
+      (HDL_IDENT
+        (NAME "LED_LINK")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 3160 40 3240)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3200)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "LED_LINK")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc6a8508e1")
+      (HDL_IDENT
+        (NAME "button1_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2776 40 2856)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2816)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "button1_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc7a8508e1")
+      (HDL_IDENT
+        (NAME "button2_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2904 40 2984)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2944)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "button2_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc8a8508e1")
+      (HDL_IDENT
+        (NAME "clk_20m_vcxo_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_20m_vcxo_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc9a8508e1")
+      (HDL_IDENT
+        (NAME "clk_20m_vcxo_p_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_20m_vcxo_p_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcaa8508e1")
+      (HDL_IDENT
+        (NAME "clk_gtx_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 5272 40 5352)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 5312)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_gtx_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcba8508e1")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 5080 40 5160)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 5120)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcca8508e1")
+      (HDL_IDENT
+        (NAME "dac_cs1_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 472 1256 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_cs1_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcda8508e1")
+      (HDL_IDENT
+        (NAME "dac_cs2_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 600 1256 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_cs2_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcea8508e1")
+      (HDL_IDENT
+        (NAME "dac_din_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 344 1256 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_din_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcfa8508e1")
+      (HDL_IDENT
+        (NAME "dac_sclk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 216 1256 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_sclk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc0b8508e1")
+      (HDL_IDENT
+        (NAME "dio_clk_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1176 1176 1256 1256)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1216)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_clk_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc1b8508e1")
+      (HDL_IDENT
+        (NAME "dio_clk_p_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1176 1048 1256 1128)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_clk_p_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc2b8508e1")
+      (HDL_IDENT
+        (NAME "dio_led_bot_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 2072 1256 2152)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 2112)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_led_bot_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc3b8508e1")
+      (HDL_IDENT
+        (NAME "dio_led_top_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 2200 1256 2280)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 2240)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_led_top_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc4b8508e1")
+      (HDL_IDENT
+        (NAME "dio_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 1304 1256 1384)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1344)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_n_o(4:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc5b8508e1")
+      (HDL_IDENT
+        (NAME "dio_oe_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 1560 1256 1640)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1600)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_oe_n_o(4:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc6b8508e1")
+      (HDL_IDENT
+        (NAME "dio_onewire_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 2520 40 2600)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2560)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dio_onewire_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc7b8508e1")
+      (HDL_IDENT
+        (NAME "dio_p_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 1432 1256 1512)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1472)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_p_o(4:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc8b8508e1")
+      (HDL_IDENT
+        (NAME "dio_sdn_ck_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 1944 1256 2024)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1984)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_sdn_ck_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc9b8508e1")
+      (HDL_IDENT
+        (NAME "dio_sdn_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 1816 1256 1896)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1856)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_sdn_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcab8508e1")
+      (HDL_IDENT
+        (NAME "dio_term_en_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "4" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 1688 1256 1768)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 1728)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dio_term_en_o(4:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcbb8508e1")
+      (HDL_IDENT
+        (NAME "fpga_scl_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 2136 40 2216)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2176)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "fpga_scl_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bccb8508e1")
+      (HDL_IDENT
+        (NAME "fpga_sda_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 2264 40 2344)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2304)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "fpga_sda_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcdb8508e1")
+      (HDL_IDENT
+        (NAME "pps_ext_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY -40 1688 40 1768)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1728)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pps_ext_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bceb8508e1")
+      (HDL_IDENT
+        (NAME "scl_tristate")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 2392 1256 2472)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 2432)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "scl_tristate")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcfb8508e1")
+      (HDL_IDENT
+        (NAME "sda_tristate")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 2520 1256 2600)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 2560)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "sda_tristate")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc0c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_los_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 4248 40 4328)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4288)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_los_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc1c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_mod_def0_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3608 40 3688)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3648)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_mod_def0_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc2c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_mod_def1_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 3736 40 3816)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3776)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_mod_def1_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc3c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_mod_def2_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 3864 40 3944)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3904)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_mod_def2_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc4c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_rate_select_b")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 3992 40 4072)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4032)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_rate_select_b")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc5c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_rxn_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_rxn_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc6c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_rxp_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_rxp_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc7c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_tx_disable_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 4120 40 4200)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4160)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_tx_disable_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc8c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_tx_fault_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 4376 40 4456)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 4416)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_tx_fault_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc9c8508e1")
+      (HDL_IDENT
+        (NAME "sfp_txn_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1112 40 1192)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_txn_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcac8508e1")
+      (HDL_IDENT
+        (NAME "sfp_txp_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "sfp_txp_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcbc8508e1")
+      (HDL_IDENT
+        (NAME "test_p")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 2648 1256 2728)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 2688)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "test_p")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bccc8508e1")
+      (HDL_IDENT
+        (NAME "thermo_id")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 3)
+        )
+      )
+      (GEOMETRY -40 2392 40 2472)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2432)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "thermo_id")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcdc8508e1")
+      (HDL_IDENT
+        (NAME "uart_rxd_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 1176 3352 1256 3432)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 3392)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "uart_rxd_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcec8508e1")
+      (HDL_IDENT
+        (NAME "uart_txd_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 3224 1256 3304)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 3264)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "uart_txd_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bcfc8508e1")
+      (HDL_IDENT
+        (NAME "wrf_snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+          (DEF_VALUE "c_dummy_snk_in")
+        )
+      )
+      (GEOMETRY 1176 5144 1256 5224)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 5184)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "wrf_snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc0d8508e1")
+      (HDL_IDENT
+        (NAME "wrf_snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 5016 1256 5096)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 5056)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "wrf_snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc1d8508e1")
+      (HDL_IDENT
+        (NAME "wrf_src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 1)
+          (DEF_VALUE "c_dummy_src_in")
+        )
+      )
+      (GEOMETRY 1176 4312 1256 4392)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 4352)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "wrf_src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c530101042547d0e1bc2d8508e1")
+      (HDL_IDENT
+        (NAME "wrf_src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1176 4184 1256 4264)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 4224)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "wrf_src_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53547894254520e1bcbd762977" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53547894254520e1bcbd762977")
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53377894254520e1bc65862977")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'clb_wrpc_top'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_simulation : integer := 0;"
+               "--     g_dpram_size : integer := 90112/ 4);"
+               "--   port("
+               "--     LED_ACT           : out    std_logic;"
+               "--     LED_LINK          : out    std_logic;"
+               "--     button1_i         : in     std_logic;"
+               "--     button2_i         : in     std_logic;"
+               "--     clk_20m_vcxo_n_i  : in     std_logic;"
+               "--     clk_20m_vcxo_p_i  : in     std_logic;"
+               "--     clk_gtx_i         : in     std_logic;"
+               "--     clk_sys_i         : in     std_logic;"
+               "--     dac_cs1_n_o       : out    std_logic;"
+               "--     dac_cs2_n_o       : out    std_logic;"
+               "--     dac_din_o         : out    std_logic;"
+               "--     dac_sclk_o        : out    std_logic;"
+               "--     dio_clk_n_i       : in     std_logic;"
+               "--     dio_clk_p_i       : in     std_logic;"
+               "--     dio_led_bot_o     : out    std_logic;"
+               "--     dio_led_top_o     : out    std_logic;"
+               "--     dio_n_o           : out    std_logic_vector(4 downto 0);"
+               "--     dio_oe_n_o        : out    std_logic_vector(4 downto 0);"
+               "--     dio_onewire_b     : inout  std_logic;"
+               "--     dio_p_o           : out    std_logic_vector(4 downto 0);"
+               "--     dio_sdn_ck_n_o    : out    std_logic;"
+               "--     dio_sdn_n_o       : out    std_logic;"
+               "--     dio_term_en_o     : out    std_logic_vector(4 downto 0);"
+               "--     fpga_scl_b        : inout  std_logic;"
+               "--     fpga_sda_b        : inout  std_logic;"
+               "--     pps_ext_i         : in     std_logic := '0';"
+               "--     scl_tristate      : out    std_logic;"
+               "--     sda_tristate      : out    std_logic;"
+               "--     sfp_los_i         : in     std_logic;"
+               "--     sfp_mod_def0_b    : in     std_logic;"
+               "--     sfp_mod_def1_b    : inout  std_logic;"
+               "--     sfp_mod_def2_b    : inout  std_logic;"
+               "--     sfp_rate_select_b : inout  std_logic;"
+               "--     sfp_rxn_i         : in     std_logic;"
+               "--     sfp_rxp_i         : in     std_logic;"
+               "--     sfp_tx_disable_o  : out    std_logic;"
+               "--     sfp_tx_fault_i    : in     std_logic;"
+               "--     sfp_txn_o         : out    std_logic;"
+               "--     sfp_txp_o         : out    std_logic;"
+               "--     test_p            : out    std_logic;"
+               "--     thermo_id         : inout  std_logic;"
+               "--     uart_rxd_i        : in     std_logic;"
+               "--     uart_txd_o        : out    std_logic;"
+               "--     wrf_snk_i         : in     t_wrf_sink_in := c_dummy_snk_in;"
+               "--     wrf_snk_o         : out    t_wrf_sink_out;"
+               "--     wrf_src_i         : in     t_wrf_source_in := c_dummy_src_in;"
+               "--     wrf_src_o         : out    t_wrf_source_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of clb_wrpc_top is"
+               ""
+               "begin"
+               ""
+               "end architecture structure ; -- of clb_wrpc_top"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

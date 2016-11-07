@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c7cf3f1e9158011e8b5f1d32f80")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271203")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247733")
+  )
+  (FILE "../../wr-cores/ip_cores/general-cores/modules/common/gencores_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1369317183 "Thu May 23 15:53:03 2013")
+    (MODIFIED 1478271203 "Fri Nov 04 15:53:23 2016")
+  )
+)
+(END_OF_FILE)

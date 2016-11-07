@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c53142ac18548a0e1bc55a2d023")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271554")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247734")
+  )
+  (FILE "../../wr-cores/ip_cores/general-cores/modules/wishbone/wbgen2/wbgen2_pkg.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478271553 "Fri Nov 04 15:59:13 2016")
+    (MODIFIED 1478271554 "Fri Nov 04 15:59:14 2016")
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,24 @@
+(DATABASE_VERSION 16)
+(PACKAGE_FILE
+  (OBID "pack0c012c530a3af52508e0e1bc8ea7fff7")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../aes/modules/wb_aes/aes_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Fri Feb 14 10:11:01 2014")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "aes_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1381999520 "Thu Oct 17 10:45:20 2013")
+    (MODIFIED 1392368001 "Fri Feb 14 09:53:21 2014")
+  )
+)
+(END_OF_FILE)

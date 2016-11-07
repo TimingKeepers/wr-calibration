@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c5367f2bd550750e1bcf6b571c6")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271476")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247260")
+  )
+  (FILE "../../wr-cores/platform/xilinx/wr_gtp_phy/wr_gtp_phy_spartan6.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1440427894 "Mon Aug 24 16:51:34 2015")
+    (MODIFIED 1478271476 "Fri Nov 04 15:57:56 2016")
+  )
+)
+(END_OF_FILE)

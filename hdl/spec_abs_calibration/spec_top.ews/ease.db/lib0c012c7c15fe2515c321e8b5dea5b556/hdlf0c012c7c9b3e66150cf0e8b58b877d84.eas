@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c7c9b3e66150cf0e8b58b877d84")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271326")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247259")
+  )
+  (FILE "../../wr-cores/modules/wr_dacs/spec_serial_dac_arb.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1365697465 "Thu Apr 11 18:24:25 2013")
+    (MODIFIED 1478271326 "Fri Nov 04 15:55:26 2016")
+  )
+)
+(END_OF_FILE)

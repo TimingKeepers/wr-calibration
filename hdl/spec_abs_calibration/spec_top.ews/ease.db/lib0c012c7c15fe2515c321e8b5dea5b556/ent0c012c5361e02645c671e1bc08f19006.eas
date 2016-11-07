@@ -1,0 +1,172 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5361e02645c671e1bc08f19006")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Nov 11 15:00:33 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "pos_edge")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 512 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1415712278 "Tue Nov 11 14:24:38 2014")
+      (MODIFIED 1415714433 "Tue Nov 11 15:00:33 2014")
+    )
+    (PORT
+      (OBID "eprt0c012c53d1e02645c671e1bcedf19006")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "I")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d1e02645c671e1bc0ef19006")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d1e02645c671e1bc3ef19006")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5322e02645c671e1bc0ff19006")
+      (HDL_IDENT
+        (NAME "Pulse")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 472 24 552 104)
+      (SIDE 1)
+      (LABEL
+        (POSITION 448 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Pulse")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5371e02645c671e1bc38f19006" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5371e02645c671e1bc38f19006")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5371e02645c671e1bc48f19006")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'pos_edge'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Clk   : in     std_logic;"
+               "--     I     : in     std_logic;"
+               "--     Pulse : out    std_logic;"
+               "--     Rst   : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of pos_edge is"
+               ""
+               "begin"
+               "   process (Clk, Rst)"
+               "   Variable del: std_logic;"
+               "   begin"
+               "     if Rst = '1' then"
+               "        pulse <= '0';"
+               "        del := '0';"
+               "     elsif rising_edge(Clk) then"
+               "        if I = '1' and del = '0' then"
+               "          Pulse <= '1';"
+               "        else"
+               "          Pulse <= '0';"
+               "        end if;"
+               "        del := I;"
+               "     end if;"
+               "   end process;"
+               "end architecture rtl ; -- of pos_edge"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

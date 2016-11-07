@@ -20,7 +20,7 @@
       <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/clb_wrpc.ews/html/index.htm" name="Index"/>
     </section>
     <section name="Markers">
-      <key type="string" value="design:Toplevel:&lt;Internal>/lib0c012c7c15fe2515c321e8b5dea5b556_comp0c012c53c2dcc02544c0e1bc3b126856" name="CurrentPath"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>/lib0c012c7c15fe2515c321e8b5dea5b556_comp0c012c53c2dcc02544c0e1bc3b126856/lib0c012c7c15fe2515c321e8b5dea5b556_comp0c012c533e9b92250ae0e1bce243a135" name="CurrentPath"/>
       <key type="string" value="lib0c012c7c15fe2515c321e8b5dea5b556_ent0c012c7c146f9025cc61e8b58876eb73" name="HdlOutputObject"/>
       <key type="string" value="P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/CLBv2_Design/clb_wrpc/top/clb_wrpc_top_tb.vhd" name="HdlOutputFile"/>
     </section>

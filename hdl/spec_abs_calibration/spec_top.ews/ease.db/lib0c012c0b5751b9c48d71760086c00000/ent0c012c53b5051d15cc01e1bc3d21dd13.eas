@@ -1,0 +1,98 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53b5051d15cc01e1bc3d21dd13")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Fri Jan 31 10:54:58 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "dummy_aes")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 384 128)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1372672091 "Mon Jul 01 11:48:11 2013")
+      (MODIFIED 1391161759 "Fri Jan 31 10:49:19 2014")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c5318151d15cc01e1bc3031dd13")
+        (LIBRARY "work")
+        (NAME "aes_pkg")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d6051d15cc01e1bc1e21dd13")
+      (HDL_IDENT
+        (NAME "aes_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_aes_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "aes_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53d5051d15cc01e1bc6d21dd13" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53d5051d15cc01e1bc6d21dd13")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53d5051d15cc01e1bc7d21dd13")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'dummy_aes'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     aes_i : out    t_aes_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of dummy_aes is"
+               ""
+               "begin"
+               "    aes_i.audio_in  <= '0';"
+               "    aes_i.fifo_rd   <= '0';"
+               "end architecture rtl ; -- of dummy_aes"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c530a17be258c00e1bc5322ad71")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

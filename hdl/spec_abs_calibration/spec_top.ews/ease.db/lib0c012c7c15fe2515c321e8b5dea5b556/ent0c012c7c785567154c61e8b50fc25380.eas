@@ -1,0 +1,394 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c785567154c61e8b50fc25380")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c585567154c61e8b5dec25380")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_mesfin/fw/WRPC/ip_cores/general-cores/modules/wishbone/wb_onewire_master/xwb_onewire_master.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376302610")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "wishbone_pkg")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 23 11:32:56 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1372938722")
+    )
+    (HDL_IDENT
+      (NAME "xwb_onewire_master")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2816 832)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1366709639 "Tue Apr 23 11:33:59 2013")
+      (MODIFIED 1376303497 "Mon Aug 12 12:31:37 2013")
+    )
+    (GENERIC
+      (OBID "egen0c012c7c785567154c61e8b51fc25380")
+      (HDL_IDENT
+        (NAME "g_interface_mode")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_interface_mode")
+          (DEF_VALUE "CLASSIC")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_interface_mode(CLASSIC)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c785567154c61e8b52fc25380")
+      (HDL_IDENT
+        (NAME "g_address_granularity")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_address_granularity")
+          (DEF_VALUE "WORD")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_address_granularity(WORD)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c785567154c61e8b53fc25380")
+      (HDL_IDENT
+        (NAME "g_num_ports")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "1")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_num_ports(1)")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c785567154c61e8b54fc25380")
+      (HDL_IDENT
+        (NAME "g_ow_btp_normal")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "string")
+          (DEF_VALUE "\"5.0\"")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_ow_btp_normal(\"5.0\")")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7c785567154c61e8b55fc25380")
+      (HDL_IDENT
+        (NAME "g_ow_btp_overdrive")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "string")
+          (DEF_VALUE "\"1.0\"")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_ow_btp_overdrive(\"1.0\")")
+      )
+    )
+    (META_GENERIC
+      (OBID "mgen0c012c7c785567154c61e8b56fc25380")
+      (GEOMETRY 48 48 208 208)
+      (SIDE 3)
+      (LABEL
+        (POSITION 272 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 1)
+        (TEXT "5 generics")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b57fc25380")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b58fc25380")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b59fc25380")
+      (HDL_IDENT
+        (NAME "slave_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 2776 536 2856 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "slave_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b5afc25380")
+      (HDL_IDENT
+        (NAME "slave_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2776 664 2856 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "slave_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b5bfc25380")
+      (HDL_IDENT
+        (NAME "desc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_device_descriptor")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2776 280 2856 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "desc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b5cfc25380")
+      (HDL_IDENT
+        (NAME "owr_pwren_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_ports -1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "owr_pwren_o(g_num_ports -1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b5dfc25380")
+      (HDL_IDENT
+        (NAME "owr_en_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_ports -1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "owr_en_o(g_num_ports -1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c785567154c61e8b5efc25380")
+      (HDL_IDENT
+        (NAME "owr_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "g_num_ports -1" "0")
+          )
+        )
+      )
+      (GEOMETRY 2776 88 2856 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2752 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "owr_i(g_num_ports -1:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7cd16b80250621e8b56888a6e4" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7cd16b80250621e8b56888a6e4")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c7c989b80250621e8b5bec8a6e4")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'xwb_onewire_master'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_interface_mode      : t_wishbone_interface_mode := CLASSIC;"
+               "--     g_address_granularity : t_wishbone_address_granularity := WORD;"
+               "--     g_num_ports           : integer := 1;"
+               "--     g_ow_btp_normal       : string := \"5.0\";"
+               "--     g_ow_btp_overdrive    : string := \"1.0\");"
+               "--   port("
+               "--     clk_sys_i   : in     std_logic;"
+               "--     rst_n_i     : in     std_logic;"
+               "--     slave_i     : in     t_wishbone_slave_in;"
+               "--     slave_o     : out    t_wishbone_slave_out;"
+               "--     desc_o      : out    t_wishbone_device_descriptor;"
+               "--     owr_pwren_o : out    std_logic_vector(g_num_ports -1 downto 0);"
+               "--     owr_en_o    : out    std_logic_vector(g_num_ports -1 downto 0);"
+               "--     owr_i       : in     std_logic_vector(g_num_ports -1 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of xwb_onewire_master is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of xwb_onewire_master"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

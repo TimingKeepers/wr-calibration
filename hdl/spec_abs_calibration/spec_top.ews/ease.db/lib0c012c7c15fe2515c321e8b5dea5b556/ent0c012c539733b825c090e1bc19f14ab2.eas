@@ -1,0 +1,97 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c539733b825c090e1bc19f14ab2")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c535dbaf52508e0e1bcc428fff7")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/lm32_2nd/modules/dummys/dummy_tdc.vhd")
+      (PROPERTY "IMPORTED_LAST" "1382001639")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 18 17:33:49 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1382001174")
+    )
+    (HDL_IDENT
+      (NAME "dummy_stmach")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 640 192)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1384854393 "Tue Nov 19 10:46:33 2013")
+      (MODIFIED 1424277229 "Wed Feb 18 17:33:49 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5b017a6e4")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539733b825c090e1bc29f14ab2")
+      (HDL_IDENT
+        (NAME "stmach_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_stmach_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "stmach_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c539733b825c090e1bc39f14ab2" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c539733b825c090e1bc39f14ab2")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c539733b825c090e1bc49f14ab2")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'dummy_stmach'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     stmach_i : out    t_stmach_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of dummy_stmach is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of dummy_stmach"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,18 @@
+(DATABASE_VERSION 16)
+(HDL_FILE
+  (OBID "hdlf0c012c5367d5ae25c880e1bca9351c17")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Thu Jan 30 15:11:02 2014")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+  )
+  (FILE "../../lm32_2nd/modules/wishbone/wb_tdc/xwb_tdc.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1391091062 "Thu Jan 30 15:11:02 2014")
+    (MODIFIED 1391091062 "Thu Jan 30 15:11:02 2014")
+  )
+)
+(END_OF_FILE)

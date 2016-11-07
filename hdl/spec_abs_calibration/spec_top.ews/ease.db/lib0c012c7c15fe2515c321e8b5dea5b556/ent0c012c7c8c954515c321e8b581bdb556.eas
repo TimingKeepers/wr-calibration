@@ -1,0 +1,135 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7c8c954515c321e8b581bdb556")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 23 11:32:56 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "DummyMaster")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 640 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1364482504 "Thu Mar 28 15:55:04 2013")
+      (MODIFIED 1376301970 "Mon Aug 12 12:06:10 2013")
+    )
+    (PORT
+      (OBID "eprt0c012c7c30a54515c321e8b504bdb556")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Master_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Master_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7c71a54515c321e8b544bdb556")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Master_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Master_in")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c7c8c954515c321e8b5b1bdb556" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c7c8c954515c321e8b5b1bdb556")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c7c8c954515c321e8b5c1bdb556")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'DummyMaster'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Master_in : in     t_wishbone_master_in;"
+               "--     Master_o  : out    t_wishbone_master_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of DummyMaster is"
+               ""
+               "begin"
+               ""
+               "-- master output wishbone signals"
+               "  master_o.cyc                                 <= '0';"
+               "  master_o.stb                                 <= '0';"
+               "  master_o.adr                                 <= (Others => '0');"
+               "  master_o.sel                                 <= \"0000\";"
+               "  master_o.we                                  <= '0';"
+               "  master_o.dat                                 <= (Others => '0');"
+               ""
+               "-- Master input wishbone signals"
+               "--  master_i.ack                                <= '0';"
+               "--  master_i.err                                <= '0';"
+               "--  master_i.rty                                <= '0';"
+               "--  master_i.stall                              <= '0';"
+               "--  master_i.int                                <= '0';"
+               "--  master_i.dat                                <= (Others => '0');"
+               ""
+               ""
+               "end architecture rtl ; -- of DummyMaster"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c7c493b80250621e8b5e017a6e4")
+        (NAME "rtl.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

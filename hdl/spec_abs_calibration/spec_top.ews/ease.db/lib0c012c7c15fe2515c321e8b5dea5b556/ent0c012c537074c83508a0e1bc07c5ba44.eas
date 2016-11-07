@@ -1,0 +1,312 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c537074c83508a0e1bc07c5ba44")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Wed Jun 04 09:41:37 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "Debug_Length")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 896 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1401702151 "Mon Jun 02 11:42:31 2014")
+      (MODIFIED 1401867697 "Wed Jun 04 09:41:37 2014")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "all")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53c274c83508a0e1bc7cc5ba44")
+      (HDL_IDENT
+        (NAME "wrf_snk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_in")
+          (MODE 1)
+          (DEF_VALUE "c_dummy_snk_in")
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wrf_snk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d274c83508a0e1bc8cc5ba44")
+      (HDL_IDENT
+        (NAME "wrf_snk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_sink_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wrf_snk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533f74c83508a0e1bcd8f5ba44")
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534f74c83508a0e1bce8f5ba44")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53c005c83508a0e1bcd906ba44")
+      (HDL_IDENT
+        (NAME "cnt")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 856 88 936 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "cnt(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5360dce8350901e1bcdf1727c5")
+      (HDL_IDENT
+        (NAME "l_okay")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 280 936 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "l_okay")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5390dce8350901e1bc102727c5")
+      (HDL_IDENT
+        (NAME "l_error")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 344 936 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "l_error")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c538074c83508a0e1bc27c5ba44" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c538074c83508a0e1bc27c5ba44")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c534174c83508a0e1bcc9c5ba44")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'Debug_Length'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     Clk       : in     std_logic;"
+               "--     Rst       : in     std_logic;"
+               "--     cnt       : out    std_logic_vector(15 downto 0);"
+               "--     l_error   : out    std_logic;"
+               "--     l_okay    : out    std_logic;"
+               "--     wrf_snk_i : in     t_wrf_sink_in := c_dummy_snk_in;"
+               "--     wrf_snk_o : in     t_wrf_sink_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of Debug_Length is"
+               ""
+               "signal cyc_del: std_logic;"
+               "signal EtherType_IPv4: std_logic;"
+               "signal IP_Length: std_logic_vector (15 downto 0);"
+               "Signal Prot_UDP: std_logic;"
+               ""
+               "-- wrf_snk_o.ack   : std_logic;"
+               "    -- stall : std_logic;"
+               "    -- err   : std_logic;"
+               "    -- rty   : std_logic;"
+               "-- wrf_snk_i.adr : std_logic_vector(1 downto 0);"
+               "    -- dat : std_logic_vector(15 downto 0);"
+               "    -- cyc : std_logic;"
+               "    -- stb : std_logic;"
+               "    -- we  : std_logic;"
+               "    -- sel : std_logic_vector(1 downto 0);"
+               "    "
+               "begin"
+               ""
+               "process (Clk, Rst)"
+               "  variable count: integer range 0 to 65535;"
+               "Begin"
+               "  If Rst = '1' Then"
+               "     cyc_del <= '0';"
+               "     count := 0;"
+               "     EtherType_IPv4 <= '0';"
+               "     IP_Length <= (Others => '0');"
+               "     Prot_UDP <= '0';"
+               "     l_okay <= '0';"
+               "     l_error <= '0';"
+               "  ElsIf Rising_Edge(Clk) then"
+               "     cyc_del <= wrf_snk_i.cyc;"
+               ""
+               "     If wrf_snk_i.cyc = '1' and cyc_del = '0' then"
+               "        -- Start Of Cycle"
+               "        count := 0;"
+               "        EtherType_IPv4 <= '0';"
+               "        IP_Length <= (Others => '0');"
+               "        Prot_UDP <= '0';"
+               "     end if;"
+               "     "
+               "     If wrf_snk_i.cyc = '0' and cyc_del = '1' then"
+               "        -- End Of Cycle"
+               "        if EtherType_IPv4 = '1' and Prot_UDP = '1' and count * 2 = to_integer(unsigned(IP_Length)) + 16 then "
+               "            -- Note that IP_Length is in bytes and \"count\" is in words hence count * 2"
+               "            -- Also note \"+ 16\" since 14 bytes (WR Type 0x0204 + MAC Src/Dst + Ethertype) are counted but not included in IP_Length"
+               "          l_okay <= '1';"
+               "        else"
+               "          l_error <= '1';"
+               "        end if;"
+               "     else"
+               "       l_okay <= '0';"
+               "       l_error <= '0';"
+               "     end if;"
+               "     "
+               "    if wrf_snk_i.cyc = '1' and wrf_snk_i.stb = '1' and wrf_snk_o.stall = '0' then"
+               "      case count is"
+               "        when 7 =>"
+               "           If wrf_snk_i.dat = x\"0800\" then             -- Ethertype 0x0800 == IPv4"
+               "              EtherType_IPv4 <= '1';"
+               "           end if;"
+               "        when 9 =>"
+               "           IP_Length <= wrf_snk_i.dat;                 -- IP Length = UDP Length + 20 = Payload + 8 + 20"
+               "        when 12 =>"
+               "           If wrf_snk_i.dat(7 downto 0) = x\"11\" then   -- Protocol 0x11 == UDP"
+               "              Prot_UDP <= '1';"
+               "           end if;"
+               "        when others =>"
+               "      end case;"
+               "      count := count + 1;"
+               "    end if;"
+               "  End If;"
+               "  cnt <= std_logic_vector(To_Unsigned(count,16));"
+               "End Process;"
+               ""
+               "end architecture structure ; -- of Debug_Length"
+               ""
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

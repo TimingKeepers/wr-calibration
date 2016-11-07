@@ -1,0 +1,24 @@
+(DATABASE_VERSION 16)
+(PACKAGE_FILE
+  (OBID "pack0c012c53fb3af52508e0e1bc9ea7fff7")
+  (PROPERTIES
+    (PROPERTY "ExternalLoc" "true")
+    (PROPERTY "PackageHeaderFile" "../../tdc/modules/tdc_pkg.vhd")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Tue Feb 11 14:07:36 2014")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+    (PROPERTY "SkipHdlGeneration" "true")
+  )
+  (HDL_IDENT
+    (NAME "tdc_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1381999551 "Thu Oct 17 10:45:51 2013")
+    (MODIFIED 1392123339 "Tue Feb 11 13:55:39 2014")
+  )
+)
+(END_OF_FILE)

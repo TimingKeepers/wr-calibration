@@ -1,0 +1,156 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53563af52508e0e1bcf9a7fff7")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c53463af52508e0e1bc09a7fff7")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/lm32_2nd/top/lm32_2nd.vhd")
+      (PROPERTY "IMPORTED_LAST" "1381999715")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Oct 17 11:30:04 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1379676423")
+    )
+    (HDL_IDENT
+      (NAME "Dum_mnic")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1280 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1381999461 "Thu Oct 17 10:44:21 2013")
+      (MODIFIED 1382002203 "Thu Oct 17 11:30:03 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5b017a6e4")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c53b92af52508e0e1bc52a7fff7")
+        (LIBRARY "design")
+        (NAME "genram_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c53563af52508e0e1bc0aa7fff7")
+      (HDL_IDENT
+        (NAME "g_dpram_size")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+          (DEF_VALUE "20480")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_dpram_size(20480)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53563af52508e0e1bc1aa7fff7")
+      (HDL_IDENT
+        (NAME "dpram_wbb_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 344 1320 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dpram_wbb_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53563af52508e0e1bc2aa7fff7")
+      (HDL_IDENT
+        (NAME "dpram_wbb_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dpram_wbb_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53364af52508e0e1bc67b7fff7" "a0")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53364af52508e0e1bc67b7fff7")
+    (HDL_IDENT
+      (NAME "a0")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53c1eaf52508e0e1bcd478fff7")
+        (NAME "a0.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'a0' of entity 'Dum_mnic'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_dpram_size : integer := 20480);"
+               "--   port("
+               "--     dpram_wbb_i : out    t_wishbone_slave_in;"
+               "--     dpram_wbb_o : in     t_wishbone_slave_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture a0 of Dum_mnic is"
+               ""
+               "begin"
+               ""
+               "end architecture a0 ; -- of Dum_mnic"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

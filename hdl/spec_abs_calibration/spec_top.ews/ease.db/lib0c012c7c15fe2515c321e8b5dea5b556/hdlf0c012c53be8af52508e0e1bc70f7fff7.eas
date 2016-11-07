@@ -1,0 +1,18 @@
+(DATABASE_VERSION 16)
+(HDL_FILE
+  (OBID "hdlf0c012c53be8af52508e0e1bc70f7fff7")
+  (PROPERTIES
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 9")
+    (PROPERTY "STAMP_TIME" "Thu Oct 17 11:07:55 2013")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "7.4")
+  )
+  (FILE "../../lm32_2nd/modules/xwb_tdc_empty.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1382000875 "Thu Oct 17 11:07:55 2013")
+    (MODIFIED 1382000875 "Thu Oct 17 11:07:55 2013")
+  )
+)
+(END_OF_FILE)

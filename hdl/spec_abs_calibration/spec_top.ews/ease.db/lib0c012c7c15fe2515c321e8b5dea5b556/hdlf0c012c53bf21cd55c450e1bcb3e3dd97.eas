@@ -1,0 +1,21 @@
+(DATABASE_VERSION 23)
+(HDL_FILE
+  (OBID "hdlf0c012c53bf21cd55c450e1bcb3e3dd97")
+  (PROPERTIES
+    (PROPERTY "IMPORTED_LAST" "1478271182")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+    (PROPERTY "SkipFileInFlow" "true")
+    (PROPERTY "TIME_MODIFIED_ONIMPORT" "1478247658")
+  )
+  (FILE "../../wr-cores/ip_cores/etherbone-core/hdl/eb_slave_core/eb_ethernet_slave.vhd")
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1440486139 "Tue Aug 25 09:02:19 2015")
+    (MODIFIED 1478271182 "Fri Nov 04 15:53:02 2016")
+  )
+)
+(END_OF_FILE)

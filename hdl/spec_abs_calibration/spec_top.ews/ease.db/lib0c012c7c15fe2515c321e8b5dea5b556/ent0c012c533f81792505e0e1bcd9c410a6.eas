@@ -1,0 +1,313 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c533f81792505e0e1bcd9c410a6")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Mon Feb 16 17:02:46 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "timing_ref_out")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 704 1280)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1385634035 "Thu Nov 28 11:20:35 2013")
+      (MODIFIED 1424102565 "Mon Feb 16 17:02:45 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c42813515c321e8b51156b556")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539f81792505e0e1bc6cc410a6")
+      (HDL_IDENT
+        (NAME "refclk_p_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 88 744 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "refclk_p_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53af81792505e0e1bc7cc410a6")
+      (HDL_IDENT
+        (NAME "refclk_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 152 744 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "refclk_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ef81792505e0e1bc3dc410a6")
+      (HDL_IDENT
+        (NAME "pps_p_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 664 744 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "pps_p_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ff81792505e0e1bc4dc410a6")
+      (HDL_IDENT
+        (NAME "pps_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 728 744 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "pps_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c533491792505e0e1bc25d410a6")
+      (HDL_IDENT
+        (NAME "pps_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "pps_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ba4b7d25cc11e1bcdd72aed1")
+      (HDL_IDENT
+        (NAME "ref_clk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537daf8d25cbf0e1bcdc718431")
+      (HDL_IDENT
+        (NAME "ref_clk_62_5")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 664 1112 744 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 640 1152)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ref_clk_62_5")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539bc640350a20e1bcf0a7ae00")
+      (HDL_IDENT
+        (NAME "ref_clk_locked_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_locked_i")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534f81792505e0e1bc0ac410a6" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534f81792505e0e1bc0ac410a6")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5350024b254720e1bc33e11096")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'timing_ref_out'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     pps_i            : in     std_logic;"
+               "--     pps_n_o          : out    std_logic;"
+               "--     pps_p_o          : out    std_logic;"
+               "--     ref_clk_62_5     : out    std_logic;"
+               "--     ref_clk_i        : in     std_logic;"
+               "--     ref_clk_locked_i : in     std_logic;"
+               "--     refclk_n_o       : out    std_logic;"
+               "--     refclk_p_o       : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of timing_ref_out is"
+               ""
+               "  signal pps_oddr       : std_ulogic;"
+               "  signal pps_oddr_n     : std_ulogic;"
+               "  signal pps_i_n        : std_ulogic;"
+               "  signal ref_clk        : std_ulogic;"
+               ""
+               "begin"
+               ""
+               "   oddr_ref_clk: ODDR"
+               "   generic map("
+               "      DDR_CLK_EDGE => \"SAME_EDGE\","
+               "      INIT         => '0',"
+               "      SRTYPE       => \"SYNC\")"
+               "   port map("
+               "      Q  => ref_clk,"
+               "      C  => ref_clk_i,"
+               "      CE => '1',"
+               "      D1 => '1',"
+               "      D2 => '0',"
+               "      R  => '0',"
+               "      S  => '0');"
+               ""
+               "   obuf_ref_clk: OBUFDS"
+               "   generic map("
+               "     CAPACITANCE => \"DONT_CARE\","
+               "     IOSTANDARD  => \"DEFAULT\","
+               "     SLEW        => \"SLOW\")"
+               "   port map("
+               "     O  => refclk_p_o,"
+               "     OB => refclk_n_o,"
+               "     I  => ref_clk);"
+               ""
+               "  -- Output buffering"
+               "  -------------------------------------"
+               "  ref_clk_62_5_buf : BUFG"
+               "  port map"
+               "   (O   => ref_clk_62_5,"
+               "    I   => ref_clk_i);"
+               "	 "
+               "	 oddr_pps: ODDR"
+               "	   generic map("
+               "		 DDR_CLK_EDGE => \"SAME_EDGE\","
+               "		 INIT         => '0',"
+               "		 SRTYPE       => \"SYNC\")"
+               "	   port map("
+               "		 Q  => pps_oddr,"
+               "		 C  => ref_clk_i,"
+               "		 CE => '1',"
+               "		 D1 => pps_i,"
+               "		 D2 => pps_i,"
+               "		 R  => '0',"
+               "		 S  => '0');"
+               ""
+               "     obuf_pps: OBUFDS"
+               "	   generic map("
+               "		 CAPACITANCE => \"DONT_CARE\","
+               "		 IOSTANDARD  => \"DEFAULT\","
+               "		 SLEW        => \"SLOW\")"
+               "	   port map("
+               "		 O  => pps_p_o,"
+               "		 OB => pps_n_o,"
+               "		 I  => pps_oddr);"
+               ""
+               "end architecture structure ; -- of timing_ref_out"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c532917be258c00e1bcfe12ad71")
+        (NAME "structure.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

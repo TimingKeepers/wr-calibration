@@ -1,0 +1,89 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c5341cddf254c31e1bcbc77cb70")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Wed Feb 18 17:33:49 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "dummy_aes")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 576 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1392368660 "Fri Feb 14 10:04:20 2014")
+      (MODIFIED 1424277229 "Wed Feb 18 17:33:49 2015")
+    )
+    (PORT
+      (OBID "eprt0c012c53d1cddf254c31e1bc2f77cb70")
+      (HDL_IDENT
+        (NAME "aes_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_aes_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "aes_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5351cddf254c31e1bcec77cb70" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5351cddf254c31e1bcec77cb70")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5351cddf254c31e1bcfc77cb70")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'dummy_aes'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     aes_o : out    t_aes_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of dummy_aes is"
+               ""
+               "begin"
+               "    aes_o.fifo_dout    <= (others => '0');  -- std_logic_vector(c_aes_word_size-1 downto 0);    -- data from decoded audio fifo"
+               "    aes_o.fifo_full    <= '0';              -- std_logic;    -- decoded audio fifo full"
+               "    aes_o.fifo_empty   <= '0';              -- std_logic;    -- decoded audio fifo empty"
+               "    aes_o.audio_clk    <= '0';              -- std_logic;    -- 25 MHz clk output for AES3 digitizer"
+               "    aes_o.audio_on_off <= '0';              -- std_logic;    -- Power on/off the audio instrument"
+               ""
+               "end architecture rtl ; -- of dummy_aes"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

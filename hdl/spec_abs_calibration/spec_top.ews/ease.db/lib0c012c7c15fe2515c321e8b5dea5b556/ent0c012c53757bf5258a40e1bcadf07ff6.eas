@@ -1,0 +1,114 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53757bf5258a40e1bcadf07ff6")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Sep 15 12:45:39 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "pullup1")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 192 192)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1372422047 "Fri Jun 28 14:20:47 2013")
+      (MODIFIED 1442313939 "Tue Sep 15 12:45:39 2015")
+    )
+    (PORT
+      (OBID "eprt0c012c53757bf5258a40e1bcbdf07ff6")
+      (HDL_IDENT
+        (NAME "o1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "o1")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53da7bf5258a40e1bcc8017ff6")
+      (HDL_IDENT
+        (NAME "o2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "o2")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53757bf5258a40e1bccdf07ff6" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53757bf5258a40e1bccdf07ff6")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53757bf5258a40e1bcedf07ff6")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'pullup1'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     o1 : out    std_logic;"
+               "--     o2 : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of pullup1 is"
+               ""
+               "begin"
+               "   o1 <= 'H';"
+               "   o2 <= 'H';"
+               "end architecture structure ; -- of pullup1"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file0c012c53757bf5258a40e1bcfdf07ff6")
+        (NAME "structure.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

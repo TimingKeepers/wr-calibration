@@ -1,0 +1,829 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c538ea7d1358561e1bc93d0a513")
+    (PROPERTIES
+      (PROPERTY "PORTORDER" "1")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Mar 10 11:01:15 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "FirePacketGen")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 832 960)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1394440936 "Mon Mar 10 09:42:16 2014")
+      (MODIFIED 1394442568 "Mon Mar 10 10:09:28 2014")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "design")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538ea7d1358561e1bcc3d0a513")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Clk")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538ea7d1358561e1bcd3d0a513")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538ea7d1358561e1bce3d0a513")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "WrReq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 792 280 872 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "WrReq")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538ea7d1358561e1bcf3d0a513")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Tx_Fire")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Tx_Fire")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538ea7d1358561e1bc04d0a513")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 792 216 872 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Full")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538ea7d1358561e1bc24d0a513")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "UDP_Tx")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "dbus_type")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 792 152 872 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "UDP_Tx")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5314c7d1358561e1bc24e0a513")
+      (HDL_IDENT
+        (NAME "numwords")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "13" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "numwords(13:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53f6c7d1358561e1bc64e0a513")
+      (HDL_IDENT
+        (NAME "numpackets")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "9" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "numpackets(9:0)")
+      )
+    )
+    (ARCH_DECLARATION 3 "arch0c012c538ea7d1358561e1bc34d0a513" "fsm")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c538ea7d1358561e1bc34d0a513")
+    (HDL_IDENT
+      (NAME "fsm")
+      (USERNAME 1)
+    )
+    (TYPE 3)
+    (STATE_MACHINE_V2
+      (OBID "fsmx0c012c538ea7d1358561e1bc44d0a513")
+      (PROPERTIES
+        (PROPERTY "PROPMAP_VERSION" "1")
+        (PROPERTY "TL_FSM_CLOCKPORT" "Clk")
+        (PROPERTY "TL_FSM_IEEEFUNC" "true")
+        (PROPERTY "TL_FSM_MEALY" "1")
+        (PROPERTY "TL_FSM_MOORE" "1")
+        (PROPERTY "TL_FSM_STATEBITS" "3")
+        (PROPERTY "TL_FSM_STATEENCODING" "1")
+      )
+      (ACTION
+        (OBID "lab0c012c538ea7d1358561e1bc54d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "UDP_Tx.EOD <= '0';"
+                   "UDP_Tx.D <= x\"aa11\";"
+                   "WrReq <= '0';")
+      )
+      (ACTION
+        (OBID "lab0c012c538ea7d1358561e1bc74d0a513")
+        (NAME "CntInc")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 1)
+        (VHDL_TEXT "If Full = '0' Then"
+                   "   Cnt := Cnt + 1;"
+                   "End If;")
+      )
+      (ACTION
+        (OBID "lab0c012c538ea7d1358561e1bcb4d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "If Full = '0' Then"
+                   "   Cnt := Cnt + 1;"
+                   "End If;"
+                   "If Cnt = to_integer(unsigned (numwords)) Then"
+                   "   UDP_Tx.EOD <= '1';"
+                   "   UDP_Tx.D <= x\"0E0D\";"
+                   "ElsIf Cnt = 1 Then"
+                   "   UDP_Tx.EOD <= '0';"
+                   "   UDP_Tx.D <= x\"050D\";"
+                   "Else"
+                   "   UDP_Tx.EOD <= '0';"
+                   "   UDP_Tx.D <= Std_Logic_Vector(To_Unsigned(Cnt,16));"
+                   "End If;"
+                   "WrReq <= Not Full;")
+      )
+      (ACTION
+        (OBID "lab0c012c538ea7d1358561e1bcf4d0a513")
+        (NAME "Initalize")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 1)
+        (VHDL_TEXT "UDP_Tx.EOD <= '0';"
+                   "UDP_Tx.D <= x\"aa11\";"
+                   "WrReq <= '0';"
+                   "Cnt := 0;"
+                   "Frame := 0;")
+      )
+      (ACTION
+        (OBID "lab0c012c538ea7d1358561e1bc45d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Cnt := 0;"
+                   "Frame := 1;")
+      )
+      (ACTION
+        (OBID "lab0c012c538ea7d1358561e1bc55d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Cnt := 0;"
+                   "Frame := Frame + 1;")
+      )
+      (CONDITION
+        (OBID "lab0c012c538ea7d1358561e1bc75d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Rst = '1'")
+      )
+      (CONDITION
+        (OBID "lab0c012c538ea7d1358561e1bcd5d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Tx_Fire = '1'")
+      )
+      (CONDITION
+        (OBID "lab0c012c538ea7d1358561e1bce5d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Full = '0' And Cnt=to_integer(unsigned (numwords)) And Frame = to_integer(unsigned (numpackets))")
+      )
+      (CONDITION
+        (OBID "lab0c012c538ea7d1358561e1bcf5d0a513")
+        (NAME "")
+        (MEALY 0)
+        (MOORE 0)
+        (SHOW_LABEL 0)
+        (VHDL_TEXT "Full = '0' And Cnt = to_integer(unsigned (numwords))"
+                   "")
+      )
+      (FSM_DIAGRAM
+        (OBID "fsm0c012c538ea7d1358561e1bc26d0a513")
+        (SHEETSIZE 0 0 9600 14400)
+        (INCLUDED_TEXT
+          (OBID "itxt0c012c538ea7d1358561e1bc36d0a513")
+          (GEOMETRY 3736 600 3816 680)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3904 640)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 129)
+            (TEXT "State Machine Declarations:"
+                  "Variable Cnt: Integer Range 0 to 16383;"
+                  "Variable Frame: Integer Range 0 to 1023;"
+                  "")
+          )
+          (TYPE "State Machine Declarations")
+          (VALUE "Variable Cnt: Integer Range 0 to 16383;"
+                 "Variable Frame: Integer Range 0 to 1023;"
+                 "")
+        )
+        (GLOBAL
+          (OBID "fsmp0c012c538ea7d1358561e1bc46d0a513")
+          (GEOMETRY 168 168 232 232)
+          (LABEL
+            (POSITION 264 168)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 0)
+            (FORMAT 129)
+            (TEXT "FSM Properties:"
+                  "Clock : Clk (Rising edge)"
+                  "State assignment : Enumerate"
+                  "State decoding : Case construct"
+                  "Actions on transitions : Clocked"
+                  "Actions on states : Clocked"
+                  "")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c538ea7d1358561e1bc56d0a513")
+          (HDL_IDENT
+            (NAME "Idle")
+            (USERNAME 1)
+            (ATTRIBUTES
+            )
+          )
+          (GEOMETRY 1728 1280 2880 1984)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2250 1382)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "1:Idle")
+          )
+          (NUMBER 1)
+          (ACTION
+            (OBID "act0c012c538ea7d1358561e1bc66d0a513")
+            (GEOMETRY 1880 1624 1960 1704)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1984 1664)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "UDP_Tx.EOD <= '0';"
+                    "UDP_Tx.D <= x\"aa11\";"
+                    "WrReq <= '0';")
+            )
+            (ACTION "lab0c012c538ea7d1358561e1bc54d0a513")
+          )
+        )
+        (STATE
+          (OBID "stat0c012c538ea7d1358561e1bc07d0a513")
+          (HDL_IDENT
+            (NAME "Packet")
+            (USERNAME 1)
+            (ATTRIBUTES
+            )
+          )
+          (GEOMETRY 1600 2560 3136 4672)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2324 2639)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 769)
+            (TEXT "2:Packet")
+          )
+          (NUMBER 2)
+          (ACTION
+            (OBID "act0c012c538ea7d1358561e1bc17d0a513")
+            (GEOMETRY 1688 3416 1768 3496)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1792 3456)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "If Full = '0' Then"
+                    "   Cnt := Cnt + 1;"
+                    "End If;"
+                    "If Cnt = to_integer(unsigned (numwords)) Then"
+                    "   UDP_Tx.EOD <= '1';"
+                    "   UDP_Tx.D <= x\"0E0D\";"
+                    "ElsIf Cnt = 1 Then"
+                    "   UDP_Tx.EOD <= '0';"
+                    "   UDP_Tx.D <= x\"050D\";"
+                    "Else"
+                    "   UDP_Tx.EOD <= '0';"
+                    "   UDP_Tx.D <= Std_Logic_Vector(To_Unsigned(Cnt,16));"
+                    "End If;"
+                    "WrReq <= Not Full;")
+            )
+            (ACTION "lab0c012c538ea7d1358561e1bcb4d0a513")
+          )
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c538ea7d1358561e1bc67d0a513")
+          (GEOMETRY 2304 640 2304 1280)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2304 640)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+          )
+          (PRIORITY -1)
+          (ASYNC 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bc77d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bcb6f52977")
+            )
+            (GEOMETRY 2296 632 2312 648)
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bc87d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bcc6f52977")
+            )
+            (GEOMETRY 2296 1272 2312 1288)
+            (STATE "stat0c012c538ea7d1358561e1bc56d0a513")
+          )
+          (ACTION
+            (OBID "act0c012c538ea7d1358561e1bc97d0a513")
+            (GEOMETRY 2264 1048 2344 1128)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2368 1088)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Initalize")
+            )
+            (ACTION "lab0c012c538ea7d1358561e1bcf4d0a513")
+          )
+          (CONDITION "lab0c012c538ea7d1358561e1bc75d0a513")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2237 765)
+            (ARROW_MPOS 2304 832)
+            (ARROW_EPOS 2371 765)
+            (LABEL
+              (POSITION 1890 745)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Rst = '1'")
+            )
+          )
+          (POINTS            (POINT 2304 640)
+            (POINT 2304 1280)
+)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c538ea7d1358561e1bca7d0a513")
+          (GEOMETRY 1488 1416 1728 1728)
+          (SIDE 0)
+          (LABEL
+            (POSITION 1728 1728)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bcb7d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bce6f52977")
+            )
+            (GEOMETRY 1720 1720 1736 1736)
+            (STATE "stat0c012c538ea7d1358561e1bc56d0a513")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bcc7d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bcf6f52977")
+            )
+            (GEOMETRY 1720 1408 1736 1424)
+            (STATE "stat0c012c538ea7d1358561e1bc56d0a513")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 1555 1634)
+            (ARROW_MPOS 1488 1567)
+            (ARROW_EPOS 1421 1634)
+            (LABEL
+              (POSITION 1488 1439)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 1728 1728 1408 1728 1408 1416 1728 1416)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c538ea7d1358561e1bc99d0a513")
+          (GEOMETRY 2304 1984 2304 2560)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2304 1984)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bca9d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bc19f52977")
+            )
+            (GEOMETRY 2296 1976 2312 1992)
+            (STATE "stat0c012c538ea7d1358561e1bc56d0a513")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bcb9d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bc29f52977")
+            )
+            (GEOMETRY 2296 2552 2312 2568)
+            (STATE "stat0c012c538ea7d1358561e1bc07d0a513")
+          )
+          (ACTION
+            (OBID "act0c012c538ea7d1358561e1bcc9d0a513")
+            (GEOMETRY 2264 2392 2344 2472)
+            (SIDE 0)
+            (LABEL
+              (POSITION 1827 2404)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Cnt := 0;"
+                    "Frame := 1;")
+            )
+            (ACTION "lab0c012c538ea7d1358561e1bc45d0a513")
+            (INDEX 1)
+          )
+          (CONDITION "lab0c012c538ea7d1358561e1bcd5d0a513")
+          (ARROW
+            (NUMBER 0)
+            (ARROW_BPOS 2237 2205)
+            (ARROW_MPOS 2304 2272)
+            (ARROW_EPOS 2371 2205)
+            (LABEL
+              (POSITION 2366 2062)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Tx_Fire = '1'")
+            )
+          )
+          (POINTS            (POINT 2304 1984)
+            (POINT 2304 2560)
+)
+        )
+        (TRANS_LINE
+          (OBID "tran0c012c538ea7d1358561e1bcd9d0a513")
+          (GEOMETRY 2304 1664 4224 4928)
+          (SIDE 0)
+          (LABEL
+            (POSITION 2304 4672)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "0")
+          )
+          (PRIORITY 0)
+          (FROM_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bce9d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bc59f52977")
+            )
+            (GEOMETRY 2296 4664 2312 4680)
+            (STATE "stat0c012c538ea7d1358561e1bc07d0a513")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bcf9d0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bc69f52977")
+            )
+            (GEOMETRY 2872 1656 2888 1672)
+            (STATE "stat0c012c538ea7d1358561e1bc56d0a513")
+          )
+          (CONDITION "lab0c012c538ea7d1358561e1bce5d0a513")
+          (ARROW
+            (NUMBER 1)
+            (ARROW_BPOS 3197 4995)
+            (ARROW_MPOS 3264 4928)
+            (ARROW_EPOS 3197 4861)
+            (LABEL
+              (POSITION 1593 5032)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Full = '0' And Cnt=to_integer(unsigned (numwords)) And Frame = to_integer(unsigned (numpackets))")
+            )
+          )
+          (POINTS            (POINT 2304 4672)
+            (POINT 2304 4928)
+            (POINT 4224 4928)
+            (POINT 4224 1664)
+            (POINT 2880 1664)
+)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c538ea7d1358561e1bc0ad0a513")
+          (GEOMETRY 1360 4118 1600 4544)
+          (SIDE 0)
+          (LABEL
+            (POSITION 1600 4544)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "1")
+          )
+          (PRIORITY 1)
+          (FROM_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bc1ad0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bc89f52977")
+            )
+            (GEOMETRY 1592 4536 1608 4552)
+            (STATE "stat0c012c538ea7d1358561e1bc07d0a513")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bc2ad0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c53ebd594254520e1bc99f52977")
+            )
+            (GEOMETRY 1592 4110 1608 4126)
+            (STATE "stat0c012c538ea7d1358561e1bc07d0a513")
+          )
+          (ACTION
+            (OBID "act0c012c538ea7d1358561e1bc3ad0a513")
+            (GEOMETRY 1431 4107 1511 4187)
+            (SIDE 0)
+            (LABEL
+              (POSITION 727 4126)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+              (TEXT "Cnt := 0;"
+                    "Frame := Frame + 1;")
+            )
+            (ACTION "lab0c012c538ea7d1358561e1bc55d0a513")
+            (INDEX 22)
+          )
+          (CONDITION "lab0c012c538ea7d1358561e1bcf5d0a513")
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 1427 4391)
+            (ARROW_MPOS 1360 4324)
+            (ARROW_EPOS 1293 4391)
+            (LABEL
+              (POSITION 544 4456)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 0)
+              (FORMAT 0)
+              (TEXT "Full = '0' And Cnt = to_integer(unsigned (numwords))"
+                    "")
+            )
+          )
+          (BEZIER 1600 4544 1280 4544 1280 4118 1600 4118)
+        )
+        (TRANS_SPLINE
+          (OBID "tran0c012c538ea7d1358561e1bcead0a513")
+          (GEOMETRY 3136 4096 3280 4544)
+          (SIDE 0)
+          (LABEL
+            (POSITION 3136 4544)
+            (SCALE 80)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 4)
+            (FORMAT 0)
+            (TEXT "2")
+          )
+          (PRIORITY 2)
+          (FROM_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bcfad0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c533c16e5250221e1bcbcb09672")
+            )
+            (GEOMETRY 3128 4536 3144 4552)
+            (STATE "stat0c012c538ea7d1358561e1bc07d0a513")
+          )
+          (TO_CONN
+            (OBID "fsmc0c012c538ea7d1358561e1bc0bd0a513")
+            (PROPERTIES
+              (PROPERTY "CopiedFrom" "fsmc0c012c533c16e5250221e1bcccb09672")
+            )
+            (GEOMETRY 3128 4088 3144 4104)
+            (STATE "stat0c012c538ea7d1358561e1bc07d0a513")
+          )
+          (ARROW
+            (NUMBER 25)
+            (ARROW_BPOS 3347 4380)
+            (ARROW_MPOS 3280 4313)
+            (ARROW_EPOS 3213 4380)
+            (LABEL
+              (POSITION 3280 4185)
+              (SCALE 80)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 3)
+              (FORMAT 0)
+            )
+          )
+          (BEZIER 3136 4544 3328 4544 3328 4096 3136 4096)
+        )
+      )
+    )
+  )
+)
+(END_OF_FILE)

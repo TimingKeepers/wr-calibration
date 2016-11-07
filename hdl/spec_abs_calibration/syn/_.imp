@@ -1,0 +1,10 @@
+setMode -bs
+setMode -bs
+setMode -bs
+setMode -bs
+setCable -port auto
+Identify -inferir
+identifyMPM 
+assignFile -p 1 -file "spec_top_elf.bit"
+Program -p 1 
+quit

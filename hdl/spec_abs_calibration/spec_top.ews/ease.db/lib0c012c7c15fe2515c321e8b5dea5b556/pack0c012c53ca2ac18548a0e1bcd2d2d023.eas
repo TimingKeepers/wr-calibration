@@ -1,0 +1,49 @@
+(DATABASE_VERSION 23)
+(PACKAGE_FILE
+  (OBID "pack0c012c53ca2ac18548a0e1bcd2d2d023")
+  (PROPERTIES
+    (PROPERTY "ExternalFileId" "hdlf0c012c53ba2ac18548a0e1bca2d2d023")
+    (PROPERTY "STAMP_PLATFORM" "PC")
+    (PROPERTY "STAMP_REVISION" "Revision 5")
+    (PROPERTY "STAMP_TIME" "Fri Nov 04 16:03:16 2016")
+    (PROPERTY "STAMP_TOOL" "Ease")
+    (PROPERTY "STAMP_VERSION" "8.3")
+  )
+  (HDL_IDENT
+    (NAME "endpoint_private_pkg")
+    (USERNAME 1)
+  )
+  (OBJSTAMP
+    (DESIGNER "peterj")
+    (CREATED 1478271660 "Fri Nov 04 16:01:00 2016")
+    (MODIFIED 1478271660 "Fri Nov 04 16:01:00 2016")
+  )
+  (EXTERNAL 1)
+  (PACKAGE_USE
+    (PACKAGE_USE
+      (OBID "pack0c012c53892ac18548a0e1bc57c2d023")
+      (LIBRARY "work")
+      (NAME "ep_wbgen2_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c7c68d13515c321e8b59e6cb556")
+      (LIBRARY "work")
+      (NAME "wr_fabric_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c7c4f934515c321e8b5feacb556")
+      (LIBRARY "work")
+      (NAME "endpoint_pkg")
+      (SUFFIX "ALL")
+    )
+    (PACKAGE_USE
+      (OBID "pack0c012c7c17fe2515c321e8b5d9b5b556")
+      (LIBRARY "work")
+      (NAME "genram_pkg")
+      (SUFFIX "ALL")
+    )
+  )
+)
+(END_OF_FILE)

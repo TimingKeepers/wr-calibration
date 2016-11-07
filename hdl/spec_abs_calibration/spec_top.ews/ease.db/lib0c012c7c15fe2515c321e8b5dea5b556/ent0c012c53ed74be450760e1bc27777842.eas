@@ -1,0 +1,347 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53ed74be450760e1bc27777842")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Aug 25 10:49:23 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "PHY2RX")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2048 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1424705502 "Mon Feb 23 16:31:42 2015")
+      (MODIFIED 1440492412 "Tue Aug 25 10:46:52 2015")
+    )
+    (GENERIC
+      (OBID "egen0c012c535784be450760e1bcf2e77842")
+      (HDL_IDENT
+        (NAME "g_pcs_16bit")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+          (DEF_VALUE "false")
+        )
+      )
+      (GEOMETRY 472 408 552 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 616 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_pcs_16bit(false)")
+      )
+      (GENERIC "egen0c012c5340743e450b01e1bcc3c5ba03")
+    )
+    (PORT
+      (OBID "eprt0c012c537184be450760e1bcb0d77842")
+      (HDL_IDENT
+        (NAME "ch1_rx_data_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ch1_rx_data_i(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537184be450760e1bcd0d77842")
+      (HDL_IDENT
+        (NAME "ch1_rx_rbclk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ch1_rx_rbclk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537184be450760e1bcf0d77842")
+      (HDL_IDENT
+        (NAME "ch1_rx_k_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ch1_rx_k_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c537184be450760e1bc11d77842")
+      (HDL_IDENT
+        (NAME "ch1_rx_enc_err_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ch1_rx_enc_err_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c538184be450760e1bc31d77842")
+      (HDL_IDENT
+        (NAME "ch1_rx_bitslide_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ch1_rx_bitslide_i(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534484be450760e1bc0ad77842")
+      (HDL_IDENT
+        (NAME "phy_rx_data_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (DEF_VALUE "(others=>'0')")
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 24 2088 104)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 64)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "phy_rx_data_o(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534484be450760e1bc2ad77842")
+      (HDL_IDENT
+        (NAME "phy_rx_rbclk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY 2008 88 2088 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "phy_rx_rbclk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534484be450760e1bc4ad77842")
+      (HDL_IDENT
+        (NAME "phy_rx_k_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (DEF_VALUE "(OTHERS => '0')")
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "0" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 216 2088 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "phy_rx_k_o(0:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534484be450760e1bc6ad77842")
+      (HDL_IDENT
+        (NAME "phy_rx_enc_err_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY 2008 280 2088 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "phy_rx_enc_err_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534484be450760e1bc8ad77842")
+      (HDL_IDENT
+        (NAME "phy_rx_bitslide_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (DEF_VALUE "(others=>'0')")
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 344 2088 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 384)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "phy_rx_bitslide_o(3:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53fd74be450760e1bc57777842" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53fd74be450760e1bc57777842")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c537c84be450760e1bc35e77842")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'PHY2RX'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_pcs_16bit : boolean := false);"
+               "--   port ("
+               "--     ch1_rx_bitslide_i : in     std_logic_vector(3 downto 0);"
+               "--     ch1_rx_data_i     : in     std_logic_vector(7 downto 0);"
+               "--     ch1_rx_enc_err_i  : in     std_logic;"
+               "--     ch1_rx_k_i        : in     std_logic;"
+               "--     ch1_rx_rbclk_i    : in     std_logic;"
+               "--     phy_rx_bitslide_o : out    std_logic_vector(3 downto 0) := (others=>'0');"
+               "--     phy_rx_data_o     : out    std_logic_vector(7 downto 0) := (others=>'0');"
+               "--     phy_rx_enc_err_o  : out    std_logic := '0';"
+               "--     phy_rx_k_o        : out    std_logic_vector(0 downto 0) := (OTHERS => '0');"
+               "--     phy_rx_rbclk_o    : out    std_logic := '0');"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of PHY2RX is"
+               ""
+               "begin"
+               "  -- need an assignment for phy_rx_k_o. Also assign other signals to keep delta delay's aligned"
+               "  phy_rx_k_o(0)                 <= ch1_rx_k_i;"
+               "  phy_rx_bitslide_o(3 downto 0) <= ch1_rx_bitslide_i;"
+               "  phy_rx_data_o(7 downto 0)     <= ch1_rx_data_i;"
+               "  phy_rx_enc_err_o              <= ch1_rx_enc_err_i;"
+               "  phy_rx_rbclk_o                <= ch1_rx_rbclk_i;"
+               "end architecture structure ; -- of PHY2RX"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

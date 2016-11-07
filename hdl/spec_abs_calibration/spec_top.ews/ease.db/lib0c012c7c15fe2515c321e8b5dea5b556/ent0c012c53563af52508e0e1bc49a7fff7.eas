@@ -1,0 +1,143 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c53563af52508e0e1bc49a7fff7")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c5378b416254150e1bcd59308c4")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/lm32_2nd/top/lm32_2nd.vhd")
+      (PROPERTY "IMPORTED_LAST" "1382109092")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Fri Oct 18 17:25:28 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1382107882")
+    )
+    (HDL_IDENT
+      (NAME "tri_state")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 384 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1381999461 "Thu Oct 17 10:44:21 2013")
+      (MODIFIED 1382109928 "Fri Oct 18 17:25:28 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c493b80250621e8b5b017a6e4")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53563af52508e0e1bc59a7fff7")
+      (HDL_IDENT
+        (NAME "i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53563af52508e0e1bc69a7fff7")
+      (HDL_IDENT
+        (NAME "o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 344 88 424 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 320 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53563af52508e0e1bc79a7fff7")
+      (HDL_IDENT
+        (NAME "oen")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "oen")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c534af416254150e1bcc7b308c4" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c534af416254150e1bcc7b308c4")
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c538e2516254150e1bcd0c308c4")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'tri_state'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     i   : in     std_logic;"
+               "--     o   : out    std_logic;"
+               "--     oen : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture structure of tri_state is"
+               ""
+               "begin"
+               ""
+               "end architecture structure ; -- of tri_state"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

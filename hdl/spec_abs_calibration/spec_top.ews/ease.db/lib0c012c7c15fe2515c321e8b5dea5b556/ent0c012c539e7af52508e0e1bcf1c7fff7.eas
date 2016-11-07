@@ -1,0 +1,322 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c539e7af52508e0e1bcf1c7fff7")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c530b8af52508e0e1bc78e7fff7")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/lm32_2nd/modules/xwb_aes_empty.vhd")
+      (PROPERTY "IMPORTED_LAST" "1382000824")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Oct 17 11:30:04 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1372674720")
+    )
+    (HDL_IDENT
+      (NAME "xwb_aes")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 896 832)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1382000617 "Thu Oct 17 11:03:37 2013")
+      (MODIFIED 1382002203 "Thu Oct 17 11:30:03 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c534c2af52508e0e1bc62a7fff7")
+        (LIBRARY "design")
+        (NAME "wishbone_pkg")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c530a3af52508e0e1bc8ea7fff7")
+        (LIBRARY "design")
+        (NAME "aes_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c539e7af52508e0e1bc02c7fff7")
+      (HDL_IDENT
+        (NAME "g_interface_mode")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_interface_mode")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_interface_mode()")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c539e7af52508e0e1bc12c7fff7")
+      (HDL_IDENT
+        (NAME "g_address_granularity")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_address_granularity")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_address_granularity()")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c539e7af52508e0e1bc22c7fff7")
+      (HDL_IDENT
+        (NAME "g_word_size")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+        )
+      )
+      (GEOMETRY 0 0 80 80)
+      (SIDE 3)
+      (LABEL
+        (POSITION 144 40)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_word_size()")
+      )
+    )
+    (META_GENERIC
+      (OBID "mgen0c012c539e7af52508e0e1bc32c7fff7")
+      (GEOMETRY 48 48 208 208)
+      (SIDE 3)
+      (LABEL
+        (POSITION 272 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 1)
+        (TEXT "3 generics")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bc42c7fff7")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bc52c7fff7")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bc62c7fff7")
+      (HDL_IDENT
+        (NAME "slave_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "slave_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bc72c7fff7")
+      (HDL_IDENT
+        (NAME "slave_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_slave_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 280 936 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "slave_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bc82c7fff7")
+      (HDL_IDENT
+        (NAME "desc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_device_descriptor")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 408 936 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "desc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bc92c7fff7")
+      (HDL_IDENT
+        (NAME "aes_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_aes_in")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "aes_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c539e7af52508e0e1bca2c7fff7")
+      (HDL_IDENT
+        (NAME "aes_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_aes_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 536 936 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 576)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "aes_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c538b8af52508e0e1bcace7fff7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c538b8af52508e0e1bcace7fff7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53c1eaf52508e0e1bc4578fff7")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'xwb_aes'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_interface_mode      : t_wishbone_interface_mode;"
+               "--     g_address_granularity : t_wishbone_address_granularity;"
+               "--     g_word_size           : integer);"
+               "--   port("
+               "--     clk_sys_i : in     std_logic;"
+               "--     rst_n_i   : in     std_logic;"
+               "--     slave_i   : in     t_wishbone_slave_in;"
+               "--     slave_o   : out    t_wishbone_slave_out;"
+               "--     desc_o    : out    t_wishbone_device_descriptor;"
+               "--     aes_i     : in     t_aes_in;"
+               "--     aes_o     : out    t_aes_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of xwb_aes is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of xwb_aes"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

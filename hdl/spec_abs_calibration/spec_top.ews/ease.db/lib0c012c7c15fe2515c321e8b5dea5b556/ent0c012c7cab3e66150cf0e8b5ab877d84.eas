@@ -1,0 +1,353 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7cab3e66150cf0e8b5ab877d84")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c9b3e66150cf0e8b58b877d84")
+      (PROPERTY "HDL_FILENAME" "P:/App/ASTERICS_Cleopatra(WP5.1)/peterj/WR_Calibration/designs/spec_cal/wr-cores/modules/wr_dacs/spec_serial_dac_arb.vhd")
+      (PROPERTY "IMPORTED_LAST" "1440152357")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Fri Aug 21 12:56:05 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1440079953")
+    )
+    (HDL_IDENT
+      (NAME "spec_serial_dac_arb")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1856 2304)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1365697466 "Thu Apr 11 18:24:26 2013")
+      (MODIFIED 1440154563 "Fri Aug 21 12:56:03 2015")
+    )
+    (GENERIC
+      (OBID "egen0c012c7cab3e66150cf0e8b5bb877d84")
+      (HDL_IDENT
+        (NAME "g_invert_sclk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "boolean")
+        )
+      )
+      (GEOMETRY 152 88 232 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 296 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_invert_sclk()")
+      )
+    )
+    (GENERIC
+      (OBID "egen0c012c7cab3e66150cf0e8b5cb877d84")
+      (HDL_IDENT
+        (NAME "g_num_extra_bits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "integer")
+        )
+      )
+      (GEOMETRY 152 216 232 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 296 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "g_num_extra_bits()")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b5db877d84")
+      (HDL_IDENT
+        (NAME "clk_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b5eb877d84")
+      (HDL_IDENT
+        (NAME "rst_n_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rst_n_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b5fb877d84")
+      (HDL_IDENT
+        (NAME "val1_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1368 40 1448)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1408)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "val1_i(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b50c877d84")
+      (HDL_IDENT
+        (NAME "load1_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1240 40 1320)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1280)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "load1_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b51c877d84")
+      (HDL_IDENT
+        (NAME "val2_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "val2_i(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b52c877d84")
+      (HDL_IDENT
+        (NAME "load2_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "load2_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b53c877d84")
+      (HDL_IDENT
+        (NAME "dac_cs_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1816 984 1896 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_cs_n_o(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b54c877d84")
+      (HDL_IDENT
+        (NAME "dac_clr_n_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1816 536 1896 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_clr_n_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b55c877d84")
+      (HDL_IDENT
+        (NAME "dac_sclk_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1816 1176 1896 1256)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_sclk_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7cab3e66150cf0e8b56c877d84")
+      (HDL_IDENT
+        (NAME "dac_din_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1816 664 1896 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1792 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dac_din_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c5362bf6d550f80e1bce767f906" "behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c5362bf6d550f80e1bce767f906")
+    (HDL_IDENT
+      (NAME "behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c535c307d550f80e1bc18c8f906")
+        (NAME "behavioral_1.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavioral' of entity 'spec_serial_dac_arb'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   generic("
+               "--     g_invert_sclk    : boolean;"
+               "--     g_num_extra_bits : integer);"
+               "--   port ("
+               "--     clk_i       : in     std_logic;"
+               "--     rst_n_i     : in     std_logic;"
+               "--     val1_i      : in     std_logic_vector(15 downto 0);"
+               "--     load1_i     : in     std_logic;"
+               "--     val2_i      : in     std_logic_vector(15 downto 0);"
+               "--     load2_i     : in     std_logic;"
+               "--     dac_cs_n_o  : out    std_logic_vector(1 downto 0);"
+               "--     dac_clr_n_o : out    std_logic;"
+               "--     dac_sclk_o  : out    std_logic;"
+               "--     dac_din_o   : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavioral of spec_serial_dac_arb is"
+               ""
+               "begin"
+               ""
+               "end architecture behavioral ; -- of spec_serial_dac_arb"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

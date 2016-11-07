@@ -1,0 +1,228 @@
+/* FILE : fpga.bmm
+*  Define a BRAM map for the LM32 memory "xwb_dpram".
+*  Run ISE Translate -> "Floorplan Area/IO/Logic (PlanAhead)" once (without this BMM file
+*  attached to the ISE Project) to find out that there are 16 ramloops and each RAMB36E1
+*  Note: *THE RAMLOOP ORDER WITHIN A BUS_BLOCK IS VERY IMPORTANT!!!*
+*        Define ramloop 15 downto 0 and databits 31 downto 0 !!! Otherwise the memory
+*        content will be swapped and the program fails to execute. Aperently the ramloop
+*        number and bit definitions are not read by data2mem.
+*
+*
+* Address space LM32 memory "xwb_dpram"
+*  g_dpram_size = 131072/4 = 32768 (128 KByte = 32 KWord)
+*  This size is in 32 bit words => byte size = 4 * 32768 = 131072 bytes)
+* (old:
+* g_dpram_size = 90112/4 = 22528
+* This size is in 32 bit words => byte size = 4 * 22528 = 90112 bytes)
+*
+* ATTENTION PARITY!
+* Although the memory is implemented in RAMB36E1 the address same MUST be defined as
+* RAMB32 (insetad of RAMB36) since we are NOT using parity! If the address space is
+* defined as RAMB36 then data2mem is expecting an extra nibble for each 32 bit instruction
+* in the ".elf" file and since this nibble is not provided, the ramblocks will be filled
+* such that a nibble shift is accumulating in the data.
+* Note that this can be examined using the command
+* "data2mem -bm fpga_bd.bmm -bt fpga_elf.bit -d > dump.txt"
+*
+* ATTENTION Xilinx Synthesis
+* XST implements the 32K * 32 bit as:
+*     64 blocks of 512 (RAMB16) * 32 bits
+*
+****************************************************************************************/
+
+ADDRESS_SPACE lm32_wrpc_memory COMBINED [0x00000000:0x0001FFFF]
+  ADDRESS_RANGE RAMB16
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram1 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram2 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram3 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram4 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram5 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram6 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram7 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram8 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram9 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram10 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram11 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram12 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram13 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram14 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram15 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram16 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram17 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram18 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram19 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram20 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram21 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram22 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram23 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram24 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram25 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram26 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram27 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram28 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram29 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram30 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram31 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram32 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram33 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram34 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram35 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram36 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram37 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram38 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram39 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram40 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram41 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram42 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram43 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram44 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram45 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram46 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram47 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram48 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram49 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram50 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram51 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram52 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram53 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram54 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram55 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram56 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram57 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram58 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram59 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram60 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram61 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram62 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram63 [31:0];
+    END_BUS_BLOCK;
+    BUS_BLOCK
+      U_WR_CORE/WRPC/DPRAM/GEN_INITF.U_DPRAM/gen_single_clk.U_RAM_SC/Mram_ram64 [31:0];
+    END_BUS_BLOCK;
+  END_ADDRESS_RANGE;
+END_ADDRESS_SPACE;

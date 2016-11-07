@@ -1,0 +1,622 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c532a75ae25c880e1bcdaf41c17")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 10")
+      (PROPERTY "STAMP_TIME" "Tue Aug 25 10:49:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "tdc")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 1728)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1391089570 "Thu Jan 30 14:46:10 2014")
+      (MODIFIED 1440491870 "Tue Aug 25 10:37:50 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7cd620a025cc61e8b58457eb73")
+        (LIBRARY "work")
+        (NAME "EMAC16bit_Package")
+        (SUFFIX "all")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d4e7ae25c880e1bc36651c17")
+      (HDL_IDENT
+        (NAME "wb_tdc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_tdc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e4e7ae25c880e1bc46651c17")
+      (HDL_IDENT
+        (NAME "wb_tdc_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wishbone_master_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1368 40 1448)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1408)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "wb_tdc_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531437be258c00e1bcdf32ad71")
+      (HDL_IDENT
+        (NAME "clk_sys_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1496 40 1576)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1536)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk_sys_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531437be258c00e1bcef32ad71")
+      (HDL_IDENT
+        (NAME "Rst")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1560 40 1640)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1600)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Rst")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53b437be258c00e1bca042ad71")
+      (HDL_IDENT
+        (NAME "ref_clk_250")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_250")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536537be258c00e1bc8142ad71")
+      (HDL_IDENT
+        (NAME "ref_clk_250_90")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_250_90")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5321b1af258010e1bca8b37916")
+      (HDL_IDENT
+        (NAME "ss_test")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "6" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 280 1448 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ss_test(6:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53ccb1af258010e1bc29b37916")
+      (HDL_IDENT
+        (NAME "tdc_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_tdc_out")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "tdc_o")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e2e2bf250511e1bc9a14f166")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "c_tdc_channels-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "s(c_tdc_channels-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5363e2bf250511e1bcda14f166")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "s_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "c_tdc_channels-1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 152 1448 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 192)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "s_n(c_tdc_channels-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c535d23bf250511e1bc6974f166")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "download")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "c_tdc_channels-1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "download(c_tdc_channels-1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c5358a8cf25ce90e1bc8290f752")
+      (HDL_IDENT
+        (NAME "time_offset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "27" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "time_offset(27:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53732ccf25ce90e1bce2b0f752")
+      (HDL_IDENT
+        (NAME "timeslice_start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "timeslice_start")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c536f3840350a20e1bcd4c7ae00")
+      (HDL_IDENT
+        (NAME "ref_clk_lock")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_lock")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534bf724350650e1bcf422f065")
+      (HDL_IDENT
+        (NAME "ref_clk_62_5")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ref_clk_62_5")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e92a4735c061e1bc3b484105")
+      (HDL_IDENT
+        (NAME "enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "enable")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53e92a4735c061e1bc4b484105")
+      (HDL_IDENT
+        (NAME "r_enable_tdc_ch")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "r_enable_tdc_ch(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c531c726d358141e1bcbc0356e1")
+      (HDL_IDENT
+        (NAME "r_veto_value")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "31" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 984 40 1064)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1024)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "r_veto_value(31:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c534e726d358141e1bc0d0356e1")
+      (HDL_IDENT
+        (NAME "s_hits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_hits")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 1048 40 1128)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1088)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "s_hits")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c53d89c5f35c931e1bc4136b823")
+      (HDL_IDENT
+        (NAME "flush")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 856 40 936)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 896)
+        (SCALE 64)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "flush")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c532a75ae25c880e1bc0bf41c17" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c532a75ae25c880e1bc0bf41c17")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c53f981af258010e1bca5b37916")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'tdc'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Rst             : in     std_logic;"
+               "--     clk_sys_i       : in     std_logic;"
+               "--     download        : in     std_logic_vector(c_tdc_channels-1 downto 0);"
+               "--     enable          : in     std_logic;"
+               "--     flush           : in     std_logic;"
+               "--     r_enable_tdc_ch : out    std_logic_vector(31 downto 0);"
+               "--     r_veto_value    : out    std_logic_vector(31 downto 0);"
+               "--     ref_clk_250     : in     std_logic;"
+               "--     ref_clk_250_90  : in     std_logic;"
+               "--     ref_clk_62_5    : in     std_logic;"
+               "--     ref_clk_lock    : in     std_logic;"
+               "--     s               : in     std_logic_vector(c_tdc_channels-1 downto 0);"
+               "--     s_hits          : out    t_hits;"
+               "--     s_n             : in     std_logic_vector(c_tdc_channels-1 downto 0);"
+               "--     ss_test         : out    std_logic_vector(6 downto 0);"
+               "--     tdc_o           : out    t_tdc_out;"
+               "--     time_offset     : in     std_logic_vector(27 downto 0);"
+               "--     timeslice_start : in     std_logic;"
+               "--     wb_tdc_i        : in     t_wishbone_master_out;"
+               "--     wb_tdc_o        : out    t_wishbone_master_in);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of tdc is"
+               "	component xwb_tdc is"
+               "	  generic("
+               "      g_interface_mode      : t_wishbone_interface_mode:=CLASSIC;"
+               "      g_address_granularity : t_wishbone_address_granularity:=WORD;"
+               "      g_tdc_channels  	    : natural:=c_tdc_channels"
+               "    );"
+               "    port("
+               "      clk_sys_i       : in std_logic;"
+               "      rst_n_i         : in std_logic;"
+               "      -- Wishbone"
+               "      slave_i         : in  t_wishbone_slave_in;"
+               "      slave_o         : out t_wishbone_slave_out;"
+               "      desc_o          : out t_wishbone_device_descriptor;"
+               "      --clocks"
+               "      ref_clk_250     : in std_logic;"
+               "      ref_clk_250_90  : in std_logic;	"
+               "      ref_clk_62_5    : in std_logic;	"
+               "      ref_clk_lock    : in std_logic;"
+               "      --time_slice			 "
+               "      timeslice_start : in  std_logic;"
+               "      offset          : in  std_logic_vector(27 downto 0);"
+               "      --TDC signals"
+               "      enable          : in   std_logic;"
+               "      flush           : in   std_logic;"
+               "      r_enable_tdc_ch : out std_logic_vector(31 downto 0);"
+               "      r_veto_value    : out std_logic_vector(31 downto 0);"
+               "      s_hits          : out t_hits;"
+               "      ss_test         : out std_logic_vector(6 downto 0);"
+               "      tdc_i           : in  t_tdc_in;"
+               "      tdc_o           : out t_tdc_out"
+               "    );"
+               ""
+               "	end component xwb_tdc;"
+               ""
+               "  signal rst_n_i: std_logic;"
+               "	signal internal_tdc_in: t_tdc_in;"
+               "	"
+               "begin"
+               "  rst_n_i <= not Rst;"
+               ""
+               "  internal_tdc_in.s        <= s;"
+               "  internal_tdc_in.s_n      <= s_n;"
+               "  internal_tdc_in.download <= download;"
+               "  "
+               "  wrap_tdc: xwb_tdc"
+               "    generic map ("
+               "       g_interface_mode      => PIPELINED,"
+               "       g_address_granularity => BYTE,"
+               "       g_tdc_channels        => c_tdc_channels"
+               "    )"
+               "    port map ("
+               "       clk_sys_i        => clk_sys_i,"
+               "	     rst_n_i          => rst_n_i,"
+               "       slave_i          => wb_tdc_i,"
+               "       slave_o          => wb_tdc_o,"
+               "       desc_o           => open,"
+               "       ref_clk_250      => ref_clk_250,"
+               "       ref_clk_250_90   => ref_clk_250_90,"
+               "       ref_clk_62_5     => ref_clk_62_5,"
+               "       ref_clk_lock     => ref_clk_lock,"
+               "       timeslice_start  => timeslice_start,"
+               "       offset           => time_offset,"
+               "       enable           => enable,"
+               "       flush            => flush,"
+               "       r_enable_tdc_ch  => r_enable_tdc_ch,"
+               "       r_veto_value     => r_veto_value,"
+               "       s_hits           => s_hits,"
+               "       ss_test          => ss_test,"
+               "       tdc_i            => internal_tdc_in,"
+               "       tdc_o            => tdc_o"
+               "    );		 "
+               "	"
+               "end architecture rtl ; -- of tdc"
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

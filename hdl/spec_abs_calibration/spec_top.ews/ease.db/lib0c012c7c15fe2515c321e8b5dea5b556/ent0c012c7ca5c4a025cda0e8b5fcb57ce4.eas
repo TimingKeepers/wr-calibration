@@ -1,0 +1,120 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent0c012c7ca5c4a025cda0e8b5fcb57ce4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlf0c012c7c95c4a025cda0e8b5acb57ce4")
+      (PROPERTY "HDL_FILENAME" "P:/App/KM3Net/CLB/CLBv2/SVN_Valencia/CLBv2_peter/fw/CLBv2_Design/clb_wrpc/modules/wb_dummys/wb_DummySource.vhd")
+      (PROPERTY "IMPORTED_LAST" "1376639361")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Mon Sep 23 11:32:56 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1376639060")
+    )
+    (HDL_IDENT
+      (NAME "wb_DummySource")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 768 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "peterj")
+      (CREATED 1376406618 "Tue Aug 13 17:10:18 2013")
+      (MODIFIED 1376639636 "Fri Aug 16 09:53:56 2013")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack0c012c7c68d13515c321e8b59e6cb556")
+        (LIBRARY "design")
+        (NAME "wr_fabric_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ca5c4a025cda0e8b50db57ce4")
+      (HDL_IDENT
+        (NAME "src_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_in")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 728 152 808 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_i")
+      )
+    )
+    (PORT
+      (OBID "eprt0c012c7ca5c4a025cda0e8b51db57ce4")
+      (HDL_IDENT
+        (NAME "src_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "t_wrf_source_out")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 728 280 808 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 704 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "src_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch0c012c53189dd025c490e1bcd4c1b5f2" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch0c012c53189dd025c490e1bcd4c1b5f2")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file0c012c5349add025c490e1bce8d1b5f2")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'wb_DummySource'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     src_i : out    t_wrf_source_in;"
+               "--     src_o : in     t_wrf_source_out);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of wb_DummySource is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of wb_DummySource"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)
