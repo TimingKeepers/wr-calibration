@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 
 # private imports:
 from lib.docopt import docopt
-import lib.Keysight_DSO_S_254A as DSO
+import lib.LeCroy8254 as DSO
 #import lib.Agilent_DSO6104A as DSO
 import lib.pat_gen as pat_gen
 
