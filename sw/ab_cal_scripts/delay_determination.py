@@ -40,7 +40,7 @@ import bz2
 ## Add some "missing" functions to older scipy modules 
 ##
 #if scipy.__version__ < "0.11.0":
-if scipy.__version__ < "0.14.0":
+if 1:
     def _boolrelextrema(data, comparator, axis=0, order=1, mode='clip'):
         """
         Calculate the relative extrema of `data`.
