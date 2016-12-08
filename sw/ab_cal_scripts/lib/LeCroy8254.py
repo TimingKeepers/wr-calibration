@@ -625,28 +625,28 @@ def osc_init(scope, time_base = 50.0e-9):
   # use Channel 3 Ethernet Frame input
 
   # A fixed trigger level is important for proper timing measurement
-  # Choose 1.4 Volt for a direct signal but 0.8  Volt when the signal
-  # is split by a power splitter
+  # MiniCircuits Splitters ZFRSC-123+ have ~ 6 + 3,75 dB attenuation (~ factor 3).
+  # A 2,4 V signal split once results in 0,8 V, slit twice in 260 mV.
   scope.write("TRIG_SELECT EDGE,SR,C1")
 
   use_power_splitter = True
 
   if use_power_splitter:
-    scope.write("C1:TRIG_LEVEL 0.4")
-    scope.write("C1:Volt_DIV 0.5")
+    scope.write("C1:TRIG_LEVEL 0.15")
+    scope.write("C1:Volt_DIV 0.1")
   else:  
-    scope.write("C1:TRIG_LEVEL 0.7")
-    scope.write("C1:Volt_DIV 0.75")
+    scope.write("C1:TRIG_LEVEL 0.3")
+    scope.write("C1:Volt_DIV 0.2")
 
   scope.write("C1:COUPLING D50")
   scope.write("C1:OFFSET 0.0")
 
   scope.write("C3:COUPLING D50")
   scope.write("C3:OFFSET 0.0")
-  scope.write("C3:Volt_DIV 0.125")
+  scope.write("C3:Volt_DIV 0.25")
   scope.write("C4:COUPLING D50")
   scope.write("C4:OFFSET 0.0")
-  scope.write("C4:Volt_DIV 0.125")
+  scope.write("C4:Volt_DIV 0.25")
 
 
   # Trigger in the centre of the screen; important for maximum estimations
