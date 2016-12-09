@@ -653,7 +653,7 @@ def osc_init(scope, time_base = 50.0e-9):
   # forwarded to function average_edge_to_sfd
   scope.write("TRIG_DELAY 0 ns")
   scope.write("TIME_DIV "+str(time_base))  # set 50 ns/div
-  #scope.write("REFERENCE_CLOCK EXTERNAL")  # set external refrence clock
+  scope.write("REFERENCE_CLOCK EXTERNAL")  # set external refrence clock
 
   return
 
@@ -670,6 +670,8 @@ if __name__ == "__main__":
     #scope =  vxi11.Instrument("192.168.32.243")
     print(scope.ask("*IDN?"))
     # Returns 'LECROY,WAVERUNNER8254M-MS,LCRY4253N20398,8.1.0'
+    # Note that for LeCroy oscilloscopes LXI needs to be enabled (with proper
+    # IP address configured). See menu "Utilities" -> "Utilities Setup" -> "Remote" tab
     channels = '1'
     #record_len = 1000
     num_avg = 1
