@@ -156,34 +156,6 @@ if __name__ == "__main__":
   # use Channel 3-4 Ethernet Frame input
   DSO.osc_init(scope, time_base)    
 
-  """
-  scope.write(":TRIGger:EDGE:SOURce CHANnel1")
-  scope.write(":TRIGger:SWEep TRIGgered")
-
-  use_power_splitter = True
-
-  if use_power_splitter:
-    scope.write(":TRIGger:LEVel CHANnel1, 0.05")
-    scope.write(":CHANnel1:RANGe 0.8")     # 100 mV/div
-  else:  
-    scope.write(":TRIGger:LEVel CHANnel1, 0.1")
-    scope.write(":CHANnel1:RANGe 1.6")     # 200 mV/div
-
-  scope.write(":CHANnel1:INPut DCFifty")
-  scope.write(":CHANnel1:OFFSet 0.0")
-
-  scope.write(":CHANnel3:INPut DCFifty")
-  scope.write(":CHANnel3:OFFSet 0.0")
-  scope.write(":CHANnel3:RANGe 0.8")     # 100 mV/div
-
-
-  # Trigger in the centre of the screen; important for maximum estimations
-  # forwarded to function average_meas
-  scope.write(":TIMebase:DELay 0")
-  scope.write(":TIMebase:RANGe "+str(time_base))  # set 50 ns/div
-  scope.write(":TIMebase:REFClock ON")    # set external refrence clock
-  """
-
   meas, samples, sample_period, first_filename, last_filename = average_edge_to_edge(scope, num_meas, expect_max, estimated_delay, tolerance)
   print("Samples:",samples)
   print("Sample Period:",sample_period)
