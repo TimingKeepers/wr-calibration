@@ -167,17 +167,17 @@ if __name__ == "__main__":
     freq_cnt.write("INP1:LEVEL:AUTO OFF")
 
     # A fixed trigger level is important for proper timing measurement
-    # Choose 100 mV for a direct signal but 50 mV when the signal
-    # is split by a power splitter
+    # MiniCircuits Splitters ZFRSC-123+ have ~ 6 + 3,75 dB attenuation (~ factor 3).
+    # A 2,4 V signal split once results in 0,8 V, slit twice in 260 mV.
 
-    use_power_splitter_ch1 = True
+    use_power_splitter_ch1 = False
     use_power_splitter_ch2 = True
 
     freq_cnt.write("INP1:IMP 50")
     if use_power_splitter_ch1:
-      freq_cnt.write("INP1:LEV 0.05")
+      freq_cnt.write("INP1:LEV 0.13")
     else:  
-      freq_cnt.write("INP1:LEV 0.1")
+      freq_cnt.write("INP1:LEV 0.4")
 
     # Channel 2 setup:
     freq_cnt.write("INP2:COUP DC")
@@ -185,14 +185,14 @@ if __name__ == "__main__":
     freq_cnt.write("INP2:SLOPE POS")
 
     # A fixed trigger level is important for proper timing measurement
-    # Choose 100 mV for a direct signal but 50 mV when the signal
-    # is split by a power splitter
+    # MiniCircuits Splitters ZFRSC-123+ have ~ 6 + 3,75 dB attenuation (~ factor 3).
+    # A 2,4 V signal split once results in 0,8 V, slit twice in 260 mV.
 
     freq_cnt.write("INP2:IMP 50")
     if use_power_splitter_ch2:
-      freq_cnt.write("INP2:LEV 0.05")
+      freq_cnt.write("INP2:LEV 0.13")
     else:  
-      freq_cnt.write("INP2:LEV 0.1")
+      freq_cnt.write("INP2:LEV 0.4")
 
     # initialize and wait for initialisatio to complete
     freq_cnt.write("INIT")
