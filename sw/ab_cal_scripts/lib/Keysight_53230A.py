@@ -175,9 +175,9 @@ if __name__ == "__main__":
 
     freq_cnt.write("INP1:IMP 50")
     if use_power_splitter_ch1:
-      freq_cnt.write("INP1:LEV 0.13")
+      freq_cnt.write("INP1:LEV 0.15")
     else:  
-      freq_cnt.write("INP1:LEV 0.4")
+      freq_cnt.write("INP1:LEV 0.3")
 
     # Channel 2 setup:
     freq_cnt.write("INP2:COUP DC")
@@ -190,9 +190,9 @@ if __name__ == "__main__":
 
     freq_cnt.write("INP2:IMP 50")
     if use_power_splitter_ch2:
-      freq_cnt.write("INP2:LEV 0.13")
+      freq_cnt.write("INP2:LEV 0.15")
     else:  
-      freq_cnt.write("INP2:LEV 0.4")
+      freq_cnt.write("INP2:LEV 0.3")
 
     # initialize and wait for initialisatio to complete
     freq_cnt.write("INIT")

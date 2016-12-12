@@ -633,10 +633,10 @@ def osc_init(scope, time_base = 50.0e-9):
 
   if use_power_splitter:
     scope.write("C1:TRIG_LEVEL 0.15")
-    scope.write("C1:Volt_DIV 0.1")
+    scope.write("C1:Volt_DIV 0.25")
   else:  
     scope.write("C1:TRIG_LEVEL 0.3")
-    scope.write("C1:Volt_DIV 0.2")
+    scope.write("C1:Volt_DIV 0.5")
 
   scope.write("C1:COUPLING D50")
   scope.write("C1:OFFSET 0.0")
