@@ -159,6 +159,8 @@ if __name__ == "__main__":
     # Use external 10MHz reference
     freq_cnt.write("ROSCillator:SOURce EXTernal")
 
+    # Disable timeout (otherwise we might loose measurements)
+    freq_cnt.write("SYSTem:TIMeout INFinity")
 
     # Channel 1 setup:
     freq_cnt.write("INP1:COUP DC")
