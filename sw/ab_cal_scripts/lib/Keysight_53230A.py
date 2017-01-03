@@ -55,15 +55,34 @@ def get_time_interval(freq_cnt, num_meas=1):
   file_header += "#measurements:\n"
 
   meas_data = []
-  for measurement in range(num_meas):
-    measurement = freq_cnt.ask("READ?")
-    meas_data.append(measurement+"\n")
-    print(measurement)
+  freq_cnt.write("SAMPle:COUNt " + str(num_meas))
+  freq_cnt.write("INITiate:IMMediate")
+  print("Wait for measurments...")
+
+  """
+  datapoints = 0
+  datapoints_1 = 0
+  while datapoints < num_meas:
+    datapoints = int(freq_cnt.ask("DATA:POINTs?"))
+    if datapoints_1 != datapoints:
+      print(datapoints)
+    datapoints_1 = datapoints
+    time.sleep(0.1)
+  """
+  time.sleep(num_meas+10)
+
+  measurement= freq_cnt.ask("FETCh?")
+  meas_data = measurement.split(',')
+
+  #for measurement in range(num_meas):
+  #  measurement = freq_cnt.ask("READ?")
+  #  meas_data.append(measurement+"\n")
+  #  print(measurement)
 
   # Write out file_header, followed by all measured data
   data = [file_header]
   for i in range(len(meas_data)):
-    data.append(meas_data[i])
+    data.append(meas_data[i]+"\n")
 
   filename="data/"+time.strftime(format("%y%m%d_%H_%M_%S"),timestamp)+"_freq_cnt_keysight_53230A"
   print("save waveform into file:",filename)
@@ -143,18 +162,24 @@ if __name__ == "__main__":
   if len(sys.argv) >= 2:            # just IP number
     freq_cnt =  vxi11.Instrument(sys.argv[1])    
     #freq_cnt =  vxi11.Instrument("192.168.32.251")
+
+    # Put the device in a known state
+    freq_cnt.write("*RST")
+    freq_cnt.write("*CLS")
+
     print(freq_cnt.ask("*IDN?"))
     # Returns 'Agilent Technologies,53230A,MY50001484,02.05-1519.666-1.19-4.15-127-155-35'
+
     if len(sys.argv) >= 3:          # There are more arguments...
       num_meas = int(sys.argv[2].split('=')[1])
 
     print ("num_meas", num_meas)
 
-    # Put the device in a known state
-    freq_cnt.write("*RST")
-
     # Setup Time Interval measurment from channel 1 -> 2
     freq_cnt.write("CONFigure:TINTerval (@1),(@2)")
+    freq_cnt.write("SENSe:GATE:STARt:DELAy:SOURce IMMediate")
+    freq_cnt.write("SENSE:TINTerval:GATE:SOURce IMMediate")
+    freq_cnt.write("SENSE:TINTerval:GATE:POLarity POSitive")
 
     # Use external 10MHz reference
     freq_cnt.write("ROSCillator:SOURce EXTernal")
@@ -185,6 +210,7 @@ if __name__ == "__main__":
     freq_cnt.write("INP2:COUP DC")
     freq_cnt.write("INP2:RANGE 5")
     freq_cnt.write("INP2:SLOPE POS")
+    freq_cnt.write("INP2:LEVEL:AUTO OFF")
 
     # A fixed trigger level is important for proper timing measurement
     # MiniCircuits Splitters ZFRSC-123+ have ~ 6 + 3,75 dB attenuation (~ factor 3).
