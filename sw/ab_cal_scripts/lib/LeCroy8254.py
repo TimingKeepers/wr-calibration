@@ -640,13 +640,16 @@ def osc_init(scope, time_base = 50.0e-9):
 
   scope.write("C1:COUPLING D50")
   scope.write("C1:OFFSET 0.0")
+  scope.write("VBS 'app.Acquisition.C1.InterpolateType = \"sinxx\"'")
 
   scope.write("C3:COUPLING D50")
   scope.write("C3:OFFSET 0.0")
   scope.write("C3:Volt_DIV 0.25")
+  scope.write("VBS 'app.Acquisition.C3.InterpolateType = \"sinxx\"'")
   scope.write("C4:COUPLING D50")
   scope.write("C4:OFFSET 0.0")
   scope.write("C4:Volt_DIV 0.25")
+  scope.write("VBS 'app.Acquisition.C4.InterpolateType = \"sinxx\"'")
 
 
   # Trigger in the centre of the screen; important for maximum estimations
