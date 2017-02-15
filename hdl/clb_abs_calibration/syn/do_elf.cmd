@@ -9,7 +9,8 @@ Rem reference design software
 rem set elf_file_lm32_wrpc=..\..\..\sw\embedded\precompiled\wrpc-clb-sw\wrc.elf
 
 Rem calibration software
-set elf_file_lm32_wrpc=..\..\..\sw\embedded\precompiled\wrpc-clb-cal-sw\wrc.elf
+rem set elf_file_lm32_wrpc=..\..\..\sw\embedded\precompiled\wrpc-clb-cal-sw\wrc.elf
+set elf_file_lm32_wrpc=..\..\..\..\InSituAlpha\wrpc-sw\wrc.elf
 
 set tag_lm32_wrpc="lm32_wrpc_memory"
 
