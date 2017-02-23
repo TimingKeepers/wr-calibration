@@ -19,9 +19,6 @@ import serial
 import time
 import sys
 
-# Add parent directory (containing 'lib') to the module search path
-sys.path.insert(0,'..')
-
 from lib.docopt import docopt
 import lib.itu_conversions as itu_conv
 import lib.wrt_sfppt015sc as tunable
