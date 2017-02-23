@@ -1,16 +1,12 @@
 """
 Delay Determination Library with functions for delay estimation.
 
-License GPL version 2:
-
 Copyright (C) 2016  Tjeerd Pinkert
-based on:
-[5]	N. Sotiropoulos et al., Opt. Express 21, 32643-32654 (2013)
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -18,13 +14,16 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 -------------------------------------------------------------------------------
 
 This library mainly holds closely inspected correlation functions which are
 rigorously checked for one off errors etc.
+
+Part of the ideas for cross-correlation and interpolation can be found back in
+N. Sotiropoulos et al., Opt. Express 21, 32643-32654 (2013)
+
 """
 
 import sys
@@ -37,7 +36,9 @@ import scipy.signal
 import bz2
 
 ##
-## Add some "missing" functions to older scipy modules 
+## Add some "missing" functions to older scipy modules, these are not checked
+## for compliance with the licence of the rest of the program and can be
+## exempted or removed if needed for compliance with GPLv3.
 ##
 #if scipy.__version__ < "0.11.0":
 if 1:
@@ -245,7 +246,7 @@ analysis_methods= [
 #TODO: finish this function....
 def delay_from_waveform(waveform_data, analysis, channels=[2,4], length=0.0, refractive_index=1.5):
     """
-    Analise the delay resulting from an oscilloscope trace using the cross
+    Analyse the delay resulting from an oscilloscope trace using the cross
     correlation methods. The function returns a dictionary with delay values
     for each analysis method.
     
@@ -336,6 +337,10 @@ def correlate_linear(signal1, signal2, center=0, shift=100, length=None, correla
     Linear correlation as proposed in ITSP-jacovitti-1993. This is a linear
     correlation on a subset of the signal samples, such that no zero padding is
     applied.
+    
+    reference: Giovanni Jacovitti and Gaetano Scarano, Discrete Time Techniques
+        for Time Delay Estimation, IEEE Transactions on Signal Processing 41(2),
+        525-533 (1993)
     
     The problem with zero-padding is that cross correlation
     automatically favours the centre position of the signals because zero
