@@ -24,6 +24,9 @@ import scipy
 import numpy
 import matplotlib.pyplot as plt
 
+# Add parent directory (containing 'lib') to the module search path
+sys.path.insert(0,'..')
+
 # private imports:
 from lib.docopt import docopt
 import lib.LeCroy8254 as DSO
