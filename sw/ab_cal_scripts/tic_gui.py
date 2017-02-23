@@ -1,7 +1,25 @@
 #!/usr/bin/python
 
 """
-tic_gui: Analyzes Time Interval Count Measurements and White Rabbit Abslolute Calibration GUI output
+tic_gui: Analyzes Time Interval Count Measurements and White Rabbit Abslolute
+    Calibration GUI output
+
+-------------------------------------------------------------------------------
+Copyright (C) 2016 Peter Jansweijer
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+-------------------------------------------------------------------------------
 
 This script calculates the differences between:
 - the time measured on the Time Interval Counter for PPS -> Tx/Rx-timestamp
@@ -12,7 +30,8 @@ Measuremenrs should be taken while the WR device is in GrandMaster mode
 ('mode gm') and locked to an external 10 MHz reference. Measurments are started
 after the 'ptp start' command
 
-The same reference clock mentioned above should also have been used for the Time Interval Counter measurement!
+The same reference clock mentioned above should also have been used for the
+Time Interval Counter measurement!
 
 Usage:
   tic_gui.py     <tic_file> <wr_gui_file> <meas_type>
