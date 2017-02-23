@@ -18,7 +18,6 @@ Options:
 """
 
 import sys
-import delay_determination as dd
 import vxi11
 import scipy
 import numpy
@@ -32,6 +31,7 @@ from lib.docopt import docopt
 import lib.LeCroy8254 as DSO
 #import lib.Agilent_DSO6104A as DSO
 import lib.pat_gen as pat_gen
+import lib.delay_determination as dd
 
 # 8B10B K symbols
 K28_5p = "1100000101"   # = 0xBC (+RD)
