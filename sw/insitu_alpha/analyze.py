@@ -1,33 +1,14 @@
 #!/usr/bin/python
 
 """
-tic_gui: Analyzes Time Interval Count Measurements and White Rabbit Abslolute Calibration GUI output
-
-This script calculates the differences between:
-- the time measured on the Time Interval Counter for PPS -> Tx/Rx-timestamp
-- the time stamped by the WR device (t1/t4) that was outputted on the WR GUI
-  while running the absolute calibration software.
-
-Measuremenrs should be taken while the WR device is in GrandMaster mode
-('mode gm') and locked to an external 10 MHz reference. Measurments are started
-after the 'ptp start' command
-
-The same reference clock mentioned above should also have been used for the Time Interval Counter measurement!
+analyze.py: Analyzes itu_channel/wavelength/crtt that was stored in a file
 
 Usage:
-  tic_gui.py     <tic_file> <wr_gui_file> <meas_type>
-  tic_gui.py     <tic_file> <"tic">
-  tic_gui.py     -h | --help
+  analyze.py     <crtt_file>
+  analyze.py     -h | --help
 
-  <tic_file>     <type 'str'> file name that contains the Time Interval
-                 measurements between pps_o and either tx_ts or rx_ts output
-  <wr_gui_file>  <type 'str'> name of file containing the Time Interval
-                 measurements between pps_o and either tx_ts or rx_ts output
-  <meas_type>    <type 'str'> either
-                 "t1"   -> (measured TIC for PPS/Tx-ts) - (WR_GUI t1)
-                 "t4"   -> (measured TIC for PPS/Rx-ts) - (WR_GUI t4)
-                 "t1_4" -> (WR_GUI t4) - (WR_GUI t1)
-                 "tic"  -> histogram just the time interval measurements
+  <crtt_file>    <type 'str'> file name that contains the crtt measurements
+                 for different SFP wavelengthes
 
 Options:
   -h --help    Show this screen.
@@ -50,64 +31,111 @@ sys.path.insert(0,'..')
 
 # private imports:
 from lib.docopt import docopt
-import lib.Keysight_53230A as tic
+import lib.wrt_sfppt015sc as tunable
 
 ############################################################################
 
-def wr_abs_cal_gui_file_to_scipy_array(filename):
+def file_to_dict(filename):
   """
-  Retrieve the White Rabbit GUI info which is written during Absolute Calibration
+  Retrieve the measurement file
    
   filename -- source file from which to retrieve data.
     
-  returns: <type 'numpy.ndarray'> measurements
+  returns: <type 'dict'>
+              key        : value
+              itu_channel: [wavelength, crtt]
   """
 
+  # create an empty dictionairy
+  crtt_data = {}
   data_file = open(filename,"r")
-  # header = data_file.read(5)           # read the waveform_header "wrc# "
-  #if header != "wrc# ":
-    #print("Exception: wr_abs_cal_gui_file_to_scipy_array: Not a WR Absolute Calibration GUI file.")
-    #Exception("wr_abs_cal_gui_file_to_scipy_array: Not a WR Absolute Calibration GUI file.")
-    #data_file.close()
-    #return
 
-  # create an empty gui_data dictionairy
-  gui_data     = {}
+  line = data_file.readline()
+  #print(line)
+  if line.strip() != "#In Situ Alpha measurements":
+    Exception("file_to_dict: Not an In Situ Alpha measurements file.")
+    data_file.close()
+    return (crtt_data)
 
-  # create an empty lists for t1 and t4 components
-  lst_t1_sec   = []
-  lst_t1  = []
-  lst_t4_sec   = []
-  lst_t4  = []
+  line = data_file.readline()	# Read date
+  #print(line)
+  line = data_file.readline()	# Read time
+  #print(line)
+  line = data_file.readline()	# Read comment
+  #print(line)
+
+  # create an empty lists for fields:
+  # sfp module channel, ITU channel, ITU wavelength [nm], crtt
 
   while 1:
     line=data_file.readline()
-    line_lst = line.split(" ")
-    if len(line_lst) < 6:
-      break
+    if line[:len("#")]!="#":  # Skip lines that are commented out
+      line_lst = line.split(",")
+      if len(line_lst) < 4:
+        break
 
-    # Values one one line are:
-    # t1 sec, t1[ns], t1_phase[ps], t4 sec, t4[ns], t4_phase[ps]
-    # to calculate proper t1 and t4
-    # ns must be scaled 1e-9 and phase scaled with 1e-12
-    lst_t1_sec.append(line_lst[0])
-    lst_t1.append(1e-9 * scipy.float64(line_lst[1]) + 1e-12 * scipy.float64(line_lst[2]))
-    lst_t4_sec.append(line_lst[3])
-    lst_t4.append(1e-9 * scipy.float64(line_lst[4]) + 1e-12 * scipy.float64(line_lst[5]))
+      # Values one one line are:
+      # channel, ITU channel, ITU wavelength [nm], crtt
+      lst_meas = []
+      lst_meas.append(line_lst[2])		# Wavelength
+      lst_meas.append(line_lst[3])		# crtt
+      lst_meas.append(line_lst[0])		# sfp module channel number
+      crtt_data.update({line_lst[1]:lst_meas})	# itu_channel: [wavelength, crtt]
 
   data_file.close()
 
-  t1_sec = scipy.array(lst_t1_sec)
-  t1 = scipy.array(lst_t1)
-  t4_sec = scipy.array(lst_t4_sec)
-  t4 = scipy.array(lst_t4)
+  #for key_itu_ch,value_itu_ch in sorted(crtt_data.items()):
+  #  print (key_itu_ch, value_itu_ch)
 
-  gui_data["t1 seconds"]=(t1_sec)
-  gui_data["t1"]=(t1)
-  gui_data["t4 seconds"]=(t4_sec)
-  gui_data["t4"]=(t4)
+  return (crtt_data)
 
-  return gui_data
+############################################################################
+
+def dict_to_narray(crtt_data):
+  """
+  converts the data that is stored in crtt_data <type 'dict'> into 
+  <type 'numpy.ndarray'>
+   
+  returns: <type 'numpy.ndarray'>
+  """
+
+  crtt_array = {}
+  lst_channel = []
+  lst_itu_channel = []
+  lst_itu_wavelength = []
+  lst_crtt = []
+
+  for key_itu_ch,value_itu_ch in sorted(crtt_data.items()):
+    #print (key_itu_ch, value_itu_ch)
+    lst_itu_channel.append(key_itu_ch)
+    lst_itu_wavelength.append(value_itu_ch[0])
+    lst_crtt.append(value_itu_ch[1])
+    lst_channel.append(value_itu_ch[2])
+
+  crtt_array["itu_channel"]=scipy.array(lst_itu_channel)
+  crtt_array["itu_wavelength"]=scipy.array(lst_itu_wavelength)
+  crtt_array["crtt"]=scipy.array(lst_crtt)
+  crtt_array["channel"]=scipy.array(lst_channel)
+
+  return (crtt_array)
+
+############################################################################
+def calc_alpha(cl_wl, crtt_data, ref_itu_channel, fixed_itu_channel=20):
+  """
+  calc_alpha calculates the alpha factors for the wavelengths in the
+  crtt_data array of measurements.
+  It takes a ref_itu_channel for lambda 1 ans scans lambda 2 over each
+  other measurment.
+  A fixed wavelenth is used for either the forward or the backward
+  connection between master ans slave.
+  """
+  
+  tuneable_sfp_ch = tunable.sfp_channel(fixed_itu_channel)
+  wl = cl_wl[tuneable_sfp_ch][2]
+
+  print("fixed itu channel:",fixed_itu_channel, "= WRT-SFPPT015SC channel:", tuneable_sfp_ch, "wavelength: ", wl)
+
+  return(0)
 
 ############################################################################
 ##
@@ -115,80 +143,28 @@ def wr_abs_cal_gui_file_to_scipy_array(filename):
 ##
 if __name__ == "__main__":
   
-  arguments = docopt(__doc__,version='Keysight DSO-S 254A version 01')
+  arguments = docopt(__doc__,version='Analyze In Sity Alpha Measurements')
 
-  tic_file = sys.argv[1]
-  if len(sys.argv) == 3 and sys.argv[2] == "tic":
-    tic_data = tic.file_to_scipy_array(tic_file)
-    num = len(tic_data[0]) # x-axis in [0]
-    t_hist = tic_data[1]   # y-axis in [1]
-    hist_tic = plt.figure("Time Interval Counter skew")
-  elif len(sys.argv) != 4:
+  if len(sys.argv) != 2:
     print ("### wrong number of input arguments")
     sys.exit()
   else:
-    wr_gui_file = sys.argv[2]
-    src = sys.argv[3]
-    if src == "t1":
-      ts_output = "tx_ts"
-    elif src == "t4":
-      ts_output = "rx_ts"
-    elif src == "t1_4":
-      ts_output = ""
-    else:
-      print ("### wrong timestamp source")
-      sys.exit()
+    insitu_file = sys.argv[1]
 
-    gui_data = wr_abs_cal_gui_file_to_scipy_array(wr_gui_file)
+    crtt_data = file_to_dict(insitu_file)
+    crtt_array = dict_to_narray(crtt_data)
 
-    if src == "t1_4":
-      t_hist = gui_data["t4"] - gui_data["t1"]
-      num = len(gui_data["t1"])
-      print("Delay between internal timestamp t1 and t4 (i.e. t4-t1):")
-      hist_tic = plt.figure("Historam difference WR (t4-t1)")
-    else:
-      tic_data = tic.file_to_scipy_array(tic_file)
+    #calc_alpha(cl_wl,crtt_data,11)
+    #sys.exit()
 
-      num_tic = len(tic_data[0]) # x-axis in [0]
-      num_gui = len(gui_data[src])
-      num = min(num_tic,num_gui)
-
-      print ("Measurements found in 53230A file:",num_tic,"in WR_GUI file:", num_gui)
-      print ("Measurements to take into account:",num)
-      print("Delay between internal timestamp "+src+" to "+ts_output+":")
-
-      fig = plt.figure("Time Interval Counter measurements and WR GUI "+src+" versus measurment number")
-      ax = fig.add_subplot(111)
-      ax.set_xlabel('measurement number')
-      ax.set_ylabel('TIC value, WR '+src)
-      x = tic_data[0][:num]
-      ax.plot(x,tic_data[1][:num])
-      ax.plot(x,gui_data[src][:num])
-      plt.draw()
-      t_hist = tic_data[1][:num] - gui_data[src][:num]
-      hist_tic = plt.figure("Historam difference (pps->ts) - WR "+src)
-
-  mean_delay  = numpy.mean(t_hist)
-  max_delay   = numpy.max(t_hist)
-  min_delay   = numpy.min(t_hist)
-  stdev_delay = numpy.std(t_hist, ddof = 1)
-
-  print("number of measurements:", num)
-  print("mean:", mean_delay)
-  print("max:", max_delay)
-  print("min:", min_delay)
-  print("width:",max_delay-min_delay)
-  print("st-dev:", stdev_delay)
-
-  ax = hist_tic.add_subplot(111)
-  ax.set_xlabel('Time')
-  ax.set_ylabel('Count')
-  ax.text(0.01,0.95,'mean = {0:.6g}'.format(mean_delay), transform=ax.transAxes)
-  ax.text(0.01,0.90,'std = {0:.6g}'.format(stdev_delay), transform=ax.transAxes)
-  ax.text(0.01,0.85,'max = {0:.6g}'.format(max_delay), transform=ax.transAxes)
-  ax.text(0.01,0.80,'min = {0:.6g}'.format(min_delay), transform=ax.transAxes)
-  ax.text(0.01,0.75,'n = {0:d}'.format(num), transform=ax.transAxes)
-  ax.hist(t_hist,bins=20)
-  plt.show()
+    fig = plt.figure("CRTT versus ITU Channel number")
+    ax = fig.add_subplot(111)
+    ax.set_xlabel('ITU Channel number')
+    ax.set_ylabel('CRTT')
+    ax.text(0.01,0.95,str(insitu_file), transform=ax.transAxes)
+    x = crtt_array["itu_channel"]
+    ax.plot(x,crtt_array["crtt"])
+    plt.draw()
+    plt.show()
 
   sys.exit()
