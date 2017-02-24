@@ -3,6 +3,23 @@
 """
 Delay determination from edge to edeg (for oscilloscope skew measurement)
 
+-------------------------------------------------------------------------------
+Copyright (C) 2016 Peter Jansweijer
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+-------------------------------------------------------------------------------
+
 Usage:
   edge_edge.py <IP#> [--meas=<number>]
   edge_edge.py -h | --help
@@ -18,7 +35,6 @@ Options:
 """
 
 import sys
-import delay_determination as dd
 import vxi11
 import scipy
 import numpy
@@ -32,6 +48,7 @@ from lib.docopt import docopt
 import lib.LeCroy8254 as DSO
 #import lib.Agilent_DSO6104A as DSO
 import lib.pat_gen as pat_gen
+import lib.delay_determination as dd
 
 # 8B10B K symbols
 K28_5p = "1100000101"   # = 0xBC (+RD)
