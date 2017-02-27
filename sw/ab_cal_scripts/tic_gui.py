@@ -53,6 +53,7 @@ Options:
   --version    Show version.
 """
 
+import os
 import sys
 import time
 import struct
@@ -65,7 +66,9 @@ import numpy
 import matplotlib.pyplot as plt
 
 # Add parent directory (containing 'lib') to the module search path
-sys.path.insert(0,'..')
+lib_path = (os.path.dirname(os.path.abspath(__file__)))
+lib_path = os.path.join(lib_path,"..")
+sys.path.insert(0,lib_path)
 
 # private imports:
 from lib.docopt import docopt
