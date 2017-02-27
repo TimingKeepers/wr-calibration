@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 -------------------------------------------------------------------------------
 
 Usage:
-  Keysight_DSO_S_254A.py <IP#> [-c<1,2,3,4>] [-a<averages>]
+  Keysight_DSO_S_254A.py <IP#> [-c<1,2,3,4>] [-a<averages>] [-o=<dir>]
   Keysight_DSO_S_254A.py -h | --help
 
   IP          IP number of the Oscilloscope
@@ -33,10 +33,12 @@ Options:
   --version   Show version.
   -c<1,2,3,4> channel number
   -a          number of averages [default: 1]
-
+  -o=<dir>    optional directory for output file storage [default: "data/"]
+  
 """
 from docopt import docopt
 
+import os
 import sys
 import time
 import scipy
@@ -58,7 +60,7 @@ def get_sweeps(scope, chan_str):
 
 ############################################################################
 
-def get_waveforms(scope, channels=[1,2,3,4], num_avg=1):
+def get_waveforms(scope, channels=[1,2,3,4], num_avg=1, output_dir="data"):
 
   """
   Measure and save Keysight DSO-S 254A waveforms
@@ -66,6 +68,7 @@ def get_waveforms(scope, channels=[1,2,3,4], num_avg=1):
   scope           -- instance of python-vxi connected to the oscilloscope
   channels        -- channels that are going to be measured for example '1,2'
   num_avg         -- the number of averiges taken by the oscilloscope
+  output_dir      -- name of the directory where measured waveform files wil be stored
 
   the file output format is as described below:
 
@@ -141,7 +144,13 @@ def get_waveforms(scope, channels=[1,2,3,4], num_avg=1):
   for i in range(len(channel_data)):
     data.append(channel_data[i])
 
-  filename="data/"+time.strftime(format("%y%m%d_%H_%M_%S"),timestamp)+"_scope_keysight_dso_s_254A_bin"
+  # add trailing slash if not present
+  output_dir = os.path.join(output_dir,'')
+  if os.path.exists(output_dir) != True:
+    os.mkdir(output_dir)
+    print("Output directory does not exist => created: "+output_dir)
+
+  filename=output_dir+time.strftime(format("%y%m%d_%H_%M_%S"),timestamp)+"_scope_keysight_dso_s_254A_bin"
   print("save waveform into file:",filename)
 
   file=open(filename,"w")
@@ -517,7 +526,8 @@ if __name__ == "__main__":
     channels = '1'
     #record_len = 1000
     num_avg = 1
-
+    output_dir = "data"
+    
     if len(sys.argv) >= 3:                  # There are more arguments...
       for arg_value in sys.argv[2:]:
         if arg_value[:2] == '-c':           # set channels
@@ -528,7 +538,8 @@ if __name__ == "__main__":
         #  print(record_len)
         if arg_value[:2] == '-a':           # set number of averages
           num_avg=int(arg_value[2:])
-          #print(num_avg)
+        if option[0] == '-o':           # set output directory
+          output_dir=option[1]
 
     #print ("channels:",channels, "record length:", record_len, "num_avg", num_avg)
 
@@ -537,15 +548,15 @@ if __name__ == "__main__":
     # use Channel 3 Ethernet Frame input
 
     # A fixed trigger level (1,4 Volt) is important for proper timing measurement
-    scope.write(":TRIGger:LEVel CHANnel1,1.4")
-    scope.write(":CHANnel1:INPut DCFifty")
+    #scope.write(":TRIGger:LEVel CHANnel1,1.4")
+    #scope.write(":CHANnel1:INPut DCFifty")
 
     # Trigger in the centre of the screen; important for maximum estimations
     # forwarded to function average_edge_to_sfd
     scope.write(":TIMebase:DELay 0")
 
     #d,filename = get_waveforms(scope, channels, record_len, num_avg)
-    d,filename = get_waveforms(scope, channels, num_avg)
+    d,filename = get_waveforms(scope, channels, num_avg, output_dir)
     wf_data = file_to_waveform(filename)
 
     check_waveforms(wf_data)
