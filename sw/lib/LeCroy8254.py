@@ -715,8 +715,8 @@ if __name__ == "__main__":
     # use Channel 3 Ethernet Frame input
 
     # A fixed trigger level (1,4 Volt) is important for proper timing measurement
-    scope.write("C1:TRIG_LEVEL 0.1")
-    scope.write("C1:COUPLING DC50")
+    #scope.write("C1:TRIG_LEVEL 0.1")
+    #scope.write("C1:COUPLING DC50")
 
     # Trigger in the centre of the screen; important for maximum estimations
     # forwarded to function average_edge_to_sfd

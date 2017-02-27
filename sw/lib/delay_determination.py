@@ -659,12 +659,12 @@ def peak_position(axis, signal, delta_x=None, signal1_x0=None, signal2_x0=None, 
     #boolean array with True only at closest value to x_estimate
     index_selector=(alternate_axis-x_estimate<delta_x/2.0)*(alternate_axis-x_estimate>=-delta_x/2.0)
     index_estimate=scipy.arange(len(axis))[index_selector]
-    print "estimated delay (index) on axis:", index_estimate
-    print "time:", alternate_axis[index_estimate]
+    print ("estimated delay (index) on axis:", index_estimate)
+    print ("time:", alternate_axis[index_estimate])
 
     max_index=nearest_maximum_index(signal, index_estimate)
-    print "estimated index of maximum correlation:", max_index
-    print "time:", alternate_axis[max_index]
+    print ("estimated index of maximum correlation:", max_index)
+    print ("time:", alternate_axis[max_index])
 
     #select small part of correlation peak, create interpolation function,
     # interpolate and find maximum
@@ -677,8 +677,8 @@ def peak_position(axis, signal, delta_x=None, signal1_x0=None, signal2_x0=None, 
     if not delta_x==None:
         peak_position=time_axis(index_interpolated, delta_x, signal1_x0, signal2_x0)
 
-    print "delay (index) from interpolation:", index_interpolated
-    print "delay time from interpolation:", time_axis(index_interpolated, delta_x, signal1_x0, signal2_x0)
+    print ("delay (index) from interpolation:", index_interpolated)
+    print ("delay time from interpolation:", time_axis(index_interpolated, delta_x, signal1_x0, signal2_x0))
 
     return -peak_position
 
@@ -793,7 +793,7 @@ class DataConfiguration(object):
         for file_n in file_name:
             try:
                 data_properties=DataProperties(self)
-                print data_properties
+                print (data_properties)
             except: 
                 raise DataConfigurationError("Could not open file to read data properties")
 
